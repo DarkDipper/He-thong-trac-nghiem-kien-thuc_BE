@@ -20,5 +20,13 @@ Góp ý:
  	1. [CodeLearn](https://codelearn.io/learning/cpp-cho-nguoi-moi-bat-dau)
  	2. [LearnCPP](https://www.learncpp.com/)
  	3. [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)
-- Phân loại (0h 4/4 - 23h59 10/4)
+- Phân loại (0h 4/4 - 23h59 10/4):
+	Phân loại theo khuôn mẫu file SL.xlxs
+- Frontend : React (T.Phong)
+	1. Lần 1(0h 23h59 - 23h59 15/4): 
+	2. Lần 2(0h 16/4 - 23h59 19/4):
+- Backend (Lộc, Vinh) : Django 
+	1. Lần 1(0h 23h59 - 23h59 16/4): 
+	2. Lần 2(0h 17/4 - 23h59 20/4):
+- Làm sile + test hệ thống(0h 21/4 - lúc báo cáo) 
 	
