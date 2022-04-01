@@ -22,7 +22,7 @@ Góp ý:
  	3. [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)
 - Phân loại (0h 4/4 - 23h59 10/4):
 	Phân loại theo khuôn mẫu file SL.xlxs
-	Database : csv
+	Database : MongoDB
 - Frontend : React (T.Phong)
 	1. Lần 1(0h 10/4 - 23h59 15/4):
 		- Danh sách các bài học + chương mục
