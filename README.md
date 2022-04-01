@@ -13,3 +13,12 @@
 Góp ý:
   - hỗ trợ tra cứu thêm dạng **phân loại** kiến thức (theo bài tập, khái niệm, tính chất,...)
   - hỗ trợ trắc nghiệm dựa trên từng bài học, sau đó tạo ra trắc nghiệm tổng hợp, câu hỏi liên kết được bài học, liên kết được theo kiến thức đã đặc tả
+ 
+ 
+ Bắt đầu làm là ngày 2/4/2022
+ - Cào data (23h59 2/4 - 23h59 3/4): 
+ 	1. [CodeLearn](https://codelearn.io/learning/cpp-cho-nguoi-moi-bat-dau)
+ 	2. [LearnCPP](https://www.learncpp.com/)
+ 	3. [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)
+- Phân loại (0h 4/4 - 23h59 10/4)
+	
