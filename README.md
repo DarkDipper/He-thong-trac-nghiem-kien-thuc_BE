@@ -17,9 +17,9 @@ Góp ý:
  
  Bắt đầu làm là ngày 2/4/2022
  - Cào data (23h59 2/4 - 23h59 3/4): 
- 	1. [CodeLearn](https://codelearn.io/learning/cpp-cho-nguoi-moi-bat-dau)
- 	2. [LearnCPP](https://www.learncpp.com/)
- 	3. [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)
+ 	1. [CodeLearn](https://codelearn.io/learning/cpp-cho-nguoi-moi-bat-dau) <Lộc>
+ 	2. [LearnCPP](https://www.learncpp.com/) <Vinh>
+ 	3. [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html) <Phong>
 - Phân loại (0h 4/4 - 23h59 10/4):
 	Phân loại theo khuôn mẫu file SL.xlxs
 	Database : MongoDB
