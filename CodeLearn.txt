@@ -1,0 +1,4154 @@
+Cài đặt môi trường lập trình C++ | Codelearn
+---------------------------------------
+Đây là bài đầu tiên trong loạt bài hướng dẫn học lập trình C++ cho người mới bắt đầu, mục tiêu của bài này là giúp bạn làm quen với hệ thống và cài đặt môi trường lập trình C++.
+Nếu bạn đã quen với hệ thống và có môi trường lập trình C++ trên máy của mình thì có thể bỏ qua bài hướng dẫn này bằng cách bấm nút CHẠY THỬ sau đó bấm NỘP BÀI bên góc phải phía dưới của màn hình.
+Bạn có thể xem video dưới đây để biết cách cài đặt môi trường và nộp bài trên hệ thống (nên xem ở chế độ toàn màn hình).
+/Media/Default/Users/blackcat/CPPBasic/bandicam%202020-03-07%2022-29-29-119.mp4" controls="controls"
+Cài đặt môi trường lập trình
+Nếu bạn là người mới bắt đầu thì mình khuyên bạn nên sử dụng phần mềm Dev-C++ để lập trình vì nó nhẹ, dễ cài đặt và dễ sử dụng.
+Cài đặt Dev-C++
+https://sourceforge.net/projects/orwelldevcpp/files/latest/download" target="_blank" rel="noopener"Bấm vào đây để tải Dev-C++.
+Sau khi bấm vào link bạn hãy chờ 5 giây để file được tải xuống. Sau khi tải xong bạn hãy mở file vừa tải về và làm như sau:
+Bấm vào OK
+/Media/Default/Users/blackcat/CPPBasic/1.png"
+Bấm vào I Agree
+/Media/Default/Users/blackcat/CPPBasic/2.png"
+Bấm vào Next
+/Media/Default/Users/blackcat/CPPBasic/3.png"
+Bấm vào Install và chờ khoảng 1 phút.
+/Media/Default/Users/blackcat/CPPBasic/4.png"
+Bấm Finish.
+/Media/Default/Users/blackcat/CPPBasic/5.png"
+Bấm Next
+/Media/Default/Users/blackcat/CPPBasic/6.png"
+Bấm Next tiếp
+/Media/Default/Users/blackcat/CPPBasic/7.png"
+Bấm OK
+/Media/Default/Users/blackcat/CPPBasic/8.png"
+Tới đây bạn đã đặt thành công Dev-C++, giao diện của Dev-C++ sẽ trông như sau:
+/Media/Default/Users/blackcat/CPPBasic/8.5.png"
+Sử dụng Dev-C++ để viết chương trình C++
+Từ giao diện của phần mềm Dev-C++, bấm tổ hợp phím Ctrl + N hoặc bấm vào File -> New -> Source File.
+/Media/Default/Users/blackcat/CPPBasic/9.png"
+Sau đó hãy copy đoạn code mẫu bên dưới vào cửa sổ vừa hiện ra (đoạn code này bạn sẽ được học và hiểu ở các bài sau).
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	cout<<"Hello C++";
+	return 0;
+}
+
+Kết quả sau khi copy xong:
+/Media/Default/Users/blackcat/CPPBasic/10%20(1).jpg"
+Tiếp theo đó bạn hãy bấm F11 (hoặc Fn + F11) và Enter, sẽ có 1 chương trình hiển thị ra: 
+/Media/Default/Users/blackcat/CPPBasic/13.png"
+Đây chính là chương trình được chạy từ đoạn code bên trên, tới đây bạn đã biết cách sử dụng Dev-C++ để viết chương trình C++. Hãy đọc tiếp phần sau để biết cách nộp bài trên hệ thống.
+Hướng dẫn sử dụng hệ thống
+Ở các bài tập tiếp theo bạn hãy viết code trên phần mềm Dev-C++ và nếu thấy kết quả của chương trình giống như trong đề bài thì có thể copy code vào và bấm nút CHẠY THỬ bên góc phải phía dưới màn hình, sau đó hệ thống sẽ kiểm tra nếu code của bạn đúng thì bạn có thể bấm NỘP BÀI và chuyển qua bài tiếp theo.
+Quay lại bài này, bạn hãy bấm bấm nút CHẠY THỬ và NỘP BÀI để làm bài tiếp theo. 
+Đọc thêm: https://codelearn.io/sharing/chuong-trinh-cpp-duoc-bien-dich-the-nao"https://codelearn.io/sharing/chuong-trinh-cpp-duoc-bien-dich-the-nao
+Viết chương trình Hello World đầu tiên trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy thay dấu ... bằng các đoạn code để chương trình hiển thị ra màn hình dòng chữ:
+Hello World!
+Hãy đọc phần lý thuyết và xem hướng dẫn để biết cách làm bài này!
+Lý thuyết
+Trước tiên bạn hãy chạy thử đoạn code sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Xin chao!";
+	return 0;
+}
+
+Sau khi chạy sẽ có 1 chương trình được hiển thị lên màn hình với dòng chữ:
+Xin chao!
+Nếu bạn là người mới bắt đầu thì trong đoạn code trên có khá nhiều câu lệnh mà bạn không biết như #include<iostream>, using namespace std;, int main() { và return 0; nhưng bạn đừng quan tâm tới các câu lệnh này vội, hãy coi như những lệnh này là bắt buộc đối với 1 chương trình C++.
+Bây giờ bạn hãy thay từ "Xin chao!" trong dòng code:
+cout << "Xin chao!";
+
+thành tên của bạn và chạy thử. Ví dụ nếu bạn tên là Minh thì hãy sửa đoạn code trên thành:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Minh";
+	return 0;
+}
+
+Lúc này chương trình của bạn sẽ hiển thị lên dòng chữ:
+Minh
+Tới đây chắc bạn cũng đã hiểu được câu lệnh cout << là gì, nó đơn giản chỉ là một câu lệnh giúp bạn hiển thị lên màn hình một dòng chữ nào đó.
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Bạn chỉ cần điền cout << "Hello World!"; vào dấu ... giống trong video sau (bấm vào toàn màn hình để xem rõ hơn):
+/Media/Default/Users/blackcat/CPPBasic/ex2.mp4" controls="controls"
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Hello World!";
+	return 0;
+}
+
+Bài tập C++ cơ bản: câu lệnh cout | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiện ra màn hình dòng chữ:
+Welcome to Codelearn.io!
+Hướng dẫn
+Để hiển thị lên màn hình một dòng chữ nào đó bạn có thể dùng câu lệnh cout <<. Ví dụ bạn có thể viết chương trình hiển thị ra hình dòng chữ
+Welcome
+bằng các câu lệnh:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Welcome";
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính tổng hai số | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình tổng của 12 và 15.
+Lý thuyết
+Trước tiên bạn hãy chạy thử đoạn code dùng để tính tổng 2 số như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << 8 + 4;
+	return 0;
+}
+
+Sau khi chạy bạn sẽ thấy số 12 được hiển thị lên màn hình.
+Đoạn code này rất đơn giản và dễ hiểu: gọi tới lệnh cout << để hiển thị ra màn hình kết quả của phép tính 8 + 4.
+Tương tự bạn có thể tạo ra 1 chương trình tính toán đơn giản bằng cách thay 8 + 4 bằng các biểu thức khác như 9 - 7:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << 9 - 7;
+	return 0;
+}
+
+Chương trình này sẽ hiển thị lên màn hình:
+2
+Quay trở lại phần bài tập, bạn hãy viết chương trình hiển thị lên màn hình tổng của 12 và 15.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << 12 + 15;
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính tổng hai số (tiếp) | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình tổng của 1489 và 7348.
+Hướng dẫn
+Ví dụ về chương trình tính tổng của 67 và 83:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << 67 + 83;
+	return 0;
+}
+
+Comment trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy sử dụng comment để chương trình hiển thị ra màn hình dòng chữ
+Hello World!
+Lý thuyết
+Comment hay còn gọi là chú thích được dùng để giải thích các dòng code, giúp cho người đọc hay chính người viết code sau này hiểu được source code dễ dàng hơn. Các ký tự và đoạn code trong comment sẽ không được chương trình thực thi.
+Trong C++ có 2 loại comment là comment trên một dòng và comment trên nhiều dòng.
+Comment trên một dòng sẽ được bắt đầu với //. Ví dụ đơn giản về comment một dòng:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Dùng lệnh cout để hiển thị Hello World! ra màn hình
+	cout << "Hello World!";
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+Hello World!
+Bạn cũng có thể đặt comment ngay sau câu lệnh:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Hello World!"; // Dùng lệnh cout để hiển thị Hello World! ra màn hình
+	return 0;
+}
+
+Comment trên nhiều dòng trong ngôn ngữ lập trình C++ sẽ bắt đầu bằng dấu /* và kết thúc bằng dấu */. Ví dụ:
+/*
+Chương trình c++ hiển thị ra màn hình dòng chữ Hello World!
+sử dụng câu lệnh cout
+*/
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Hello World!";
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+Hello World!
+Tới đây bạn đã hiểu và biết cách sử dụng comment, hãy quay lại phần bài tập và làm thử.
+Nếu bạn vẫn chưa quen cách sử dụng comment để làm bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+/*
+A simple C++ program to display "Hello World!" on the screen
+using cout statement
+*/
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Display Hello World on the screen
+	cout << "Hello World!";
+	return 0;
+}
+
+Bài tập về cộng hai số trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình dòng chữ sau:
+324 + 553 = {P}
+với {P} là tổng của 324 và 553.
+Lý thuyết
+Như đã được làm ở các bài trước, để hiển thị ra 324 + 553 = bạn sử dụng câu lệnh:
+cout << "324 + 553 = ";
+Để hiển thị ra tổng của 324 và 553 bạn sử dụng câu lệnh:
+cout << 324 + 553;
+Bạn có thể tự nhận thấy sự khác biệt giữa 2 dòng lệnh này:
+Khi câu lệnh cout <<  được sử dụng cùng 2 dấu " thì chương trình của bạn sẽ hiển thị tất cả những thứ có trong 2 dấu nháy đó.
+Ngược lại chương trình của bạn sẽ hiển thị giá trị của biểu thức được đặt cạnh câu lệnh cout <<
+Do đó bạn có thể giải bài trên bằng cách kết hợp câu lệnh cout << "324 + 553"; và cout << 324 + 553;
+Ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "12 + 15 = ";
+	cout << 12 + 15;
+	return 0;
+}
+
+Sẽ hiển thị lên màn hình
+12 + 15 = 27
+Câu lệnh cout còn có thể viết theo kiểu liền mạch nên chương trình trên còn có thể rút gọn thành:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "12 + 15 = " << 12 + 15;
+	return 0;
+}
+
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "324 + 553 = " << 324 + 553;
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính hiệu 2 số | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình dòng chữ sau:
+3472 - 2355 = {P}
+với {P} là hiệu của 3472 và 2355.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "3472 - 2355 = " << 3472 - 2355;
+	return 0;
+}
+
+Bài tập C++ cơ bản: hiển thị thông tin trên nhiều dòng | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình thông tin sau:
+Name: Codelearn.
+Date of birth: 2019.
+Lý thuyết
+Đầu tiên bạn hãy chạy thử chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Name: Codelearn.";
+	cout << "Date of birth: 2019.";
+	return 0;
+}
+
+Chương trình trên sẽ hiển thị lên màn hình:
+Name: Codelearn.Date of birth: 2019.
+Có thể thấy đoạn code trên không hiển thị được thông tin trên 2 dòng. Để hiển thị được trên nhiều dòng bạn cần sử dụng câu lệnh cout << endl; hoặc cout << '\n';
+Ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Line1";
+	cout << endl;
+	cout << "Line2";
+	return 0;
+}
+
+Sẽ hiển thị lên màn hình
+Line1
+Line2
+Nếu thấy câu lệnh endl khó nhớ thì bạn có thể hiểu nó là viết tắt của end line. Ngoài ra bạn còn 1 số cách khác để hiển thị trên nhiều dòng. Ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Line1\nLine2";
+    cout << endl;
+    cout << "Line3" << endl << "Line4";
+    return 0;
+}
+
+Sẽ hiển thị lên màn hình:
+Line1
+Line2
+Line3
+Line4
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "Name: Codelearn.";
+	cout << endl;
+	cout << "Date of birth: 2019.";
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính tổng, hiệu, tích và thương 2 số | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình thông tin sau:
+2468 + 1234 = {P1}
+2468 - 1234 = {P2}
+2468 * 1234 = {P3}
+2468 / 1234 = {P4}
+Với {P1} là tổng của 2468 và 1234.
+Với {P2} là hiệu của 2468 và 1234.
+Với {P3} là tích của 2468 và 1234.
+Với {P4} là thương của 2468 và 1234.
+Đây là bài ôn tập lại các bài trước, nếu bạn chưa làm được thì có thể xem hướng dẫn ở phía dưới:
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "2468 + 1234 = " << 2468 + 1234 << endl;
+	cout << "2468 - 1234 = " << 2468 - 1234 << endl;
+	cout << "2468 * 1234 = " << 2468 * 1234 << endl;
+	cout << "2468 / 1234 = " << 2468 / 1234;
+	return 0;
+}
+
+Biến và cách khai báo biến trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình khai báo 2 biến a và b kiểu số nguyên, sau đó gán giá trị cho a = 254, b = 343 và hiển thị ra màn hình:
+a + b = {P}
+Với {P} là tổng của biến a và biến b.
+Lý thuyết
+Biến trong lập trình được dùng để đại diện cho một giá trị mà có thể thay đổi trong quá trình chạy. Ví dụ như biến thể hiện số tuổi, số tiền trong tài khoản, ... các giá trị này hoàn toàn có thể thay đổi theo thời gian và cần sử dụng biến để lưu trữ.
+Ứng với mỗi kiểu dữ liệu như số nguyên, số thực, xâu ký tự, ... thì lại có một cách khai báo biến khác nhau. Trong đó cú pháp để khai báo biến kiểu số nguyên sẽ giống như sau:
+int tên_biến;
+Ví dụ về chương tình khai báo và sử dụng biến kiểu số nguyên:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến x kiểu số nguyên
+	int x;
+	// Gán giá trị cho x = 5
+	x = 5;
+	// Hiển thị giá trị của biến x ra màn hình
+	cout << "x = " << x;
+	return 0;
+}
+Trong ví dụ trên thì int là từ khóa được dùng để khai báo biến kiểu số nguyên (int là viết tắt của cụm từ integer - có nghĩa là số nguyên).
+Bạn còn có thể gán giá trị cho biến ngay khi khai báo giống như sau:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo và gán giá trị cho biến x
+	int x = 5;
+	cout << "x = " << x << endl;
+	x = 7;
+	// Hiển thị ra màn hình giá trị của x sau khi thay đổi
+	cout << "x = " << x << endl;
+	return 0;
+}
+Kết quả khi chạy chương trình:
+x = 5
+x = 7
+Có thể thấy cách khai báo và sử dụng biến rất đơn giản, bạn cũng có thể sử dụng biến để thực hiện các phép toán:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến a kiểu số nguyên và gán giá trị cho a = 438
+	int a = 438;
+	// Khai báo biến b kiểu số nguyên và gán giá trị cho b = 238
+	int b = 238;
+	// Hiển thị ra màn hình hiệu của a và b
+	cout << "a - b = " << a - b;
+	return 0;
+}
+
+
+Kết quả khi chạy chương trình:
+a - b = 200
+Lưu ý: Khi đặt tên cho biến bạn cần tuân theo 1 số nguyên tắc sau:
+
+Tên biến có thể có chữ cái, chữ số và dấu gạch dưới nhưng ký tự đầu tiên của tên biến bắt buộc phải là dấu gạch dưới hoặc chữ cái.
+
+
+Tên biến không được có khoảng trắng.
+Tên biến không được trùng với các từ khóa như int, float, static, struct...
+
+Một số tên biến hợp lệ:
+int a;
+int _a;
+int a10_;
+Một số tên biến không hợp lệ:
+int 10a;
+int a 10;
+int int;
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 254;
+	int b = 343;
+	cout << "a + b = " << a + b;
+	return 0;
+}
+Đọc thêm: https://codelearn.io/sharing/20-tu-khoa-cpp-ai-hoc-cung-can-biet-phan-1"20 từ khóa C++ ai cũng cần biết 
+Bài tập C++ cơ bản: khai báo biến và tính hiệu | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra 2 biến a và b kiểu số nguyên, gán giá trị cho a = 8343 và b = 6453. Sau đó hiển thị ra màn hình:
+a - b = {P}
+Với {P} là hiệu của biến a và biến b.
+Hướng dẫn
+Câu lệnh để khai báo biến a kiểu số nguyên và gán giá trị cho a = 8343:
+int a = 8343;
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 8343;
+	int b = 6453;
+	cout << "a - b = " << a - b;
+	return 0;
+}
+Bài tập C++ cơ bản: khai báo biến và tính tổng, hiệu, tích, thương | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra 2 biến a và b kiểu số nguyên, sau đó gán giá trị cho a = 6, b = 2 và thực hiện hiển thị ra màn hình:
+a + b = {P1}
+a - b = {P2}
+a * b = {P3}
+a / b = {P4}
+{P1} là tổng của a và b.
+{P2} là hiệu của a và b.
+{P3} là tích của a và b.
+{P4} là thương của a và b.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 6;
+	int b = 2;
+	cout << "a + b = " << a + b << endl;
+	cout << "a - b = " << a - b << endl;
+	cout << "a * b = " << a * b << endl;
+	cout << "a / b = " << a / b;
+
+	return 0;
+}
+
+Kiểu dữ liệu chuỗi ký tự (string) trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra biến name kiểu xâu ký tự, sau đó gán giá trị cho biến name = "Codelearn" và thực hiện hiển thị lên màn hình dòng chữ:
+Hello Codelearn
+Lý thuyết
+Như bạn đã biết, cú pháp để khai báo biến sẽ giống như sau:
+kiểu_dữ_liệu tên_biến;
+Với biến kiểu số nguyên thì kiểu dữ liệu sẽ chính là int và đối với biến kiểu xâu thì kiểu dữ liệu sẽ là string. Ví dụ để khai báo và sử dụng biến kiểu xâu bạn làm như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến name kiểu string và gán giá trị cho name = "Codelearn"
+	string name = "Codelearn";
+	// Hiển thị biến name ra màn hình
+	cout << name;
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+Codelearn
+Qua bài này bạn đã biết cách khai báo và sử dụng biến kiểu string.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	string name = "Codelearn";
+	cout << "Hello " << name;
+	return 0;
+}
+
+Bài tập C++ cơ bản: khai báo và hiển thị biến kiểu string và int | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra biến name kiểu string và biến dob kiểu int. Sau đó gán giá trị cho name = "Codelearn", dob = 2019 và thực hiện hiển thị ra màn hình:
+Name: Codelearn
+Date of birth: 2019
+Hướng dẫn
+Câu lệnh dùng để tạo và gán giá trị cho biến kiểu string
+string name = "Codelearn";
+Câu lệnh dùng để tạo và gán giá trị cho biến kiểu int
+int dob = 2019;
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string name = "Codelearn";
+    int dob = 2019;
+    cout << "Name: " << name << endl;
+    cout << "Date of birth: " << dob;
+    return 0;
+}
+
+Kiểu số thực (float và double) trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra 2 biến a, b kiểu số thực. Sau đó gán giá trị cho a = 10.5, b = 7 và thực hiện hiển thị ra màn hình:
+a / b = {P}
+Với {P} là thương của a và b ({P} là kết quả của phép chia: a / b).
+Lý thuyết
+Kiểu dữ liệu số trong C++ được chia làm 2 loại là kiểu số nguyên và kiểu số thực. Để khai báo và gán giá trị cho biến kiểu số thực bạn dùng từ khóa double:
+// Khai báo biến a kiểu số thực và gán giá trị cho a = 10.5
+double a = 10.5;
+Ví dụ chương trình tạo và hiển thị biến kiểu số thực ra màn hình:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến a kiểu số thực và gán giá trị cho a = 1.5
+	double a = 1.5;
+	cout << "a = " << a;
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+a = 1.5
+Ngoài double ra thì bạn cũng có thể dùng float để khai báo biến kiểu số thực nhưng trong hầu hết mọi trường hợp bạn nên sử dụng kiểu double.
+Lưu ý: nếu bạn dùng biến kiểu số nguyên để lưu trữ các số thực thì kết quả thu được sẽ chỉ có phần nguyên. Ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 1.5;
+	int pi = 3.14;
+	cout << "a = " << a << endl;
+	cout << "pi = " << pi << endl;
+	return 0;
+}
+Kết quả khi chạy chương trình:
+a = 1
+pi = 3
+Do đó, nếu bài này bạn khai báo biến a và biến b với kiểu int giống chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 10.5;
+	int b = 7;
+	cout << "a / b = " << a / b;
+	return 0;
+}
+
+Thì kết quả khi sẽ chương trình sẽ là:
+a / b = 1
+Giải thích: ban đầu bạn khởi tạo giá trị cho biến a là 10.5 nhưng do a là biến kiểu int nên giá trị của a sẽ là 10. Do đó, a / b bản chất sẽ là 10 / 7 và kết quả sẽ phải là 1.42857 nhưng chương trình lại hiển thị 1 ra màn hình do kết quả của phép chia 2 số nguyên sẽ là 1 số nguyên => 1.42857 sẽ bị chuyển về 1. Để màn hình hiển thị được 1.42857 bạn cần ép kiểu của phép chia về double giống chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 10.5;
+	int b = 7;
+	cout << "a / b = " << (double)a / b;
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+a / b = 1.42857
+Trong đó, (double)a / b nghĩa là thực hiện ép kiểu cho giá trị của biến a về double, sau đó thực hiện chia a cho b. Lúc này, phép chia 1 số kiểu double và 1 số kiểu int sẽ là 1 số kiểu double nên kết quả sẽ là 1.42857.
+Bạn cũng có thể ép kiểu cho biến kiểu double về kiểu int giống như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	double pi = 3.14;
+	cout << (int)pi;
+	return 0;
+}
+Đọc tới đây bạn đã hiểu về cách khai báo biến kiểu số thực, hãy quay lại phần bài tập và làm thử.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	double a = 10.5;
+	double b = 7;
+	cout << "a / b = " << a / b;
+	return 0;
+}
+
+Do 7 là một số nguyên nên bạn cũng có thể khai báo biến b với kiểu int thay vì double giống như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	double a = 10.5;
+	int b = 7;
+	cout << "a / b = " << a / b;
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính diện tích hình chữ nhật | Codelearn
+---------------------------------------
+Bài tập
+Cho trước hình chữ nhật có chiều dài và chiều rộng lần lượt là 7.5 và 3.8. Bạn hãy viết chương trình hiển thị diện tích của hình chữ nhật này ra màn hình giống như sau:
+Area = {P}
+Với {P} là diện tích của hình chữ nhật.
+Hướng dẫn
+Do chiều dài và chiều rộng của hình chữ nhật là một số thực nên bạn cần khai báo biến với kiểu dữ liệu double
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    double length = 7.5;
+    double width = 3.8;
+    cout << "Area = " << length * width;
+    return 0;
+}
+
+Bạn cũng có thể làm như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Area = " << 7.5 * 3.8;
+    return 0;
+}
+Kiểu ký tự (char) trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra biến c kiểu ký tự, sau đó gán giá trị cho biến c = 'x' và thực hiện hiển thị biến c ra màn hình.
+Lý thuyết
+Kiểu ký tự trong C++ là kiểu dữ liệu chỉ lưu trữ được 1 ký tự trong bảng mã https://vi.wikipedia.org/wiki/ASCII"ASCII, ký tự này có thể là một chữ cái (a, b, c, ... x, y, z), một chữ số (0, 1, 2,..., 9), một phép toán (+, -, *, /) hay một ký tự bất kỳ khác (!, &, ...).
+Biến kiểu ký tự được khai báo bằng từ khóa char (char là viết tắt của character). Ví dụ chương trình tạo và hiển thị biến kiểu ký tự:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến c kiểu ký tự và gán trị cho c = 'a'
+	char c = 'a';
+	// Hiển thị biến c ra màn hình
+	cout << c;
+	return 0;
+}
+
+Chương trình này sẽ hiển thị lên màn hình:
+a
+Đọc tới đây bạn đã biết cách tạo và hiển thị biến kiểu ký tự, hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	char c = 'x';
+	cout << c;
+	return 0;
+}
+
+Bài tập C++ cơ bản: chuyển ký tự thành ký tự tiếp theo trong bảng chữ cái | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ký tự 'd' ra màn hình.
+Lý thuyết
+Mục đích của bài này là giúp bạn hiểu hơn về kiểu ký tự nên hãy tìm cách điền code vào dấu ... để màn hình hiển thị ra ký tự 'd'.
+Kiểu ký tự bản chất là một kiểu số nguyên, bạn có thể hiện thị giá trị nguyên của một ký tự bằng câu lệnh cout << (int)ký_tự; giống như chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << "a = " << (int)'a' << endl;
+	cout << "b = " << (int)'b' << endl;
+	cout << "c = " << (int)'c' << endl;
+	cout << "d = " << (int)'d' << endl;
+	cout << "e = " << (int)'e' << endl;
+	cout << "..." << endl;
+	cout << "x = " << (int)'x' << endl;
+	cout << "y = " << (int)'y' << endl;
+	cout << "z = " << (int)'z' << endl;
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+a = 97
+b = 98
+c = 99
+d = 100
+e = 101
+...
+x = 120
+y = 121
+z = 122
+Từ kết quả trên có thể thấy, giá trị số của các chữ cái từ 'a' đến 'z' tăng dần, mỗi giá trị liên tiếp cách nhau 1 đơn vị.
+Do kiểu ký tự là một kiểu số nguyên nên bạn có thể áp dụng các phép toán +, -, *, /. Từ đoạn code bên trên có thể thấy để hiển thị ký tự 'd' bạn có thể lấy ký tự 'a' + 3, để hiển thị ký tự 'e' bạn có thể lấy ký tự 'd' + 1 như chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	char d = 'a' + 3;
+	char e = 'd' + 1;
+	cout << d << endl;
+	cout << e;
+	return 0;
+}
+
+Màn hình sẽ hiển thị ra:
+d
+e
+Đọc tới đây bạn đã có thể làm được bài này, hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được thì có thể xem hướng dẫn bên dưới
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	char d = 'a' + 3;
+	cout << d;
+	return 0;
+}
+
+Hoặc
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	char d = 'a' - 'a' + 'd';
+	cout << d;
+	return 0;
+}
+
+Các kiểu dữ liệu số nguyên trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra 2 biến a và b kiểu số nguyên. Sau đó gán giá trị cho a = 384847522, b = 988347273 và thực hiện hiển thị ra màn hình tích của biến a và biến b.
+Lý thuyết
+Trong ngôn ngữ lập trình C++ có các kiểu dữ liệu lưu trữ số nguyên như: short, int, long, long long...
+Sự khác biệt giữa các kiểu dữ liệu này là miền giá trị:
+Miền giá trị của kiểu short là từ -32768 tới 32767.
+Miền giá trị của kiểu int là từ -2147483648 tới 2147483647.
+Miền giá trị của kiểu long là từ -2147483647 tới 2147483647 (giống với miền dữ liệu của kiểu int).
+Miền giá trị của kiểu long long là từ -9223372036854775808 tới 9223372036854775807.
+Có thể thấy miền giá trị của kiểu long long là lớn nhất, do đó bạn có thể dùng kiểu dữ liệu này để thay cho các kiểu dữ liệu khác nhưng bù lại dùng kiểu dữ liệu này sẽ tốn bộ nhớ hơn (kiểu dữ liệu có miền giá trị càng lớn sẽ càng tốn bộ nhớ). Do đó bạn cần sử dụng các kiểu dữ liệu một cách hợp lý, ví dụ biến để lưu trữ số học sinh trong một lớp học nên là kiểu short vì thường một lớp chỉ có vài chục học sinh.
+Lưu ý: Miền giá trị của các kiểu dữ liệu còn phụ thuộc vào yếu tố khác nhưng thường sẽ giống như trên.
+Quay lại bài này, bạn không thể dùng kiểu int để lưu giá trị cho biến a và b do kết quả của phép nhân 2 số kiểu int sẽ là 1 số kiểu int mà miền giá trị của kiểu int là không đủ để lưu trữ kết quả của phép nhân 384847522 * 988347273. Ví dụ chương trình:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a = 384847522;
+    int b = 988347273;
+    cout << a * b;
+    return 0;
+}
+
+Sẽ cho ra kết quả:
+-628954446
+Có thể thấy kết quả này là sai hoàn toàn, bạn cần dùng một kiểu dữ liệu lớn hơn cho biến a và biến b.
+Đọc tới đây chắc bạn cũng đã đoán được sẽ phải dùng kiểu dữ liệu gì để làm bài này. Hãy quay lại phần bài tập và làm thử.
+Nếu bạn vẫn chưa làm được thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Dùng kiểu long long thay vì int cho biến a và biến b.
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    long long a = 384847522;
+    long long b = 988347273;
+    cout << a * b;
+    return 0;
+}
+
+Hoặc nếu bạn muốn dùng kiểu int cho biến a và biến b thì có thể làm như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a = 384847522;
+    int b = 988347273;
+    /* 
+    Mặc định kết quả của phép nhân 2 số kiểu int 
+    sẽ là một số kiểu int nên bạn cần dùng câu lệnh (long long) 
+    để báo rằng kết quả của phép nhân này là một số kiểu long long
+    */
+    cout << (long long)a * b;
+    return 0;
+}
+
+Kiểu bool trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra biến b kiểu bool (kiểu luận lý), sau đó gán giá trị cho biến b = true và thực hiện hiển thị biến b ra màn hình.
+Lý thuyết
+Ngoài các kiểu dữ liệu bạn đã được học như char, string, short, int, long long, ... thì trong C++ còn một kiểu dữ liệu căn bản nữa là kiểu bool (kiểu luận lý).
+Kiểu dữ liệu này chỉ nhận 2 giá trị là true và false (tương ứng với đúng và sai), kiểu bool bản chất cũng là kiểu số nguyên nên giá trị true và false thực ra là 1 và 0. Xem chương trình sau để hiểu rõ hơn:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến a kiểu bool và gán giá trị cho a = true
+	bool a = true;
+	// Khai báo biến b kiểu bool và gán giá trị cho b = false
+	bool b = false;
+	// Hiển thị biến a và b ra màn hình
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+a = 1
+b = 0
+Kiểu bool thường được dùng để lưu các giá trị của các biểu thức mang tính đúng sai. Ví dụ:
+bool b1 = 5 > 4; // > là toán tử so sánh lớn hơn, b1 sẽ có giá trị là true
+bool b2 = 5 < 4; // < là toán tử so sánh nhỏ hơn, b2 sẽ có giá trị là false
+bool b3 = 5 == 5; // == là toán tử so sánh bằng, b3 có giá trị là true
+bool b4 = 5 != 5; // != là toán tử so sánh khác bằng b4 có giá trị là false
+Các toán tử >, <, ==, != là các toán tử so sánh được dùng trong các biểu thức điều kiện, bạn sẽ được học về các toán tử này rõ hơn trong các bài về mệnh đề if-else.
+Lưu ý: bạn cũng có thể gán các giá trị số nguyên cho biến kiểu bool, các giá trị khác 0 sẽ được hiểu là true và giá trị 0 sẽ được hiểu là false:
+bool b1 = 0; // b1 sẽ nhận giá trị false
+bool b2 = -1; // b2 sẽ nhận giá trị true
+bool b3 = 1; // b2 sẽ nhận giá trị true
+bool b4 = -1000; // b3 sẽ nhận giá trị true
+bool b5 = 1000; // b3 sẽ nhận giá trị true
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	bool b = true;
+	cout << b;
+	return 0;
+}
+
+Các kiểu dữ liệu trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho biến a kiểu số nguyên, biết giá trị của biến a luôn nằm trong khoảng [-1000, 1000], kiểu dữ liệu nào sau đây là phụ hợp nhất để khai báo biến a.
+Lý thuyết
+Ở các bài trước bạn đã được học một số kiểu dữ liệu như short, int, long long, double, bool, ... ngoài các kiểu dữ liệu này ra trong C++ còn một số kiểu dữ liệu nữa, xem bảng sau để hiểu rõ hơn:
+
+
+
+Kiểu dữ liệu
+Kích thước
+Miền giá trị
+
+
+bool
+1byte
+0 tới 1
+
+
+char
+1byte
+-128 tới 127
+
+
+unsigned char
+1byte
+0 tới 255
+
+
+int
+4bytes
+-2147483648 tới 2147483647
+
+
+unsigned int
+4bytes
+0 tới 4294967295
+
+
+short
+2bytes
+-32768 tới 32767
+
+
+unsigned short
+2bytes
+0 tới 65,535
+
+
+long long
+8bytes
+-(263) tới (263) - 1
+
+
+unsigned long long
+8bytes
+0 tới 18446744073709551615
+
+
+float
+4bytes
+
+
+
+double
+8bytes
+
+
+
+string
+
+
+
+
+
+Ở trong bảng trên thì cột Kích thước được dùng để thể hiện số byte mà chương trình cần để lưu trữ cho biến của kiểu dữ liệu tương ứng. Ví dụ nếu bạn khai báo biến a kiểu int thì chương trình sẽ cần sử dụng 4 bytes trên RAM để lưu trữ biến a. Cột kích thước không có giá trị cho biến kiểu string do số bytes cần cho biến kiểu string sẽ bị phụ thuộc vào số ký tự của nó.
+Có thể thấy kiểu dữ liệu có miền giá trị càng lớn thì càng tốn bộ nhớ nên bạn cần chọn kiểu dữ liệu phù hợp cho các biến. Ví dụ bạn không nên dùng biến kiểu long long chỉ để lưu trữ số học sinh của một lớp học hay số nhân viên của một công ty, thay vào đó bạn nên dùng kiểu dữ liệu short hoặc int.
+Các kiểu dữ liệu mà có từ unsigned đằng trước là các kiểu dữ liệu chỉ lưu trữ được các giá trị lớn hơn hoặc bằng 0 (unsigned trong tiếng anh là không dấu, có thể hiểu là các số không có dấu - đằng trước và đây là các số không âm).
+Lưu ý: Khi sử dụng kiểu unsigned với phép trừ thì bạn nên cẩn thận vì đây là kiểu dữ liệu không lưu được các giá trị âm, hãy xem ví dụ sau để hiểu hơn:
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	unsigned int a = 5;
+	unsigned int b = 8;
+	cout << a - b;
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+4294967293
+Nhập xuất dữ liệu cơ bản trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào tên của mình từ bàn phím và thực hiện hiển thị ra màn hình dòng chữ:
+Hello {P}
+Với {P} là tên bạn vừa nhập từ bàn phím.
+Ví dụ nếu bạn nhập tên là Trung thì màn hình sẽ hiển thị lên dòng chữ:
+Hello Trung
+Lý thuyết
+Để nhập dữ liệu cho 1 biến từ bàn phím bạn có thể dùng câu lệnh cin >> tên_biến;
+Bạn hãy chạy thử chương trình sau để hiểu rõ hơn:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	// Khai báo biến name kiểu string
+	string name;
+	// Dùng lệnh cin để nhập giá trị cho biến name từ bàn phím
+	cin >> name;
+	cout << "Hello " << name;
+	return 0;
+}
+
+Sau khi chạy bạn hãy nhập từ bàn phím:
+Trung
+Và bấm phím Enter thì màn hình sẽ hiển thị ra:
+Hello Trung
+Có thể thấy việc nhập dữ liệu từ bàn phím vào 1 biến là rất đơn giản, bạn chỉ cần dùng câu lệnh cin >> tên_biến;
+Lưu ý: với cout thì bạn dùng cặp dấu nhỏ hơn (<<) còn với cin thì bạn dùng cặp dấu lớn hơn (>>).
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	string name;
+	cin >> name;
+	cout << "Hello " << name;
+	return 0;
+}
+
+Bài tập C++ cơ bản: nhập tên và địa chỉ sau đó hiển thị thông tin vừa nhập | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào tên và địa chỉ của một người sau đó hiển thị ra màn hình:
+Name: {P1}
+Address: {P2}
+Với {P1} và {P2} lần lượt là tên và địa chỉ của người đó.
+Ví dụ nếu bạn nhập:
+Kien
+HaNoi
+Thì màn hình sẽ hiển thị ra:
+Name: Kien
+Address: HaNoi
+Lưu ý: khi chạy chương trình ở trên máy, bạn không nhập tên và địa chỉ có khoảng trắng vì lệnh cin không đọc được khoảng trắng. Ví dụ chương trình sau:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	string s;
+	cin >> s;
+	cout << s;
+	return 0;
+}
+
+Nếu bạn nhập
+Welcome to Codelearn
+Thì chương trình sẽ chỉ hiển thị:
+Welcome
+Để nhập được dữ liệu có khoảng trắng vào cho biến s bạn cần dùng câu lệnh getline(cin, s); nhưng bạn chưa cần lo về vấn đề này vội vì các test cases trong bài này cũng như các bài khác đều không có khoảng trắng khi nhập dữ liệu.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string name, address;
+    cin >> name >> address;
+    cout << "Name: " << name << endl;
+    cout << "Address: " << address;
+    return 0;
+}
+
+Hoặc nếu bạn muốn nhập được dữ liệu có khoảng trắng cho biến name và address thì có thể làm như sau:
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main() {
+    string name, address;
+    getline(cin, name);
+    getline(cin, address);
+    cout << "Name: " << name << endl;
+    cout << "Address: " << address;
+    return 0;
+}
+
+Bài tập C++ cơ bản: tính tổng 2 số được nhập vào từ bàn phím | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình tạo ra 2 biến a và b kiểu số nguyên. Sau đó nhập giá trị cho a và b từ bàn phím và hiển thị ra màn hình:
+a + b = {P}
+Với {P} là tổng của a và b.
+Ví dụ nếu bạn nhập
+7 9
+thì màn hình sẽ hiển thị ra:
+a + b = 16
+Lý thuyết
+Nhập dữ liệu cho biến kiểu int cũng giống như nhập dữ liệu cho biến kiểu string. Ví dụ về chương trình nhập từ bàn phím 2 số nguyên và hiển thị ra hiệu của chúng:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	cout << "a - b = " << a - b;
+	return 0;
+}
+
+Nếu bạn nhập
+5 8
+Và bấm phím Enter thì chương trình này sẽ hiển thị lên màn hình:
+a - b = -3
+Lưu ý: nếu bạn nhập giá trị không hợp lệ cho các biến kiểu số thì giá trị nhận được sẽ là 0. Ví dụ nếu bạn nhập giá trị cho biến a kiểu int là "abc", "xyz", ... thì a sẽ nhận giá trị 0.
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	cout << "a + b = " << a + b;
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính diện tích hình chữ nhật | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím chiều dài và chiều rộng của một hình chữ nhật (chiều dài và chiều rộng của hình chữ nhật này là một số nguyên) sau đó hiển thị ra màn hình:
+Area = {P}
+Với {P} là diện tích của hình chữ nhật.
+Hướng dẫn
+Chiều dài và chiều rộng của hình chữ nhật là một số nguyên nên bạn cần khai bao biến với kiểu dữ liệu số nguyên:
+int length, width;
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int length, width;
+	cin >> length >> width;
+	cout << "Area = " << length * width;
+	return 0;
+}
+Toán tử chia lấy phần dư trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho 2 biến a và b kiểu số nguyên được nhập vào từ bàn phím, bạn hãy viết chương trình hiển thị ra màn hình:
+a % b = {P}
+Với {P} là phần dư của phép chia a/b.
+Ví dụ nếu bạn nhập
+7 3
+thì màn hình sẽ hiển thị:
+a % b = 1
+Giải thích: 7 chia 3 dư 1
+Lý thuyết
+Để lấy phần dư của một phép chia bạn có thể sử dụng toán tử %. Ví dụ chương trình:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	cout << 5 % 3;
+	return 0;
+}
+
+Sẽ hiển thị lên màn hình:
+2
+Do 2 là phần dư của phép chia 5/3.
+Lưu ý: toán tử chia lấy phần dư % chỉ có thể được áp dụng cho các số nguyên chứ không thể áp dụng cho các số thực.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	cout << "a % b = " << a % b;
+	return 0;
+}
+
+Bài tập C++ cơ bản: Tính tổng, hiệu, tích, thương của 2 số | Codelearn
+---------------------------------------
+Bài tập
+Cho 2 biến a và b kiểu số nguyên được nhập vào từ bàn phím, bạn hãy viết chương trình hiển thị ra màn hình các phép toán trên 2 biến này giống như sau:
+a + b = {P1}
+a - b = {P2}
+a * b = {P3}
+a / b = {P4}
+a % b = {P5}
+Trong đó:
+{P1} là tổng của a và b.
+{P2} là hiệu của a và b.
+{P3} là tích của a và b.
+{P4} là thương của a và b.
+{P5} là phần dư của phép chia a/b.
+Ví dụ nếu bạn nhập:
+10 5
+thì màn hình sẽ hiển thị ra:
+a + b = 15
+a - b = 5
+a * b = 50
+a / b = 2
+a % b = 0
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	cout << "a + b = " << a + b << endl;
+	cout << "a - b = " << a - b << endl;
+	cout << "a * b = " << a * b << endl;
+	cout << "a / b = " << a / b << endl;
+	cout << "a % b = " << a % b;
+	return 0;
+}
+
+Bài tập C++ cơ bản: hiển thị tuổi của một người sau 15 năm | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím tên, tuổi của một người. Sau đó hiển thị ra màn hình:
+In 15 years, age of {P1} will be {P2}
+Với {P1} là tên của người đó, {P2} là tuổi của người đó sau 15 năm.
+Ví dụ nếu bạn nhập:
+Tuan 23
+Thì màn hình sẽ hiển thị lên:
+In 15 years, age of Tuan will be 38
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	string name;
+	int age;
+	cin >> name >> age;
+	cout << "In 15 years, age of " << name << " will be " << age + 15;
+	return 0;
+}
+
+Bài tập C++ cơ bản: hoán đổi giá trị 2 biến | Codelearn
+---------------------------------------
+Bài tập
+Cho 2 biến a và b kiểu số nguyen được nhập vào từ bàn phím, bạn hãy viết chương trình hoán đổi giá trị của hai biến này sau đó hiển thị ra màn hình:
+after swapping, a = {P1}, b = {P2}
+Với {P1} và {P2} lần lượt là giá trị của a và b sau khi đã hoán đổi.
+Ví dụ nếu bạn nhập a = 3, b = 4 như bên dưới:
+3 4
+Thì chương trình sẽ hiển thị ra:
+after swapping, a = 4, b = 3
+Nếu bạn chưa giải được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Để hoán đổi giá trị của 2 biến bạn không thể gán trực tiếp a = b, b = a; (do nếu gán a = b thì lúc này giá trị của a sẽ bằng b và sau đó gán lại b = a thì thực chất là gán giá trị của b cho chính nó). Ví dụ:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a = 3;
+	int b = 4;
+	a = b, b = a;
+	cout << a << " " << b << endl;
+	return 0;
+}
+Kết quả khi chạy chương trình:
+4 4
+Do đó bạn cần lưu lại được giá trị của biến a, gán a cho b và gán ngược lại b cho giá trị ban đầu của a. Để làm được việc này bạn cần tạo ra biến trung gian c và làm giống như sau:
+int c = a;
+a = b;
+b = c;
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	int c = a;
+	a = b;
+	b = c;
+	cout << "after swapping, a = " << a << ", b = " << b;
+	return 0;
+}
+
+Ngoài ra, còn có một số cách làm mà không tạo ra biến trung gian giống như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	cout << "after swapping, a = " << a << ", b = " << b;
+	return 0;
+}
+
+Bài tập C++ cơ bản: tính chu vi của một hình tròn | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập vào bán kính r của một hình tròn và hiển thị ra màn hình chu vi của hình tròn đó biết π = 3.14:
+Circumference = {P}
+Với {P} là chu vi của hình tròn có bán kính r.
+Ví dụ nếu bạn nhập:
+7.5
+Thì chương trình sẽ in ra:
+Circumference = 47.1
+Hướng dẫn
+Bán kính của của hình tròn có thể là một số thực nên bạn cần khai báo biến với kiểu double.
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	double r;
+	cin >> r;
+	cout << "Circumference = " << 2 * r * 3.14;
+	return 0;
+}
+
+Bài tập C++ cơ bản: hiển thị ký tự tiếp theo trong bảng chữ cái | Codelearn
+---------------------------------------
+Đề bài
+Bạn hãy viết chương trình nhập vào một ký tự từ bàn phím và thực hiện hiển thị ký tự tiếp theo trong bảng bảng chữ cái của ký tự đó ra màn hình.
+Ví dụ nếu bạn nhập
+c
+thì chương trình sẽ hiển thị ra
+d
+Giải thích: 'd' là ký tự tiếp theo của 'c' trong bảng chữ cái.
+Hướng dẫn
+Như đã được học ở chương Biến và các kiểu dữ liệu, bạn có thể hiển thị ký tự tiếp theo của một ký tự bằng cách cộng ký tự đó với 1.
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	char c;
+	cin >> c;
+	c = c + 1;
+	cout << c;
+	return 0;
+}
+
+Mệnh đề if else trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n. Sau đó kiểm tra xem nếu n là số chẵn thì hiển thị ra:
+n is an even number
+Ngược lại, nếu n là số lẻ thì hiển thị ra:
+n is an odd number
+Lý thuyết
+Khi lập trình chắc chắn sẽ có những lúc bạn muốn sử dụng tới câu điều kiện, ví dụ như khi bạn muốn viết chương trình kiểm tra tính chẵn lẻ của một số hay kiểm tra xem tên của 2 người có giống nhau hay không, ... để viết được chương trình theo yêu cầu trên thì bạn cần biết cách sử dụng mệnh đề if hoặc mệnh đề if-else.
+Mệnh đề if:
+Mệnh đề if được dùng để kiểm tra một biểu thức điều kiện có đúng hay không, nếu đúng thì các câu lệnh bên trong mệnh đề if sẽ được thực thi. Ví dụ để kiểm tra xem n có chia hết cho 2 không bạn có thể làm như sau:
+if (n % 2 == 0) {
+	// Nếu n chia hết cho 2 thì hiển thị n is an even number
+	cout << "n is an even number";
+}
+if (n % 2 != 0) {
+	// Nếu n không chia hết cho 2 thì hiển thị n is an odd number
+	cout << "n is an odd number";
+}
+
+Trong ngôn ngữ lập trình C++, == là toán tử kiểm tra xem 2 giá trị có bằng nhau không, != là toán tử kiểm tra xem 2 giá trị có khác nhau không. Như ở ví dụ trên if (n % 2 == 0) là câu lệnh kiểm tra xem n chia dư cho 2 có bằng 0 không, if (n % 2 != 0) là câu lệnh kiểm tra xem n chia dư cho 2 có khác 0 không.
+Lưu ý: Một số bạn hay nhầm giữa toán tử = và toán tử ==, toán tử = là toán tử gán giá trị chứ không phải toán tử so sánh nên nếu bạn dùng toán tử = để so sánh hay giá trị thì chương trình sẽ cho ra kết quả sai.
+Mệnh đề if-else:
+Tương tự như mệnh đề if nhưng nếu biểu thức điều kiện trong if sai thì đoạn code bên trong else sẽ được thực thi:
+if (n % 2 == 0) {
+	// Nếu n chia hết cho 2 thì hiển thị n is an even number
+	cout << "n is an even number";
+} else {
+	// Ngược lại (n không chia hết cho 2) thì hiển thị n is an odd number
+	cout << "n is an odd number";
+}
+
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu sử dụng mệnh đề if:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	if (n % 2 == 0) {
+		cout << "n is an even number";
+	}
+	if(n % 2 != 0) {
+		cout << "n is an odd number";
+	}
+	return 0;
+}
+
+Code mẫu sử dụng mệnh đề if-else:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	if (n % 2 == 0) {
+		cout << "n is an even number";
+	} else {
+		cout << "n is an odd number";
+	}
+	return 0;
+}
+
+Bài tập C++ cơ bản: kiểm tra một số là số nguyên âm hay nguyên dương | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n và hiển thị ra màn hình:
+Nếu n là số nguyên dương thì hiển thị ra:
+n is a positive number
+Nếu n là số nguyên âm thì hiển thị ra:
+n is a negative number
+Nếu n = 0 thì hiển thị ra:
+n is equal to 0
+Lý thuyết
+Để kiểm tra một số có bằng 0 không bạn có thể sử dụng mệnh đề if và toán tử == giống như sau:
+if (n == 0) {
+	// Nếu n = 0 thì hiển thị ra màn hình n is equal to 0
+	cout << "n is equal to 0";
+}
+Để kiểm tra một số là nguyên âm hay nguyên dương bạn có thể sử dụng mệnh đề if với các toán tử > và <. Ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n = 5;
+	if (n > 0) {
+		// Nếu n lớn hơn 0 thì hiển thị n is a positive number
+		cout << "n is a positive number";
+	}
+	if (n < 0) {
+		// Nếu n nhỏ hơn 0 thì hiển thị n is a negative number
+		cout << "n is a negative number";
+	}
+	return 0;
+}
+
+Sẽ hiển thị lên màn hình:
+n is a positive number
+Đọc tới đây bạn đã biết cách sử dụng toán tử > và < để so sánh, hãy quay lại phần bài tập và làm thử.
+Hướng dẫn
+Bạn hãy tham khảo cả 3 đoạn code mẫu bên dưới.
+Code mẫu sử dụng mệnh đề if:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	if (n > 0) {
+		cout << "n is a positive number";
+	}
+	if (n < 0) {
+		cout << "n is a negative number";
+	} 
+	if (n == 0) {
+		cout << "n is equal to 0";
+	}
+	return 0;
+}
+
+Code mẫu sử dụng mệnh đề if-else:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    if (n > 0) {
+        cout << "n is a positive number";
+    } else{
+        if (n < 0) {
+            cout << "n is a negative number";
+        } else {
+            cout << "n is equal to 0";
+        }
+    }
+    return 0;
+}
+
+Code trên có thể viết ngắn hơn bằng cách viết liền else if và else:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    if (n > 0) {
+        cout << "n is a positive number";
+    } else if (n < 0) {
+        cout << "n is a negative number";
+    } else {
+        cout << "n is equal to 0";
+    }
+    return 0;
+}
+
+Bài tập C++ cơ bản: so sánh giá trị 2 số được nhập vào từ bàn phím | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số 2 nguyên a và b. Sau đó hiển thị ra màn hình:
+Nếu a lớn hơn hoặc bằng b thì hiển thị ra:
+a is greater than or equal to b
+Ngược lại nếu a nhỏ hơn b thì hiển thị ra:
+a is smaller than b
+Lý thuyết
+Để kiểm tra một số có lớn hơn hoặc bằng số khác không bạn có thể sử dụng toán tử >=. Ví dụ để kiểm tra biến a có lớn hơn hoặc bằng biến b bạn có thể làm như sau:
+if (a >= b) {
+	/* 
+	Nếu a lớn hơn hoặc bằng b thì hiển thị ra màn hình
+	a is greater than or equal to b
+	*/
+	cout << "a is greater than or equal to b";
+}
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Hướng dẫn
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	if (a >= b) {
+		cout << "a is greater than or equal to b";
+	}
+	else {
+		cout << "a is smaller than b";
+	}
+	return 0;
+}
+Bài tập C++ cơ bản: nhập và so sánh biến kiểu string | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập vào tên của 2 người, bạn hãy kiểm tra xem tên của 2 người này có giống nhau hay không. Nếu có thì hiển thị ra:
+two people have the same name
+Ngược lại nếu tên của 2 người này không giống nhau thì hiển thị ra:
+two people don't have the same name
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string a, b;
+    cin >> a >> b;
+    if (a == b) {
+        cout << "two people have the same name";
+    } else {
+        cout << "two people don't have the same name";
+    }
+    return 0;
+}
+
+Mệnh đề if-else và toán tử AND trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập từ bàn phím 2 số nguyên a, b. Bạn hãy kiểm tra xem giá trị của cả a và b có khác 0 không. Nếu có hiển thị:
+a is not equal to 0 and b is not equal to 0
+Ngược lại nếu a hoặc b có giá trị bằng 0 thì hiển thị:
+a is equal to 0 or b is equal to 0
+Lý thuyết
+Để kiểm tra xem một số có khác 0 rất đơn giản, bạn có thể sử dụng mệnh đề if và toán tử !=. Ví dụ để kiểm tra xem biến a có khác 0 bạn có thể làm như sau:
+if (a != 0) {
+    // Nếu a khác 0 thì hiển thị a is not equal to zero
+    cout << "a is not equal to 0";
+}
+Vậy để kiểm tra xem cả a và b có khác 0 bạn cần kết hợp được 2 câu lệnh if (a != 0) và if (b != 0) lại với nhau. Trong C++ bạn có thể kết hợp 2 câu lệnh này bằng toán tử &&. Ví dụ:
+if (a != 0 && b != 0) {
+    // Nếu cả a và b đều khác 0 thì hiển thị a is not equal to 0 and b is not equal to 0
+    cout << "a is not equal to 0 and b is not equal to 0";
+}
+Hoặc bạn cũng có thể dùng 2 câu lệnh if lồng nhau nhưng bạn không nên làm theo cách này:
+if (a != 0) {
+	if (b != 0) {
+		cout << "a is not equal to 0 and b is not equal to 0";
+	}
+}
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if (a != 0 && b != 0) {
+        cout << "a is not equal to 0 and b is not equal to 0";
+    } else {
+        cout << "a is equal to 0 or b is equal to 0";
+    }
+    return 0;
+}
+
+Bài tập C++ cơ bản: tìm số lớn nhất trong 3 số | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập từ bàn phím 3 số nguyên. Sau đó hiển thị lên màn hình số lớn nhất trong 3 số này.
+Ví dụ nếu bạn nhập:
+4 7 3
+thì màn hình sẽ hiển thị ra:
+7
+Nếu bạn nhập:
+4 4 4
+thì màn hình sẽ hiển thị ra:
+4
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Sử dụng toán tử 3 ngôi
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b, c;
+	cin >> a >> b >> c;
+	int max = (a > b && a > c) ? a : (b > c ? b : c);
+	cout << max;
+	return 0;
+}
+Sử dụng mệnh đề if hoặc if-else
+Bạn cần lưu ý trường hợp giá trị của a, b và c là như nhau, trong trường hợp này nếu bạn sử dụng 3 câu lệnh if thì chương trình sẽ cho kết quả sai, xem chương trình sau để hiểu rõ hơn:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b, c;
+	a = 5;
+	b = 5;
+	c = 5;
+
+	if (a >= b && a >= c) {
+		cout << a << endl;
+	}
+	if (b >= a && b >= c) {
+		cout << b << endl;
+	}
+	if (c >= a && c >= b) {
+		cout << c << endl;
+	}
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+5
+5
+5
+Để làm bài này bạn cần sử dụng câu lệnh if-else. Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b, c;
+	cin >> a >> b >> c;
+	
+	if (a >= b && a >= c) {
+		cout << a;
+	}
+	else {
+		if (b >= c) {
+			cout << b;
+		}
+		else {
+			cout << c;
+		}
+	}
+
+	return 0;
+}
+
+Đoạn code trên có thể rút gọn thành:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b, c;
+	cin >> a >> b >> c;
+
+	if (a >= b && a >= c) {
+		cout << a;
+	} else if (b >= c) {
+		cout << b;
+	} else {
+		cout << c;
+	}
+
+	return 0;
+}
+
+Bài tập C++ cơ bản: kiểm tra giá trị một số có nằm trong một đoạn cho trước | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập từ bàn phím số nguyên a. Bạn hãy kiểm tra xem a có nằm trong đoạn [10, 100] không, nếu có thì hiển thị ra màn hình:
+{P} is in the range [10, 100]
+Ngược lại hiển thị ra màn hình:
+{P} is not in the range [10, 100]
+Với {P} là giá trị của biến a.
+Lưu ý: nếu bạn đã quên khái niệm về đoạn thì [10, 100] chính là đoạn bao gồm các số lớn hơn hoặc bằng 10 và nhỏ hơn hoặc bằng 100.
+Ví dụ nếu bạn nhập:
+55
+Thì màn hình sẽ hiển thị ra:
+55 is in the range [10, 100]
+Hướng dẫn
+Lưu ý: Bạn không thể viết if (10 <= a <= 100) để kiểm tra xem a có nằm trong đoạn [10, 100] không, để làm bài này bạn cần sử dụng toán tử &&. 
+Code mẫu sử dụng toán tử 3 ngôi:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a;
+	cin >> a;
+	cout << a << ((a >= 10 && a <= 100) ? "is in the range[10, 100]" : " is not in the range [10, 100]");
+	return 0;
+}
+Code mẫu sử dụng mệnh đề if-else:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a;
+	cin >> a;
+	if (a >= 10 && a <= 100) {
+		cout << a << " is in the range [10, 100]";
+	} else {
+		cout << a << " is not in the range [10, 100]";
+	}
+	return 0;
+}
+
+Bài tập C++ cơ bản: kiểm tra xem điểm nhập vào có hợp lệ hay không | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập từ bàn phím điểm của một học sinh. Biết điểm hợp lệ là điểm nằm trong đoạn từ 0 đến 10, bạn hãy kiểm tra xem điểm vừa nhập có hợp lệ không, nếu có thì hiển thị ra màn hình:
+The score is valid
+Ngược lại nếu điểm không hợp lệ thì hiển thị:
+The score is not valid
+Lý thuyết
+Bài này bạn có thể dùng mệnh đề if và toán tử && như bài trước hoặc cũng có thể dùng mệnh đề if và toán tử ||. Ngược với toán tử &&, toán tử || dùng để kiểm tra xem một trong các biểu thức có đúng không, nếu có thì đoạn code bên trong mệnh đề if sẽ được thực thi (với toán tử && thì tất cả các biểu thức phải đúng thì code bên trong mệnh đề if mới được thực thi, hiểu đơn giản hơn thì || là toán tử hoặc còn && là toán tử và). Ví dụ để kiểm tra biến score có nhỏ hơn 0 hoặc lớn hơn 10 bạn có thể làm như sau:
+if (score < 0 || score > 10) {
+	// Nếu score nhỏ hơn 0 hoặc score lớn hơn 10 thì đoạn code trong khối lệnh này sẽ được thực thi
+}
+Đọc tới đây bạn đã biết cách dùng toán tử ||, hãy sử dụng cả 2 toán tử là && và || để làm bài này.
+Nếu bạn chưa làm được thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu sử dụng toán tử ||:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int score;
+	cin >> score;
+	if (score < 0 || score > 10) {
+		cout << "The score is not valid";
+	} else {
+		cout << "The score is valid";
+	}
+	return 0;
+}
+
+Code mẫu sử dụng toán tử &&:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int score;
+	cin >> score;
+	if (score >= 0 && score <= 10) {
+		cout << "The score is valid";
+	} else {
+		cout << "The score is not valid";
+	}
+	return 0;
+}
+
+Bài tập C++ cơ bản: kiểm xem 3 số có tạo thành dãy tăng hoặc giảm hay không | Codelearn
+---------------------------------------
+Bài tập
+Viết chương trình nhập từ bàn phím 3 số nguyên a, b, c. Sau đó hãy kiểm tra xem a, b, c có tạo thành một dãy số tăng dần hoặc giảm dần hay không.
+Nếu a ≤ b và b ≤ c thì chỉ hiển thị:
+increasing
+Nếu a ≥ b và b ≥ c thì hiển thị:
+decreasing
+Ngược lại, nếu không vào 1 trong hai trường hợp trên thì hiển thị:
+neither increasing nor decreasing order
+Hướng dẫn
+Sử dụng các câu lệnh if, else if và else cùng với toán tử so sánh >=
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
+    if (a <= b && b <= c) {
+        cout << "increasing";
+    } else if (a >= b && b >= c) {
+        cout << "decreasing";
+    } else {
+        cout << "neither increasing nor decreasing order";
+    }
+    return 0;
+}
+Câu lệnh switch case trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho 2 biến kiểu số nguyên a, b và 1 biến kiểu ký tự c. Cả 3 biến này đều được nhập từ bàn phím. Biết biến c là 1 trong 4 ký tự '+', '-', '*' hoặc '/'. Bạn hãy viết chương trình hiển thị giá trị của biểu thức khi áp dụng phép toán c lên a và b. Ví dụ nếu bạn nhập a = 7, c = '+', b = 9 như bên dưới:
+7 + 9
+Thì màn hình sẽ hiển thị ra:
+16
+Lý thuyết
+Bài này bạn hoàn toàn có thể làm bằng mệnh đề if như đã học nhưng cách tốt hơn là sử dụng lệnh switch case.
+Cấu trúc của lệnh switch case:
+	switch (x) {
+	case giá_trị_1:
+		// Nếu x có giá trị bằng giá_trị_1 thì đoạn code trong khối lệnh này sẽ được thực thi
+		break;
+	case giá_trị_2:
+		// Nếu x có giá trị bằng giá_trị_2 thì đoạn code trong khối lệnh này sẽ được thực thi
+		break;
+	case giá_trị_3:
+		// Nếu x có giá trị bằng giá_trị_3 thì đoạn code trong khối lệnh này sẽ được thực thi
+		break;
+	...
+	case giá_trị_n:
+		// Nếu x có giá trị bằng giá_trị_n thì đoạn code trong khối lệnh này sẽ được thực thi
+		break;
+	default:
+		/* 
+		Nếu x không bằng giá trị nào trong các giá trị trên 
+		thì code trong khối lệnh này sẽ được thực thi
+		*/
+		break;
+	}
+Biến hoặc biểu thức bên trong lệnh switch phải là một số nguyên và giá trị trong các lệnh case phải là một hằng số. Ví dụ về chương trình nhập vào một số từ 1 tới 7 và hiển thị ngày trong tuần tương ứng với số đó:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	switch (n) {
+	case 1:
+		cout << "Monday";
+		break;
+	case 2:
+		cout << "Tuesday";
+		break;
+	case 3:
+		cout << "Wednesday";
+		break;
+	case 4:
+		cout << "Thursday";
+		break;
+	case 5:
+		cout << "Friday";
+		break;
+	case 6:
+		cout << "Saturday";
+		break;
+	case 7:
+		cout << "Sunday";
+		break;
+	default:
+		cout << "Invalid input! Please enter week number between 1-7";
+	}
+	return 0;
+}
+
+Lưu ý: nếu trong lệnh case không có break thì chương trình sẽ tiếp tục thực thi các lệnh trong các case tiếp theo cho tới khi gặp lệnh break. Ví dụ về chương trình nhập vào tháng và hiển thị ra số ngày trong tháng đó (không tính năm nhuận):
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int month, day;
+	cin >> month;
+
+	switch (month) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+		{
+			day = 31;
+			break;
+		}
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+		{
+			day = 30;
+			break;
+		}
+		default: {
+			day = 28;
+		}
+	}
+	cout << day;
+	return 0;
+}
+Đọc tới đây bạn đã có thể làm được bài này bằng câu lệnh switch case, hãy quay lại phần bài tập và làm thử.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	char c;
+	cin >> a >> c >> b;
+	switch (c) {
+	case '+':
+		cout << a + b;
+		break;
+	case '-':
+		cout << a - b;
+		break;
+	case '*':
+		cout << a * b;
+		break;
+	case '/':
+		cout << a / b;
+		break;
+	}
+	return 0;
+}
+
+Vòng lặp for trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n và hiển thị ra các số từ 1 tới n.
+Ví dụ nếu nhập n = 10 thì chương trình sẽ hiển thị ra màn hình:
+1 2 3 4 5 6 7 8 9 10 
+Lý thuyết
+Bài này sẽ được giải bằng vòng lặp for. Cách đơn giản nhất để hiểu được vòng lặp trong C++ là xem nhiều các ví dụ.
+Ví dụ về chương trình sử dụng vòng lặp for để in ra các số từ 1 tới 5:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    // i++ tương đương với i = i + 1 hoặc i += 1.
+    for (int i = 1; i <= 5; i++) {
+        cout << i << " ";
+    }
+    return 0;
+}
+Kết quả khi chạy chương trình:
+1 2 3 4 5 
+Ví dụ về chương trình sử dụng vòng lặp for để in ra các số từ 10 về 1:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    // i-- tương đương với i = i - 1 hoặc i -= 1
+    for (int i = 10; i > 0; i--) {
+        cout << i << " ";
+    }
+    return 0;
+}
+Kết quả khi chạy chương trình:
+10 9 8 7 6 5 4 3 2 1
+Ví dụ về chương trình sử dụng vòng lặp for để in ra các số chẵn từ 2 tới 100:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 2; i <= 100; i = i + 2) {
+        cout << i << " ";
+    }
+    return 0;
+}
+
+Kết quả khi chạy chương trình:
+2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100
+Tới đây chắc bạn cũng đã hiểu sơ qua về cách sử dụng vòng lặp for. Vòng lặp được hiểu đơn giản là lặp lại 1 đoạn code. Ví dụ vòng for:
+for (int i = 1; i <= 5; i++) {
+    cout << i << " ";
+}
+Sẽ hoạt động theo thứ tự như sau:
+Bước 1. Tạo ra biến i kiểu nguyên và gán giá trị cho i = 1
+Bước 2. Nếu i <= 5 thì thực hiện khối lệnh bên trong vòng for (chính là đoạn code cout << i << " ";). Ngược lại nếu i > 5 thì dừng không chạy tiếp bước 3.
+Bước 3. Tăng i lên 1 đơn vị và quay lại bước 2 (i++ tương đương với i = i + 1 hoặc i += 1).
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++){
+        cout << i << " ";
+    }
+    return 0;
+}
+Bài tập C++ cơ bản: hiển thị ra màn hình các số từ a tới b | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím số nguyên a và b. Sau đó hiển thị ra các số từ a tới b:
+Ví dụ nếu nhập a = 5, b = 9 thì chương trình sẽ hiển thị ra màn hình:
+5 6 7 8 9 
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    for (int i = a; i <= b; i++) {
+        cout << i << " ";
+    }
+    return 0;
+}
+Bài tập về vòng lặp trong C++: tính tổng các số từ n về -5 | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n và thực hiện hiển thị các số từ n về -5.
+Ví dụ nếu nhập n = 5 thì chương trình sẽ hiển thị ra màn hình:
+5 4 3 2 1 0 -1 -2 -3 -4 -5
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    for (int i = n; i >= -5; i--) {
+        cout << i << " ";
+    }
+    return 0;
+}
+Bài tập về vòng lặp trong C++: tính tổng các số từ a tới b | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên a và b. Sau đó hiển thị ra màn hình tổng các số từ a tới b:
+Ví dụ nếu nhập a = 5, b = 9 thì chương trình sẽ hiển thị ra màn hình:
+35
+Giải thích: 5 + 6 + 7 + 8 + 9 = 35
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    // sum là biến lưu trữ tổng các số từ a tới b
+    // Lưu ý: bạn cần khởi tạo giá trị cho biến sum = 0
+    int sum = 0;
+    cin >> a >> b;
+    for (int i = a; i <= b; i++) {
+        sum = sum + i;
+    }
+    cout << sum;
+    return 0;
+}
+Bài tập về vòng lặp trong C++: tính tổng các số lẻ từ 0 tới n | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n và thực hiện hiển thị ra tổng các số lẻ từ 0 tới n.
+Ví dụ nếu nhập n = 7 thì chương trình sẽ hiển thị ra màn hình:
+16
+Giải thích: 1 + 3 + 5 + 7 = 16
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int sum = 0;
+    for (int i = 0; i <= n; i++) {
+        if (i % 2 == 1) {
+            // sum += i; tương đương với sum = sum + i;
+            sum += i;
+        }
+    }
+    cout << sum;
+    return 0;
+}
+Bài tập về vòng lặp trong C++: hiển thị ra màn hình các số chia hết cho 3 từ a tới b | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên a và b. Sau đó hiển thị ra màn hình các số chia hết cho 3 từ a tới b:
+Ví dụ nếu nhập a = 1, b = 20 thì chương trình sẽ hiển thị ra màn hình:
+3 6 9 12 15 18
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Để kiểm tra biến i có chia hết cho 3 không bạn có thể dùng câu lệnh:
+if (i % 3 == 0) {
+    cout << "i is divisible by 3";
+}
+
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    for (int i = a; i <= b; i++) {
+        if (i % 3 == 0) {
+            cout << i << " ";
+        }
+    }
+    return 0;
+}
+Bài tập về vòng lặp trong C++: tính n giai thừa | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím số nguyên n và hiển thị ra màn hình n! (n giai thừa).
+Ví dụ nếu nhập n = 5 thì chương trình sẽ hiển thị ra màn hình:
+120
+Giải thích: 1 * 2 * 3 * 4 * 5 = 120.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    // Biến lưu trữ kết quả của n!
+    // Lưu ý: bạn cần khởi tạo giá trị cho biến này = 1
+    int factorial = 1;
+    for (int i = 1; i <= n; i++) {
+        factorial = factorial * i;
+    }
+    cout << factorial;
+    return 0;
+}
+Bài tập C++ cơ bản: hiển thị ra màn hình các ước của một số | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím một số nguyên n và hiển thị ra màn hình các ước của n với n > 0.
+Ví dụ nếu nhập n = 12 thì chương trình sẽ hiển thị ra màn hình:
+1 2 3 4 6 12
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        // Nếu n chia hết cho i thì i chính là ước của n
+        if (n % i == 0) {
+            cout << i << " ";
+        }
+    }
+    return 0;
+}
+Vòng lặp while trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào bàn phím số nguyên n và hiển thị ra các số chẵn từ n tới 100.
+Ví dụ nếu nhập n = 90 thì chương trình sẽ hiển thị ra màn hình:
+90 92 94 96 98 100
+Lý thuyết
+Bài này bạn có thể làm bằng vòng lặp for như các bài trước nhưng tôi sẽ hướng dẫn bạn sử dụng vòng lặp while để làm.
+Cấu trúc vòng lặp while:
+while (biểu_thức){
+    // Nếu biểu thức đúng thì thực hiện đoạn code trong khối lệnh này
+}
+Có thể thấy cách sử dụng vòng lặp while rất đơn giản, khi biểu_thức còn đúng thì thực hiện đoạn code bên trong vòng while.
+Hãy xem một vài ví dụ về vòng lặp while để hiểu rõ hơn:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n = 5;
+    while (n != 0) {
+        cout << n << " ";
+        n--;
+    }
+    return 0;
+}
+Chương trình này sẽ hiển thị ra màn hình:
+5 4 3 2 1 
+Đoạn code trên có thể hiểu đơn giản là: Khi n còn khác 0 thì hiển thị ra màn hình giá trị của n và giảm n đi 1.
+Ví dụ khác về hiển thị các số chẵn từ 1 tới 100 sử dụng vòng lặp while:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n = 1;
+    while (n <= 100) {
+        if (n % 2 == 0) {
+            cout << n << " ";
+        }
+        n++;
+    }
+    return 0;
+}
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu sử dụng vòng lặp while:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n <= 100) {
+		if (n % 2 == 0) {
+			cout << n << " ";
+		}
+		n++;
+	}
+	return 0;
+}
+Code mẫu sử dụng vòng lặp for:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	for (; n <= 100; n++) {
+		if (n % 2 == 0) {
+			cout << n << " ";
+		}
+	}
+	return 0;
+}
+Bài tập C++ cơ bản: đếm số ước của một số được nhập vào từ bàn phím | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím số nguyên n và hiển thị ra màn hình số các ước số của n.
+Ví dụ nếu nhập n = 12 thì chương trình sẽ hiển thị ra màn hình:
+6
+Giải thích: 12 có 6 ước là 1, 2, 3, 4, 6, 12
+Hướng dẫn
+Code mẫu sử dụng vòng lặp while:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	int i = 1;
+	int count = 0;
+	while (i <= n) {
+		if (n % i == 0) {
+			count++;
+		}
+		i++;
+	}
+	cout << count;
+	return 0;
+}
+Code mẫu sử dụng vòng lặp for:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	int count = 0;
+	for (int i = 1; i <= n; i++) {
+		if (n % i == 0) {
+			count++;
+		}
+	}
+	cout << count;
+	return 0;
+}
+Bài tập về vòng lặp trong C++: tính lũy thừa bậc b của a (a mũ b) | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím hai số nguyên dương a và b. Sau đó hiển thị ra màn hình kết quả của ab.
+Ví dụ nếu nhập a = 2, b = 3 thì chương trình sẽ hiển thị ra màn hình:
+8
+Giải thích: 2 * 2 * 2 = 8.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu sử dụng vòng lặp while:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    // answer là biến lưu trữ kết quả của a mũ b
+    // Lưu ý: bạn phải khởi tạo giá trị cho answer = 1
+    int answer = 1;
+    while (b > 0) {
+        // answer *= a tương đương với answer = answer * a
+        answer *= a;
+        b--;
+    }
+    cout << answer;
+    return 0;
+}
+Code mẫu sử dụng vòng lặp for:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    int answer = 1;
+    for (; b > 0; answer *= a, b--);
+    cout << answer;
+    return 0;
+}
+Bài tập C++ cơ bản: tính tổng các số chia hết cho 3 và 5 trong đoạn [a, b] | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập từ bàn phím hai số nguyên a và b. Sau đó hiển thị ra màn hình các số từ a tới b mà chia hết cho cả 3 và 5.
+Ví dụ nếu nhập a = 1, b = 50 thì chương trình sẽ hiển thị ra màn hình:
+15 30 45
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu sử dụng vòng lặp while:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	while (a <= b) {
+		if (a % 3 == 0 && a % 5 == 0) {
+			cout << a << " ";
+		}
+		a++;
+	}
+	return 0;
+}
+Code mẫu sử dụng vòng lặp for:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	for (int i = a; i <= b; i++) {
+		if (i % 3 == 0 && i % 5 == 0) {
+			cout << i << " ";
+		}
+	}
+	return 0;
+}
+Bài tập C++ cơ bản về câu lệnh break | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy điền code vào dấu ... để màn hình hiển thị ra các số từ 1 tới 50.
+Lý thuyết
+Bài này bạn sẽ học được cách dừng vòng lặp với câu lệnh break.
+Câu lệnh break là câu lệnh dùng để dừng một vòng lặp, cách sử dụng câu lệnh break rất đơn giản, ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 20; i++) {
+        if (i == 11) {
+            break;
+        }
+        cout << i << " ";
+    }
+    return 0;
+}
+Sẽ hiển thị ra
+1 2 3 4 5 6 7 8 9 10
+thay vì
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+do khi i = 11 thì câu lệnh break sẽ được thực thi và tất cả code trong vòng lặp sẽ không được thực hiện tiếp.
+Trong chương trình trên nếu bạn đặt câu lệnh cout << i << " "; lên trước câu lệnh break; giống như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 20; i++) {
+        cout << i << " ";
+        if (i == 11) {
+            break;
+        }
+    }
+    return 0;
+}
+Thì màn hình sẽ hiển thị ra:
+1 2 3 4 5 6 7 8 9 10 11
+Do khi i = 11 thì câu lệnh cout << i << " "; sẽ được thực thi trước câu lệnh break;
+Bạn cũng có thể dùng câu lệnh break với vòng lặp while giống chương trình sau:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int i = 1;
+    while (i <= 20) {
+        if (i == 11) {
+            break;
+        }
+        cout << i << " ";
+        i++;
+    }
+    return 0;
+}
+Kết quả khi chạy chương trình:
+1 2 3 4 5 6 7 8 9 10
+Đọc tới đây bạn đã hiểu cách sử dụng câu lệnh break và có thể quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 100; i++) {
+        if (i == 51) {
+            break;
+        }
+        cout << i << " ";
+    }
+    return 0;
+}
+Bài tập về câu lệnh continue trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy điền code vào dấu ... để màn hình hiển thị ra các số lẻ từ 1 tới 100.
+Lý thuyết
+Bài này bạn sẽ học được cách sử dụng câu lệnh continue.
+Khi gặp câu lệnh continue trong vòng lặp, các đoạn code bên dưới câu lênh này trong vòng lặp sẽ không được thực thi.
+Ví dụ chương trình hiển thị các số chẵn từ 1 tới 100 sử dụng câu lệnh continue:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 100; i++) {
+        if (i % 2 != 0) {
+            continue;
+        }
+        cout << i << " ";
+    }
+    return 0;
+}
+Trong đoạn code trên khi câu lệnh continue được thực thi thì câu lệnh cout << i << " "; sẽ không được thực thi (do câu lệnh này nằm trong vòng lặp và nằm dưới câu lệnh continue).
+Bạn cũng có thể dùng câu lệnh continue với vòng lặp while.
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 100; i++) {
+        if (i % 2 == 0) {
+            continue;
+        }
+        cout << i << " ";
+    }
+    return 0;
+}
+Vòng lặp do-while trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình các số từ 1 tới 5 sử dụng vòng lặp do-while.
+Lý thuyết
+Ở các bài trước bạn đã được học về vòng lặp for và while, bài này bạn sẽ học được cách sử dụng vòng lặp do-while. Cấu trúc vòng lặp do-while:
+do {
+	// Khối lệnh
+} while (biểu_thức);
+
+Đầu tiên khối lệnh bên trong vòng lặp do-while sẽ được thực thi trước. Sau đó vòng lặp do-while sẽ kiểm tra biểu thức điều kiện, nếu biểu thức điều kiện đúng thì chương trình sẽ tiếp tục thực thi khối lệnh trong do-while, ngược lại nếu biểu thức điều kiện sai thì dừng vòng lặp.
+Vòng lặp do-while khác vòng lặp while ở chỗ vòng lặp while sẽ kiểm tra điều kiện trước, còn vòng lặp do-while sẽ thực hiện khối lệnh trước nên khối lệnh trong do-while sẽ được thực thi ít nhất 1 lần.
+Ví dụ về sự khác nhau giữa 2 vòng lặp:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int i = 1;
+	do {
+		cout << "do-while";
+	} while (i < 1);
+
+	while (i < 1) {
+		cout << "while";
+	}
+	return 0;
+}
+
+Chương trình trên sẽ hiển thị ra:
+do-while
+Lưu ý: Vòng lặp do-while kết thúc bằng dấu chấm phẩy.
+Bạn hãy quay lại phần bài tập và làm thử bằng vòng lặp do-while.
+Nếu bạn chưa biết cách làm bài này bằng vòng lặp do-while thì có thể xem hướng dẫn bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int i = 1;
+	do {
+		cout << i << " ";
+		i++;
+	} while (i <= 5);
+	return 0;
+}
+
+Bài tập về vòng lặp do-while trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình các số có số 0 ở cuối từ 1 tới 1000 (màn hình sẽ hiển thị lên các số 10, 20, 30, ..., 990, 1000)
+Hướng dẫn
+Nếu 1 số chia hết cho 10 thì chữ số cuối cùng của số đó luôn là số 0, nên bài này thực ra là in ra những số chia hết cho 10 từ 1 tới 100.
+Do đó bạn có thể làm như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int i = 1;
+    do {
+        if (i % 10 == 0) {
+            cout << i << " ";
+        }
+        i++;
+    } while (i <= 1000);
+    return 0;
+}
+Mảng (array) trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình nhập vào từ bàn phím 10 số nguyên và hiển thị ra tổng của 10 số này.
+Ví dụ nếu nhập:
+2 7 6 3 4 8 9 7 6 10
+Thì màn hình sẽ hiển thị:
+62
+Lý thuyết
+Bài này có thể làm bằng cách thông thường là tạo ra 10 biến như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a0, a1, a2, a3, a4, a5, a6, a7, a8, a9;
+    cin >> a0 >> a1 >> a2 >> a3 >> a4 >> a5 >> a6 >> a7 >> a8 >> a9;
+    int sum = a0 + a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9;
+    cout << sum;
+    return 0;
+}
+
+Có thể thấy cách làm này không được hay, bạn phải tạo ra rất nhiều biến. Nếu chương trình yêu cầu nhập 100 số nguyên thì bạn cũng phải tạo ra 100 biến. Rất may là vấn đề này có thể giải quyết bằng mảng.
+Mảng được hiểu đơn giản là một tập hợp các biến. Ví dụ bài này nếu làm bằng mảng thì sẽ như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    // Khai báo mảng a kiểu số nguyên với 10 phần tử
+    int a[10];
+    // Khai báo biến lưu trữ tổng các phần tử trong mảng
+    int sum = 0;
+    // Dùng vòng for để nhập dữ liệu cho các phần tử trong mảng
+    for (int i = 0; i < 10; i++) {
+        cin >> a[i];
+    }
+    // Dùng vòng for để tính tổng các phần tử trong mảng
+    for (int i = 0; i < 10; i++) {
+        sum += a[i];
+    }
+    // In ra tổng các phần tử trong mảng
+    cout << sum;
+    return 0;
+}
+
+Có thể thấy thay vì tạo ra 10 biến thì bạn chỉ cần tạo ra 1 mảng với 10 phần tử. Thay vì nhập dữ liệu và tính tổng trên từng biến thì bạn nhập dữ liệu và tính tổng trên từng phần tử của mảng.
+Các phần tử của mảng được truy xuất bằng toán tử []. Ví dụ:
+
+a[0] tương đương với phần tử thứ nhất.
+a[1] tương đương với phần tử thứ hai.
+...
+
+Nhìn chung cách làm bài này với mảng cũng giống việc tạo ra nhiều biến, chỉ khác ở chỗ thay vì phải viết a0, a1, a2, ..., a9 thì bạn có thể dùng vòng lặp for và viết là a[i].
+Ngoài ra bạn còn có thể khai báo và khởi tạo giá trị cho mảng bằng 1 số cách dưới đây:
+// Khai báo mảng a 5 phần tử với giá trị từ 1 tới 5
+int a[5] = {1, 2, 3, 4, 5};
+// Khai báo mảng a 5 phần tử với giá trị từ 1 tới 5
+int a[] = { 1, 2, 3, 4, 5 };
+// Khai báo mảng a 20 phần tử và gán giá trị cho 5 phần tử đầu tiên
+int a[20] = { 1, 2, 3, 4, 5 };
+
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a[10];
+    int sum = 0;
+    for (int i = 0; i < 10; i++) {
+        cin >> a[i];
+    }
+    for (int i = 0; i < 10; i++) {
+        sum += a[i];
+    }
+    cout << sum;
+    return 0;
+}
+
+Bài này còn có thể làm đơn giản hơn như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int a;
+    int sum = 0;
+    for (int i = 0; i < 10; i++) {
+        cin >> a;
+        sum += a;
+    }
+    cout << sum;
+    return 0;
+}
+
+Bài tập về mảng trong C++: tìm phần tử lớn nhất trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết chương trình hiển thị ra phần tử lớn nhất trong mảng. Ví dụ nếu bạn nhập n = 5, arr = [2, 7, 6, 8, 9] như bên dưới:
+5
+2 7 6 8 9
+Thì màn hình sẽ hiển thị:
+9
+Giải thích: mảng này có 5 phần tử và 9 là phần tử lớn nhất trong mảng.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Để tạo ra mảng a có n phần tử bạn có thể viết như sau:
+int a[n];
+Lưu ý: nếu trên máy bạn báo lỗi ở đoạn code này thì là do trình biên dịch trên máy bạn không hỗ trợ C99. Bạn có thể khắc phục bằng cách sửa int a[n]; thành int a[1000]; (cứ khai báo mảng 1000 phần tử, không dùng tới cũng không sao).
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int a[1000];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    int maxValue = a[0];
+    for (int i = 0; i < n; i++) {
+        if (a[i] > maxValue) {
+            maxValue = a[i];
+        }
+    }
+    cout << maxValue;
+    return 0;
+}
+
+Bài tập về mảng trong C++: tính tổng của phần tử đầu tiên và cuối cùng trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết chương trình hiển thị ra tổng của phần tử đầu tiên và cuối cùng trong mảng arr. Ví dụ nếu bạn nhập n = 5, arr = [2, 7, 6, 8, 9] như bên dưới:
+5
+2 7 6 8 9
+Thì màn hình sẽ hiển thị:
+11
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+arr[0] + arr[n - 1] chính là tổng của phần tử đầu tiên và cuối cùng.
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int arr[1000];
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    cout << arr[0] + arr[n - 1];
+    return 0;
+}
+
+Bài tập về mảng trong C++: hiển thị ra màn hình các số chẵn trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết chương trình hiển thị ra màn hình những số chẵn trong mảng. Ví dụ nếu bạn nhập:
+5
+2 7 6 8 9
+Thì màn hình sẽ hiển thị:
+2 6 8 
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int a[1000];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] % 2 == 0) {
+            cout << a[i] << " ";
+        }
+    }
+    return 0;
+}
+
+Bài tập C++ cơ bản: đếm số phần tử có giá trị bằng k trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr và số nguyên k được nhập từ bàn phím. Bạn hãy viết chương trình hiển thị ra màn hình số phần tử có giá trị bằng k trong mảng arr.
+Ví dụ nếu bạn nhập n = 6, arr = [3, 8, 7, 8, 3, 3], k = 3 như bên dưới:
+6
+3 8 7 8 3 3
+3
+Thì màn hình hiển thị lên:
+3
+Giải thích: trong mảng có 3 phần tử có giá trị bằng 3.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n, k;
+    int arr[1000];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    cin >> k;
+
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == k) {
+            count++;
+        }
+    }
+    cout << count;
+    return 0;
+}
+
+Bài tập C++ cơ bản: tính tổng các phần tử có giá trị lớn hơn 0 trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr. Bạn hãy viết chương trình tính tổng các số lẻ lớn hơn 0 trong mảng.
+Ví dụ nếu bạn nhập:
+8
+3 -7 2 5 9 -6 10 12
+Thì màn hình hiển thị lên:
+17
+Giải thích: 3 + 5 + 9 = 17.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    int arr[1000];
+    int sum = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 != 0 && arr[i] > 0) {
+            sum += arr[i];
+        }
+    }
+    cout << sum;
+    return 0;
+}
+Bài tập C++ cơ bản: hiển thị các phần tử nằm trong đoạn [0, 10] trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr. Bạn hãy viết chương trình hiển thị những số lớn hơn hoặc bằng 0 và nhỏ hơn hoặc bằng 10 trong mảng arr.
+Ví dụ nếu bạn nhập:
+8
+3 -7 2 5 9 -6 10 12
+Thì màn hình hiển thị lên:
+3 2 5 9 10 
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    int arr[1000];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    for (int i = 0; i < n; i++) {
+        if (arr[i] >= 0 && arr[i] <= 10) {
+            cout << arr[i] << " ";
+        }
+    }
+    return 0;
+}
+Bài tập C++ cơ bản: sắp xếp mảng theo thứ tự tăng dần | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng các số nguyên n phần tử arr. Bạn hãy viết chương trình sắp xếp các phần tử của mảng theo thứ tự tăng dần và hiển thị ra màn hình mảng sau khi đã sắp xếp.
+Ví dụ nếu bạn nhập n = 6, arr = [5,3,2,6,7,7] như bên dưới:
+6
+5 3 2 6 7 7
+Thì màn hình hiển thị lên:
+2 3 5 6 7 7
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    int arr[1000];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] > arr[j]) {
+                // Nếu arr[i] > arr[j] thì hoán đổi giá trị của arr[i] và arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
+Mảng 2 chiều trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng 2 chiều các số nguyên n hàng m cột arr được nhập từ bàn phím. Bạn hãy viết chương trình tính tổng các phần tử trong mảng arr.
+Ví dụ nếu bạn nhập n = 2, m = 3, arr = [[5, 7, 3], [1, 2, 4]] như bên dưới:
+2 3
+5 7 3
+1 2 4
+Thì màn hình sẽ hiển thị ra:
+22
+Lý thuyết
+Mảng 2 chiều hay còn được gọi là ma trận là một mảng các mảng 1 chiều. Mảng 2 chiều giống như một cái bảng, mảng 1 chiều là các dòng trong bảng và các phần tử của mảng là các ô.
+Cú pháp để khai báo mảng 2 chiều với 3 hàng và 5 cột:
+int arr[3][5];
+Ví dụ chương trình nhập vào một mảng 2 chiều và in mảng 2 chiều này ra màn hình:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int arr[100][100];
+	int n, m;
+
+	cin >> n >> m;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cin >> arr[i][j];
+		}
+	}
+	
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << "arr[" << i << "][" << j << "] = " << arr[i][j] << " " << endl;
+		}
+	}
+
+	return 0;
+}
+
+Nếu bạn nhập
+3 4
+3 4 8 2
+5 6 4 9
+2 3 8 1
+
+Thì chương trình sẽ hiển thị ra:
+arr[0][0] = 3
+arr[0][1] = 4
+arr[0][2] = 8
+arr[0][3] = 2
+arr[1][0] = 5
+arr[1][1] = 6
+arr[1][2] = 4
+arr[1][3] = 9
+arr[2][0] = 2
+arr[2][1] = 3
+arr[2][2] = 8
+arr[2][3] = 1
+Có thể thấy cách sử dụng mảng 2 chiều rất đơn giản, bạn hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn bên dưới:
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int arr[100][100];
+	int n, m;
+
+	cin >> n >> m;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cin >> arr[i][j];
+		}
+	}
+
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			sum += arr[i][j];
+		}
+	}
+
+	cout << sum;
+
+	return 0;
+}
+
+Bài tập về mảng 2 chiều trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho một mảng 2 chiều các số nguyên n hàng m cột arr được nhập từ bàn phím. Bạn hãy viết chương trình tính tổng các phần tử chia hết cho 5 trong arr.
+Ví dụ nếu bạn nhập n = 3, m = 4, arr = [[10, 4, 8, 2], [5, 6, 4, 9], [20, 3, 8, 1]] như bên dưới:
+3 4
+10 4 8 2
+5 6 4 9
+20 3 8 1
+
+Thì màn hình sẽ hiển thị ra:
+35
+Giải thích: Tổng các phần tử chia hết cho 5 trong arr là 10 + 5 + 20 = 35.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int arr[100][100];
+	int n, m;
+
+	cin >> n >> m;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cin >> arr[i][j];
+		}
+	}
+
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (arr[i][j] % 5 == 0) {
+				sum += arr[i][j];
+			}
+		}
+	}
+	
+	cout << sum;
+
+	return 0;
+}
+
+Bài tập C++ cơ bản: hiển thị ký tự thứ k trong string | Codelearn 
+---------------------------------------
+Bài tập
+Cho xâu s và số nguyên k được nhập từ bàn phím. Bạn hãy viết chương trình in ra màn hình ký tự thứ k trong xâu s.
+Ví dụ nếu bạn nhập s = "Codelearn", k = 2 như bên dưới:
+Codelearn
+2
+Thì màn hình sẽ hiển thị ra:
+o
+Giải thích: ký tự thứ 2 trong xâu Codelearn là ký tự o
+Lý thuyết
+Xâu bản chất là một mảng các ký tự do đó bạn có thể truy xuất tới các ký tự trong xâu giống như truy xuất tới các phần tử trong mảng. Ví dụ chương trình sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s = "Codelearn";
+    cout << s[0] << s[1];
+    return 0;
+}
+
+Sẽ hiển thị ra màn hình:
+Co
+Từ đó bạn có thể lấy ra phần tử thứ k trong xâu s bằng s[k - 1];
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    int k;
+    cin >> s >> k;
+    cout << s[k - 1];
+    return 0;
+}
+
+Bài tập về xâu trong C++: đếm số lần xuất hiện của một ký tự trong một xâu | Codelearn
+---------------------------------------
+Bài tập
+Cho xâu s và ký tự c được nhập từ bàn phím. Bạn hãy viết chương trình in ra số lần xuất hiện của ký tự c trong xâu s.
+Ví dụ nếu bạn nhập s = "Codelearn", c = 'e' như bên dưới:
+Codelearn
+e
+Thì màn hình sẽ hiển thị ra:
+2
+Giải thích: ký tự thứ 'e' xuất hiện 2 lần trong xâu "Codelearn"
+Lý thuyết
+Do xâu bản chất là một mảng các ký tự nên việc duyệt các ký tự trong xâu cũng giống với duyệt các phần tử trong mảng, bạn có thể dùng vòng lặp for để duyệt qua các ký tự trong xâu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s = "Codelearn";
+    // s.size() chính là độ dài của xâu s
+    for (int i = 0; i < s.size(); i++) {
+        cout << s[i] << endl;
+    }
+    return 0;
+}
+
+Đoạn code này sẽ hiển thị ra màn hình:
+C
+o
+d
+e
+l
+e
+a
+r
+n
+Trong ví dụ trên s.size() chính là lấy ra độ dài của xâu s.
+Đọc tới đây bạn đã có thể quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    char c;
+    cin >> s >> c;
+    int count = 0;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == c) {
+            count++;
+        }
+    }
+    cout << count;
+    return 0;
+}
+
+Bài tập xử lý chuỗi trong C++: tìm vị trí xuất hiện của một ký tự trong một xâu | Codelearn
+---------------------------------------
+Bài tập
+Cho xâu s và ký tự c được nhập từ bàn phím, bạn hãy viết chương trình in ra vị trí đầu tiên mà ký tự c xuất hiện trong xâu s, nếu ký tự c không xuất hiện trong s thì in ra -1.
+Ví dụ nếu bạn nhập s = "codelearn" và c = 'o' như bên dưới:
+codelearn o
+thì màn hình sẽ hiển thị ra:
+1
+Giải thích: ký tự s[1] chính là ký tự 'o'
+Ví dụ khác nếu bạn nhập:
+codewar z
+Thì màn hình sẽ hiển thị ra:
+-1
+Giải thích: ký tự 'z' không xuất hiện trong xâu "codewar".
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    char c;
+    cin >> s >> c;
+    int index = -1;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == c) {
+            index = i;
+            /*
+            Gọi lệnh break để dừng vòng lặp do
+            đã tìm thấy vị trí đầu tiên mà ký tự c xuất hiện.
+            Nếu không có lệnh break thì kết quả của chương trình
+            sẽ là vị trí cuối cùng mà ký tự c xuất hiện.
+            */
+            break;
+        }
+    }
+    cout << index;
+    return 0;
+}
+Bài tập về xử lý xâu trong C++: chuyển các ký tự in thường sang in hoa | Codelearn
+---------------------------------------
+Bài tập
+Cho xâu s được nhập từ bàn phím. Bạn hãy viết chương trình chuyển các ký tự in thường trong xâu s thành in hoa và hiển thị xâu s ra màn hình:
+Ví dụ nếu bạn nhập s = "Codelearn" như bên dưới:
+Codelearn
+Thì màn hình sẽ hiển thị ra:
+CODELEARN
+Lý thuyết
+Về bản chất ký tự cũng chỉ là một số nguyên, việc bạn chuyển 1 ký tự từ in thường sang in hoa thực chất là chuyển đổi từ 1 số nguyên sang 1 số nguyên khác. Như đã được học, để hiển thị giá trị nguyên (mã ASCII) của một ký tự bạn có thể làm như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    cout << 'a' << " = " << (int)'a' << endl;
+    cout << 'b' << " = " << (int)'b' << endl;
+    cout << 'c' << " = " << (int)'c' << endl;
+    cout << 'd' << " = " << (int)'d' << endl;
+    cout << endl;
+    cout << 'A' << " = " << (int)'A' << endl;
+    cout << 'B' << " = " << (int)'B' << endl;
+    cout << 'C' << " = " << (int)'C' << endl;
+    cout << 'D' << " = " << (int)'D' << endl;
+    return 0;
+}
+
+Chương trình này sẽ hiển thị lên màn hình:
+a = 97
+b = 98
+c = 99
+d = 100
+
+A = 65
+B = 66
+C = 67
+D = 68
+Có thể quan sát thấy giá trị của các ký tự in thường luôn bằng giá trị của các ký tự in hoa cộng với 32. Từ đó bạn có thể chuyển 1 ký tự từ in thường sang in hoa bằng cách trừ đi 32. Ví dụ chương trình:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    char c = 'd' - 32;
+    cout << c;
+    return 0;
+}
+
+Sẽ hiển thị ra màn hình
+D
+Từ đó bạn có thể giải bài này bằng cách duyệt qua các ký tự và nếu ký tự đó là in thường thì trừ đi 32.
+Nếu bạn vẫn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] >= 'a' && s[i] <= 'z') {
+            s[i] -= 32;
+        }
+    }
+    cout << s;
+    return 0;
+}
+
+Bài tập về xử lý xâu trong C++: chuyển các ký tự in hoa sang in thường | Codelearn
+---------------------------------------
+Bài tập
+Cho xâu s được nhập từ bàn phím. Bạn hãy viết chương trình chuyển các ký tự in hoa trong xâu s thành in thường và hiển thị xâu s ra màn hình:
+Ví dụ nếu bạn nhập s = "CODELEARN" như bên dưới:
+CODELEARN
+Thì màn hình sẽ hiển thị ra:
+codelearn
+Hướng dẫn
+Bài này khá giống bài trước, bạn có thể cộng với 32 để 1 ký tự in hoa trở thành in thường.
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] >= 'A' && s[i] <= 'Z') {
+            s[i] += 32;
+        }
+    }
+    cout << s;
+    return 0;
+}
+
+Bài tập C++ cơ bản: đếm số ký tự in hoa trong một xâu | Codelearn
+---------------------------------------
+Bài tập
+Cho xâu s được nhập từ bàn phím. Bạn hãy viết chương trình hiển thị ra màn hình số các ký tự in hoa trong xâu s.
+Ví dụ nếu bạn nhập s = "CodeWar" như bên dưới:
+CodeWar
+Thì màn hình sẽ hiển thị ra:
+2
+Giải thích: trong xâu s có 2 ký tự in hoa là 'C' và 'W'
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	string s;
+	int count = 0;
+	cin >> s;
+	for (int i = 0; i < s.size(); i++) {
+		if (s[i] >= 'A' && s[i] <= 'Z') {
+			count++;
+		}
+	}
+	cout << count;
+	return 0;
+}
+
+Bài tập C++ cơ bản: thay đổi giá trị của các ký tự trong xâu | Codelearn
+---------------------------------------
+Bài tập
+Cho xâu s được nhập từ bàn phím. Bạn hãy viết chương trình chuyển các ký tự '3' trong xâu s sang ký tự 'e' và hiển thị xâu s ra màn hình.
+Ví dụ nếu bạn nhập s = "cod3l3arn" như bên dưới:
+cod3l3arn
+Thì màn hình sẽ hiển thị ra:
+codelearn
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == '3') {
+            s[i] = 'e';
+        }
+    }
+    cout << s;
+    return 0;
+}
+Bài tập C++ cơ bản: hiển thị ra màn hình các ký tự từ A tới Z
+---------------------------------------
+Bài tập
+Bạn hãy viết chương trình hiển thị ra màn hình các ký tự từ 'A' tới 'Z' như bên dưới:
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Hướng dẫn
+Như đã học ở các bài trước, ký tự thực ra cũng chỉ là 1 số nguyên, do đó bạn có thể dùng vòng for và làm như sau:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    for (char c = 'A'; c <= 'Z'; c++) {
+        cout << c;
+    }
+    return 0;
+}
+
+Tìm hiểu về hàm trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết hàm hiển thị ra màn hình các số từ 1 tới 100 giống như sau:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+Lý thuyết
+Hàm được hiểu đơn giản là 1 đoạn code, khi bạn gọi hàm thì thực ra là bạn đang gọi tới đoạn code này (bạn cũng có thể hiểu hàm là viết tắt của 1 đoạn code). Cách khai báo và sử dụng hàm rất đơn giản, trước hết bạn hãy xem một vài ví dụ về hàm:
+Ví dụ về hàm hiển thị ra các số từ 1 tới 10:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm show
+void show() {
+	// Hiển thị ra màn hình các số từ 1 đến 10
+	for (int i = 1; i <= 10; i++) {
+		cout << i << " ";
+	}
+}
+
+int main() {
+	// Gọi hàm show
+	show();
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+1 2 3 4 5 6 7 8 9 10
+Ví dụ về hàm hiển thị ra bảng chữ cái tiếng anh:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm show
+void show() {
+	// Hiển thị bảng chữ cái tiếng anh ra màn hình
+	for (char c = 'A'; c <= 'Z'; c++) {
+		cout << c;
+	}
+}
+
+int main() {
+	// Gọi hàm show
+	show();
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Như đã nói ở trên, việc bạn gọi hàm thực ra là bạn đang gọi tới đoạn code bên trong hàm nên bạn có thể hiển thị ra 2 bảng chữ cái bằng cách gọi hàm 2 lần:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm show
+void show() {
+	// Hiển thị bảng chữ cái tiếng anh ra màn hình
+	for (char c = 'A'; c <= 'Z'; c++) {
+		cout << c;
+	}
+	cout << endl;
+}
+
+int main() {
+	// Gọi hàm show
+	show();
+	show();
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Tới đây chắc bạn cũng đã hiểu cách tạo và sử dụng hàm, cú pháp để khai báo hàm sẽ trông giống như sau:
+void tên_hàm() {
+	/*
+	Khối lệnh bên trong thân hàm
+	Khối lệnh này sẽ được thực thi khi bạn gọi hàm
+	*/
+}
+Để sử dụng hàm bạn chỉ đơn giản là gọi tới tên_hàm();
+Đọc tới đây bạn đã biết cách tạo và sử dụng hàm, hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+void show() {
+	for (int i = 1; i <= 100; i++) {
+		cout << i << " ";
+	}
+}
+
+int main() {
+	show();
+	return 0;
+}
+
+Đọc thêm: https://codelearn.io/sharing/cach-tao-vector-trong-cpp"https://codelearn.io/sharing/cach-tao-vector-trong-cpp 
+Bài tập về hàm trong C++: viết hàm hiển thị ra màn hình các số chia hết cho 3 và không chia hết cho 5 | Codelearn
+---------------------------------------
+Bài tập
+Bạn hãy viết hàm hiển thị ra màn hình các số chia hết cho 3 và không chia hết cho 5 từ 1 tới 100.
+Hướng dẫn
+Mục đích của bài này là giúp bạn làm quen với hàm.
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+void show() {
+	for (int i = 1; i <= 100; i++) {
+		if (i % 3 == 0 && i % 5 != 0) {
+			cout << i << " ";
+		}
+	}
+}
+
+int main() {
+	show();
+	return 0;
+}
+
+Hàm có tham số trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho biến name kiểu string được nhập từ bàn phím, bạn hãy viết hàm hiển thị ra màn hình thông tin sau:
+Hello {P}
+Với {P} là giá trị của biến name.
+Ví dụ nếu bạn nhập:
+Codelearn
+Thì màn hình sẽ hiển thị ra:
+Hello Codelearn
+Lý thuyết
+Bài này sẽ giúp bạn học được cách sử dụng hàm có đầu vào. Trước hết hãy xem ví dụ đơn giản về hàm có đầu vào:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm show với đầu vào là biến name kiểu string
+void show(string name) {
+	// Hiển thị biến name ra màn hình
+	cout << "Hello " << name;
+}
+
+int main() {
+	string name = "Codelearn";
+	// Bạn cũng có thể gọi show("Codelearn"); thay vì show(name);
+	show(name);
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+Hello Codelearn
+Hàm show() trong ví dụ trên là hàm có đầu vào là 1 biến kiểu string.
+Khi gọi một hàm có đầu vào bạn luôn cần cung cấp giá trị cho các đầu vào của hàm. Để hiểu rõ hơn bạn hãy xem ví dụ khác về hàm hiển thị số lớn nhất trong 3 số đầu vào:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm show với đầu vào là 3 số nguyên a, b, c
+void show(int a, int b, int c) {
+	int maxValue = a;
+	if (maxValue < b) {
+		maxValue = b;
+	}
+	if (maxValue < c) {
+		maxValue = c;
+	}
+	// Hiển số lớn nhất trong 3 số đầu vào
+	cout << maxValue << endl;
+}
+
+int main() {
+	// Gọi hàm show với giá trị của các đầu vào là a = 4, b = 6, c = 3 
+	show(4, 6, 3);
+	// Gọi hàm show với giá trị của các đầu vào là a = 2, b = 1, c = 5 
+	show(2, 1, 5);
+	// Gọi hàm show với giá trị của các đầu vào là a = 3, b = 3, c = 3 
+	show(3, 3, 3);
+	return 0;
+}
+Kết quả khi chạy chương trình:
+6
+5
+3
+Có thể thấy khi gọi hàm show(); bạn cần truyền giá trị cho 3 đầu vào.
+Đọc tới đây bạn đã biết cách sử dụng hàm có đầu vào, hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này bạn có thể xem hướng dẫn bên dưới:
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+void show(string name) {
+	cout << "Hello " << name;
+}
+
+int main() {
+	string name;
+	cin >> name;
+	show(name);
+	return 0;
+}
+
+Bài tập về hàm trong C++: viết hàm chuyển một xâu từ in hoa sang in thường.
+---------------------------------------
+Bài tập
+Cho xâu s1, s2 và s3 được nhập từ bàn phím. Bạn hãy viết chương trình chuyển các ký tự in hoa trong 3 xâu này thành in thường và hiển thị cả 3 xâu ra màn hình.
+Ví dụ nếu bạn nhập s1 = "CODELEARN", s2 = "FSOFT", s3 = "FPT" như bên dưới:
+CODELEARN
+FSOFT
+FPT
+Thì màn hình sẽ hiển thị ra:
+codelearn
+fsoft
+fpt
+Lý thuyết
+Bài này sẽ giúp bạn hiểu hơn về lợi ích của hàm.
+Trước tiên bạn hãy xem code khi làm bài này mà không sử dụng hàm:
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    string s1, s2, s3;
+    cin >> s1 >> s2 >> s3;
+    
+    for (int i = 0; i < s1.size(); i++) {
+        if (s1[i] >= 'A' && s1[i] <= 'Z') {
+            s1[i] += 32;
+        }
+    }
+
+    for (int i = 0; i < s2.size(); i++) {
+        if (s2[i] >= 'A' && s2[i] <= 'Z') {
+            s2[i] += 32;
+        }
+    }
+
+    for (int i = 0; i < s3.size(); i++) {
+        if (s3[i] >= 'A' && s3[i] <= 'Z') {
+            s3[i] += 32;
+        }
+    }
+
+    cout << s1 << endl << s2 << endl << s3;
+
+    return 0;
+}
+
+Chắc bạn cũng đã nhận thấy vấn đề với cách làm này: code ở cả 3 vòng for bị trùng lặp nhau. Rõ ràng bạn cần tìm cách để tái sử dụng lại đoạn code chuyển 1 xâu từ in hoa sang in thường thay vì cứ phải lặp lại đoạn code này mỗi khi sử dụng.
+Qua các bài đã học về hàm, bạn đã biết rằng hàm được dùng để đại diện cho 1 đoạn code, do đó bạn có thể đặt đoạn code bị trùng lặp vào trong hàm và mỗi khi sử dụng bạn chỉ cần gọi hàm.
+Để thấy được lợi ích của hàm bạn hãy xem code khi làm bài này bằng hàm:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm show với đầu vào là xâu s
+void show(string s) {
+    // Chuyển xâu s từ in hoa sang in thường
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] >= 'A' && s[i] <= 'Z') {
+            s[i] += 32;
+        }
+    }
+    // Hiển thị xâu s ra màn hình
+    cout << s << endl;
+}
+
+int main() {
+    string s1, s2, s3;
+    cin >> s1 >> s2 >> s3;
+    show(s1);
+    show(s2);
+    show(s3);
+    return 0;
+}
+
+Có thể thấy khi sử dụng hàm code trở nên ngắn và dễ hiểu hơn.
+Tới đây chắc bạn cũng đã biết cách làm bài này với hàm để code ngắn và đẹp hơn, hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được thì có thể xem hướng dẫn bên dưới.
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+void show(string s) {
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] >= 'A' && s[i] <= 'Z') {
+            s[i] += 32;
+        }
+    }
+    cout << s << endl;
+}
+
+int main() {
+    string s1, s2, s3;
+    cin >> s1 >> s2 >> s3;
+    show(s1);
+    show(s2);
+    show(s3);
+    return 0;
+}
+
+Bài tập về hàm trong C++: viết hàm sắp xếp mảng cho trước.
+---------------------------------------
+Bài tập
+Cho mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết hàm sắp xếp các phần tử của mảng này theo thứ tự giảm dần.
+Ví dụ nếu bạn nhập n = 5, arr = [7, 2, 8, 4, 9] như bên dưới:
+5
+7 2 8 4 9
+Thì màn hình sẽ hiển thị lên:
+9 8 7 4 2 
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn bên dưới.
+Hướng dẫn
+Bài này giống với bài sắp xếp mảng bạn đã được làm ở chương trước, mục đích mình tạo ra bài này là giúp bạn làm quen với hàm có đầu vào là một mảng.
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+void sortArray(int arr[1000], int n) {
+	for (int i = 0; i < n; i++) {
+		for(int j = i + 1; j < n; j++){
+			if (arr[i] < arr[j]) {
+				int temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+}
+
+int main() {
+	int n;
+	int arr[1000];
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	sortArray(arr, n);
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+
+	return 0;
+}
+
+Hàm có giá trị trả về và hàm void trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết hàm trả về tổng các phần tử trong mảng arr.
+Ví dụ nếu bạn nhập n = 5, arr = [7, 2, 8, 4, 9] như bên dưới:
+5
+7 2 8 4 9
+Thì chương trình sẽ hiển thị lên:
+30
+Giải thích: 7 + 2 + 8 + 4 + 9 = 30
+Lý thuyết
+Ở các bài trước bạn đã biết cách tạo và sử dụng hàm không có giá trị trả về. Hàm không có giá trị trả về được khai báo bằng từ khóa void, các hàm dạng này được sử dụng để thực thi các đoạn code trong thân hàm và không cần lấy ra kết quả sau khi thực thi xong.
+Hàm có giá trị trả về khác hàm không có giá trị trả về ở chỗ là các hàm dạng này sau khi thực thi các đoạn code thì sẽ trả về một kết quả. Ví dụ về hàm trả về tổng các số từ 1 tới n:
+#include<iostream>
+
+using namespace std;
+
+// Khai báo hàm sum với kiểu trả về là int và đầu vào là số n
+int sum(int n) {
+	// Biến lưu trữ tổng các số từ 1 tới n
+	int add = 0;
+	// Tính tổng các số từ 1 tới n và lưu vào biến add
+	for (int i = 1; i <= n; i++) {
+		add += i;
+	}
+	// Trả về add (gán kết quả của hàm sum cho add)
+	return add;
+}
+
+int main() {
+	// Hiển thị giá trị của hàm sum với các đầu vào khác nhau ra màn hình
+	cout << sum(3) << " " << sum(4) << " " << sum(5);
+	return 0;
+}
+
+Kết quả khi chạy chương trình:
+6 10 15
+Trong ví dụ trên hàm sum() được khai báo với từ khóa int nên sẽ có kiểu trả về là một số nguyên (kết quả của hàm này là một số nguyên).
+Để trả về một kết quả cho hàm bạn dùng câu lệnh return, như ở ví dụ trên thì hàm sum() có gọi tới câu lệnh return add; nên kết quả của hàm sẽ chính là biến add.
+Do sum() là hàm có giá trị trả về là một số nguyên nên bạn có thể sử dụng hàm này như sử dụng một số nguyên (bạn có thể gán int a = sum(3); hay cout << sum(3);, ...).
+Nếu bạn vẫn chưa quen với hàm có giá trị trả về thì có thể xem tiếp một ví dụ khác đơn giản hơn về hàm trả về tổng 2 số:
+#include<iostream>
+
+using namespace std;
+
+int sum(int a, int b) {
+	return a + b;
+}
+
+int main() {
+	cout << sum(2, 3) << endl;
+	cout << sum(1, 4) << endl;
+	cout << sum(3, 7) << endl;
+	return 0;
+}
+Kết quả khi chạy chương trình:
+5
+5
+10
+Lưu ý: Hàm sẽ kết thúc và trả về giá trị ngay khi gặp câu lệnh return. Xem ví dụ sau để hiểu hơn:
+#include<iostream>
+
+using namespace std;
+
+int sum(int a, int b) {
+	return 1;
+	return a + b;
+}
+
+int main() {
+	cout << sum(2, 3) << endl;
+	cout << sum(1, 4) << endl;
+	cout << sum(3, 7) << endl;
+	return 0;
+}
+Kết quả khi chạy chương trình:
+1
+1
+1
+Đọc tới đây bạn đã biết cách tạo và sử dụng hàm có giá trị trả về, hãy quay lại phần bài tập và làm thử.
+Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn bên dưới:
+Hướng dẫn
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int sumOfArray(int arr[1000], int n) {
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += arr[i];
+	}
+	return sum;
+}
+
+int main() {
+	int n;
+	int arr[1000];
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	cout << sumOfArray(arr, n);
+	return 0;
+}
+
+Bài tập C++ cơ bản: viết hàm trả về phần tử lớn nhất trong mảng.
+---------------------------------------
+Bài tập
+Cho mảng các số nguyên n1 phần tử arr1 và mảng các số nguyên n2 phần tử arr2 được nhập từ bàn phím. Bạn hãy hoàn thiện hàm maxOfArray() để chương trình hiển thị ra số lớn nhất trong 2 mảng này.
+Ví dụ nếu bạn nhập n1 = 5, arr1 = [1, 2, 3, 4, 5], n2 = 6, arr2 = [4, 2, 2, 6, 13, 1] như bên dưới:
+5
+1 2 3 4 5
+6
+4 2 2 6 13 1
+Thì màn hình sẽ hiển thị lên:
+5 13
+Giải thích: 5 và 13 lần lượt là số lớn nhất trong 2 mảng.
+Hướng dẫn
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int maxOfArray(int arr[1000], int n) {
+	int maxValue = arr[0];
+	for (int i = 0; i < n; i++) {
+		if (arr[i] > maxValue) {
+			maxValue = arr[i];
+		}
+	}
+	return maxValue;
+}
+
+int main() {
+	int n1, n2;
+	int arr1[1000], arr2[1000];
+	cin >> n1;
+	for (int i = 0; i < n1; i++) {
+		cin >> arr1[i];
+	}
+	cin >> n2;
+	for (int i = 0; i < n2; i++) {
+		cin >> arr2[i];
+	}
+
+	cout << maxOfArray(arr1, n1) << " " << maxOfArray(arr2, n2);
+
+	return 0;
+}
+
+Bài tập C++ cơ bản: viết hàm đếm số phần tử lẻ trong mảng.
+---------------------------------------
+Bài tập
+Cho mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết hàm trả về số phần tử lẻ trong mảng arr.
+Ví dụ nếu bạn nhập n = 7, arr = [2, 5, 3, 6, 9, 4, 1] như bên dưới:
+7
+2 5 3 6 9 4 1
+Thì chương trình sẽ hiển thị lên:
+4
+Giải thích: trong mảng arr có 4 số lẻ.
+Hướng dẫn
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int countOddNumberInArray(int arr[1000], int n) {
+	int count = 0;
+	for (int i = 0; i < n; i++) {
+		if (arr[i] % 2 == 1) {
+			count++;
+		}
+	}
+	return count;
+}
+
+int main() {
+	int n;
+	int arr[1000];
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	cout << countOddNumberInArray(arr, n);
+	return 0;
+}
+
+Bài tập về hàm trong C++: viết hàm hiển thị những xâu có độ dài lớn hơn 3 trong mảng | Codelearn
+---------------------------------------
+Đề bài
+Cho mảng các xâu ký tự n phần tử arr được nhập từ bàn phím, bạn hãy viết hàm hiển thị ra những xâu có độ dài lớn hơn hoặc bằng 3 trong mảng arr.
+Ví dụ nếu bạn nhập n = 4, arr = ["abcd", "ab", "abc", "a"] như bên dưới
+4
+abcd ab abc a
+thì màn hình sẽ hiển thị ra:
+abcd abc 
+Giải thích: Trong arr có 2 xâu có độ dài lớn hơn hoặc bằng 3 là "abcd" và "abc"
+Hướng dẫn
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+void show(string arr[1000], int n) {
+	for (int i = 0; i < n; i++) {
+		if (arr[i].size() >= 3) {
+			cout << arr[i] << " ";
+		}
+	}
+}
+
+int main() {
+	int n;
+	string arr[1000];
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	show(arr, n);
+	return 0;
+}
+
+Bài tập C++ cơ bản: viết hàm trả về chu vi hình tròn | Codelearn
+---------------------------------------
+Bài tập
+Cho hình tròn có bán kính r được nhập từ bàn phím, bạn hãy viết hàm trả về chu vi của hình tròn này biết π = 3.14.
+Ví dụ nếu bạn nhập:
+3.5
+Thì chương trình sẽ hiển thị ra:
+21.98
+Hướng dẫn
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+double circumference(double r) {
+	return 2 * r * 3.14;
+}
+
+int main() {
+	double r;
+	cin >> r;
+	cout << circumference(r);
+	return 0;
+}
+
+Hàm đệ quy trong C++ | Codelearn
+---------------------------------------
+Bài tập
+Cho số nguyên dương n được nhập từ bàn phím, bạn hãy viết hàm đệ quy trả về n! (n giai thừa).
+Ví dụ: nếu bạn nhập n = 5 thì chương trình sẽ hiển thị lên màn hình 120.
+Lý thuyết
+Hàm đệ quy là hàm mà gọi tới chính nó, ví dụ một hàm đệ quy sẽ trông giống như sau:
+void recurse() {
+    ...
+    recurse();
+    ...
+}
+Do tính chất tự gọi lại chính nó nên để tránh việc hàm đệ quy chạy không bao giờ dừng bạn luôn cần có điểm dừng (điểm dừng được hiểu đơn giản là tới 1 lúc nào đó, hàm đệ quy sẽ không gọi lại chính nó nữa).
+Mô tả hàm đệ quy tính 5!:
+factorial(5)
+= 5 * factorial(4)
+= 5 * 4 * factorial(3)
+= 5 * 4 * 3 * factorial(2)
+= 5 * 4 * 3 * 2 * factorial(1)
+= 5 * 4 * 3 * 2 * 1
+= 120
+Điểm dừng ở ví dụ trên chính là khi đầu vào của hàm factorial bằng 1 thì hàm factorial sẽ trả về 1 thay vì gọi tiếp tới chính nó.
+Để hiểu rõ hơn bạn hãy xem ví dụ tiếp theo về hàm đệ quy tính tổng các số từ 1 tới n:
+#include<iostream>
+
+using namespace std;
+
+int sum(int n) {
+    if (n == 0) return 0;
+    return n + sum(n - 1);
+}
+
+int main() {
+    cout << sum(10);
+    return 0;
+}
+
+Điểm dừng ở đây chính là khi n = 0 thì hàm sum trả về 0 thay vì gọi tiếp tới chính nó.
+Bạn có thể làm bài này dựa vào ví dụ trên, nếu bạn vẫn chưa làm được thì có thể xem hướng dẫn bên dưới:
+Hướng dẫn
+Code mẫu:
+#include<iostream>
+
+using namespace std;
+
+int factorial(int n) {
+    if (n == 1) return 1;
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int n;
+    cin >> n;
+    cout << factorial(n);
+    return 0;
+}
+​​
+Bài tập hàm đệ quy C++: viết hàm đệ quy trả về tổng các số lẻ từ 1 tới n
+---------------------------------------
+Bài tập
+Cho số nguyên n được nhập từ bàn phím, bạn hãy viết hàm đệ quy trả về tổng các số lẻ từ 1 tới n.
+Ví dụ nếu bạn nhập n = 5 thì chương trình sẽ hiển thị lên màn hình 9 (do 1 + 3 + 5 = 9).
+Hướng dẫn
+Bài này bạn cần kết hợp hàm đệ quy với câu lệnh if-else.
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int sum(int n) {
+    if (n == 1) return 1;
+    if (n % 2 == 0) {
+        return sum(n - 1);
+    } else {
+        return n + sum(n - 1);
+    }
+}
+
+int main() {
+    int n;
+    cin >> n;
+    cout << sum(n);
+    return 0;
+}
+Bài tập hàm đệ quy C++: viết hàm đệ quy trả về tổng các phần tử trong mảng | Codelearn
+---------------------------------------
+Bài tập
+Cho mảng các số nguyên n phần tử arr được nhập từ bàn phím. Bạn hãy viết hàm đệ quy tính tổng các phần tử của mảng.
+Nếu bạn vẫn chưa chưa thạo cách dùng hàm đệ quy thì có thể xem hướng dẫn bên dưới.
+Hướng dẫn
+Bài này cũng khá giống bài trước, bạn chỉ cần lưu ý rằng phần tử đầu tiên của mảng là a[0] chứ không phải là a[1].
+Code mẫu:
+#include <iostream>
+
+using namespace std;
+
+int sumOfArray(int a[1000], int n) {
+    if (n == 1) return a[0];
+    return a[n - 1] + sumOfArray(a, n - 1);
+}
+
+int main() {
+    int n;
+    int arr[1000];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    cout << sumOfArray(arr, n);
+    return 0;
+}
