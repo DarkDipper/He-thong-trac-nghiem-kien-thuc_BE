@@ -1,0 +1,1499 @@
+<main id="main" role="main" class="main"><article id="post-626" class="post-626 post type-post status-publish format-standard hentry category-cpp-tutorial" itemscope="" itemtype="http://schema.org/Article" itemprop="mainEntity"><div class="schema-image"></div><div class="article-inner"><header><div class="entry-meta beforetitle-meta"></div><h1 class="entry-title singular-title" itemprop="headline">4.6 — Fixed-width integers and size_t</h1><div class="entry-meta aftertitle-meta"><span class="author vcard" itemscope="" itemtype="http://schema.org/Person" itemprop="author"><i class="icon-author icon-metas" title="Author"></i><a class="url fn n" rel="author" href="https://www.learncpp.com/author/Alex/" title="View all posts by Alex" itemprop="url"><em itemprop="name">Alex</em></a></span>
+<span class="onDate date"><i class="icon-date icon-metas" title="Date"></i><time class="published" datetime="2011-11-25T21:59:24-08:00" itemprop="datePublished">November 25, 2011, 9:59 pm</time>
+<time class="updated" datetime="2021-10-21T16:43:29-07:00" itemprop="dateModified">October 21, 2021</time></span></div></header><div class="entry-content" itemprop="articleBody"><div class="code-block code-block-1" style="margin:8px 8px 8px 0;float:left"><div class="cf_monitor" style="margin-right:16px"><span id="ezoic-pub-ad-placeholder-101" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:280px;min-width:336px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-medrectangle-3"><span id="div-gpt-ad-learncpp_com-medrectangle-3-0" ezaw="336" ezah="280" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad"><div id="google_ads_iframe_/1254144,22581327789/learncpp_com-medrectangle-3_0__container__" style="border: 0pt none; width: 336px; height: 0px;"></div></span></span></div></span></div></div><p>In the previous lessons on integers, we covered that C++ only guarantees that integer variables will have a minimum size -- but they could be larger, depending on the target system.</p><p class="cpp-section cpp-topline" style="clear:both">Why isn’t the size of the integer variables fixed?</p><p>The short answer is that this goes back to C, when computers were slow and performance was of the utmost concern. C opted to intentionally leave the size of an integer open so that the compiler implementers could pick a size for int that performs best on the target computer architecture.</p><p class="cpp-section cpp-topline" style="clear:both">Doesn’t this suck?</p><p>By modern standards, yes. As a programmer, it’s a little ridiculous to have to deal with types that have uncertain ranges.</p><p>Consider the int type. The minimum size for int is 2 bytes, but it’s often 4 bytes on modern architectures. If you assume an int is 4 bytes because that’s most likely, then your program will probably misbehave on architectures where int is actually 2 bytes (since you will probably be storing values that require 4 bytes in a 2 byte variable, which will cause overflow or undefined behavior). If you assume an int is only 2 bytes to ensure maximum compatibility, then on systems where int is 4 bytes, you’re wasting 2 bytes per integer and doubling your memory usage!</p><div class="code-block code-block-2" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-130" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:250px;min-width:970px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-medrectangle-4"><span style="background:0 0 !important;display:flex !important;float:none !important;justify-content:space-between;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-width:970px;padding:0;text-align:center !important;width:970px;" class="ezoic-ad medrectangle-4 medrectangle-4130 adtester-container adtester-container-130 ezoic-ad-adaptive" data-ez-name="learncpp_com-medrectangle-4"><span class="ezoic-ad medrectangle-4 medrectangle-4-multi-130 adtester-container adtester-container-130" data-ez-name="learncpp_com-medrectangle-4"><span id="div-gpt-ad-learncpp_com-medrectangle-4-0" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"></script></span></span><span class="ezoic-ad medrectangle-4 medrectangle-4-multi-130 adtester-container adtester-container-130" data-ez-name="learncpp_com-medrectangle-4"><span id="div-gpt-ad-learncpp_com-medrectangle-4-0_1" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"></script></span></span><span class="ezoic-ad medrectangle-4 medrectangle-4-multi-130 adtester-container adtester-container-130" data-ez-name="learncpp_com-medrectangle-4"><span id="div-gpt-ad-learncpp_com-medrectangle-4-0_2" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"></script></span></span><style> .medrectangle-4-multi-130{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:0px !important;margin-right:0px !important;margin-top:15px !important;max-width:100% !important;min-height:250px;min-width:300px;padding:0;text-align:center !important;}</style></span></span></div></span></div></div><p class="cpp-section cpp-topline" style="clear:both">Fixed-width integers</p><p>To address the above issues, C99 defined a set of <span class="cpp-definition">fixed-width integers</span> (in the stdint.h header) that are guaranteed to be the same size on any architecture.</p><p>These are defined as follows:</p><div class="cpp-table-wrapper"><p></p><table class="cpp-table"><tbody><tr><th>Name</th><th>Type</th><th>Range</th><th>Notes</th></tr><tr><td>std::int8_t</td><td>1 byte signed</td><td>-128 to 127</td><td>Treated like a signed char on many systems. See note below.</td></tr><tr><td>std::uint8_t</td><td>1 byte unsigned</td><td>0 to 255</td><td>Treated like an unsigned char on many systems. See note below.</td></tr><tr><td>std::int16_t</td><td>2 byte signed</td><td>-32,768 to 32,767</td><td></td></tr><tr><td>std::uint16_t</td><td>2 byte unsigned</td><td>0 to 65,535</td><td></td></tr><tr><td>std::int32_t</td><td>4 byte signed</td><td>-2,147,483,648 to 2,147,483,647</td><td></td></tr><tr><td>std::uint32_t</td><td>4 byte unsigned</td><td>0 to 4,294,967,295</td><td></td></tr><tr><td>std::int64_t</td><td>8 byte signed</td><td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td><td></td></tr><tr><td>std::uint64_t</td><td>8 byte unsigned</td><td>0 to 18,446,744,073,709,551,615</td><td></td></tr></tbody></table></div><p>C++ officially adopted these fixed-width integers as part of C++11. They can be accessed by including the <code>&lt;cstdint&gt;</code> header, where they are defined inside the <em>std</em> namespace. Here’s an example:</p><div class="code-toolbar"><pre class="line-numbers language-cpp" tabindex="0"><code class="match-braces language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdint&gt;</span> <span class="token comment">// for fixed-width integers</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation brace-round brace-open brace-level-1" id="pair-43-close">(</span><span class="token punctuation brace-round brace-close brace-level-1" id="pair-43-open">)</span>
+<span class="token punctuation brace-curly brace-open brace-level-1" id="pair-45-close">{</span>
+    std<span class="token double-colon punctuation">::</span><span class="token keyword keyword-int16_t">int16_t</span> i<span class="token punctuation brace-curly brace-open brace-level-2" id="pair-44-close">{</span><span class="token number">5</span><span class="token punctuation brace-curly brace-close brace-level-2" id="pair-44-open">}</span><span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> i<span class="token punctuation">;</span>
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation brace-curly brace-close brace-level-1" id="pair-45-open">}</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div><p>The fixed-width integers have two downsides that are typically raised.</p><p>First, the fixed-width integers are not guaranteed to be defined on all architectures. They only exist on systems where there are fundamental types matching their widths and following a certain binary representation. Your program will fail to compile on any such architecture that does not support a fixed-width integer that your program is using. However, given that most modern architectures have standardized around 8/16/32/64-bit variables, this is unlikely to be a problem unless your program needs to be portable to some exotic mainframe or embedded architectures.</p><div class="code-block code-block-3" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-108"></span></div></div><p>Second, if you use a fixed-width integer, it may be slower than a wider type on some architectures. For example, if you need an integer that is guaranteed to be 32-bits, you might decide to use <code>std::int32_t</code>, but your CPU might actually be faster at processing 64-bit integers. However, just because your CPU can process a given type faster doesn’t mean your program will be faster overall -- modern programs are often constrained by memory usage rather than CPU, and the larger memory footprint may slow your program more than the faster CPU processing accelerates it. It’s hard to know without actually measuring.</p><p class="cpp-section cpp-topline" style="clear:both">Fast and least integers</p><p>To help address the above downsides, C++ also defines two alternative sets of integers that are guaranteed to be defined.</p><p>The fast types (std::int_fast#_t and std::uint_fast#_t) provide the fastest signed/unsigned integer type with a width of at least # bits (where # = 8, 16, 32, or 64). For example, <em>std::int_fast32_t</em> will give you the fastest signed integer type that’s at least 32 bits.</p><p>The least types (std::int_least#_t and std::uint_least#_t) provide the smallest signed/unsigned integer type with a width of at least # bits (where # = 8, 16, 32, or 64). For example, <em>std::uint_least32_t</em> will give you the smallest unsigned integer type that’s at least 32 bits.</p><p>Here’s an example from the author’s Visual Studio (32-bit console application):</p><div class="code-block code-block-4" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-124" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:250px;min-width:300px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-box-4"><span id="div-gpt-ad-learncpp_com-box-4-0" ezaw="970" ezah="250" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad"></span></span></div></span></div></div><div class="code-toolbar"><pre class="line-numbers language-cpp" tabindex="0"><code class="match-braces language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdint&gt;</span> <span class="token comment">// for fixed-width integers</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation brace-round brace-open brace-level-1" id="pair-46-close">(</span><span class="token punctuation brace-round brace-close brace-level-1" id="pair-46-open">)</span>
+<span class="token punctuation brace-curly brace-open brace-level-1" id="pair-53-close">{</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"least 8:  "</span> <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-47-close">(</span>std<span class="token double-colon punctuation">::</span>int_least8_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-47-open">)</span> <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" bits\n"</span><span class="token punctuation">;</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"least 16: "</span> <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-48-close">(</span>std<span class="token double-colon punctuation">::</span>int_least16_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-48-open">)</span> <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" bits\n"</span><span class="token punctuation">;</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"least 32: "</span> <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-49-close">(</span>std<span class="token double-colon punctuation">::</span>int_least32_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-49-open">)</span> <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" bits\n"</span><span class="token punctuation">;</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"fast 8:  "</span> <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-50-close">(</span>std<span class="token double-colon punctuation">::</span>int_fast8_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-50-open">)</span> <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" bits\n"</span><span class="token punctuation">;</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"fast 16: "</span> <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-51-close">(</span>std<span class="token double-colon punctuation">::</span>int_fast16_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-51-open">)</span> <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" bits\n"</span><span class="token punctuation">;</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"fast 32: "</span> <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-52-close">(</span>std<span class="token double-colon punctuation">::</span>int_fast32_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-52-open">)</span> <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" bits\n"</span><span class="token punctuation">;</span>
+
+	<span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation brace-curly brace-close brace-level-1" id="pair-53-open">}</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div><p>This produced the result:</p><pre>least 8:  8 bits
+least 16: 16 bits
+least 32: 32 bits
+
+fast 8:  8 bits
+fast 16: 32 bits
+fast 32: 32 bits
+</pre><p>You can see that std::int_least16_t is 16 bits, whereas std::int_fast16_t is actually 32 bits. This is because on the author’s machine, 32-bit integers are faster to process than 16-bit integers.</p><p>However, these fast and least integers have their own downsides: First, not many programmers actually use them, and a lack of familiarity can lead to errors. Second, the fast types can lead to the same kind of memory wastage that we saw with 4 byte integers. Most seriously, because the size of the fast/least integers can vary, it’s possible that your program may exhibit different behaviors on architectures where they resolve to different sizes. For example:</p><div class="code-toolbar"><pre class="line-numbers language-cpp" tabindex="0"><code class="match-braces language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdint&gt;</span> <span class="token comment">// for fixed-width integers</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation brace-round brace-open brace-level-1" id="pair-54-close">(</span><span class="token punctuation brace-round brace-close brace-level-1" id="pair-54-open">)</span>
+<span class="token punctuation brace-curly brace-open brace-level-1" id="pair-56-close">{</span>
+    std<span class="token double-colon punctuation">::</span>uint_fast16_t sometype <span class="token punctuation brace-curly brace-open brace-level-2" id="pair-55-close">{</span> <span class="token number">0</span> <span class="token punctuation brace-curly brace-close brace-level-2" id="pair-55-open">}</span><span class="token punctuation">;</span>
+    <span class="token operator">--</span>sometype<span class="token punctuation">;</span> <span class="token comment">// intentionally overflow to invoke wraparound behavior</span>
+
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> sometype<span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation brace-curly brace-close brace-level-1" id="pair-56-open">}</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div><p>This code will produce different results depending on whether std::uint_fast16_t is 16, 32, or 64 bits.</p><p>It’s hard to know where your program might not function as expected until you’ve rigorously tested your program on such architectures. And we imagine not many developers have access to a wide range of different architectures to test with!</p><p class="cpp-section cpp-topline" style="clear:both">std::int8_t and std::uint8_t likely behave like chars instead of integers</p><div class="code-block code-block-5" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-120"></span></div></div><p>Due to an oversight in the C++ specification, most compilers define and treat <em>std::int8_t</em> and <em>std::uint8_t</em> (and the corresponding fast and least fixed-width types) identically to types <em>signed char</em> and <em>unsigned char</em> respectively. This means these 8-bit types may (or may not) behave differently than the rest of the fixed-width types, which can lead to errors. This behavior is system-dependent, so a program that behaves correctly on one architecture may not compile or behave correctly on another architecture.</p><p>We show an example of this in lesson <a href="https://www.learncpp.com/cpp-tutorial/introduction-to-type-conversion-and-static_cast/">4.12 -- Introduction to type conversion and static_cast</a>.</p><p>For consistency, it’s best to avoid <em>std::int8_t</em> and <em>std::uint8_t</em> (and the related fast and least types) altogether (use <em>std::int16_t</em> or <em>std::uint16_t</em> instead).</p><div class="cpp-note cpp-lightredbackground"><p class="cpp-note-title cpp-bottomline">Warning</p><p>Avoid the 8-bit fixed-width integer types. If you do use them, note that they are often treated like chars.</p></div><p class="cpp-section cpp-topline" style="clear:both">Integral best practices</p><p>Given the various pros and cons of the fundamental integral types, the fixed-width integral types, the fast/least integral types, and signed/unsigned challenges, there is little consensus on integral best practices.</p><p>Our stance is that it’s better to be correct than fast, better to fail at compile time than runtime -- therefore, we recommend avoiding the fast/least types in favor of the fixed-width types. If you later discover the need to support a platform for which the fixed-width types won’t compile, then you can decide how to migrate your program (and thoroughly test) at that point.</p><div class="code-block code-block-6" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-125" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:250px;min-width:300px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-banner-1"><span id="div-gpt-ad-learncpp_com-banner-1-0" ezaw="970" ezah="250" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad"></span></span></div></span></div></div><div class="cpp-note cpp-lightgreenbackground"><p class="cpp-note-title cpp-bottomline">Best practice</p><ul><li>Prefer <code>int</code> when the size of the integer doesn’t matter (e.g. the number will always fit within the range of a 2-byte signed integer). For example, if you’re asking the user to enter their age, or counting from 1 to 10, it doesn’t matter whether int is 16 or 32 bits (the numbers will fit either way). This will cover the vast majority of the cases you’re likely to run across.</li><li>Prefer <code>std::int#_t</code> when storing a quantity that needs a guaranteed range.</li><li>Prefer <code>std::uint#_t</code> when doing bit manipulation or where well-defined wrap-around behavior is required.</li></ul><p>Avoid the following when possible:</p><ul><li>Unsigned types for holding quantities</li><li>The 8-bit fixed-width integer types</li><li>The fast and least fixed-width types</li><li>Any compiler-specific fixed-width integers -- for example, Visual Studio defines __int8, __int16, etc…</li></ul></div><p class="cpp-section cpp-topline" style="clear:both">What is std::size_t?</p><p>Consider the following code:</p><div class="code-toolbar"><pre class="line-numbers language-cpp" tabindex="0"><code class="match-braces language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation brace-round brace-open brace-level-1" id="pair-57-close">(</span><span class="token punctuation brace-round brace-close brace-level-1" id="pair-57-open">)</span>
+<span class="token punctuation brace-curly brace-open brace-level-1" id="pair-59-close">{</span>
+    std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-58-close">(</span><span class="token keyword keyword-int">int</span><span class="token punctuation brace-round brace-close brace-level-2" id="pair-58-open">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation brace-curly brace-close brace-level-1" id="pair-59-open">}</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div><p>On the author’s machine, this prints:</p><pre>4
+</pre><p>Pretty simple, right? We can infer that operator sizeof returns an integer value -- but what integer type is that return value? An int? A short? The answer is that sizeof (and many functions that return a size or length value) return a value of type <em>std::size_t</em>. <span class="cpp-definition">std::size_t</span> is defined as an unsigned integral type, and it is typically used to represent the size or length of objects.</p><p>Amusingly, we can use the <em>sizeof</em> operator (which returns a value of type <em>std::size_t</em>) to ask for the size of <em>std::size_t</em> itself:</p><div class="code-toolbar"><pre class="line-numbers language-cpp" tabindex="0"><code class="match-braces language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstddef&gt;</span> <span class="token comment">// std::size_t</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation brace-round brace-open brace-level-1" id="pair-60-close">(</span><span class="token punctuation brace-round brace-close brace-level-1" id="pair-60-open">)</span>
+<span class="token punctuation brace-curly brace-open brace-level-1" id="pair-62-close">{</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-61-close">(</span>std<span class="token double-colon punctuation">::</span>size_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-61-open">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
+
+	<span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation brace-curly brace-close brace-level-1" id="pair-62-open">}</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div><p>Compiled as a 32-bit (4 byte) console app on the author’s system, this prints:</p><pre>4
+</pre><p>Much like an integer can vary in size depending on the system, <em>std::size_t</em> also varies in size. <em>std::size_t</em> is guaranteed to be unsigned and at least 16 bits, but on most systems will be equivalent to the address-width of the application. That is, for 32-bit applications, <em>std::size_t</em> will typically be a 32-bit unsigned integer, and for a 64-bit application, <em>size_t</em> will typically be a 64-bit unsigned integer. <em>size_t</em> is defined to be big enough to hold the size of the largest object creatable on your system (in bytes). For example, if <em>std::size_t</em> is 4 bytes wide, the largest object creatable on your system can’t be larger than 4,294,967,295 bytes, because this is the largest number a 4 byte unsigned integer can store. This is only the uppermost limit of an object’s size, the real size limit can be lower depending on the compiler you’re using.</p><div class="code-block code-block-7" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-121" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:250px;min-width:970px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-large-leaderboard-2"><span style="background:0 0 !important;display:flex !important;float:none !important;justify-content:space-between;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-width:970px;padding:0;text-align:center !important;width:970px;" class="ezoic-ad large-leaderboard-2 large-leaderboard-2121 adtester-container adtester-container-121 ezoic-ad-adaptive" data-ez-name="learncpp_com-large-leaderboard-2"><span class="ezoic-ad large-leaderboard-2 large-leaderboard-2-multi-121 adtester-container adtester-container-121" data-ez-name="learncpp_com-large-leaderboard-2"><span id="div-gpt-ad-learncpp_com-large-leaderboard-2-0" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"> 	var asau = '8992865211'; 	var cid = '2886929358'; 	var pid = 'ca-pub-0588844875925051'; 	var slotId = 'div-gpt-ad-learncpp_com-large-leaderboard-2-0'; 	var ffid = 1; 	var alS = 1036 % 1000;  	var container = document.getElementById(slotId); 	var ins = document.createElement('ins');     ins.id = slotId + '-asloaded';     ins.className = 'adsbygoogle ezasloaded';     ins.dataset.adClient = pid;     ins.dataset.adSlot = asau;     ins.dataset.adChannel = cid;     ins.dataset.fullWidthResponsive = 'true';  	ins.style.display = 'block'; 	if(ffid !== 2){         ins.style.width = container.offsetWidth + 'px'; 	} else {         container.attributes.ezaw.value + 'px';     } 	 	if (alS >= 30 && (alS != 34 && alS != 35)){         ins.dataset.adFormat = 'auto';     }else{         ins.style.height = container.attributes.ezah.value + 'px'; 	}  	container.appendChild(ins);  	(adsbygoogle = window.adsbygoogle || []).push({});  	window.ezoSTPixelAdd(slotId, 'stat_source_id', 44); 	window.ezoSTPixelAdd(slotId, 'adsensetype', 2); 	 	var lo = new MutationObserver(window.ezaslEvent);     lo.observe(document.getElementById(slotId + '-asloaded'), { attributes: true }); 	</script></span></span><span class="ezoic-ad large-leaderboard-2 large-leaderboard-2-multi-121 adtester-container adtester-container-121" data-ez-name="learncpp_com-large-leaderboard-2"><span id="div-gpt-ad-learncpp_com-large-leaderboard-2-0_1" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"> 	var asau = '8992865211'; 	var cid = '2886929358'; 	var pid = 'ca-pub-0588844875925051'; 	var slotId = 'div-gpt-ad-learncpp_com-large-leaderboard-2-0_1'; 	var ffid = 1; 	var alS = 1036 % 1000;  	var container = document.getElementById(slotId); 	var ins = document.createElement('ins');     ins.id = slotId + '-asloaded';     ins.className = 'adsbygoogle ezasloaded';     ins.dataset.adClient = pid;     ins.dataset.adSlot = asau;     ins.dataset.adChannel = cid;     ins.dataset.fullWidthResponsive = 'true';  	ins.style.display = 'block'; 	if(ffid !== 2){         ins.style.width = container.offsetWidth + 'px'; 	} else {         container.attributes.ezaw.value + 'px';     } 	 	if (alS >= 30 && (alS != 34 && alS != 35)){         ins.dataset.adFormat = 'auto';     }else{         ins.style.height = container.attributes.ezah.value + 'px'; 	}  	container.appendChild(ins);  	(adsbygoogle = window.adsbygoogle || []).push({});  	window.ezoSTPixelAdd(slotId, 'stat_source_id', 44); 	window.ezoSTPixelAdd(slotId, 'adsensetype', 2); 	 	var lo = new MutationObserver(window.ezaslEvent);     lo.observe(document.getElementById(slotId + '-asloaded'), { attributes: true }); 	</script></span></span><span class="ezoic-ad large-leaderboard-2 large-leaderboard-2-multi-121 adtester-container adtester-container-121" data-ez-name="learncpp_com-large-leaderboard-2"><span id="div-gpt-ad-learncpp_com-large-leaderboard-2-0_2" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"> 	var asau = '8992865211'; 	var cid = '2886929358'; 	var pid = 'ca-pub-0588844875925051'; 	var slotId = 'div-gpt-ad-learncpp_com-large-leaderboard-2-0_2'; 	var ffid = 1; 	var alS = 1036 % 1000;  	var container = document.getElementById(slotId); 	var ins = document.createElement('ins');     ins.id = slotId + '-asloaded';     ins.className = 'adsbygoogle ezasloaded';     ins.dataset.adClient = pid;     ins.dataset.adSlot = asau;     ins.dataset.adChannel = cid;     ins.dataset.fullWidthResponsive = 'true';  	ins.style.display = 'block'; 	if(ffid !== 2){         ins.style.width = container.offsetWidth + 'px'; 	} else {         container.attributes.ezaw.value + 'px';     } 	 	if (alS >= 30 && (alS != 34 && alS != 35)){         ins.dataset.adFormat = 'auto';     }else{         ins.style.height = container.attributes.ezah.value + 'px'; 	}  	container.appendChild(ins);  	(adsbygoogle = window.adsbygoogle || []).push({});  	window.ezoSTPixelAdd(slotId, 'stat_source_id', 44); 	window.ezoSTPixelAdd(slotId, 'adsensetype', 2); 	 	var lo = new MutationObserver(window.ezaslEvent);     lo.observe(document.getElementById(slotId + '-asloaded'), { attributes: true }); 	</script></span></span><style> .large-leaderboard-2-multi-121{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:0px !important;margin-right:0px !important;margin-top:15px !important;max-width:100% !important;min-height:250px;min-width:300px;padding:0;text-align:center !important;}</style></span></span></div></span></div></div><p>By definition, any object with a size (in bytes) larger than the largest integral value <em>size_t</em> can hold is considered ill-formed (and will cause a compile error), as the <em>sizeof</em> operator would not be able to return the size without wrapping around.</p><div class="prevnext"><div class="prevnext-inline"><a class="nav-link" href="https://www.learncpp.com/cpp-tutorial/introduction-to-scientific-notation/"><div class="nav-button nav-button-next"><div class="nav-button-icon"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></div><div class="nav-button-text"><div class="nav-button-title">Next lesson</div><div class="nav-button-lesson"><span class="nav-button-lesson-number">4.7</span>Introduction to scientific notation</div></div></div></a><a class="nav-link" href="/"><div class="nav-button nav-button-index"><div class="nav-button-icon"><i class="fa fa-home" aria-hidden="true"></i></div><div class="nav-button-text"><div class="nav-button-title">Back to table of contents</div></div></div></a><a class="nav-link" href="https://www.learncpp.com/cpp-tutorial/unsigned-integers-and-why-to-avoid-them/"><div class="nav-button nav-button-prev"><div class="nav-button-icon"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div><div class="nav-button-text"><div class="nav-button-title">Previous lesson</div><div class="nav-button-lesson"><span class="nav-button-lesson-number">4.5</span>Unsigned integers, and why to avoid them</div></div></div></a></div></div><div class="code-block code-block-10" style="margin:8px 0;clear:both"><div class="cf_monitor"><span id="ezoic-pub-ad-placeholder-106" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:400px;min-width:580px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-large-mobile-banner-1"><span id="div-gpt-ad-learncpp_com-large-mobile-banner-1-0" ezaw="580" ezah="400" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad"></span></span></div></span></div></div></div><footer class="entry-meta entry-utility"></footer></div><span class="schema-publisher" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://www.learncpp.com/blog/wp-content/uploads/learncpp.png"></span><meta itemprop="name" content="Learn C++"></span><link itemprop="mainEntityOfPage" href="https://www.learncpp.com/fixed-width-integers-and-size-t/"></article><nav id="nav-below" class="navigation" role="navigation"><div class="nav-previous"><em>Previous Post</em><a href="https://www.learncpp.com/site-news/site-software-updated-1123/" rel="prev"><span>Site software updated 11/23</span></a></div><div class="nav-next"><em>Next Post</em><a href="https://www.learncpp.com/cpp-tutorial/b-1-introduction-to-c11/" rel="next"><span>B.1 — Introduction to C++11</span></a></div></nav><div class="wpdiscuz_top_clearing"></div><div id="comments" class="comments-area"><div id="respond" style="width:0;height:0;clear:both;margin:0;padding:0"></div><div id="wpdcom" class="wpdiscuz_unauth wpd-default wpd-layout-2 wpd-comments-open"><div class="wc_social_plugin_wrapper"></div><div class="wpd-form-wrap"><div class="wpd-form-head"><div class="wpd-auth"><div class="wpd-login"></div></div></div><div class="wpd-form wpd-form-wrapper wpd-main-form-wrapper" id="wpd-main-form-wrapper-0_0"><form class="wpd_comm_form wpd_main_comm_form" method="post" enctype="multipart/form-data"><div class="wpd-field-comment"><div class="wpdiscuz-item wc-field-textarea"><div class="wpdiscuz-textarea-wrap wpd-txt"><div class="wpd-avatar"><img alt="guest" src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2256%22 height=%2256%22%3E%3C/svg%3E" data-ezsrcset="https://www.learncpp.com/ezoimgfmt/secure.gravatar.com/avatar/?s=112&amp;d=mm&amp;r=g 2x" class="ezlazyload avatar avatar-56 photo avatar-default" height="56" width="56" loading="lazy" ezimgfmt="rs rscb2 src ng ngcb2 srcset" data-ezsrc="https://www.learncpp.com/ezoimgfmt/secure.gravatar.com/avatar/?s=56&amp;d=mm&amp;r=g"></div><div class="wpd-textarea-wrap"><div id="wpd-editor-char-counter-0_0" class="wpd-editor-char-counter"></div><label style="display:none" for="wc-textarea-0_0">Label</label>
+<div id="qt_wc-textarea-0_0_toolbar" class="quicktags-toolbar"><input type="button" id="qt_wc-textarea-0_0_cpp_bold_button" class="ed_button button button-small" title="Bold text" value="b"><input type="button" id="qt_wc-textarea-0_0_cpp_underline_button" class="ed_button button button-small" title="Underlined text" value="u"><input type="button" id="qt_wc-textarea-0_0_cpp_link_button" class="ed_button button button-small" title="Link to another website" value="url"><input type="button" id="qt_wc-textarea-0_0_cpp_code_button" class="ed_button button button-small" title="A short piece of C++ code displayed as part of a sentence" value="Inline code"><input type="button" id="qt_wc-textarea-0_0_cpp_code_block_button" class="ed_button button button-small" title="A syntax-highlighted block of C++ code" value="C++ code block"><input type="button" id="qt_wc-textarea-0_0_cpp_help_button" class="ed_button button button-small" title="Opens a new tab with help on how to use these buttons" value="Help!"></div><textarea id="wc-textarea-0_0" placeholder="Leave a comment..." aria-label="Leave a comment..." required="" name="wc_comment" class="wc_comment wpd-field"></textarea></div><div class="wpd-editor-buttons-right"></div></div></div></div><div class="wpd-form-foot"><div class="wpdiscuz-textarea-foot"><div class="wpdiscuz-button-actions"></div></div><div class="wpd-form-row"><div class="wpd-form-col-left"><div class="wpdiscuz-item wc_name-wrapper wpd-has-icon"><div class="wpd-field-icon"><i class="fas fa-user"></i></div><input id="wc_name-0_0" required="" aria-required="true" class="wc_name wpd-field" name="wc_name" placeholder="Name*" maxlength="50" pattern=".{3,50}">
+<label for="wc_name-0_0" class="wpdlb">Name*</label></div><div class="wpdiscuz-item wc_email-wrapper wpd-has-icon"><div class="wpd-field-icon"><i class="fas fa-at"></i></div><input id="wc_email-0_0" required="" aria-required="true" class="wc_email wpd-field" type="email" name="wc_email" placeholder="Email*">
+<label for="wc_email-0_0" class="wpdlb">Email*</label><div class="wpd-field-desc"><i class="far fa-question-circle"></i><span>Your email address will not be displayed</span></div></div>Avatars from <a href="https://gravatar.com/">https://gravatar.com/</a> are connected to your provided email address.</div><div class="wpd-form-col-right"><div class="wc-field-submit"><span style="margin-top:6px">Notify me about replies:&nbsp;&nbsp;</span>
+<label class="wpd_label" wpd-tooltip="Notify me about new replies to this comment"><input id="wc_notification_new_comment-0_0" class="wc_notification_new_comment-0_0 wpd_label__checkbox" value="comment" type="checkbox" name="wpdiscuz_notification_type" checked="">
+<span class="wpd_label__text"><span class="wpd_label__check"><i class="fas fa-bell wpdicon wpdicon-on"></i><i class="fas fa-bell-slash wpdicon wpdicon-off"></i></span></span></label><input id="wpd-field-submit-0_0" class="wc_comm_submit wpd_not_clicked wpd-prim-button" type="submit" name="submit" value="Post Comment"></div></div><div class="clearfix"></div></div></div><input type="hidden" class="wpdiscuz_unique_id" value="0_0" name="wpdiscuz_unique_id"></form></div><div id="wpdiscuz_hidden_secondary_form" style="display:none"><div class="wpd-form wpd-form-wrapper wpd-secondary-form-wrapper" id="wpd-secondary-form-wrapper-wpdiscuzuniqueid" style="display:none"><div class="wpd-secondary-forms-social-content"></div><div class="clearfix"></div><form class="wpd_comm_form wpd-secondary-form-wrapper" method="post" enctype="multipart/form-data"><div class="wpd-field-comment"><div class="wpdiscuz-item wc-field-textarea"><div class="wpdiscuz-textarea-wrap wpd-txt"><div class="wpd-avatar"><img alt="guest" src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2256%22 height=%2256%22%3E%3C/svg%3E" data-ezsrcset="https://www.learncpp.com/ezoimgfmt/secure.gravatar.com/avatar/?s=112&amp;d=mm&amp;r=g 2x" class="ezlazyload avatar avatar-56 photo avatar-default" height="56" width="56" loading="lazy" ezimgfmt="rs rscb2 src ng ngcb2 srcset" data-ezsrc="https://www.learncpp.com/ezoimgfmt/secure.gravatar.com/avatar/?s=56&amp;d=mm&amp;r=g"></div><div class="wpd-textarea-wrap"><div id="wpd-editor-char-counter-wpdiscuzuniqueid" class="wpd-editor-char-counter"></div><label style="display:none" for="wc-textarea-wpdiscuzuniqueid">Label</label>
+<textarea id="wc-textarea-wpdiscuzuniqueid" placeholder="Leave a comment..." aria-label="Leave a comment..." required="" name="wc_comment" class="wc_comment wpd-field"></textarea></div><div class="wpd-editor-buttons-right"></div></div></div></div><div class="wpd-form-foot"><div class="wpdiscuz-textarea-foot"><div class="wpdiscuz-button-actions"></div></div><div class="wpd-form-row"><div class="wpd-form-col-left"><div class="wpdiscuz-item wc_name-wrapper wpd-has-icon"><div class="wpd-field-icon"><i class="fas fa-user"></i></div><input id="wc_name-wpdiscuzuniqueid" required="" aria-required="true" class="wc_name wpd-field" name="wc_name" placeholder="Name*" maxlength="50" pattern=".{3,50}">
+<label for="wc_name-wpdiscuzuniqueid" class="wpdlb">Name*</label></div><div class="wpdiscuz-item wc_email-wrapper wpd-has-icon"><div class="wpd-field-icon"><i class="fas fa-at"></i></div><input id="wc_email-wpdiscuzuniqueid" required="" aria-required="true" class="wc_email wpd-field" type="email" name="wc_email" placeholder="Email*">
+<label for="wc_email-wpdiscuzuniqueid" class="wpdlb">Email*</label><div class="wpd-field-desc"><i class="far fa-question-circle"></i><span>Your email address will not be displayed</span></div></div>Avatars from <a href="https://gravatar.com/">https://gravatar.com/</a> are connected to your provided email address.</div><div class="wpd-form-col-right"><div class="wc-field-submit"><label class="wpd_label" wpd-tooltip="Notify me about new replies to this comment"><input id="wc_notification_new_comment-wpdiscuzuniqueid" class="wc_notification_new_comment-wpdiscuzuniqueid wpd_label__checkbox" value="comment" type="checkbox" name="wpdiscuz_notification_type" checked="">
+<span class="wpd_label__text"><span class="wpd_label__check"><i class="fas fa-bell wpdicon wpdicon-on"></i><i class="fas fa-bell-slash wpdicon wpdicon-off"></i></span></span></label><input id="wpd-field-submit-wpdiscuzuniqueid" class="wc_comm_submit wpd_not_clicked wpd-prim-button" type="submit" name="submit" value="Post Comment"></div></div><div class="clearfix"></div></div></div><input type="hidden" class="wpdiscuz_unique_id" value="wpdiscuzuniqueid" name="wpdiscuz_unique_id"></form></div></div></div><div id="wpd-threads" class="wpd-thread-wrapper"><div class="wpd-thread-head"><div class="wpd-thread-info" data-comments-count="295"><span class="wpdtc" title="295">295</span> Comments</div><div class="wpd-space"></div><div class="wpd-thread-filter"><div class="wpd-filter wpdf-sorting"><span class="wpdiscuz-sort-button wpdiscuz-date-sort-desc wpdiscuz-sort-button-active" data-sorting="newest">Newest</span>
+<i class="fas fa-sort-down"></i><div class="wpdiscuz-sort-buttons"><span class="wpdiscuz-sort-button wpdiscuz-date-sort-asc" data-sorting="oldest">Oldest</span>
+<span class="wpdiscuz-sort-button wpdiscuz-vote-sort-up" data-sorting="by_vote">Most Voted</span></div></div></div></div><div class="wpd-comment-info-bar"><div class="wpd-current-view"><i class="fas fa-quote-left"></i>Inline Feedbacks</div><div class="wpd-filter-view-all">View all comments</div></div><div class="wpd-thread-list"><div id="wpd-comm-567163_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-567163" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Erwin de Geus" src="https://secure.gravatar.com/avatar/4d4519c6e36e1e3400438d7b47f94eb6?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/4d4519c6e36e1e3400438d7b47f94eb6?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Erwin de Geus
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="April 2, 2022 11:05 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    April 2, 2022 11:05 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-567163"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p><code><br>
+#include &lt;iostream&gt;<br>
+#include &lt;stdint.h&gt;</code></p><code>
+<p>int main()<br>
+{<br>
+    std::cout &lt;&lt; "least  8:  " &lt;&lt;<br>
+        sizeof(int_least8_t) * 8 &lt;&lt; " bits\n";<br>
+    std::cout &lt;&lt; "least 16: " &lt;&lt;<br>
+        sizeof(int_least16_t) * 8 &lt;&lt; " bits\n";<br>
+    std::cout &lt;&lt; "least 32: " &lt;&lt;<br>
+        sizeof(int_least32_t) * 8 &lt;&lt; " bits\n";<br>
+    std::cout &lt;&lt; '\n';<br>
+    std::cout &lt;&lt; "fast  8:  " &lt;&lt;<br>
+        sizeof(int_fast8_t) * 8 &lt;&lt; " bits\n";<br>
+    std::cout &lt;&lt; "fast 16: " &lt;&lt;<br>
+        sizeof(int_fast16_t) * 8 &lt;&lt; " bits\n";<br>
+    std::cout &lt;&lt; "fast 32: " &lt;&lt;<br>
+        sizeof(int_fast32_t) * 8 &lt;&lt; " bits\n";</p>
+</code><p><code>    return 0;<br>
+}</code></p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-567163_0"></div></div><div id="wpd-comm-566844_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566844" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="lorenzo" src="https://secure.gravatar.com/avatar/94522efb1a0278bd3a01524701fc3c29?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/94522efb1a0278bd3a01524701fc3c29?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    lorenzo
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="March 24, 2022 2:12 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 24, 2022 2:12 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566844"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>"For example, if std::size_t is 4 bytes wide, the largest object creatable on your system can’t be larger than 4,294,967,295 bytes, because this is the largest number a 4 byte unsigned integer can store."</p>
+<p>I have executed the code:</p>
+<div class="code-toolbar"><pre class="line-numbers language-cpp" tabindex="0"><code class="match-braces language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstddef&gt;</span> <span class="token comment">// std::size_t</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation brace-round brace-open brace-level-1" id="pair-63-close">(</span><span class="token punctuation brace-round brace-close brace-level-1" id="pair-63-open">)</span>
+<span class="token punctuation brace-curly brace-open brace-level-1" id="pair-65-close">{</span>
+	std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation brace-round brace-open brace-level-2" id="pair-64-close">(</span>std<span class="token double-colon punctuation">::</span>size_t<span class="token punctuation brace-round brace-close brace-level-2" id="pair-64-open">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
+
+	<span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation brace-curly brace-close brace-level-1" id="pair-65-open">}</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span><span style="height: 16px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p>getting 8.</p>
+<p>Does this mean that the largest object creatable on my system can't be larger than 2^64 -1 bytes, which is 10^9 gigabytes?! There must be something I am not getting here, could you please tell me where I am going wrong? Thanks</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566844_0"></div><div id="wpd-comm-566854_566844" class="wpd-comment wpd-reply wpd_comment_level-2"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-566854" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566844">
+        lorenzo
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 24, 2022 7:41 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 24, 2022 7:41 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566854"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>17,179,869,184 gigabytes to be exact.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result wpd-up" title="1">1</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566854_566844"></div><div id="wpd-comm-566874_566854" class="wpd-comment wpd-reply wpd_comment_level-3"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566874" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="lorenzo" src="https://secure.gravatar.com/avatar/94522efb1a0278bd3a01524701fc3c29?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/94522efb1a0278bd3a01524701fc3c29?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    lorenzo
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566854">
+        Alex
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 24, 2022 4:59 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 24, 2022 4:59 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566874"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Thanks for your reply.<br>
+How did you get that number? I mean, isn't 2^64-1=18446744073709551615 ? Also, isn't that a ridiculous amount of memory? What's the reasoning behind setting as the upper bound on  the largest object creatable on a system to such a high number? Thanks.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566874_566854"></div><div id="wpd-comm-566875_566874" class="wpd-comment wpd-reply wpd_comment_level-4"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566875" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="lorenzo" src="https://secure.gravatar.com/avatar/94522efb1a0278bd3a01524701fc3c29?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/94522efb1a0278bd3a01524701fc3c29?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    lorenzo
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566874">
+        lorenzo
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 24, 2022 5:04 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 24, 2022 5:04 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566875"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>EDIT: Thanks for your reply.<br>
+How did you get that number? I mean, isn't 2^64-1=18446744073709551615 ? Also, isn't that a ridiculous amount of memory? What's the reasoning behind setting as the upper bound on  the largest object creatable on a system to such a high number? Thanks.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566875_566874"></div><div id="wpd-comm-566920_566875" class="wpd-comment wpd-reply wpd_comment_level-5"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-566920" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566875">
+        lorenzo
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 25, 2022 4:24 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 25, 2022 4:24 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566920"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Yes, 18,446,744,073,709,551,615 bytes, which is 17,179,869,184 gigabytes.  And yes, it's a ridiculous amount of memory by today's standards, which I'm speculating is part of the reason we haven't seen 128-bit systems.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566920_566875"></div></div></div></div></div></div><div id="wpd-comm-566743_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566743" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Obiick" src="https://secure.gravatar.com/avatar/5ebe35701d177467dd3407ec30e81379?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5ebe35701d177467dd3407ec30e81379?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Obiick
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="March 21, 2022 11:30 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 21, 2022 11:30 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566743"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>if we can store any number in size_t, which is 4 bit then why not long long, double and float? their size are 8 and 4 bytes.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566743_0"></div><div id="wpd-comm-566757_566743" class="wpd-comment wpd-reply wpd_comment_level-2"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-566757" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566743">
+        Obiick
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 21, 2022 4:12 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 21, 2022 4:12 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566757"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>You can't store any number in size_t.  Is there something that gave you that idea?</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566757_566743"></div><div id="wpd-comm-566767_566757" class="wpd-comment wpd-reply wpd_comment_level-3"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566767" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Obiick" src="https://secure.gravatar.com/avatar/5ebe35701d177467dd3407ec30e81379?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5ebe35701d177467dd3407ec30e81379?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Obiick
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566757">
+        Alex
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 21, 2022 11:13 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 21, 2022 11:13 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566767"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>somewhere in the internet . I am just confused what it is used for. All I know is, it is used for self documentation and also not worry about size in a program but I don't get the exact meaning of them.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566767_566757"></div><div id="wpd-comm-566813_566767" class="wpd-comment wpd-reply wpd_comment_level-4"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-566813" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566767">
+        Obiick
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 23, 2022 11:30 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 23, 2022 11:30 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566813"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>size_t is an alias for an unsigned integral type that is used to represent the size of objects in bytes.  That is all.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566813_566767"></div></div></div></div></div><div id="wpd-comm-566384_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566384" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Blazej Jarzabek" src="https://secure.gravatar.com/avatar/77b31301903861c70c03a6d997b6cc88?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/77b31301903861c70c03a6d997b6cc88?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Blazej Jarzabek
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="March 15, 2022 3:07 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 15, 2022 3:07 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566384"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Under the Fast and least integers section.why is the std::cout &lt;&lt; "least 16: " &lt;&lt; sizeof(std::int_least16_t) * 8 &lt;&lt; smaller than std::cout &lt;&lt; "fast 16: " &lt;&lt; sizeof(std::int_fast16_t) * 8 &lt;&lt;.Does the faster one produce a bigger number because the smallest amount of bits that it can store is 4 and the least one can store 2?</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566384_0"></div><div id="wpd-comm-566402_566384" class="wpd-comment wpd-reply wpd_comment_level-2"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-566402" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566384">
+        Blazej Jarzabek
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 15, 2022 10:39 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 15, 2022 10:39 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566402"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Because sometimes larger types are faster for a CPU to process.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566402_566384"></div><div id="wpd-comm-566405_566402" class="wpd-comment wpd-reply wpd_comment_level-3"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-566405" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Blazej Jarzabek" src="https://secure.gravatar.com/avatar/77b31301903861c70c03a6d997b6cc88?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/77b31301903861c70c03a6d997b6cc88?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Blazej Jarzabek
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-566402">
+        Alex
+    </a>
+</div>
+    <div class="wpd-comment-date" title="March 15, 2022 10:58 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    March 15, 2022 10:58 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-566405"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Oooh I think I read your definition wrong when i read it earlier,but thx for replying i appreciate it.I understand it now.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-566405_566402"></div></div></div></div><div id="wpd-comm-563605_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-563605" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Amina" src="https://secure.gravatar.com/avatar/07fb87b0081870cab37467c02f9d646a?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/07fb87b0081870cab37467c02f9d646a?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Amina
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="December 18, 2021 6:33 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    December 18, 2021 6:33 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-563605"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Isn't the <code>std::int_least#_t</code> ( 16 and above ) the better choice compared to fixed-width integrals since it is guaranteed to be defined and if it is optimal then all the better, if not then it's still ok to use it anyway .<br>
+Is it ok to create variables of type <code>std::size_t</code> when we want to store a length or smth similar ( measurements maybe ) ?</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-563605_0"></div><div id="wpd-comm-563635_563605" class="wpd-comment wpd-reply wpd_comment_level-2"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-563635" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-563605">
+        Amina
+    </a>
+</div>
+    <div class="wpd-comment-date" title="December 18, 2021 12:37 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    December 18, 2021 12:37 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-563635"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>&gt; Isn't the std::int_least#_t ( 16 and above ) the better choice</p>
+<p>I used to recommend this but updated the recommendation after doing further reading.  The modern thought is that it's better to ask for exactly what you want and not get it if it doesn't exist than ask for something close to what you want and get something that may be different than what you were expecting.</p>
+<p>size_t is typically used to store the size of something, or as an index to a container -- feel free to use it for that purpose.  For other measurements (e.g. your weight or age) I'd favor a signed type.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result wpd-up" title="2">2</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-563635_563605"></div><div id="wpd-comm-563662_563635" class="wpd-comment wpd-reply wpd_comment_level-3"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-subadministrator">
+    <div id="comment-563662" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="nascardriver" src="https://secure.gravatar.com/avatar/11b09338d6108681887f55d784841888?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/11b09338d6108681887f55d784841888?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    nascardriver
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Sub-admin" wpd-tooltip-position="top">
+    <span>Sub-admin</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-563635">
+        Alex
+    </a>
+</div>
+    <div class="wpd-comment-date" title="December 19, 2021 8:31 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    December 19, 2021 8:31 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-563662"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>&gt; after doing further reading</p>
+<p>Do you remember where you read about this? I'm curious too</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-563662_563635"></div><div id="wpd-comm-563692_563662" class="wpd-comment wpd-reply wpd_comment_level-4"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-563692" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-563662">
+        nascardriver
+    </a>
+</div>
+    <div class="wpd-comment-date" title="December 20, 2021 10:20 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    December 20, 2021 10:20 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-563692"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>https://stackoverflow.com/questions/36161393/is-there-a-reason-to-use-c11s-stdint-fast32-t-or-stdint-fast16-t-over-int/36161722#36161722 was one such comment.  In particular, this comment resonated: 'Having things break at build time is usually better than having breaks at run time. If and when your code is actually run on some obscure processor needing these features, then fix it. The rule of "you probably won't need it" applies.'</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-563692_563662"></div></div></div></div></div><div id="wpd-comm-563024_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-563024" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Razz" src="https://secure.gravatar.com/avatar/9994777f54bbe2544ab5e62393aa4f95?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/9994777f54bbe2544ab5e62393aa4f95?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Razz
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="November 26, 2021 9:32 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    November 26, 2021 9:32 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-563024"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>I don't know why I'm finding this so funny but I just realized that wraparound could make for some very funny moments. Like if someone made a simple program to say "how old will you be in five years?" and uses an unsigned data type and the person types something like "-26" either as a joke or on accident and the program just decides that this poor 26 year old is going to be 4.25 billion years old in five years</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result wpd-up" title="1">1</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-563024_0"></div></div><div id="wpd-comm-561762_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-561762" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Waldo" src="https://secure.gravatar.com/avatar/0b79dedc0cbb6a2fd3557cbbd4f47d9e?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/0b79dedc0cbb6a2fd3557cbbd4f47d9e?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Waldo
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="October 7, 2021 3:00 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    October 7, 2021 3:00 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-561762"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>&gt; By definition, any object larger than the largest value size_t can hold is considered ill-formed</p>
+<p>I think you should add "(in bytes)" after "larger" for clarity</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result wpd-up" title="1">1</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-561762_0"></div></div><div id="wpd-comm-561042_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-561042" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Shareware" src="https://secure.gravatar.com/avatar/3f9ae2fe5ed76f6d0d05afd4a2f344e9?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3f9ae2fe5ed76f6d0d05afd4a2f344e9?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Shareware
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="September 7, 2021 4:48 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    September 7, 2021 4:48 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-561042"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Hi,</p>
+<p>I'm reading this "Pretty simple, right? We can infer that operator sizeof returns an integer value -- but what integer type is that value? An int? A short? The answer is that sizeof (and many functions that return a size or length value) return a value of type std::size_t. std::size_t is defined as an unsigned integral type, and it is typically used to represent the size or length of objects."</p>
+<p>and I'm confused, not sure what this is trying to say?</p>
+<p>That integer type is int because we wrote sizeof(int). No?</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-561042_0"></div><div id="wpd-comm-561048_561042" class="wpd-comment wpd-reply wpd_comment_level-2"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-561048" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-561042">
+        Shareware
+    </a>
+</div>
+    <div class="wpd-comment-date" title="September 7, 2021 8:30 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    September 7, 2021 8:30 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-561048"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>No, we're talking about the type of the value that the sizeof operator returns, not the type being passed in as a parameter.  sizeof returns an integral value of type size_t.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result wpd-up" title="3">3</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-561048_561042"></div></div></div><div id="wpd-comm-560955_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-560955" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Vinorosso" src="https://secure.gravatar.com/avatar/d110f31baf7494525b59b97491c7d270?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/d110f31baf7494525b59b97491c7d270?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Vinorosso
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="September 3, 2021 2:55 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    September 3, 2021 2:55 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-560955"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Little typo: Prefer std::int#_t when "the" storing a quantity that needs... "the" should be removed.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-560955_0"></div></div><div id="wpd-comm-560844_0" class="wpd-comment wpd_comment_level-1"><div class="wpd-comment-wrap wpd-blog-guest">
+    <div id="comment-560844" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="lincisman" src="https://secure.gravatar.com/avatar/8a1693f9b12ccdc715c4b2fe82cb967d?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/8a1693f9b12ccdc715c4b2fe82cb967d?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    lincisman
+</div>
+    
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    
+    <div class="wpd-comment-date" title="August 31, 2021 1:23 am">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    August 31, 2021 1:23 am
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-560844"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>Wait, so " To help with cross-platform portability, C99 defined a set of fixed-width integers ", but "  Using a fixed-width integer makes your code less portable, it might not compile on other systems." How both statements are true?</p>
+<p>(If this question was asked in the previous comment just ignore this)</p>
+<p>Thanks, bye :)</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result" title="0">0</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    <div class="wpd-toggle wpd-hidden wpd_not_clicked" wpd-tooltip="Hide Replies">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-560844_0"></div><div id="wpd-comm-560866_560844" class="wpd-comment wpd-reply wpd_comment_level-2"><div class="wpd-comment-wrap wpd-blog-user wpd-blog-post_author">
+    <div id="comment-560866" class="wpd-comment-right">
+    <div class="wpd-comment-header">
+    <div class="wpd-avatar ">
+    <img alt="Alex" src="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4e62d28c29f6c864923207d4c17993b?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64" loading="lazy">
+</div>
+    <div class="wpd-user-info">
+    <div class="wpd-uinfo-top">
+    <div class="wpd-comment-author ">
+    Alex
+</div>
+    <div class="wpd-comment-label" wpd-tooltip="Author" wpd-tooltip-position="top">
+    <span>Author</span>
+</div>
+    
+    
+    <div class="wpd-space"></div>
+</div>
+    <div class="wpd-uinfo-bottom">
+    
+    <div class="wpd-reply-to">
+    <i class="far fa-comments"></i>
+    Reply to&nbsp;
+    <a href="#comment-560844">
+        lincisman
+    </a>
+</div>
+    <div class="wpd-comment-date" title="August 31, 2021 12:57 pm">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    August 31, 2021 12:57 pm
+</div>
+</div>
+</div>
+    <div class="wpd-comment-link wpd-hidden">
+    <span wpd-tooltip="Comment Link" wpd-tooltip-position="left"><i class="fas fa-link" aria-hidden="true" data-comment-url="https://www.learncpp.com/cpp-tutorial/fixed-width-integers-and-size-t/#comment-560866"></i></span>
+</div>
+</div>
+    <div class="wpd-comment-text">
+    <p>With normal int, a program might compile with 16-bit integers on system A, 32-bit integers on system B, and 64-bit integers on system C.  If you're trying to port that program to all 3 systems, that can be problematic, especially if you haven't assumed the lowest common denominator (16-bit integers).</p>
+<p>With the fixed-width integers, you'll always either get the size you expect, or your program won't compile (which is probably a good thing, because you likely haven't tested your program with other sizes anyway).</p>
+<p>FWIW I rewrote a portion of this lesson today and updated the best practices.</p>
+
+</div>
+    <div class="wpd-comment-footer">
+    <div class="wpd-vote">
+    <div class="wpd-vote-up wpd_not_clicked">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path></svg>
+    </div>
+    <div class="wpd-vote-result wpd-up" title="2">2</div>
+    <div class="wpd-vote-down wpd_not_clicked wpd-dislike-hidden">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg>
+    </div>
+</div>
+    <div class="wpd-reply-button">
+    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    <span>Reply</span>
+</div>
+    <div class="wpd-space"></div>
+    
+    
+</div>
+</div>
+</div><div id="wpdiscuz_form_anchor-560866_560844"></div></div></div><div class="wpdiscuz-comment-pagination" style="display:none"><div class="wpd-load-more-submit-wrap"><button name="submit" data-lastparentid="560844" class="wpd-load-more-submit wpd-loaded wpd-prim-button">
+Load More Comments</button></div><input id="wpdiscuzHasMoreComments" type="hidden" value="1"></div></div></div></div></div><div id="wpdiscuz-loading-bar" class="wpdiscuz-loading-bar-unauth"></div><div id="wpdiscuz-comment-message" class="wpdiscuz-comment-message-unauth"></div><div class="code-block code-block-14" style="margin: 8px 0; clear: both;">
+<div class="cf_monitor"><div id="ezoic-pub-ad-placeholder-104"> </div></div></div>
+</main><aside id="primary" class="widget-area sidey" role="complementary" itemscope="" itemtype="http://schema.org/WPSideBar"><section id="custom_html-2" class="widget_text widget-container widget_custom_html"><div class="textwidget custom-html-widget"><div class="cf_monitor" style="float:right"><span id="ezoic-pub-ad-placeholder-103" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:600px;min-width:160px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-large-billboard-2"><span id="div-gpt-ad-learncpp_com-large-billboard-2-0" ezaw="160" ezah="600" style="position:relative;z-index:0;display:block;padding:0;" class="ezoic-ad"></span></span></div></span></div></div></section></aside><aside id="secondary" class="widget-area sidey" role="complementary" itemscope="" itemtype="http://schema.org/WPSideBar"><section id="custom_html-3" class="widget_text widget-container widget_custom_html"><div class="textwidget custom-html-widget"><div class="cf_monitor"><div style="float:left"><span id="ezoic-pub-ad-placeholder-102" style="display:block!important;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;max-width:100%!important;min-height:600px;min-width:300px;padding:0;text-align:center!important"><div><span class="ezoic-ad" data-ez-name="learncpp_com-box-1"><span style="background:0 0 !important;display:block !important;float:none !important;line-height:0px;margin-left:auto !important;margin-right:auto !important;max-width:100% !important;min-width:300px;padding:0;text-align:center !important;width:300px;" class="ezoic-ad box-1 box-1102 adtester-container adtester-container-102 ezoic-ad-adaptive" data-ez-name="learncpp_com-box-1"><span class="ezoic-ad box-1 box-1-multi-102 adtester-container adtester-container-102" data-ez-name="learncpp_com-box-1"><span id="div-gpt-ad-learncpp_com-box-1-0" ezaw="300" ezah="300" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:300px;min-width:300px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"></script></span></span><span class="ezoic-ad box-1 box-1-multi-102 adtester-container adtester-container-102" data-ez-name="learncpp_com-box-1"><span id="div-gpt-ad-learncpp_com-box-1-0_1" ezaw="300" ezah="300" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:300px;min-width:300px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;"></script></span></span><style> .box-1-multi-102{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:7px !important;margin-left:0px !important;margin-right:0px !important;margin-top:7px !important;max-width:100% !important;min-height:250px;min-width:300px;padding:0;text-align:center !important;}</style></span></span></div></span></div></div></div></section></aside>
