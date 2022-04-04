@@ -1,4 +1,5 @@
 {
+    "chapter": "Bài tập C++",
     "title": "Bài tập chuỗi trong C++",
     "desicription": "Chuỗi (String) trong C/C++ là một mảng ký tự được kết thúc bởi \\0 (ký tự null). Dưới đây là các bài tập C sử dụng hàm và không sử dụng hàm giúp bạn hiểu kiến thức cơ bản nhất về chuỗi. Các chương trình này xử lý các chuỗi dưới dạng như là một mảng các ký tự.",
     "img": "https://www.elib.vn/images/doc/2020/20201029//thumb/600x254/bai-tap-chuoi-trong-c-215.jpg",

@@ -1,4 +1,5 @@
 {
+    "chapter": "Câu Lệnh Điều Khiển C++",
     "title": "Mệnh đề if-else trong C++",
     "desicription": "Trong ngôn ngữ C++ cũng như các ngôn ngữ lập trình khác như JAVA, C#, Ruby, PHP, Javascript thì chương trình sẽ được biên dịch và thực thi các câu lệnh theo thứ tự từ trên xuống dưới. Vậy trong một số trường hợp chúng ta muốn đoạn code của mình chỉ được thực thi khi thõa mãn một số điều kiện nào đó thì phải làm như thế nào? Trong C++ có hỗ trợ cho chúng ta thực hiện điều trên bằng cấu trúc điều khiển. Cùng eLib.VN tìm hiểu về Mệnh đề if-else trong C++ qua bài viết dưới đây.",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/menh-de-if-else-trong-c-44.jpg",

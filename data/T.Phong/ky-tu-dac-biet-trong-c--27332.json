@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Ký tự đặc biệt trong C++",
     "desicription": "Ký tự đặc biệt trong C++ là một dãy các ký tự không đại diện cho chính nó khi được sử dụng bên trong chuỗi ký tự hoặc ký tự. Nó bao gồm hai hoặc nhiều ký tự bắt đầu bằng dấu gạch chéo ngược \\. Cùng eLib.VN tìm hiểu qua bài viết dưới đây.",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/ky-tu-dac-biet-trong-c-788.jpg",

@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Lớp Object",
     "title": "Tính kế thừa trong C++",
     "desicription": "Kế thừa là một trong những tính năng chính của lập trình hướng đối tượng trong C++. Nó cho phép người dùng tạo một lớp (lớp kế thừa) từ một lớp có sẵn (lớp chính). Để tìm hiểu về lớp kế thừa trong C++, mời bạn đọc tham khảo bài viết dưới đây của eLib.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/tinh-ke-thua-trong-c-755.jpg",

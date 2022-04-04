@@ -1,4 +1,5 @@
 {
+    "chapter": "Câu Lệnh Điều Khiển C++",
     "title": "Mệnh đề switch-case trong C++",
     "desicription": "Trong bài viết dưới đây, chúng ta cùng nhau tìm hiểu câu lệnh được xây dựng sẵn trong ngôn ngữ lập trình C++ cũng được đưa vào dạng cấu trúc rẽ nhánh có điều kiện. Đó là câu lệnh được tạo nên bởi từ khóa switch và case, còn gọi là switch case statement. Cùng tham khảo nhé!",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/menh-de-switch-case-trong-c-729.jpg",

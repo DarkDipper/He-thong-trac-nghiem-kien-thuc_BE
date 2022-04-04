@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "cout, cin và endl trong C++",
     "desicription": "Thư viện nhập xuất trong C cũng như rong C++ có tên là iostream.h, vì vậy khi viết chương trình ta phải khai báo sử dụng thư viện này. Ngoài ra với C++ thì ta phải khai báo sử dụng thêm namespace std bằng cú pháp using namespace std;. Và trong bài này chúng ta tìm hiểu hai lệnh thường sử dụng nhất để nhập xuất đó là cin và cout. Cùng theo dõi nhé!",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/cout-cin-va-endl-trong-c-162.jpg",

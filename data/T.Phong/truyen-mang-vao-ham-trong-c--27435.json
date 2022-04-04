@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Array",
     "title": "Truyền mảng vào hàm trong C++",
     "desicription": "Chúng ta đã tìm hiểu cách gọi hàm, các tham số của hàm là những biến có kiểu dữ liệu đơn giản như int, float, double... Trong bài viết hôm nay chúng ta cùng tìm hiểu tham số của hàm là mảng (Array). Vậy tham số của hàm là mảng thì có gì khác so với các tham số có các kiểu dữ liệu khác trong C++. Chúng ta sẽ cùng eLib tìm hiểu trong nội dung sau đây nhé.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/truyen-mang-vao-ham-trong-c-181.jpg",

@@ -1,4 +1,5 @@
 {
+    "chapter": "Lập trình C++ nâng cao",
     "title": "Xử lý ngoại lệ trong C++",
     "desicription": "Ngoại lệ (exception) là vấn đề - lỗi phát sinh trong quá trình thực thi chương trình. Thường khi chương trình đang chạy mà phát sinh ngoại lệ (lỗi) thì dẫn đến chương trình kết thúc ngay lập tức. Có vô số nguyên nhân để chương trình đang chạy mà phát sinh ngoại lệ. Để tìm hiểu rõ hơn cách xử lý ngoại lệ trong C++, mời bạn đọc cùng eLib tham khảo bài viết dưới đây.",
     "img": "https://www.elib.vn/images/doc/2020/20201029//thumb/600x254/xu-ly-ngoai-le-trong-c-180.jpg",

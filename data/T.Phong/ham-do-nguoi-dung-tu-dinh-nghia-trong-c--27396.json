@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Function",
     "title": "Hàm do người dùng tự định nghĩa trong C++",
     "desicription": "Trong C++, ngoài những hàm có sẵn, chúng ta còn có thể tự định nghĩa một hàm theo nhu cầu của bạn. Để tìm hiểu về cách khai báo, cách tự định nghĩa hàm như thế nào, mời bạn đọc tham khảo bài viết dưới đây của eLib.VN",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/ham-do-nguoi-dung-tu-dinh-nghia-trong-c-707.jpg",

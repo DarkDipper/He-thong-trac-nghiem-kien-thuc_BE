@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Hằng số trong C++",
     "desicription": "Tương tự biến, hằng cũng là một đại lượng thể hiện cho một dữ liệu nào đó. Nhưng dữ liệu mà hằng nắm giữ sẽ không được sửa đổi trong suốt thời gian thực thi chương trình. Mỗi một hằng sẽ có tên và giá trị mà nó nắm giữ. Bên cạnh đó hằng cũng có thể có kiểu dữ liệu tương tự như biến. Mời bạn đọc cùng tham khảo bài viết dưới đây của eLib.VN để tìm hiểu về Hằng số trong C++.",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/hang-so-trong-c-701.jpg",

@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Biến trong C++",
     "desicription": "C++ là một ngôn ngữ bậc trung nằm giữa bậc cao và bậc thấp, nó là ngôn ngữ có tính minh bạch, rõ ràng trong việc khai báo và sử dụng biến, nghĩa là nếu bạn khai báo một biến kiểu chuỗi thì bạn không thể gán cho nó là kiểu số được. Trong bài viết dưới đây, chúng ta sẽ tìm hiểu về biến và cách khai báo biến trong C++. Cùng theo dõi nhé!",
     "img": "https://www.elib.vn/images/doc/2020/20201026//thumb/600x254/bien-trong-c-288.jpg",

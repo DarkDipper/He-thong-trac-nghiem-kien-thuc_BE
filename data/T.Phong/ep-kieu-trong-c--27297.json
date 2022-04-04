@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Ép kiểu trong C++",
     "desicription": "Ép kiểu là cách để chuyển đổi một biến từ kiểu dữ liệu này sang kiểu dữ liệu khác. Ví dụ, khi bạn muốn lưu trữ một giá trị long cho một số số nguyên, bạn phải ép kiểu long thành int. Trong bài viết dưới đây, eLib.VN sẽ giới thiệu đến bạn đọc cách ép kiểu trong C++. Cùng theo dõi nhé!",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/ep-kieu-trong-c-210.jpg",

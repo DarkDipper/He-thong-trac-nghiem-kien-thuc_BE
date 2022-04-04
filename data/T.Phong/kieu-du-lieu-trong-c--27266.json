@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Kiểu dữ liệu trong C++",
     "desicription": "Dữ liệu, biến là các tham số, giá trị để lưu trữ thông tin, trong khi làm việc với bất kỳ ngôn ngữ lập trình nào, bạn cần sử dụng các kiểu biến đa dạng để lưu giữ thông tin. Các biến có chức năng như bộ nhớ dành riêng để lưu trữ dữ liệu, Khi bạn tạo ra một biến có nghĩa bạn tạo ra 1 bộ nhớ để lưu giá trị. Vậy các giá trị trong lập trình nói chung và lập trình C++ có các dạng gì? Bài viết này sẽ hướng dẫn rõ cho các bạn các giá trị, các biến trong C++.",
     "img": "https://www.elib.vn/images/doc/2020/20201026//thumb/600x254/kieu-du-lieu-trong-c-442.jpg",

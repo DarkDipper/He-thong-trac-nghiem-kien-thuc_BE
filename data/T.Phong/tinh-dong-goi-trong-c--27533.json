@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Lớp Object",
     "title": "Tính đóng gói trong C++",
     "desicription": "Trong lập trình hướng đối tượng, tính đóng gói là quá trình giữ cho các thông tin chi tiết về cách cài đặt một đối tượng, được ẩn đi khỏi người dùng của đối tượng. Thay vào đó, người dùng của đối tượng sẽ truy cập vào đối tượng thông qua một giao diện công khai. Bằng cách này, người dùng có thể sử dụng đối tượng mà không cần phải hiểu về cách mà nó được cài đặt. Để hiểu rõ hơn về tính đóng gói trong lập trình C++, mời bạn đọc tham khảo bài viết dưới đây của eLib.VN",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/tinh-dong-goi-trong-c-503.jpg",

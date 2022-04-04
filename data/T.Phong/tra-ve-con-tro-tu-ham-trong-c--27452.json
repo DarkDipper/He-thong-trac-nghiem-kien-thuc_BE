@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Poiter",
     "title": "Trả về con trỏ từ hàm trong C++",
     "desicription": "Như chúng ta đã thấy cách C++ cho phép trả về một mảng từ một hàm, tương tự như vậy, bạn cũng có thể trả về con trỏ từ hàm trong C++. Để tìm hiểu về cách trả về con trỏ từ hàm, mời bạn đọc tham khảo bài viết dưới đây của eLib.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/tra-ve-con-tro-tu-ham-trong-c-368.jpg",

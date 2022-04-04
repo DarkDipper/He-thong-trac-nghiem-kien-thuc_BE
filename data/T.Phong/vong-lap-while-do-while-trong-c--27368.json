@@ -1,4 +1,5 @@
 {
+    "chapter": "Câu Lệnh Điều Khiển C++",
     "title": "Vòng lặp while, do while trong C++",
     "desicription": "Chúng ta đã tìm hiểu một loại vòng lặp trong C++ đó là vòng lặp for, trong bài hôm nay chúng ta sẽ tiếp tục tìm hiểu một loại vòng lặp khác nữa trong C++ đó là vòng lặp while. Vậy vòng lặp while trong C++ là gì? Nó khác gì so với vòng lặp for. Chúng ta sẽ tìm hiểu trong bài viết dưới đây nhé.",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/vong-lap-while-do-while-trong-c-712.jpg",

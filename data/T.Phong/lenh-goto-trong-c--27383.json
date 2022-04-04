@@ -1,4 +1,5 @@
 {
+    "chapter": "Câu Lệnh Điều Khiển C++",
     "title": "Lệnh goto trong C++",
     "desicription": "Trong lập trình C++, câu lệnh goto được sử dụng để thay đổi luồng thực thi thông thường của chương trình bằng cách nhảy tới một phần khác của chương trình. Vậy lệnh goto trong C++ là gì? Chúng ta sẽ cùng tìm hiểu trong nội dung sau đây nhé.",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/lenh-goto-trong-c-421.jpg",

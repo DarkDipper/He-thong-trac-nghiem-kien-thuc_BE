@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Lớp Object",
     "title": "Interface trong C++",
     "desicription": "Interface trong C++ được triển khai bởi sử dụng các Lớp trừu tượng (Abstract class) và những lớp trừu tượng này không nên bị nhầm lẫn với Trừu tượng hóa dữ liệu, mà là một khái niệm của việc giữ Implementation Detail phân biệt với dữ liệu được liên kết. Để tìm hiểu rõ hơn về Interface trong C++, mời bạn đọc cùng eLib.VN tham khảo bài viết dưới đây.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/interface-trong-c-854.jpg",

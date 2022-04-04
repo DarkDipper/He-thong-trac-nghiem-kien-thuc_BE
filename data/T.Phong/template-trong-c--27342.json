@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Template trong C++",
     "desicription": "Khi học về lập trình hướng đối tượng (OOP) trong ngôn ngữ C++, trong quá trình lập trình, chắc ai cũng gặp trường hợp phải overload lại các hàm để dùng cho mỗi kiểu dữ liệu tương ứng, thì trong C++ có hỗ trợ cho chúng ta giải quyết vấn đề trên, Trong bài viết dưới đây eLib sẽ hướng dẫn bạn tiếp cận tới một kiến thức khá là quan trọng mà mỗi người học lập trình C++ đều phải biết và áp dụng nó. Đó chính là Template. Cùng theo dõi nhé!",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/template-trong-c-781.jpg",

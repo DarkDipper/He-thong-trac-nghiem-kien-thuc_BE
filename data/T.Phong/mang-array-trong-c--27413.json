@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Array",
     "title": "Mảng (array) trong C++",
     "desicription": "Ở các bài học trước chúng ta đã cùng tìm hiểu về biến được dùng để lưu trữ giá trị trong bộ nhớ. Giả sử chúng ta cần lưu trữ 1000 số nguyên trong bộ nhớ, thì chúng ta sẽ khai báo đúng 1000 tên biến khác nhau. Điều này rất là kinh khủng, chúng ta phải suy nghĩ làm sao cho 1000 tên biến phải có nghĩa. Trong C++ hổ trợ mảng giúp chúng ta giải quyết khó khăn trên. Cùng eLib tìm hiểu qua bài viết dưới đây.",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/mang-array-trong-c-917.jpg",

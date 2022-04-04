@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Lớp Object",
     "title": "Từ khóa static trong C++",
     "desicription": "Static trong c++ là dữ liệu của lớp không phải là dữ liệu của đối tượng. Static trong c++ tồn tại như một biến toàn cục. Hay nói cách khác dữ liệu static xuất hiện trước khi bạn khởi tạo đối tượng của lớp, và nó chỉ tồn tại duy nhất.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/tu-khoa-static-trong-c-909.jpg",

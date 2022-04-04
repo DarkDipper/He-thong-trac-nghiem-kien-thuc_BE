@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Lớp Object",
     "title": "Tính trừu tượng trong C++",
     "desicription": "Tính trừu tượng (Abstraction) là một trong 4 tính chất đặc trưng quan trọng của các ngôn ngữ lập trình hướng đối tượng. Mục tiêu chính của nó là làm giảm sự phức tạp bằng cách ẩn các chi tiết không liên quan trực tiếp tới người dùng. Điều đó cho phép người dùng vẫn thực hiện được các công việc cần thiết dựa trên một thực thể trừu tượng được cung cấp mà không cần hiểu hoặc thậm chí không nghĩ về tất cả sự phức tạp ẩn giấu bên trong. Để tìm hiểu rõ hơn về tính trừu tượng trong C++, mời bạn đọc tham khảo bài viết dưới đây của eLib.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/tinh-truu-tuong-trong-c-458.jpg",

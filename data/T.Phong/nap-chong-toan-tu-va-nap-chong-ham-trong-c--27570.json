@@ -1,4 +1,5 @@
 {
+    "chapter": "Nạp Chồng Toán Tử",
     "title": "Nạp chồng toán tử và Nạp chồng hàm trong C++",
     "desicription": "Nếu bạn đã học qua lập trình C++ cơ bản, chắc chắc rằng trong hầu hết các bài tập về C++, bạn đều sử dụng các toán tử số học như cộng, trừ, nhân, chia. Hầu hết các toán tử đó đều được thực hiện trên toán hạng có kiểu dữ liệu cơ bản như int, float, double…Vậy nếu như bạn muốn thực hiện các toán tử đó đối với toán hạng có kiểu dữ liệu bạn tự định nghĩa thì làm sao? Mời bạn đọc cùng eLib.VN tham khảo bài viết dưới đây để hiểu rõ về Nạp chồng toán tử và Nạp chồng hàm trong C++.",
     "img": "https://www.elib.vn/images/doc/2020/20201029//thumb/600x254/nap-chong-toan-tu-va-nap-chong-ham-trong-c-804.jpg",

@@ -1,4 +1,5 @@
 {
+    "chapter": "C++ Lớp Object",
     "title": "Các hàm Math trong C++",
     "desicription": "Trong bài viết dưới đây, eLib cùng bạn tìm hiểu và sử dụng các hàm có sẵn trong thư viện math.h – thư viện toán học của ngôn ngữ C/C++. Thông qua việc sử dụng các hàm này sẽ cho các bạn 1 cái nhìn nhất định về hàm trong ngôn ngữ lập trình, làm tiền đề để chúng ta tìm hiểu kiến thức hàm trong ngôn ngữ C++.",
     "img": "https://www.elib.vn/images/doc/2020/20201028//thumb/600x254/cac-ham-math-trong-c-678.jpg",

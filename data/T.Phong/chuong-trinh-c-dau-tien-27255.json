@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Chương trình C++ đầu tiên",
     "desicription": "Chúng ta đã biết về quy trình làm việc để tạo ra một chương trình C++, những công cụ cần thiết và IDE mà chúng ta sẽ sử dụng để phát triển chương trình. Hôm nay, chúng ta sẽ cùng viết một chương trình đầu tiên trong C++. Học cách biên dịch và chạy một chương trình đơn giản. Cùng theo dõi bài viết dưới đây của eLib nhé!",
     "img": "https://www.elib.vn/images/doc/2020/20201026//thumb/600x254/chuong-trinh-c-dau-tien133.jpg",

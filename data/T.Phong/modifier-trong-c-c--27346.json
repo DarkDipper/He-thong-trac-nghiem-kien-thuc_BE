@@ -1,4 +1,5 @@
 {
+    "chapter": "Giới thiệu về lập trình C++",
     "title": "Modifier trong C/C++",
     "desicription": "Chúng ta đã biết về  kiểu dữ liệu cơ bản trong C++, bao gồm kiểu int, char, kiểu double short int, unsigned char, long double, và kiểu signed int. Trong đó các từ như short, unsigned, long, signed được gọi là các kiểu Modifier, để tìm hiểu modifier trong C++ là gì, mời bạn đọc cùng tham khảo bài viết dưới đây của eLib.VN",
     "img": "https://www.elib.vn/images/doc/2020/20201027//thumb/600x254/modifier-trong-c-c-565.jpg",

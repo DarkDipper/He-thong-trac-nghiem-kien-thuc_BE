@@ -1,4 +1,5 @@
 {
+    "chapter": "Lập trình C++ nâng cao",
     "title": "Đa luồng trong C++",
     "desicription": "Đa luồng (Multithreading) là một form chuyên dụng của đa nhiệm (multitasking) và một đa nhiệm là tính năng cho phép máy tính của bạn chạy hai hoặc nhiều chương trình đồng thời. Để tìm hiểu rõ hơn về Đa luồng trong C++, mời bạn đọc tham khảo bài viết dưới đây của eLib",
     "img": "https://www.elib.vn/images/doc/2020/20201029//thumb/600x254/da-luong-trong-c-109.jpg",
