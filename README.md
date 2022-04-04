@@ -24,8 +24,8 @@ Góp ý:
  - [x] Cào data (23h59 2/4 - 23h59 3/4): 
    - [x] [CodeLearn](https://codelearn.io/learning/cpp-cho-nguoi-moi-bat-dau)  - Lộc
     - [x] Lộc phải bỏ file data vào folder data và tạo riêng ra folder riêng
-    - [x] [LearnCPP](https://www.learncpp.com/)  - Vinh
-    - [x] [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)  - Phong
+   - [x] [LearnCPP](https://www.learncpp.com/)  - Vinh
+   - [x] [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)  - Phong
 - [ ] Phân loại (0h 4/4 - 23h59 10/4):
 	Phân loại theo khuôn mẫu file SL.xlxs
 	Database : MongoDB
