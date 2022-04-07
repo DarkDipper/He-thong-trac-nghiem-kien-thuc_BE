@@ -1,0 +1,3028 @@
+<div class="exam-content">
+
+
+    <h4>Câu 1:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void swap(char **, char **);
+
+    int main()
+    {
+    char *pstr[2] = {"LAPTRINHC++", ".NET"};
+    swap(&amp;pstr[0], &amp;pstr[1]);
+    printf("%s%s", pstr[0], pstr[1]);
+    getch();
+    }
+    void swap(char **t1, char **t2)
+    {
+    char *t;
+    t=*t1;
+    *t1=*t2;
+    *t2=t;
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. LAPTRINHC++.NET
+
+
+
+
+
+
+
+
+    B. .NETLAPTRINHC++
+
+
+
+
+
+
+
+
+    C. Address of pstr[0] Address of pstr[1]
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 2:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    typedef struct
+    {
+    char c; // byte
+    float b; // 4 byte
+    int a; // 4 byte
+    }A;
+
+    void main()
+    {
+    printf("\n Size of struct: %d", sizeof(A));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?&nbsp;Giả sử dùng VC++ 2008 trên hệ điều hành 32 bit</p>
+
+
+
+
+
+
+
+
+
+
+    A. 9
+
+
+
+
+
+
+
+
+    B.2
+
+
+
+
+
+
+
+
+    C.6
+
+
+
+
+
+
+
+
+    D. 24
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 3:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    typedef struct
+    {
+    int a[2]; // 8 byte
+    char b[5]; // 5 byte
+    char c[5]; // 5 byte
+
+    }A;
+
+    void main()
+    {
+    printf("\n Size of struct: %d",sizeof(A));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. 20
+
+
+
+
+
+
+
+
+    B.8
+
+
+
+
+
+
+
+
+    C. 32
+
+
+
+
+
+
+
+
+    D. 24
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 4:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    struct birthday
+    {
+    int d; // day
+    int m; // month
+    int y; // year
+    };
+    struct info
+    {
+    int ID; // code of staff
+    birthday b;
+    };
+
+    void main()
+    {
+    info a = {1009,6, 9,989};
+    printf("\nID=%d, dd/mm/yyyy = %d/%d/%d", a.ID, a.b.d, a.b.m, a.b.y);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+    A. ID=1009, dd/mm/yyyy =6/09/1989
+
+
+
+
+
+
+
+
+    B. ID =009, dd/mm/yyyy = garbage value/garbage value/garbage value (garbage value: giá trị rác)
+
+
+
+
+
+
+
+
+    C. Error sytax (Lỗi cú pháp)
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 5:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    struct site
+    {
+    char name[] = "laptrinhc++";
+    int year = 2;
+    };
+    struct site *ptr;
+    printf("%s ", ptr-&gt;name);
+    printf("%d", ptr-&gt;year);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+    A. laptrinhc++ 2
+
+
+
+
+
+    B. Complier error
+
+
+
+
+
+    C. Runtime error
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Chỉ có member static của struct mới được phép khởi tạo bên trong struct</p>
+
+
+
+
+
+
+    <h4>Câu 6:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    typedef struct
+    {
+    int x;
+    static int y;
+    }st;
+
+    void main()
+    {
+    printf("sizeof(st) = %d", sizeof(st));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. 4
+
+
+
+
+
+
+
+
+    B. Complier error
+
+
+
+
+
+
+
+
+    C. 8
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 7:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    struct
+    {
+    short s[5];
+    union
+    {
+    float y;
+    long z;
+    }u;
+    } t;
+
+    void main()
+    {
+    printf("sizeof(st) = %d", sizeof(t));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A.6
+
+
+
+
+
+
+
+
+    B. 22
+
+
+
+
+
+
+
+
+    C. 32
+
+
+
+
+
+
+
+
+    D.8
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 8:</h4>
+
+
+    <p>Which of the following operators can be applied on structure variables?</p>
+
+
+
+
+
+
+
+
+
+
+    A. Equality comparison ( == )
+
+
+
+
+
+
+
+
+    B. &nbsp;Assignment ( = )
+
+
+
+
+
+
+
+
+    C. Both of the above
+
+
+
+
+
+
+
+
+    D. None of the above
+
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 9:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define x 5+2
+
+    void main()
+    {
+    int i;
+    i = x*x*x;
+    printf("%d", i);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. 21
+
+
+
+
+
+
+
+
+    B. 27
+
+
+
+
+
+
+
+
+    C. Complier Error
+
+
+
+
+
+
+
+
+    D. Another
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 10:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define call(x,y) x##y
+
+    void main()
+    {
+    int x = 5, y =0, xy = 20;
+    printf("%d", xy + call(x, y));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. &nbsp;530
+
+
+
+
+
+
+
+
+    B. 70
+
+
+
+
+
+
+
+
+    C. 40
+
+
+
+
+
+
+
+
+    D. Complier Error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 11:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #if X == 3
+    #define Y 3
+    #else
+    #define Y 5
+    #endif
+
+    void main()
+    {
+    printf("Y = %d", Y);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. Y = 3
+
+
+
+
+
+
+
+
+    B. Y = 5
+
+
+
+
+
+
+
+
+    C. Garbage value
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 12:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define X 3
+    #if !X
+    printf("C/C++");
+    #else
+    printf("Java");
+    #endif
+
+    void main()
+    {
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. C/C++
+
+
+
+
+
+
+
+
+    B. Java
+
+
+
+
+
+
+
+
+    C. Complier error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 13:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define ISEQUAL(X, Y) X == Y
+
+    void main()
+    {
+    #if ISEQUAL(X, 0)
+    printf("C/C++");
+    #else
+    printf("Java");
+    #endif
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. C/C++
+
+
+
+
+
+
+
+
+    B. Java
+
+
+
+
+
+
+
+
+    C. Complier error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 14:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define SQUARE(x) x*x
+
+    void main()
+    {
+    int x;
+    x = 36 / SQUARE(6);
+    printf("%d", x);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A.
+
+
+
+
+
+
+
+
+    B. 36
+
+
+
+
+
+
+
+
+    C. 6
+
+
+
+
+
+
+
+
+    D. 30
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 15:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define a0
+
+    void main()
+    {
+    printf("%d ", a);
+    #define a 50
+    printf("%d ", a);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A.0 50
+
+
+
+
+
+
+
+
+    B.00
+
+
+
+
+
+
+
+
+    C. 50 50
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 16:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define MAX000
+
+    void main()
+    {
+    int MAX =00;
+    printf("%d ", MAX);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A.000
+
+
+
+
+
+
+
+
+    B.00
+
+
+
+
+
+
+
+
+    C. Complier error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 17:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    #define PRINT(i, limit) do \
+    { \
+    if (i++ &lt; limit) \
+    { \
+    printf("laptrinhc++"); \
+    continue; \
+    } \
+    }while(1)
+
+    void main()
+    {
+    PRINT(0, 3);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+
+    A. &nbsp;‘laptrinhc++’ is printed 3 times
+
+
+
+
+
+
+
+
+    B. ‘laptrinhc++’ is printed 2 times
+
+
+
+
+
+
+
+
+    C. Complier error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 18:</h4>
+
+
+    <p>A ____ is a special member function used to initialize the data members of a class.</p>
+
+
+
+
+
+
+
+
+
+
+    A. constructor
+
+
+
+
+
+
+
+
+    B. destructor
+
+
+
+
+
+
+
+
+    C. static method
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Hàm tạo được gọi khi tạo đối tượng (object), hàm tạo khởi tạo member data của class</p>
+
+
+
+
+
+
+    <h4>Câu 19:</h4>
+
+
+    <p>The default access for members of a class is ___ .</p>
+
+
+
+
+
+
+
+
+
+
+    A. private
+
+
+
+
+
+
+
+
+    B. public
+
+
+
+
+
+
+
+
+    C. protected
+
+
+
+
+
+
+
+
+    D. protect
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 20:</h4>
+
+
+    <p>Member functions of a class are normally made ___ and data members of a class are normally<br made ___ .</p>
+
+
+
+
+
+
+
+
+
+
+        A. &nbsp;private, public
+
+
+
+
+
+
+
+
+        B. protected, public
+
+
+
+
+
+
+
+
+        C. public, private
+
+
+
+
+
+
+
+
+        D. public, protected
+
+
+
+
+
+
+
+
+
+        <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Khi design class, dữ liệu được đóng gói, và truy xuất dữ liệu thông qua các phương thức.<br Do vậy, dữ liệu kiểu
+            private, phương thức kiểu public.</p>
+
+
+
+
+
+
+    <h4>Câu 21:</h4>
+
+
+    <p>Inheritance enables ___ which saves time in development , and encourages using previously<br proven and high
+            quality software.</p>
+
+
+
+
+
+
+
+
+
+
+        A. reusability
+
+
+
+
+
+
+
+
+        B. encapsulation
+
+
+
+
+
+
+
+
+        C. development
+
+
+
+
+
+
+
+
+
+        <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 22:</h4>
+
+
+    <p>The three member access specifiers are ___, ___ and ___ .</p>
+
+
+
+
+
+
+
+
+
+
+    A. public, private, protected
+
+
+
+
+
+
+
+
+    B. public, private, protect
+
+
+
+
+
+
+
+
+    C. public, private, static
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 23:</h4>
+
+
+    <p>A “has a” relationship between classes represents ___ and an “is a” relationship between<br classes represent ___
+            .</p>
+
+
+
+
+
+
+
+
+
+
+        A. containment, inheritance
+
+
+
+
+
+
+
+
+        B. hiding, inheritance
+
+
+
+
+
+
+
+
+        C. encapsulation, inheritance
+
+
+
+
+
+
+
+
+
+        <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 24:</h4>
+
+
+    <p>&nbsp;A pure virtual function is specified by placing ___ at the end of its prototype in the class<br
+            definition.</p>
+
+
+
+
+
+
+
+
+
+
+        A. =0
+
+
+
+
+
+
+
+
+        B. =1
+
+
+
+
+
+
+
+
+        C. =-1
+
+
+
+
+
+
+
+
+
+        <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Hàm pure virtual được define như sau: virtual int fnc() =0;</p>
+
+
+
+
+
+
+    <h4>Câu 25:</h4>
+
+
+    <p>A operator ___ is called as de-referencing operator.</p>
+
+
+
+
+
+
+
+
+
+    A. &amp;
+
+
+
+
+
+
+
+    B. *
+
+
+
+
+
+
+
+    C. &amp;&amp;
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 26:</h4>
+
+
+    <p>The size of a class with no data members and member functions is ___ bytes</p>
+
+
+
+
+
+
+
+
+
+    A. 0
+
+
+
+
+
+
+
+    B.
+
+
+
+
+
+
+
+    C. 4
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 27:</h4>
+
+
+    <p>A class is called as abstract base class if it has a ___ function</p>
+
+
+
+
+
+
+
+
+
+
+    A. pure virtual
+
+
+
+
+
+
+
+
+    B. static
+
+
+
+
+
+
+
+
+    C. private
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 28:</h4>
+
+
+    <p>Run-time or dynamic allocation of memory may be done using the C++ operator ___ .</p>
+
+
+
+
+
+
+
+
+
+
+    A. new
+
+
+
+
+
+
+
+
+    B. alloc
+
+
+
+
+
+
+
+
+    C. malloc
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 29:</h4>
+
+
+    <p>Operator overloading permits to extend the applicability of existing C++ operators so that they work with new ___
+        or ___.</p>
+
+
+
+
+
+
+
+
+
+
+    A. data types, objects
+
+
+
+
+
+
+
+
+    B. data types, constant
+
+
+
+
+
+
+
+
+    C. data types, pointer
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 30:</h4>
+
+
+    <p>A ___ is a set of instance or values.</p>
+
+
+
+
+
+
+
+
+
+
+    A. &nbsp;class
+
+
+
+
+
+
+
+
+    B. object
+
+
+
+
+
+
+
+
+    C. function
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 31:</h4>
+
+
+    <p>C++ programming language was designed and developed by ___ at ___.</p>
+
+
+
+
+
+
+
+
+
+
+    A. Steven Job, AT&amp;T Bell Labs
+
+
+
+
+
+
+
+
+    B. Bjarne Stroustrup, AT&amp;T Bell Labs
+
+
+
+
+
+
+
+
+    C. Guido van Rossum, M&amp;D Lab
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 32:</h4>
+
+
+    <p>&nbsp;C++ is a ___ programming language with ___ extensions.</p>
+
+
+
+
+
+
+
+
+
+
+    A. procedural, object oriented
+
+
+
+
+
+
+
+
+    B. object, procedural
+
+
+
+
+
+
+
+
+    C. procedural, STL
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 33:</h4>
+
+
+    <p>Pointers are ___ that contain the addresses of other variables and ____ .</p>
+
+
+
+
+
+
+
+
+
+
+    A. value, object
+
+
+
+
+
+
+
+
+    B. object, class
+
+
+
+
+
+
+
+
+    C. variables, functions
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 34:</h4>
+
+
+    <p>A program can use the address of any variable in an expression, except variables declared with the ___ storage
+        class.</p>
+
+
+
+
+
+
+
+
+
+
+    A. static
+
+
+
+
+
+
+
+
+    B. register
+
+
+
+
+
+
+
+
+    C. auto
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Register storage class là biến được lưu ở thanh ghi, và không thể lấy địa chỉ thanh ghi bằng toán tử &amp;</p>
+
+
+
+
+
+
+    <h4>Câu 35:</h4>
+
+
+    <p>New operator allocates memory blocks from the ___.</p>
+
+
+
+
+
+
+
+
+
+
+    A. Stack
+
+
+
+
+
+
+
+
+    B. Heap
+
+
+
+
+
+
+
+
+    C. Register
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 36:</h4>
+
+
+    <p>The new operator throws a ___ when heap is exhausted.</p>
+
+
+
+
+
+
+
+
+
+
+    A. runtime exception
+
+
+
+
+
+
+
+
+    B. syntax error
+
+
+
+
+
+
+
+
+    C. logic error
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 37:</h4>
+
+
+    <p>The&nbsp;(assert.h) header is used for ___ .</p>
+
+
+
+
+
+
+
+
+
+
+    A. debugging
+
+
+
+
+
+
+
+
+    B. checking memory leak
+
+
+
+
+
+
+
+
+    C. library for time
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Thư viện&nbsp;(assert.h) define các function&nbsp;assert()&nbsp;sử dụng cho việc debug</p>
+
+
+
+
+
+
+    <h4>Câu 38:</h4>
+
+
+    <p>The constructor and destructor of a class in C++ are called ___</p>
+
+
+
+
+
+
+
+
+
+
+    A. &nbsp;automatically
+
+
+
+
+
+
+
+
+    B. manually
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Hàm tạo và hàm hủy trong C/C++ được gọi tự động</p>
+
+
+
+
+
+
+    <h4>Câu 39:</h4>
+
+
+    <p>Two or more functions may have the same name, as long as their ___ are different.</p>
+
+
+
+
+
+
+
+
+
+
+    A. &nbsp;return type
+
+
+
+
+
+
+
+
+    B. parameter lists
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>Trong C++, có thể define nhiều hàm số có cùng tên được gọi là chồng hàm (overloading). Tuy nhiên, cần tuân thủ
+        rule: các hàm số cùng tên phải có tập tham số truyền vào là khác nhau (về số lượng hoặc kiểu).</p>
+
+    <p>Nếu 2 hàm trùng tên và cả bộ tham số truyền vào thì khi biên dịch sẽ báo lỗi kể cả 2 hàm đó khác kiểu dữ liệu trả
+        về.</p>
+
+
+
+
+
+
+    <h4>Câu 40:</h4>
+
+
+    <p>A constructor with default arguments for all its parameters is called a ___ constructor.</p>
+
+
+
+
+
+
+
+
+
+    A. static
+
+
+
+
+
+
+
+    B. run-time
+
+
+
+
+
+
+
+    C. default
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 41:</h4>
+
+
+    <p>Static member functions can access only the ___ data members of a class.</p>
+
+
+
+
+
+
+
+
+
+
+    A. dynamic
+
+
+
+
+
+
+
+
+    B. static
+
+
+
+
+
+
+
+
+    C. public
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 42:</h4>
+
+
+    <p>The two types of polymorphism is : ____ &amp; ____ .</p>
+
+
+
+
+
+
+
+
+
+    A. Run time and compile time
+
+
+
+
+
+
+
+
+    B. Preprocessor, compile time
+
+
+
+
+
+
+
+
+    C. Preprocessor, Linker
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 43:</h4>
+
+
+    <p>&nbsp;A file stream is an extension of a ___ stream.</p>
+
+
+
+
+
+
+
+
+
+
+    A. console
+
+
+
+
+
+
+
+
+    B. windows
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 44:</h4>
+
+
+    <p>The Standard Template Library(STL) is a library of ___ templates.</p>
+
+
+
+
+
+
+
+
+
+
+    A. container class
+
+
+
+
+
+
+
+
+    B. &nbsp;time class
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 45:</h4>
+
+
+    <p>Run time polymorphism is ___ than the compile time polymorphism.</p>
+
+
+
+
+
+
+
+
+
+
+    A. less flexible
+
+
+
+
+
+
+
+
+    B. more flexible
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+    <p>Đa hình động (run-time) thì mềm dẻo, linh hoạt hơn đa hình tĩnh.</p>
+
+
+
+
+
+
+    <h4>Câu 46:</h4>
+
+
+    <p>With private inheritance, public and protected members of the base class become ___ members of<br the derived
+            class.</p>
+
+
+
+
+
+
+
+
+
+
+        A. private
+
+
+
+
+
+
+
+
+        B. &nbsp;public
+
+
+
+
+
+
+
+
+        C. protected
+
+
+
+
+
+
+
+
+
+        <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 47:</h4>
+
+
+    <p>The STL Container adapters contains the ___ , ___ and ___ STL containers.</p>
+
+
+
+
+
+
+
+
+
+
+    A. Stack, Queue, Priority_queue
+
+
+
+
+
+
+
+
+    B. Set, Multiset, Map
+
+
+
+
+
+
+
+
+    C. vectors, lists, deques
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 48:</h4>
+
+
+    <p>The ___ block contains code that directly or indirectly might cause an exception to be thrown.</p>
+
+
+
+
+
+
+
+
+
+
+    A. catch
+
+
+
+
+
+
+
+
+    B. try
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 49:</h4>
+
+
+    <p>When writing function or class template, one use a ___ to specify a generic data type.</p>
+
+
+
+
+
+
+
+
+
+
+    A. template parameters
+
+
+
+
+
+
+
+
+    B. keyword
+
+
+
+
+
+
+
+
+    C. none of above
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 50:</h4>
+
+
+    <p>Data items in a class may be public.</p>
+
+
+
+
+
+
+
+
+
+
+    A. TRUE
+
+
+
+
+
+
+
+
+    B. FALSE
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
