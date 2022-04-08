@@ -1,28 +1,28 @@
-div class="exam-content">
-ul>
-
-h4>Câu 1: /h4>
 
 
-p>Trong cấu trúc chương trình C++, lệnh #include dùng để làm gì? /p>
 
-A. &nbsp;Thông báo trong chương trình sử dụng các lệnh tính toán, thông báo các biến sử dụng trong thân chương trình.
+Câu 1: 
+
+
+Trong cấu trúc chương trình C++, lệnh #include dùng để làm gì? 
+
+A. Thông báo trong chương trình sử dụng các lệnh tính toán, thông báo các biến sử dụng trong thân chương trình.
 
 B. Khai báo các câu lệnh được sử dụng trong chương trình. Phải tạo các câu lệnh trước thì mới sử dụng được trong chương
 trình C++.
 
-C. &nbsp;Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương
+C. Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương
 trình phải có prototype nằm trong các thư viện chuẩn này.
 
 D. Không có đáp án đúng.
 
-span class="right-answer"> b>C /b> là đáp án đúng
+C  là đáp án đúng
 
 
-h4>Câu 2: /h4>
+Câu 2: 
 
 
-p>Trong cấu trúc chương trình C++ có bao nhiêu hàm main()? /p>
+Trong cấu trúc chương trình C++ có bao nhiêu hàm main()? 
 
 A. 1
 
@@ -35,40 +35,37 @@ D. 4
 
 
 
-span class="right-answer"> b>A /b> là đáp án đúng
+A  là đáp án đúng
 
-h4>Câu 3: /h4>
-
-
-p>Lệnh cout trong C++ có tác dụng gì? /p>
-
-A. &nbsp;Là stream đầu ra chuẩn trong C++.
-
-B. &nbsp;Là lệnh chú thích trong C++
-C. &nbsp;Là stream đầu vào chuẩn của C++.
->D. &nbsp;Là lệnh khai báo một biến.
-b>A /b> là đáp án đúng
-
-h4>Câu 4: /h4>
+Câu 3: 
 
 
-p>Lệnh cin trong C++ có tác dụng gì? /p>
+Lệnh cout trong C++ có tác dụng gì? 
+
+A. Là stream đầu ra chuẩn trong C++.
+
+B. Là lệnh chú thích trong C++
+C. Là stream đầu vào chuẩn của C++.
+D. Là lệnh khai báo một biến.
+A  là đáp án đúng
+
+Câu 4: 
+
+
+Lệnh cin trong C++ có tác dụng gì? 
 
 
 
 
-A. &nbsp;Là lệnh chú thích trong C++
+A. Là lệnh chú thích trong C++
 
 
 B. Là lệnh khai báo một biến.
-C. &nbsp;Là stream đầu ra chuẩn trong C++.
-">D. &nbsp;Là stream đầu vào chuẩn của C++.
+C. Là stream đầu ra chuẩn trong C++.
+"D. Là stream đầu vào chuẩn của C++.
 
 
-D /b> là đáp án đúng
-
-
-
+D  là đáp án đúng
 
 
 
@@ -82,22 +79,16 @@ D /b> là đáp án đúng
 
 
 
-h4>Câu 5: /h4>
-
-
-p>Kết thúc một dòng lệnh trong chương trình C++, ta sử dụng ký hiệu gì? /p>
-
-
-/>
-
-
-,
 
 
 
+Câu 5: 
 
-A. &nbsp;Dấu ,
 
+Kết thúc một dòng lệnh trong chương trình C++, ta sử dụng ký hiệu gì? 
+
+
+/
 
 
 ,
@@ -105,16 +96,7 @@ A. &nbsp;Dấu ,
 
 
 
-B. &nbsp;Dấu .
-
-
-
-
-
-
-
-
-C. &nbsp;Dấu :
+A. Dấu ,
 
 
 
@@ -123,146 +105,164 @@ C. &nbsp;Dấu :
 
 
 
-D. &nbsp;Dấu ;
+B. Dấu .
 
 
 
-D /b> là đáp án đúng
 
 
 
-h4>Câu 6: /h4>
 
 
-p>Lệnh cout trong C++ đi kèm với cặp dấu nào? /p>
+C. Dấu :
 
 
-A. &nbsp;&gt;&gt;
-B. &nbsp;\\
-C. &nbsp;||
-D. &nbsp;&lt;&lt;
 
+,
 
 
-D /b> là đáp án đúng
 
 
+D. Dấu ;
 
 
-h4>Câu 7: /h4>
 
+D  là đáp án đúng
 
-p>Để chú thích trên 1 dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? /p>
 
 
-A. &nbsp;\* và *\
-B. &nbsp;&lt;&lt;
-C. &nbsp;//
-D. &nbsp;&gt;&gt;
+Câu 6: 
 
 
+Lệnh cout trong C++ đi kèm với cặp dấu nào? 
 
-C /b> là đáp án đúng
 
+A. &gt;&gt;
+B. \\
+C. ||
+D. &lt;&lt;
 
 
 
+D  là đáp án đúng
 
 
 
 
+Câu 7: 
 
 
+Để chú thích trên 1 dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? 
 
 
+A. \* và *\
+B. &lt;&lt;
+C. //
+D. &gt;&gt;
 
-h4>Câu 8: /h4>
 
 
-p>Để chú thích trên nhiều dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? /p>
+C  là đáp án đúng
 
 
-A. &nbsp;\\
 
 
 
-B. &nbsp;&gt;&gt;
 
 
 
 
-C. &nbsp;/* và */
 
 
 
 
-D. &nbsp;&lt;&lt;
+Câu 8: 
 
 
+Để chú thích trên nhiều dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? 
 
-C /b> là đáp án đúng
 
+A. \\
 
 
 
+B. &gt;&gt;
 
 
 
 
+C. /* và */
 
 
 
 
+D. &lt;&lt;
 
 
 
-h4>Câu 9: /h4>
+C  là đáp án đúng
 
 
-p>Chú thích nào sau đây là chính xác? /p>
 
 
 
-A. &nbsp;\*Lập trình C++
 
 
 
-B. &nbsp;//Lập trình C++
 
 
 
 
-C. &nbsp;&lt;!-Lập trình C++--&gt;
 
 
 
+Câu 9: 
 
-D. &nbsp;\\Lập trình C++
 
+Chú thích nào sau đây là chính xác? 
 
 
-B /b> là đáp án đúng
 
+A. \*Lập trình C++
 
 
 
+B. //Lập trình C++
 
 
 
 
+C. &lt;!-Lập trình C++--&gt;
 
 
 
 
+D. \\Lập trình C++
 
-h4>Câu 10: /h4>
 
 
-p>Cách khai báo biến nào sau đây là đúng? /p>
+B  là đáp án đúng
 
 
 
-A. &nbsp;&lt;Kiểu dữ liệu&gt; &lt;Danh sách tên biến&gt;;
+
+
+
+
+
+
+
+
+
+
+Câu 10: 
+
+
+Cách khai báo biến nào sau đây là đúng? 
+
+
+
+A. &lt;Kiểu dữ liệu&gt; &lt;Danh sách tên biến&gt;;
 
 
 
@@ -272,29 +272,29 @@ B. &lt;Danh sách tên biến&gt; : &lt;Kiểu dữ liệu&gt;;
 
 
 
-C. &nbsp;&lt;Tên biến&gt; = &lt;Giá trị&gt;;
+C. &lt;Tên biến&gt; = &lt;Giá trị&gt;;
 
 
 
 
-D. &nbsp;Tất cả đầu không đúng
+D. Tất cả đầu không đúng
 
 
 
-A /b> là đáp án đúng
-
-
-
-
+A  là đáp án đúng
 
 
 
 
 
-h4>Câu 11: /h4>
 
 
-p>What is the correct value to return to the operating system upon the successful completion of a program? /p>
+
+
+Câu 11: 
+
+
+What is the correct value to return to the operating system upon the successful completion of a program? 
 
 
 
@@ -317,7 +317,7 @@ D. Do not return a value
 
 
 
-A /b> là đáp án đúng
+A  là đáp án đúng
 
 
 
@@ -328,10 +328,10 @@ A /b> là đáp án đúng
 
 
 
-h4>Câu 12: /h4>
+Câu 12: 
 
 
-p>What is the only function all C programs must contain? /p>
+Đâu là hàm mà tất cả chương trình C phải có?
 
 
 
@@ -353,7 +353,7 @@ D. program()
 
 
 
-C /b> là đáp án đúng
+C  là đáp án đúng
 
 
 
@@ -365,10 +365,10 @@ C /b> là đáp án đúng
 
 
 
-h4>Câu 13: /h4>
+Câu 13: 
 
 
-p>What punctuation is used to signal the beginning and end of code blocks?&nbsp; /p>
+Ký tự nào được sử dụng để báo hiệu bắt đầu và kết thúc của các khối lệnh?
 
 
 
@@ -390,20 +390,20 @@ D. ( and )
 
 
 
-A /b> là đáp án đúng
+A  là đáp án đúng
 
 
-p>Dấu {} được dùng để đánh dấu điểm bắt đầu và kết thúc 1 block code (thân hàm, while, for, if/else,..) /p>
-
-
-
+Dấu {} được dùng để đánh dấu điểm bắt đầu và kết thúc 1 khối lệnh (thân hàm, while, for, if/else,..) 
 
 
 
-h4>Câu 14: /h4>
 
 
-p>What punctuation ends most lines of C code? /p>
+
+Câu 14: 
+
+
+Ký tự nào báo hiệu kết thúc dòng lệnh trong C++
 
 
 
@@ -423,17 +423,17 @@ C. '
 
 
 
-p>Dấu ; được dùng để đánh dấu điểm kết thúc 1 dòng code. /p>
+Dấu ; được dùng để đánh dấu điểm kết thúc 1 dòng lệnh. 
 
 
 
 
 
 
-h4>Câu 15: /h4>
+Câu 15: 
 
 
-p>Which of the following is a correct comment? /p>
+Cách comment đoạn code sau đây là đúng? 
 
 
 
@@ -442,11 +442,11 @@ A. */ Comments */
 
 
 
-B. &nbsp;** Comment **
+B. ** Comment **
 
 
 
-C. &nbsp;/* Comment */
+C. /* Comment */
 
 
 
@@ -455,27 +455,27 @@ D. { Comment }
 
 
 
-C /b> là đáp án đúng
+C  là đáp án đúng
 
 
 
-p>&nbsp; /p>
+ 
 
-p>Trong ngôn ngữ C, có 2 cách comment là: "// Comments" : 1 dòng code "/* Comment */" : 1 block code /p>
-
-
+Trong ngôn ngữ C, có 2 cách comment là: "// Comments" : 1 dòng code "/* Comment */" : 1 block code 
 
 
 
 
-h4>Câu 16: /h4>
 
 
-p>Which of the following is not a correct variable type? /p>
+Câu 16: 
+
+
+Đâu là kiểu dữ liệu không đúng trong C++?
 
 
 
-A. &nbsp;float
+A. float
 
 
 
@@ -494,23 +494,21 @@ D. double
 
 
 
-B /b> là đáp án đúng
+B  là đáp án đúng
 
-p>"real" không phải là kiểu dữ liệu trong ngôn ngữ lập trình C/C++ /p>
-
-
+"real" không phải là kiểu dữ liệu trong ngôn ngữ lập trình C/C++ 
 
 
 
 
-h4>Câu 17: /h4>
 
 
-p>Which of the following is the correct operator to compare two variables? /p>
+Câu 17: 
+
+Đâu là toán tử so sánh 2 biến trong C++?
 
 
-
-A. &nbsp;:=
+A. :=
 
 
 
@@ -529,23 +527,23 @@ D. ==
 
 
 
-D /b> là đáp án đúng
+D  là đáp án đúng
 
 
 
-p>&nbsp; /p>
+ 
 
-p>"==" là toán tử dùng để so sánh 2 biến với nhau. /p>
-
-
+"==" là toán tử dùng để so sánh 2 biến với nhau. 
 
 
 
 
-h4>Câu 18: /h4>
 
 
-p>Which of the following is true? /p>
+Câu 18: 
+
+
+Which of the following is true? 
 
 
 
@@ -567,28 +565,25 @@ D. All of the above
 
 
 
-D /b> là đáp án đúng
+D  là đáp án đúng
 
 
-p>Kiểu dữ liệu boolean được định nghĩa như sau: true: giá trị khác không, false: giá trị bằng 0. /p>
-
-
-
-
-
-
-h4>Câu 19: /h4>
-
-
-p>Which of the following is the boolean operator for logical-and? /p>
-
-
-A. &amp;
+Kiểu dữ liệu boolean được định nghĩa như sau: true: giá trị khác không, false: giá trị bằng 0. 
 
 
 
 
-B. &amp;&amp;
+
+
+Câu 19: 
+Đâu là toán tử logic AND?
+
+A. &
+
+
+
+
+B. &&
 
 
 
@@ -597,23 +592,23 @@ C. |
 
 
 
-D. |&amp;
+D. |&
 
 
 
-B /b> là đáp án đúng
+B  là đáp án đúng
 
-p>Toán tử logic AND được kí hiệu là: &amp;&amp; /p>
-
-
+Toán tử logic AND được kí hiệu là: &&
 
 
 
 
-h4>Câu 20: /h4>
 
 
-p>Evaluate !(1 &amp;&amp; !(0 || 1)) /p>
+Câu 20: 
+
+Đoạn code sau trả về giá trị gì?
+ !(1 &amp;&amp; !(0 || 1)) 
 
 
 
@@ -631,39 +626,37 @@ C. Unevaluatable
 
 
 
-A /b> A là đáp án đúng
-
->
-
-
-
-h4>Câu 21: /h4>
-
-
-p>Which of the following shows the correct syntax for an if statement? /p>
-
-
-A. &nbsp;if expression
-
-
-
-B. &nbsp;if { expression
+A là đáp án đúng
 
 
 
 
-C. &nbsp;if ( expression )
+
+Câu 21: 
+
+
+Đâu là cú pháp đúng của lệnh if?
+
+
+A. if ...
+
+
+
+B. if { ...
 
 
 
 
-D. expression if
+C. if ( ... )
 
 
 
-< /b> C là đáp án đúng
+
+D. ... if
 
 
+
+C là đáp án đúng
 
 
 
@@ -672,14 +665,16 @@ D. expression if
 
 
 
-    h4>Câu 22: /h4>
+
+
+    Câu 22: 
 
     int x;
-    for(x = 0; x &lt; 10; x++) { }
+    for(x = 0; x <= 10; x++) { }
 
-    p>&nbsp; /p>
+     
 
-    p>&nbsp;What is the final value of x when the code&nbsp;is run? /p>
+    Giá trị của x sau khi thực hiện đoạn lệnh bằng: 
 
 
 
@@ -701,7 +696,7 @@ D. expression if
 
 
 
-    A /b> là đáp án đúng
+    A  là đáp án đúng
 
 
 
@@ -713,35 +708,32 @@ D. expression if
 
 
 
-    h4>Câu 23: /h4>
+    Câu 23: 
 
 
-    p>When does the code block following while(x&lt;100) execute? /p>
-
-
-
-    A. When x is less than one hundred
+    Khi nào thì lệnh While(x < 100) được thực hiện?
 
 
 
-    B. When x is greater than one hundred
+    A. Khi x < 100
 
 
 
-
-    C. When x is equal to one hundred
+    B. Khi x > 100
 
 
 
 
-    D. While it wishes
+    C. Khi x < 100
 
 
 
-    A /b> là đáp án đúng
+
+    D. Khi x != 100
 
 
 
+    A  là đáp án đúng
 
 
 
@@ -751,11 +743,11 @@ D. expression if
 
 
 
-    h4>Câu 24: /h4>
 
 
-    p>Which is not a loop structure? /p>
 
+    Câu 24: 
+    Đâu không phải là câu lệnh lặp trong C++?
 
 
     A. for
@@ -778,7 +770,7 @@ D. expression if
 
 
 
-    D /b> là đáp án đúng
+    D  là đáp án đúng
 
 
 
@@ -791,18 +783,15 @@ D. expression if
 
 
 
-    h4>Câu 25: /h4>
-
-
-    p>How many times is a do while loop guaranteed to loop? /p>
-
+    Câu 25:  
+    Lệnh lặp do while được bảo đảm việc thực hiện bao nhiêu lần?
 
 
     A. 0
 
 
 
-    B. Infinitely
+    B. Vô hạn
 
 
 
@@ -810,15 +799,11 @@ D. expression if
 
 
 
-    D. Variable
+    D. Tuỳ theo biến
 
 
 
-    C /b> là đáp án đúng
-
-
-
-
+    C  là đáp án đúng
 
 
 
@@ -827,21 +812,17 @@ D. expression if
 
 
 
-    h4>Câu 26: /h4>
 
 
-    p>Which is not a proper prototype? /p>
+
+
+    Câu 26: 
+
+    Đâu không phải là cách khai báo prototype đúng?
 
 
     A. int funct(char x, char y);
 
-
-
-    25'
-    25"
-
-    225
-    25"
     B. double funct(char x)
 
 
@@ -855,32 +836,25 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
-
-
-    p>&nbsp; /p>
-
-    p>Câu lệnh khai báo hàm thiếu dấu ; /p>
+    Câu lệnh khai báo hàm thiếu dấu ; 
 
 
 
 
 
 
-    h4>Câu 27: /h4>
-
-
-    p>What is the return type of the function with prototype: “int func(char x, float v, double t);” /p>
-
-
+    Câu 27: 
+    Đâu là kiểu dữ liệu trả về của prototype sau?
+       “int func(char x, float v, double t);” 
 
     A. char
 
 
 
 
-    B. &nbsp;int
+    B. int
 
 
 
@@ -892,23 +866,15 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
 
 
+    Câu 28: 
 
 
-
-
-
-
-
-
-
-    h4>Câu 28: /h4>
-
-
-    p>Which of the following is a valid function call (assuming the function exists)? /p>
+    Which of the following is a valid function call (assuming the function exists)? 
+    Đâu là lời gọi hàm đúng? (Giả sử rằng hàm đã được khai báo)
 
 
     A. funct;
@@ -920,7 +886,7 @@ D. expression if
 
 
 
-    C. &nbsp;funct();
+    C. funct();
 
 
 
@@ -928,7 +894,7 @@ D. expression if
 
 
 
-    C /b> là đáp án đúng
+    C  là đáp án đúng
 
 
 
@@ -940,14 +906,14 @@ D. expression if
 
 
 
-    h4>Câu 29: /h4>
+    Câu 29: 
 
 
-    p>Which of the following is a complete function?&nbsp; /p>
+    Which of the following is a complete function? 
+    Đâu là một hàm được hoàn chỉnh đúng cách?
 
 
-
-    A. &nbsp;int funct();
+    A. int funct();
 
 
 
@@ -956,26 +922,26 @@ D. expression if
 
 
 
-    C. void funct(int) {printf( “Hello” );
+    C. void funct(int) {cout<<( “Hello” );
 
 
-    D. void funct(x) {printf( “Hello” ); }
-
-
-
-    B /b> là đáp án đúng
+    D. void funct(x) {cout<<( “Hello” ); }
 
 
 
+    B  là đáp án đúng
 
 
 
 
-    h4>Câu 30: /h4>
 
 
-    p>What is required to avoid falling through from one case to the next? /p>
 
+    Câu 30: 
+
+
+    What is required to avoid falling through from one case to the next? 
+    Đâu là lệnh được sử dụng để kết thúc một case khỏi case kế tiếp?
 
 
     A. end;
@@ -995,17 +961,15 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
 
 
-    h4>Câu 31: /h4>
+    Câu 31: 
+Từ khóa nào bao hàm các khả năng chưa được xử lý?
 
 
-    p>What keyword covers unhandled possibilities? /p>
-
-
-    A. &nbsp;all
+    A. all
 
 
 
@@ -1022,7 +986,7 @@ D. expression if
 
 
 
-    C /b> là đáp án đúng
+    C  là đáp án đúng
 
 
 
@@ -1033,22 +997,22 @@ D. expression if
 
 
 
-    h4>Câu 32: /h4>
+    Câu 32: 
 
     void main()
     {
-    int x = 0;
-    switch(x)
-    {
-    case 1: printf( "One" );
-    case 0: printf( "Zero" );
-    case 2: printf( "Hello World" );
-    }
+        int x = 0;
+        switch(x)
+            {
+                case 1: printf( "One" );
+                case 0: printf( "Zero" );
+                case 2: printf( "Hello World" );
+            }
     }
 
-    p>&nbsp; /p>
+     
 
-    p>What is the result of the following code? /p>
+    Kết quả của đoạn code trên là?
 
 
 
@@ -1057,7 +1021,7 @@ D. expression if
 
 
     B. Zero
-    &nbsp;
+    
 
 
 
@@ -1069,26 +1033,23 @@ D. expression if
 
 
 
-    D /b> là đáp án đúng
+    D  là đáp án đúng
 
 
-
-    p> br />
-    Do không có lệnh break giữa các case. Khi x = 0, lệnh case 0 và case 2 được thực hiện. /p>
-
+    Do không có lệnh break giữa các case. Khi x = 0, lệnh case 0 và case 2 được thực hiện. 
 
 
 
 
 
-    h4>Câu 33: /h4>
+
+    Câu 33: 
 
 
-    p>Which of the following is the proper declaration of a pointer? /p>
+    Đâu là cách khai báo con trỏ hợp lệ?
 
 
-
-    A. &nbsp;int x;
+    A. int x;
 
 
 
@@ -1106,7 +1067,7 @@ D. expression if
 
 
 
-    D /b> là đáp án đúng
+    D  là đáp án đúng
 
 
 
@@ -1117,11 +1078,11 @@ D. expression if
 
 
 
-    h4>Câu 34: /h4>
+    Câu 34: 
 
 
-    p>&nbsp;Which of the following gives the memory address of integer variable a? /p>
-
+    Which of the following gives the memory address of integer variable a? 
+    Đâu là lệnh dùng để truy xuất địa chỉ vùng nhớ của biến a?
 
 
     A. *a;
@@ -1132,7 +1093,7 @@ D. expression if
 
 
 
-    C. &amp;a;
+    C. &a;
 
 
 
@@ -1141,7 +1102,7 @@ D. expression if
 
 
 
-    C /b> là đáp án đúng
+    C  là đáp án đúng
 
 
 
@@ -1152,11 +1113,9 @@ D. expression if
 
 
 
-    h4>Câu 35: /h4>
+    Câu 35: 
 
-
-    p>Which of the following gives the memory address of a variable pointed to by pointer a? /p>
-
+    Đâu là lệnh cung cấp địa chỉ bộ nhớ của một biến được trỏ tới bởi con trỏ a?
 
     A. a;
 
@@ -1175,15 +1134,16 @@ D. expression if
 
 
 
-    A /b> là đáp án đúng
+    A  là đáp án đúng
 
 
-    h4>Câu 36: /h4>
+    Câu 36: 
 
 
-    p>Which of the following gives the value stored at the address pointed to by pointer a? /p>
+    Which of the following gives the value stored at the address pointed to by pointer a? 
+    Đâu là lệnh truy xuất giá trị của một biến được trỏ tới bởi con trỏ a?
 
-    A. &nbsp;a;
+    A. a;
 
 
 
@@ -1196,20 +1156,18 @@ D. expression if
 
 
 
-    C /b> là đáp án đúng
+    C  là đáp án đúng
 
-    h4>Câu 37: /h4>
+    Câu 37: 
 
-
-    p>Which of the following is the proper keyword or function to allocate memory in C? /p>
-
+    Đâu là từ khoá/hàm hợp lệ để cấp phát vùng nhớ trong C++?
 
 
-    A. &nbsp;new
+    A. new
 
 
 
-    B. malloc
+    B. delete
 
     C. create
 
@@ -1218,17 +1176,16 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    A  là đáp án đúng
 
 
 
-    h4>Câu 38: /h4>
+    Câu 38: 
 
 
-    p>Which of the following is the proper keyword or function to deallocate memory in &nbsp;C language? /p>
+    Đâu là từ khoá/hàm hợp lệ để giải phóng vùng nhớ trong C++?
 
-
-    A. &nbsp;free
+    A. free
 
 
 
@@ -1244,61 +1201,14 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
-    h4>Câu 39: /h4>
+    Câu 39: 
 
-
-    p>Which of the following accesses a variable in structure b? /p>
-
-
-    A. &nbsp;b→var;
-
-
-
-    B. &nbsp;b.var;
-
-
-
-    C. b-var;
-
-
-
-    D. &nbsp;b&gt;var;
-
-
-
-    B /b> là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    h4>Câu 40: /h4>
-
-
-    p>Which of the following accesses a variable in a pointer to a structure, *b? /p>
-
-
-    />
-
-
-
-
-
+    Đâu là lệnh truy cập biến var trong struct b?
 
 
     A. b→var;
-
-
-
-
-
 
 
 
@@ -1306,17 +1216,7 @@ D. expression if
 
 
 
-
-
-
-
-
-    C. &nbsp;b-var;
-
-
-
-
-
+    C. b-var;
 
 
 
@@ -1324,9 +1224,7 @@ D. expression if
 
 
 
-    A /b> là đáp án đúng
-
-    >
+    B  là đáp án đúng
 
 
 
@@ -1337,17 +1235,27 @@ D. expression if
 
 
 
+    Câu 40: 
+
+    Đâu là lệnh truy cập biến var trong struct con trỏ *b?
+
+    A. b→var;
+
+    B. b.var;
+
+    C. b-var;
+
+    D. b&var;
+
+
+
+    A  là đáp án đúng
+
+    
 
 
 
 
-    h4>Câu 41: /h4>
-
-
-    p>Which of the following is a properly defined struct? /p>
-
-
-    />
 
 
 
@@ -1355,38 +1263,21 @@ D. expression if
 
 
 
-    A. &nbsp;struct {int a;}
 
 
 
+    Câu 41: 
 
-
-
-
+    Đâu là lệnh khai báo struct hợp lệ?
+    A. struct {int a;}
 
     B. struct a_struct {int a;}
 
+    C. struct a_struct int a;
 
+    D. struct a_struct {int a;};
 
-
-
-
-
-
-    C. &nbsp;struct a_struct int a;
-
-
-
-
-
-
-
-
-    D. &nbsp;struct a_struct {int a;};
-
-
-
-    D /b> là đáp án đúng
+    D  là đáp án đúng
 
 
 
@@ -1403,17 +1294,16 @@ D. expression if
 
 
 
-    h4>Câu 42: /h4>
+    Câu 42: 
 
-
-    p>Which properly declares a variable of struct foo? /p>
-
-
+Đâu là lệnh khai báo đúng một biến của struct foo? 
 
 
 
 
-    A. &nbsp;struct foo;
+
+
+    A. struct foo;
 
 
 
@@ -1427,35 +1317,33 @@ D. expression if
 
 
 
-    D. &nbsp;int foo;
+    D. int foo;
 
 
 
-    B /b> là đáp án đúng
-
-
-
-
+    B  là đáp án đúng
 
 
 
 
 
 
-    h4>Câu 43: /h4>
-
-
-    p>Which of the following correctly declares an array? /p>
 
 
 
 
+    Câu 43: 
 
-    A. &nbsp;int arr[10];
+    Đâu là lệnh khai báo mảng hợp lệ?
 
 
 
-    B. &nbsp;int arr;
+
+    A. int arr[10];
+
+
+
+    B. int arr;
 
 
 
@@ -1467,7 +1355,7 @@ D. expression if
 
 
 
-    A /b> là đáp án đúng
+    A  là đáp án đúng
 
 
 
@@ -1479,11 +1367,10 @@ D. expression if
 
 
 
-    h4>Câu 44: /h4>
+    Câu 44: 
 
 
-    p>What is the index number of the last element of an array with 29 elements? /p>
-
+Đâu là chỉ số của phẩn tử cuối cùng trong mảng có 29 phần tử?
 
 
     A. 29
@@ -1498,25 +1385,24 @@ D. expression if
 
 
 
-    D. &nbsp;Programmer-defined
+    D. Programmer-defined
 
 
 
-    B /b> là đáp án đúng
-
-
-
-
+    B  là đáp án đúng
 
 
 
 
 
-    h4>Câu 45: /h4>
 
 
-    p>Which of the following is a two-dimensional array? /p>
 
+
+    Câu 45: 
+
+
+Đâu là cách khai báo mảng 2 chiều hợp lệ?
 
 
     A. array arr[20][20];
@@ -1524,7 +1410,7 @@ D. expression if
 
 
 
-    B. &nbsp;int arr[20][20];
+    B. int arr[20][20];
 
 
 
@@ -1536,7 +1422,7 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
 
 
@@ -1546,61 +1432,22 @@ D. expression if
 
 
 
-    h4>Câu 46: /h4>
+    Câu 46: 
 
-
-    p>&nbsp;Which of the following correctly accesses the seventh element stored in foo, an array with 100 elements? /p>
-
-
-
-
-
-
-
-
-
+Đâu là lệnh truy cập chính xác phần tử thứ 7 được lưu trữ trong mảng có 100 phần tử?
     A. foo[6];
-
-
-
-
-
-
-
-
-    B. &nbsp;foo[7];
-
-
-
-
-
-
-
-
+    B. foo[7];
     C. foo(7);
+    D. foo;
+    A  là đáp án đúng
+
+    Câu 47: 
 
 
+    Đâu là lệnh cung cấp địa chỉ bộ nhớ của phần tử đầu tiên trong mảng arr, một mảng có 100 phần tử?
 
 
-
-
-
-
-    D. &nbsp;foo;
-
-
-
-    A /b> là đáp án đúng
-
-
-
-    h4>Câu 47: /h4>
-
-
-    p>Which of the following gives the memory address of the first element in array arr, an array with 100 elements? /p>
-
-
-    A. &nbsp;arr[0];
+    A. arr[0];
 
 
 
@@ -1617,7 +1464,7 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
 
 
@@ -1628,10 +1475,10 @@ D. expression if
 
 
 
-    h4>Câu 48: /h4>
+    Câu 48: 
 
 
-    p>Which of the following is a string literal? /p>
+    Đâu là một chuỗi ký tự?
 
 
 
@@ -1639,11 +1486,11 @@ D. expression if
 
 
 
-    B. &nbsp;“Static String”
+    B. “Static String”
 
 
 
-    C. &nbsp;‘Static String’
+    C. ‘Static String’
 
 
 
@@ -1652,13 +1499,11 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng
 
-    h4>Câu 49: /h4>
+    Câu 49: 
 
-
-    p>What character ends all strings? /p>
-
+    Ký tư nào báo hiệu kết thúc tất cả các chuỗi?
 
 
     A. ‘.’
@@ -1669,7 +1514,7 @@ D. expression if
 
 
 
-    C. &nbsp;‘\0’
+    C. ‘\0’
 
 
 
@@ -1678,7 +1523,7 @@ D. expression if
 
 
 
-    C /b> là đáp án đúng
+    C  là đáp án đúng
 
 
 
@@ -1689,17 +1534,17 @@ D. expression if
 
 
 
-    h4>Câu 50: /h4>
+    Câu 50: 
 
 
-    p>Which of the following reads in a string named x with one hundred characters? /p>
+    Đâu là lệnh đọc trong một chuỗi có tên là x với 100 ký tự?
 
 
     A. fgets(x, 101, stdin);
 
 
 
-    B. &nbsp;fgets(x, 100, stdin);
+    B. fgets(x, 100, stdin);
 
 
 
@@ -1711,4 +1556,4 @@ D. expression if
 
 
 
-    B /b> là đáp án đúng
+    B  là đáp án đúng

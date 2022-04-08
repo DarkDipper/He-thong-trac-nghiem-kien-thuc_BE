@@ -1,11 +1,5 @@
-<div class=exam-content>
-
-
-    <h4>Câu 1:</h4>
-
-
-    <p>Which of the following functions compares two strings?</p>
-
+    Câu 1:
+Đâu là hàm dùng để so sánh sự giống nhau của 2 chuỗi?
 
 
 
@@ -51,7 +45,7 @@
 
 
 
-    <b>D</b> là đáp án đúng
+    D là đáp án đúng
 
 
 
@@ -60,10 +54,10 @@
 
 
 
-    <h4>Câu 2:</h4>
+    Câu 2:
 
 
-    <p>&nbsp;Which of the following adds one string to the end of another?</p>
+    Đâu là lệnh thêm một chuỗi vào cuối chuỗi khác?
 
 
 
@@ -110,7 +104,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -123,11 +117,9 @@
 
 
 
-    <h4>Câu 3:</h4>
+    Câu 3:
 
-
-    <p>&nbsp;In which standard library file is the function printf( ) located?</p>
-
+    Hàm printf( ) được khai báo ở thư viện nào?
 
 
 
@@ -172,7 +164,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -185,12 +177,10 @@
 
 
 
-    <h4>Câu 4:</h4>
+    Câu 4:
 
-
-    <p>Which function is used to read the input from console?<br />
-        &nbsp;</p>
-
+        
+    Lệnh nào dùng để đọc giá trị từ console?
 
 
 
@@ -199,14 +189,14 @@
 
 
 
-    A. scanf( )
+    A. cin 
 
 
 
 
 
 
-    B. printf( )
+    B. cout
 
 
 
@@ -221,7 +211,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -234,31 +224,32 @@
 
 
 
-    <h4>Câu 5:</h4>
+    Câu 5:
 
 
-    <p>Which of the following are NOT relational operator?</p>
 
+    Đâu không phải là toán tử quan hệ?
 
 
 
 
 
-    A. &nbsp;&gt;
+    A. +
 
 
 
 
-    B. &nbsp;&gt;
+    B. !=
 
 
 
-    C. &lt;=
+    C. ==
 
 
 
 
-    D. None above
+    D. Khôngne above
+    D là đáp án đúng
 
 
 
@@ -267,43 +258,42 @@
 
 
 
-    <b>D</b> là đáp án đúng
 
-    4
 
 
 
+    Câu 6:
 
+    Trong chương trình C++, dòng lệnh nào được thực hiện đầu tiên?
 
 
 
 
+    A. Lệnh đầu tiên trong hàm main()
 
 
 
-    <h4>Câu 6:</h4>
 
+    B. Lệnh đầu tiên của chương trình
 
-    <p>In the C program, the first statement that will be executed?</p>
 
 
+    C. Lệnh đầu tiên trong khối comment /* */
 
 
 
-    A. The first statement of main( )
 
+    D. Câu lệnh đầu tiên của hàm kết thúc
 
 
-    B. The first statement of program
 
 
 
-    C. The first statement after the comment /**/
 
 
 
+    A là đáp án đúng
 
-    D. The first statement of end function
 
 
 
@@ -312,72 +302,50 @@
 
 
 
-    <b>A</b> là đáp án đúng
 
 
 
+    Câu 7:
 
+Tại sao các prototype lại hữu ích?
 
 
+     A. Bởi vì chúng nói với trình biên dịch rằng một hàm được khai báo sau
 
 
 
+     B. Vì chúng làm cho chương trình có thể chạy được
 
 
 
-    <h4>Câu 7:</h4>
+     C. Vì chúng cho phép người lập trình xem nhanh danh sách các hàm trong chương trình cùng với đối số cho mỗi
+     hàm số.
 
+    D. Tất cả những điều trên
 
-    <p>Why are a function phototypes useful?</p>
 
 
-    A. Because they tell the complier that a function is declared later
 
 
 
-    B. Because they make program readable
 
 
+    A là đáp án đúng
 
-    C. Because they allow the programmer to see a quick list of function in the program along with the argument for each
-    function.
-
-
-
-    D. All of the above
-
-
-
-
-
-
-
-
-    <b>A</b> là đáp án đúng
-
-
-
-
-
-
-
-
-
-    <p><br />
         Function phototype chính là việc khai báo hàm. Nếu việc gọi hàm trước khi hàm được khai báo. Trình biên dịch
-        thông báo lỗi.</p>
+        thông báo lỗi.
 
 
 
 
 
 
-    <h4>Câu 8:</h4>
+    Câu 8:
 
 
-    <p>Which of the following statements should be used to obtain a remainder after dividing 3.14 by 2.1?<br />
-        &nbsp;</p>
-
+    Which of the following statements should be Sử dụngd to obtain a remainder after dividing 3.14 by 2.1?
+        
+Câu lệnh nào sau đây được sử dụng để nhận được phần dư sau khi chia 3,14 cho 2,1?
 
 
 
@@ -390,28 +358,19 @@
 
 
 
-    B. rem = fmod(3.14, 2.1);
+    B. rem = mod(3.14, 2.1);
 
 
 
 
-    C. rem = modf(3.14, 2.1);
-
-
-
-
-
-
-    D. Remainder cannot be obtain in floating point division.
+    C. rem = div(3.14, 2.1);
 
 
 
 
 
 
-
-
-    <b>B</b> là đáp án đúng
+    D. Số dư không thể được chứa trong phép chia dấu phẩy động.
 
 
 
@@ -420,150 +379,151 @@
 
 
 
-    <p><br />
-        Toán tử % lấy phần dư của phép chia 2 số nguyên. Hàm fmod() lấy phần dư của phép chia 2 số thập phân. Hàm modf()
-        tách phần nguyên và phần thập phân.</p>
+    B là đáp án đúng
+
+
+        Toán tử % lấy phần dư của phép chia 2 số nguyên. Hàm mod() lấy phần dư của phép chia 2 số thập phân. Hàm div() lấy phần nguyên của phép chia 2 số thập phân.
 
 
 
 
 
 
-    <h4>Câu 9:</h4>
-    <p>1.&nbsp;</p>
+    Câu 9:
+    1.
 
 
-    struct book
-    {
-    char name[10];
-    float price;
-    int page; };
+    struct book{
+        char name[10];
+        float price;
+        int page; 
+    };
 
-    <p>2.&nbsp;</p>
+    2.
 
 
     long int l = 2.3;
 
-    <p>3.&nbsp;</p>
+    3.
 
 
     enum day{Monday, Tuesday, Wednesday};
 
-    <p>&nbsp;</p>
+    
 
-    <p>Which of the following is not user define data type?</p>
-
-
-    8/>
+    Đâu không phải là kiểu dữ liệu do người dùng xác định?
 
 
-    1','8')
-    l8
 
-    18/>
-    8
+
+
+   
+
+
+
+
     A. 1
 
 
 
-    '8')
-    l8
 
-    28/>
-    8
+
+
+
+
     B. 2
 
 
 
-    '8')
-    l8
 
-    38/>
-    8
+
+
+
+
     C. 3
 
 
 
-    '8')
-    l8
-
-    48/>
-    8
-    D. 1 &amp; 2 &amp; 3
 
 
 
+   
 
-
-
-    t8
-
-    <b>B</b> là đáp án đúng
-    8
-
-    8
-
-    8
-
-
-
-
-    <p><br />
-        User define data type là kiểu dữ liệu (struct, class, enum,..) do người dùng tự định nghĩa từ các kiểu dữ liệu
-        cơ bản</p>
+    D. 1, 2, 3
 
 
 
 
 
 
-    <h4>Câu 10:</h4>
+   
 
-    extern int x;
-    float func(float x) { … }
-    double pow(double, double);
-
-    <p>&nbsp;</p>
-
-    <p>Identify which of the following are declarations<br />
-        &nbsp;</p>
+    B là đáp án đúng
 
 
 
 
 
-    1','9')
-    l9
 
-    1
-    9
+
+
+
+    
+        Sử dụngr define data type là kiểu dữ liệu (struct, class, enum,..) do người dùng tự định nghĩa từ các kiểu dữ liệu
+        cơ bản
+
+
+
+
+
+
+    Câu 10:
+
+    1. extern int x;
+    2. float func(float x) { … }
+    3. double pow(double, double);
+
+    
+
+    Xác định đâu là khai báo?
+        
+
+
+
+
+
+    
+  
+
+  
+  
     A. 1
 
 
 
-    '9')
-    l9
+  
+  
 
-    2
-    9
+  
+  
     B. 2
 
 
 
-    '9')
-    l9
+  
+  
 
-    3
-    9
+  
+  
     C. 3
 
 
 
-    '9')
-    l9
+  
+  
 
-    4
-    9
+  
+  
     D. 1 and 3
 
 
@@ -571,13 +531,11 @@
 
 
 
-    t9
+  
 
-    <b>D</b> là đáp án đúng
+    D là đáp án đúng
 
-    9
-
-
+  
 
 
 
@@ -588,34 +546,27 @@
 
 
 
-    <h4>Câu 11:</h4>
+
+
+    Câu 11:
 
     extern int i;
 
-    <p>&nbsp;</p>
+    
 
-    <p>&nbsp;Is the following statement a declaration or definition?</p>
-
-
-
-
-
-
-    A. Declaration
-
-
-    B. Definition
-
-
-    C. A &amp; B
+    Câu lệnh trên là khai báo hay định nghĩa?
 
 
 
 
 
+    A. Khai Báo
 
 
-    <b>A</b> là đáp án đúng
+    B. Định nghĩa
+
+
+    C. A & B
 
 
 
@@ -623,49 +574,57 @@
 
 
 
+    A là đáp án đúng
 
-    <h4>Câu 12:</h4>
+
+
+
+
+
+
+
+    Câu 12:
 
     extern int fun( ) ;
     int fun( );
 
-    <p>&nbsp;</p>
+    
 
-    <p>Is there any difference between following declarations?</p>
-
-
-
-
-
-
-    A. Both are identical
-
-
-
-    B. No difference, except extern int fun( ); is probably in another file
-
-
-
-    C. &nbsp;int fun( ); is overrided with extern int fun( );
-
-
-
-    D. None of these
-
-
-    <b>B</b> là đáp án đúng
-
-    <p><br />
-        Khi bạn cần gọi hàm từ file .c vào file .cpp, bạn cần phải extern function</p>
+    Is there any difference between following declarations?
+Có sự khác biệt nào giữa các khai báo sau đây?
 
 
 
 
 
+    A. Cả hai đều giống hệt nhau
 
-    <h4>Câu 13:</h4>
 
-    #include &lt;stdio.h&gt;
+
+    B. Không có sự khác biệt, ngoại trừ extern int fun (); có thể nằm trong một tệp khác
+
+
+
+    C. int fun( ); được ghi đè bằng extern int fun( );
+
+
+
+    D. Tất cả đều sai
+
+
+    B là đáp án đúng
+
+    
+        Khi bạn cần gọi hàm từ file .c vào file .cpp, bạn cần phải extern function
+
+
+
+
+
+
+    Câu 13:
+
+    #include <stdio.h>
     void main()
     {
     extern int a;
@@ -673,34 +632,34 @@
     }
     int a = 20;
 
-    <p>&nbsp;</p>
+    
 
-    <p>&nbsp;In the following program where is the variable a getting defined and where it is getting declared?</p>
+   Trong chương trình sau, biến a được định nghĩa ở đâu và được khai báo ở đâu?
 
 
 
 
 
 
-    A. Extern int a is declaration, int a = 20 is the definition
+    A. Extern int a là khai báo, int a = 20 là định nghĩa
 
 
 
 
+    B. Int a = 20 là khai báo, extern int a là định nghĩa
 
-    B. &nbsp;Int a = 20 is declaration, extern int a is the definition
 
 
 
 
+    C. Int a = 20 là định nghĩa, a không được định nghĩa
 
-    C. Int a = 20 is definition, a is not defined
 
 
 
 
+    D. a được khai báo, a không được định nghĩa
 
-    D. a is declared, a is not defined
 
 
 
@@ -708,8 +667,8 @@
 
 
 
+    A là đáp án đúng
 
-    <b>A</b> là đáp án đúng
 
 
 
@@ -723,39 +682,39 @@
 
 
 
+    Câu 14:
 
-    <h4>Câu 14:</h4>
 
+    Các kiểu liên kết file gồm:
 
-    <p>What are the types of linkages?</p>
 
 
 
 
+    A. Trong và ngoài
 
-    A. Internal and External
 
 
 
+    B. Bên ngoài, Bên trong và Không có
 
-    B. External, Internal and None
 
 
+    C.  Bên ngoài và Không có
 
-    C. External and None
 
 
 
+    D. Nội bộ
 
-    D. Internal
 
 
 
 
 
 
+    B là đáp án đúng
 
-    <b>B</b> là đáp án đúng
 
 
 
@@ -769,11 +728,10 @@
 
 
 
+    Câu 15:
 
-    <h4>Câu 15:</h4>
 
-
-    <p>Which of the following special symbol allowed in a variable name?</p>
+   Ký hiệu đặc biệt nào sau đây được phép sử dụng trong một tên biến?
 
 
 
@@ -782,7 +740,7 @@
 
 
 
-    B. &nbsp;| (pipeline)
+    B. | (pipeline)
 
 
 
@@ -801,19 +759,19 @@
 
 
 
-    <b>D</b> là đáp án đúng
+    D là đáp án đúng
 
 
 
 
 
-    <h4>Câu 16:</h4>
+    Câu 16:
 
 
-    <p>By default a real number is treated as a</p>
+    Theo mặc định, một số thực được coi là
 
 
-    A. &nbsp;float
+    A. float
 
 
 
@@ -835,16 +793,16 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
 
 
-    <h4>Câu 17:</h4>
+    Câu 17:
 
 
-    <p>How would you round off a value from 1.66 to 2.0?</p>
+    Bạn sẽ làm tròn giá trị từ 1,66 thành 2,0 như thế nào?
 
 
     A. ceil(1.66)
@@ -869,185 +827,182 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
-    <p><br />
+    
         Hàm ceil(x) làm tròn số thập phân thành số nguyên nhỏ nhất, lớn hơn hoặc bằng x. Hàm floor(x) làm tròn số thập
         phân thành số nguyên lớn nhất, nhỏ hơn hoặc bằng x. Hàm roundup() và roundto() không tồn tại trong thư viện ngôn
-        ngữ C/C++</p>
+        ngữ C/C++
 
 
 
 
 
 
-    <h4>Câu 18:</h4>
+    Câu 18:
 
     int func(int arr[]);
     int func(int arr[20]);
 
-    <p>&nbsp;</p>
+    
 
-    <p>Is there any difference in the following declaration?</p>
+   Trong khai báo trên đây có sự khác biệt?
 
 
 
-    A. Yes
+    A. Có
 
 
+    B. Không
 
 
-    B. No
 
 
 
 
 
 
+    A là đáp án đúng
 
+    Câu lệnh int func(int arr[]) chấp nhận đầu vào là mảng nguyên với kích thước bất kì.
+        Câu lệnh int func(int arr[20]) chấp nhận đầu vào là mảng nguyên với kích thước là 12.
 
-    <b>A</b> là đáp án đúng
 
-    <p>Câu lệnh int func(int arr[]) chấp nhận đầu vào là mảng nguyên với kích thước bất kì.<br />
-        Câu lệnh int func(int arr[20]) chấp nhận đầu vào là mảng nguyên với kích thước là 12.</p>
 
 
 
 
+    Câu 19:
 
 
-    <h4>Câu 19:</h4>
+    Kiểu dữ liệu long double có thể được sử dụng nếu phạm vi của long double không đủ để chứa một số thực?
 
 
-    <p>A long double can be used if range of a double is not enough to accommodate a real number?</p>
+    A. Đúng
 
 
-    A. True
 
+    B. Sai
 
 
-    B. False
 
 
 
 
 
 
+    B là đáp án đúng
 
 
-    <b>B</b> là đáp án đúng
 
 
 
 
 
 
+    Câu 20:
 
+    Một float có dung lượng 4 byte, trong khi  double có dung lượng 8 byte
 
-    <h4>Câu 20:</h4>
 
+    A. Đúng
 
-    <p>&nbsp;A float is 4 byte wide, whereas a double is 8 byte wide</p>
 
+    B. Sai
 
-    A. True
 
 
-    B. False
 
 
 
+    A là đáp án đúng
 
 
 
-    <b>A</b> là đáp án đúng
 
 
 
 
 
+    Câu 21:
 
 
+    Kích thước của số nguyên ngắn và số nguyên dài có thể được xác minh bằng cách sử dụng toán tử sizeof ()
 
-    <h4>Câu 21:</h4>
 
 
-    <p>Size of short integer and long integer can be verified using the sizeof( ) operator</p>
 
 
+    A. Đúng
 
 
 
-    A. True
+    B. Sai
 
 
 
-    B. False
 
 
 
+    A là đáp án đúng
 
 
 
-    <b>A</b> là đáp án đúng
 
-    20
 
 
 
 
 
 
+    Câu 22:
 
 
-    <h4>Câu 22:</h4>
+ Nếu định nghĩa của biến bên ngoài xuất hiện trong tệp nguồn trước khi nó được sử dụng trong một hàm cụ thể, thì không cần khai báo bên ngoài trong hàm
 
 
-    <p>If the definition of external variable occurs in the source file before its use in a particular function, then
-        there is no need for an extern declaration in the function</p>
 
+    A. Đúng
 
 
 
-    A. True
+    B. Sai
 
 
 
-    B. False
 
 
 
 
+    A là đáp án đúng
 
 
+    Câu 23:
 
-    <b>A</b> là đáp án đúng
 
+    Biến toàn cục có sẵn cho tất cả các hàm. Có tồn tại một cơ chế mà nó có sẵn cho một số và không cho các số khác
 
-    <h4>Câu 23:</h4>
 
 
-    <p>Global variable are available to all functions. Does there exist a mechanism by way of which it available to some
-        and not to others</p>
 
 
+    A. Có
 
 
+    B. Không
 
 
-    A. Yes
 
 
-    B. No
 
 
 
 
+    B là đáp án đúng
 
 
 
 
-    <b>B</b> là đáp án đúng
 
 
 
@@ -1057,31 +1012,31 @@
 
 
 
+    Câu 24:
 
 
+Kích thước của short integer và long integer sẽ khác nhau tùy theo nền tảng
 
 
-    <h4>Câu 24:</h4>
+    A. Đúng
 
 
-    <p>Size of short integer and long integer would vary from one platform to another</p>
 
+    B. Sai
 
 
-    A. True
 
 
 
-    B. False
 
 
 
+    B là đáp án đúng
 
 
 
 
 
-    <b>B</b> là đáp án đúng
 
 
 
@@ -1091,16 +1046,8 @@
 
 
 
-
-
-
-
-
-    <h4>Câu 25:</h4>
-
-
-    <p>A float occupies 4 bytes. If the hexadecimal equivalent of these 4 bytes A, B, C and D, then when this float is
-        stored in memory in which of the following order do these bytes gets stored?</p>
+    Câu 25:
+    Một float có dung lượng 4 byte. Nếu tương đương hệ thập lục phân của 4 byte A, B, C và D này, thì khi float này được lưu trữ trong bộ nhớ theo thứ tự nào sau đây ?
 
 
 
@@ -1116,24 +1063,23 @@
 
 
 
-    D. Depend on big endian or little endian architecture.
+    D. Phụ thuộc vào kiến trúc endian lớn hoặc endian nhỏ.
 
 
 
 
 
 
-
-    <b>D</b> là đáp án đúng
-
-
-    <h4>Câu 26:</h4>
+    D là đáp án đúng
 
 
-    <p>What are the difference types of real data type in C?</p>
+    Câu 26:
 
 
-    A. &nbsp;float, double
+    Các kiểu khác nhau của kiểu dữ liệu thực trong C++ là gì?
+
+
+    A. float, double
 
 
 
@@ -1146,13 +1092,7 @@
     D. double, long int, float
 
 
-
-
-
-
-
-
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -1165,11 +1105,11 @@
 
 
 
-    <h4>Câu 27:</h4>
+    Câu 27:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;math.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <math.h>
+    #include <conio.h>
 
     void main()
     {
@@ -1178,47 +1118,47 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What will be the ouput of the program?</p>
-
-
-
-    A. 1.000000 &nbsp;2.000000
+    Output của chương trình là gì?
 
 
 
-    B. 1.500000 &nbsp;1.000000
+    A. 1.000000 2.000000
 
 
 
-    C. 2.000000 &nbsp;1.000000
+    B. 1.500000 1.000000
 
 
 
-    D. 1.300000 &nbsp;2.000000
+    C. 2.000000 1.000000
 
 
 
-
-
-
-
-    <b>C</b> là đáp án đúng
-
-    <p>&nbsp;</p>
-
-    <p>Xem thêm: hàm&nbsp;ceil()&nbsp;và&nbsp;floor()</p>
+    D. 1.300000 2.000000
 
 
 
 
 
 
-    <h4>Câu 28:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    C là đáp án đúng
+
+    
+
+    Xem thêm: hàm ceil() và floor()
+
+
+
+
+
+
+    Câu 28:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
@@ -1226,13 +1166,13 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>Which library will you add in the following program to work it correctly?</p>
+    Bạn sẽ thêm thư viện nào vào chương trình sau để chương trình hoạt động chính xác?
 
 
 
-    A. &nbsp;math.h
+    A. math.h
 
 
 
@@ -1253,65 +1193,65 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
 
 
-    <h4>Câu 29:</h4>
+    Câu 29:
 
 
-    <p>What will you do to treat the constant 3.14 as a long double?</p>
+    Bạn sẽ làm gì để coi hằng số 3,14 là kiểu long double?
 
 
 
-    A. &nbsp;use 3.14LD
+    A. Sử dụng 3.14LD
 
 
 
-    B. use 3.14L
+    B. Sử dụng 3.14L
 
-    C. use 3.14DL
+    C. Sử dụng 3.14DL
 
 
 
-    D. &nbsp;use 3.14LF
+    D. Sử dụng 3.14LF
 
 
 
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
-    <p>Hằng số 3.14 là kiểu double, 3.14L là kiểu long double</p>
+    Hằng số 3.14 là kiểu double, 3.14L là kiểu long double
 
 
 
 
 
 
-    <h4>Câu 30:</h4>
+    Câu 30:
 
 
-    <p>What will you do to treat the constant 3.14 as a float?</p>
+    Bạn sẽ làm gì để coi hằng số 3,14 là kiểu float?
 
 
 
-    A. use float(3.14f)
+    A. Sử dụng float(3.14f)
 
 
 
-    B. use 3.14f
+    B. Sử dụng 3.14f
 
 
 
-    C. use f(3.14)
+    C. Sử dụng f(3.14)
 
 
 
-    D. use (f)(3.14)
+    D. Sử dụng (f)(3.14)
 
 
 
@@ -1319,29 +1259,29 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
-    <p>Bạn có thể test bằng câu lệnh: sizeof(3.14f) = 4 (byte) (Visual C++ 2008 x86)</p>
+    Bạn có thể test bằng câu lệnh: sizeof(3.14f) = 4 (byte) 
 
 
 
 
 
 
-    <h4>Câu 31:</h4>
+    Câu 31:
 
 
-    <p>We want to round off x, a float, to an int value, The correct way to do is:</p>
+   Ta muốn làm tròn x ở kiểu float thành một giá trị int, Cách đúng để làm là:
 
 
 
 
-    A. &nbsp;y = (int)(x + 0.5)
+    A. y = (int)(x + 0.5)
 
 
 
-    B. &nbsp;y = int(x + 0.5)
+    B. y = int(x + 0.5)
 
 
 
@@ -1357,22 +1297,22 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
-    <p>Round off ở đây có nghĩa là làm tròn số thập phân.<br />
-        Ví dụ: 3.45 –&gt; 3, 3.5 –&gt; 4.<br />
-        Do vậy, ở đây để làm tròn x ta cộng thêm 0.5.<br />
-        Đáp án B cũng có thể đúng, nhưng đáp án A là chuẩn nhất, đảm bảo đúng trên mọi compiler.</p>
-
-
+    Round off ở đây có nghĩa là làm tròn số thập phân.
+        Ví dụ: 3.45 –> 3, 3.5 –> 4.
+        Do vậy, ở đây để làm tròn x ta cộng thêm 0.5.
+        Đáp án B cũng có thể đúng, nhưng đáp án A là chuẩn nhất, đảm bảo đúng trên mọi compiler.
 
 
 
 
-    <h4>Câu 32:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+
+    Câu 32:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
@@ -1385,9 +1325,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What will be output of the program?</p>
+    Output của chương trình là gì?
 
 
 
@@ -1398,7 +1338,7 @@
 
 
 
-    B. Complier Error
+    B. Lỗi biên dịch
 
 
     C. 1.67e, 1.67000, 1.670, 1.67
@@ -1414,27 +1354,27 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
-    <p>%e: in ra kiểu số mũ.<br />
-        %f: in ra kiểu dấu phẩy động<br />
-        %g: in ra dạng rút gọn của %f hoặc %e<br />
-        %lf: in ra kiểu dấu phẩy động.</p>
-
-
+    %e: in ra kiểu số mũ.
+        %f: in ra kiểu dấu phẩy động
+        %g: in ra dạng rút gọn của %f hoặc %e
+        %lf: in ra kiểu dấu phẩy động.
 
 
 
 
-    <h4>Câu 33:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+
+    Câu 33:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
     float n = 0.7;
-    if(n &lt; 0.7f)
+    if(n < 0.7f)
     printf(LaptrinhC++);
     else
     printf(abc);
@@ -1442,9 +1382,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What will be output of program?</p>
+    Output của chương trình là gì?
 
 
 
@@ -1458,40 +1398,40 @@
 
 
 
-    C. Complier error
+    C. Lỗi biên dịch
 
 
 
-    D. None of these
-
-
-
-
-
-
-
-
-    <b>B</b> là đáp án đúng
-
-
-
-
-    <p>0.7f là hằng số kiểu float. Biểu thức so sánh 0.7 &lt; 0.7f trả về false.</p>
+    D. Tất cả đều sai
 
 
 
 
 
 
-    <h4>Câu 34:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+
+    B là đáp án đúng
+
+
+
+
+    0.7f là hằng số kiểu float. Biểu thức so sánh 0.7 < 0.7f trả về Sai.
+
+
+
+
+
+
+    Câu 34:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
     float n = 0.7;
-    if(n &lt; 0.7)
+    if(n < 0.7)
     printf(LaptrinhC++);
     else
     printf(abc);
@@ -1499,9 +1439,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What will be output of program?</p>
+    Output của chương trình là gì?
 
 
 
@@ -1514,22 +1454,19 @@
 
 
 
-    C. Complier error
+    C. Lỗi biên dịch
 
 
-    D. None of these
-
-
-
+    D. Tất cả đều sai
 
 
 
 
 
-    <b>A</b> là đáp án đúng
 
 
 
+    A là đáp án đúng
 
 
 
@@ -1539,40 +1476,43 @@
 
 
 
-    <h4>Câu 35:</h4>
-
-
-    <p>If the file tobe included does not exist, the preprocessor flashes an error message</p>
 
 
 
-    A. True
+    Câu 35:
+
+
+ Nếu tệp được đưa vào không tồn tại, khâu tiền xử lý sẽ thông báo lỗi
 
 
 
-
-    B. False
-
+    A. Đúng
 
 
 
 
-
-
-
-    <b>A</b> là đáp án đúng
-
-    <p>Complier sẽ thông báo lỗi nếu thiếu file #include</p>
+    B. Sai
 
 
 
 
 
 
-    <h4>Câu 36:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+
+    A là đáp án đúng
+
+    Complier sẽ thông báo lỗi nếu thiếu file #include
+
+
+
+
+
+
+    Câu 36:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
@@ -1583,9 +1523,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>&nbsp;What is output of the program?</p>
+    Output của chương trình này là gì?
 
 
 
@@ -1598,7 +1538,7 @@
 
 
 
-    C. &nbsp;Error
+    C. Error
 
 
 
@@ -1611,61 +1551,60 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
-    <p>hằng số x được khởi tạo bằng 100.</p>
-
-
-
-
-
-
-    <h4>Câu 37:</h4>
-
-
-    <p>What will happen if in the C program you assign a value to a array element whose subscript exceeds the size of
-        array?</p>
-
-
-
-    A. The element will be set to 0.
-
-
-
-
-    B. The complier would report an error.
-
-
-
-    C. The program may crash if some important data gets overwritten
-
-
-
-
-    D. The array size would appropriately grow
+    hằng số x được khởi tạo bằng 100.
 
 
 
 
 
 
-    <b>C</b> là đáp án đúng
+    Câu 37:
 
 
-    <p>Khi bạn assign giá trị cho phần tử vượt quá&nbsp;kích thước của mảng. Xảy ra problem là buffer overrun. Có nghĩa
-        là sử dụng vùng nhớ ko hợp lệ (ví dụ: đang lưu giá trị của một biến khác,…), làm cho chương trình bị crash.</p>
-
-
+    Điều gì sẽ xảy ra nếu trong chương trình C++ bạn gán giá trị cho một phần tử mảng có chỉ số con vượt quá kích thước của mảng?
 
 
 
+    A. Phần tử sẽ được đặt thành 0.
 
-    <h4>Câu 38:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;math.h&gt;
-    #include &lt;conio.h&gt;
+
+
+    B. Trình biên dịch sẽ báo lỗi.
+
+
+
+    C. Chương trình có thể bị lỗi nếu một số dữ liệu quan trọng bị ghi đè
+
+
+
+
+    D. Kích thước mảng sẽ phát triển một cách thích hợp
+
+
+
+
+
+
+    C là đáp án đúng
+
+
+    Khi bạn assign giá trị cho phần tử vượt quákích thước của mảng. Xảy ra problem là buffer overrun. Có nghĩa
+        là sử dụng vùng nhớ ko hợp lệ (ví dụ: đang lưu giá trị của một biến khác,…), làm cho chương trình bị crash.
+
+
+
+
+
+
+    Câu 38:
+
+    #include <stdio.h>
+    #include <math.h>
+    #include <conio.h>
 
     void main()
     {
@@ -1673,9 +1612,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output of the program?</p>
+    Output của chương trình này là gì?
 
 
 
@@ -1695,48 +1634,46 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
-    <p>Xem thêm hàm&nbsp;sqrt()</p>
-
-
-
-
-
-
-    <h4>Câu 39:</h4>
-
-    #include &lt;stdio.h&gt;
-
-    <p>&nbsp;</p>
-
-    <p>In which stage the following code.&nbsp;Gets replaced by the contents of the file stdio.h</p>
-
-
-    A. During editing
-
-
-
-
-    B. During linking
-
-
-
-    C. During execution
-
-
-
-    D. During preprocessing
+    Xem thêm hàm sqrt()
 
 
 
 
 
 
+    Câu 39:
 
-    <b>D</b> là đáp án đúng
+    #include <stdio.h>
+
+    
+
+    Đoạn mã sau được thay thế bằng nội dung của tệp stdio.h
 
 
+    A. Trong quá trình chỉnh sửa
+
+
+
+
+    B. Trong quá trình liên kết
+
+
+
+    C. Trong quá trình thực thi
+
+
+
+    D. Trong quá trình tiền xử lý
+
+
+
+
+
+
+
+    D là đáp án đúng
 
 
 
@@ -1745,10 +1682,12 @@
 
 
 
-    <h4>Câu 40:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+
+    Câu 40:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
@@ -1756,9 +1695,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What will be output of the program?</p>
+    Output của chương trình là gì?
 
 
     A. 8 4 8
@@ -1780,51 +1719,51 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
-    <p>3.14 là hằng số kiểu double<br />
-        3.14f là hằng số kiểu float<br />
-        3.14l là hằng số kiểu long double</p>
-
-
-
-
-
-
-    <h4>Câu 41:</h4>
-
-
-    <p>A function cannot be defined inside another function</p>
-
-
-
-
-
-    A. True
-
-
-
-
-    B. False
-
-
-
-
-
-    <b>A</b> là đáp án đúng
-
-
-    <p>Không thể define 1 hàm trong 1 hàm khác, ta chỉ có thể gọi hàm trong 1 hàm khác.</p>
+    3.14 là hằng số kiểu double
+        3.14f là hằng số kiểu float
+        3.14l là hằng số kiểu long double
 
 
 
 
 
 
-    <h4>Câu 42:</h4>
-    <p>1.&nbsp;</p>
+    Câu 41:
+
+
+Một hàm không thể được khai báo bên trong một hàm khác
+
+
+
+
+
+    A. Đúng
+
+
+
+
+    B. Sai
+
+
+
+
+
+    A là đáp án đúng
+
+
+    Không thể define 1 hàm trong 1 hàm khác, ta chỉ có thể gọi hàm trong 1 hàm khác.
+
+
+
+
+
+
+    Câu 42:
+    1.
 
 
     int func(int a, int b)
@@ -1832,7 +1771,7 @@
     /*Some code*/
     }
 
-    <p>2.&nbsp;</p>
+    2.
 
 
     int func(a, b)
@@ -1841,36 +1780,36 @@
     /*Some code*/
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is the notation for following functions?</p>
+    Kí hiệu (notation) cho các chức năng sau là gì?
 
 
 
 
 
 
-    A. 1. KR Notation and 2. ANSI Notation
+    A. 1. KR notation and 2. ANSI notation
 
 
 
-    B. 1. Pre ANSI C Notation and 2. KR Notation
+    B. 1. Pre ANSI C notation and 2. KR notation
 
 
 
 
-    C. &nbsp;1. ANSI Notation and 2. KR Notation
+    C. 1. ANSI notation and 2. KR notation
 
 
 
-    D. 1. ANSI Notation and 2. Pre ANSI Notation
+    D. 1. ANSI notation and 2. Pre ANSI notation
 
 
 
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -1885,52 +1824,52 @@
 
 
 
-    <h4>Câu 43:</h4>
+    Câu 43:
 
 
-    <p>Name of functions in two different files linked together must be unique.</p>
+Tên của các hàm trong hai tệp khác nhau được liên kết với nhau phải là duy nhất.
 
 
 
 
 
+    A. Đúng
 
-    A. True
 
 
+    B. Sai
 
-    B. False
 
 
 
 
 
 
+    A là đáp án đúng
 
-    <b>A</b> là đáp án đúng
+    Câu 44:
 
-    <h4>Câu 44:</h4>
 
+Nếu kiểu trả về cho một hàm không được chỉ định, nó sẽ mặc định là int
 
-    <p>If return type for a function is not specified, it defaults to int</p>
 
 
 
+    A. Đúng
 
 
-    A. True
 
 
+    B. Sai
 
 
-    B. &nbsp;False
 
 
 
 
+    A là đáp án đúng
 
 
-    <b>A</b> là đáp án đúng
 
 
 
@@ -1941,97 +1880,92 @@
 
 
 
+    Câu 45:
 
 
-    <h4>Câu 45:</h4>
+Một hàm có thể có bất kỳ số lượng câu lệnh trả về nào, mỗi câu trả về sẽ trả về các giá trị khác nhau.
 
 
-    <p>A function may have ant number of return statements each returning different values.</p>
+    A. Đúng
 
 
 
-    A. True
+    B. Sai
 
 
 
-    B. &nbsp;False
 
 
 
 
+    A là đáp án đúng
 
 
+    Một hàm có thể sử dụng nhiều cầu lệnh return với các giá trị trả về khác nhau
 
-    <b>A</b> là đáp án đúng
 
 
-    <p>Một hàm có thể sử dụng nhiều cầu lệnh return với các giá trị trả về khác nhau</p>
 
 
 
+    Câu 46:
 
 
+Các hàm không thể trả về nhiều hơn một giá trị cùng một lúc
 
-    <h4>Câu 46:</h4>
 
+    A. Đúng
 
-    <p>Functions cannot return more than one value at a time</p>
 
 
 
-    A. True
+    B. Sai
 
 
 
 
-    B. False
 
 
+    A là đáp án đúng
 
 
 
 
-    <b>A</b> là đáp án đúng
 
 
 
+    Câu 47:
 
 
+Hàm có thể được gọi theo tham trị hoặc tham chiếu
 
+    A. Đúng
 
-    <h4>Câu 47:</h4>
 
 
-    <p>Function can be called either by value or reference</p>
 
+    B. Sai
 
-    A. True
 
 
 
 
-    B. False
 
 
 
+    A là đáp án đúng
 
 
+    Hàm gọi theo cách tham trị và tham chiếu
 
 
 
-    <b>A</b> là đáp án đúng
 
 
-    <p>Hàm gọi theo cách&nbsp;tham trị và tham chiếu</p>
 
+    Câu 48:
 
-
-
-
-
-    <h4>Câu 48:</h4>
-
-    #include&lt;stdio.h&gt;
+    #include<stdio.h>
 
     void main()
     {
@@ -2039,25 +1973,25 @@
     main();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>How many times the program will print “laptrinhc++”?</p>
+   Chương trình sẽ in “laptrinhc ++” bao nhiêu lần?
 
 
 
-    A. Infinite times
+    A. Vô hạn lần
 
 
 
-    B. 65535 times
+    B. 65535 lần
 
 
 
-    C. Till stack overflows
+    C. Cho đến khi tràn bộ nhớ
 
 
 
-    D. Cannot call main( ) in main( )
+    D. Không thể gọi hàm main( ) trong main( )
 
 
 
@@ -2065,7 +1999,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -2073,18 +2007,18 @@
 
 
 
-    <h4>Câu 49:</h4>
+    Câu 49:
 
 
-    <p>In C all function except main( ) can be called recursively</p>
+    Trong C/C++, tất cả các hàm ngoại trừ hàm main () có thể được gọi một cách đệ quy
 
 
 
-    A. True
+    A. Đúng
 
 
 
-    B. &nbsp;False
+    B. Sai
 
 
 
@@ -2093,34 +2027,33 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
-    <p>Tất cả các hàm bao gồm cả hàm main đều có thể đệ quy.</p>
+    Tất cả các hàm bao gồm cả hàm main đều có thể đệ quy.
 
 
 
 
 
 
-    <h4>Câu 50:</h4>
+    Câu 50:
 
 
-    <p>Is it true that too many recursive calls may result into stack overflow?</p>
+Quá nhiều lệnh gọi đệ quy có thể dẫn đến tràn bộ nhớ không?
 
 
+    A. Có
 
-    A. Yes
 
 
+    B. Không
 
-    B. No
 
 
 
 
 
+    A là đáp án đúng
 
-    <b>A</b> là đáp án đúng
-
-    <p>Vì khi hàm được gọi, địa chỉ hàm + giá trị trả về của hàm +… được lưu stack.</p>
+    Vì khi hàm được gọi, địa chỉ hàm + giá trị trả về của hàm +… được lưu stack.

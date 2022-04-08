@@ -1,19 +1,18 @@
 
-                                    <div class="exam-content">
-                                        <ul>
+                                   
+                                       
                                                                                            
-                                                    <h4>Câu 1:</h4>
+                                                    Câu 1:
                                                         
                                                         
-                                                        <p>Maximum number of arguments that a function can take is 12</p>
-                                                           
+                                                        Tham số tối đa một hàm có thể nhận được là 12
                                                              
                                                                                                                                                                                           
                                                                     
                                                                            
                                                                           
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -21,7 +20,7 @@
                                                                            
                                                                           
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -29,7 +28,7 @@
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                              
                                              
@@ -37,24 +36,24 @@
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 2:</h4>
+                                                    Câu 2:
                                                         
                                                         
-                                                        <p>Usually recursion works slower than loops</p>
+                                                        Thường thì đệ quy hoạt động chậm hơn các vòng lặp
                                                            
                                                              
                                                                                                                                                                                           
                                                                     
                                                                           
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
                                                                            
                                                                           
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -62,7 +61,7 @@
                                                         
                                                         
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                              
                                              
@@ -70,21 +69,21 @@
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 3:</h4>
+                                                    Câu 3:
                                                         
                                                         
-                                                        <p>In a function two return statements should never occur.</p>
+                                                        Trong một hàm, hai câu lệnh return sẽ không bao giờ xảy ra.
                                                            
                                              
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
                                                                            
                                                               
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -92,31 +91,18 @@
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                                                                                                   
-                                                                                                                            
-                                                            
-                                           
-                                                                                                                                
-                                                                                                                            
-                                                        
-                                                       
-                                                         
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                <p>Trong ngôn ngữ C, có thể sử dụng nhiều câu lệnh return trong 1 hàm. Ngoại trừ, viết 2 câu lệnh return liên tiếp nhau.</p>
+                                                               B là đáp án đúng
+                              
+                                                                Trong ngôn ngữ C/C++, có thể sử dụng nhiều câu lệnh return trong 1 hàm. Ngoại trừ, viết 2 câu lệnh return liên tiếp nhau.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 4:</h4>
+                                                    Câu 4:
                                                         
-#include&lt;stdio.h&gt;
+#include<stdio.h>;
  
 void main()
 {
@@ -129,10 +115,9 @@ float f(int a, float b)
     return ((float)a + b);
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>There is a error in the below program. Which statement will you add to remove it</p>
-                                                           
+Có một lỗi trong chương trình dưới đây. Bạn sẽ thêm/xoá câu lệnh nào?                                                          
                                                              
                                                                                                                                                                                           
                                                                     
@@ -163,7 +148,7 @@ float f(int a, float b)
                                                         
                                                        
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                             
                                             
@@ -171,10 +156,10 @@ float f(int a, float b)
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 5:</h4>
+                                                    Câu 5:
                                                         
                                                         
-                                                        <p>Every function must return a value</p>
+                                                        Mọi hàm phải trả về một giá trị
                                                            
                                                             
                                                                                                                                                                                           
@@ -182,7 +167,7 @@ float f(int a, float b)
                                                                            
                                                                          
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -190,7 +175,7 @@ float f(int a, float b)
                                                                            
                                                                          
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -198,32 +183,18 @@ float f(int a, float b)
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                                                                                                   
-                                                                                                                            
-                                                            
-                                           
-                                                                                                                                
-                                                                                                                            
-                                                        
-                                                       
-                                                         
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                <p>Hàm có kiểu trả về là void thì trong thân hàm không cần gọi lệnh return.</p>
+                                                               B là đáp án đúng
+                                                                         Hàm có kiểu trả về là void thì trong thân hàm không cần gọi lệnh return.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 6:</h4>
+                                                    Câu 6:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -231,9 +202,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Which of the following statements are correct about the program?</p>
+                                                        Câu nào sau đây là đúng về chương trình?
                                                            
                                                              
                                                                                                                                                                                           
@@ -241,7 +212,7 @@ void main()
                                                                            
                                                                           
                                                                     
-                                                                          A. It prints garbage values infinitely
+                                                                          A. Nó in vô hạn các giá trị rác
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -249,21 +220,20 @@ void main()
                                                                            
                                                                           
                                                                     
-                                                                          B. Runs infinitely without printing anything
-                                                                
+                                                                          B. Chạy vô hạn mà không cần in bất cứ thứ gì
                                                                                                                                                                                                                                                           
                                                                     
                                                                            
                                                                           
                                                                          
                                                                    
-                                                                          C. Error: main( ) cannot be called inside printf( )
+                                                                          C. Lỗi: không thể gọi main () bên trong printf ()
                                                                 
                                                                     
                                                                            
                                                                          
                                                                     
-                                                                          D. No Error and print nothing
+                                                                          D. Không có lỗi và không in gì
                                                                 
                                                                                                                                                                                         
 
@@ -271,7 +241,7 @@ void main()
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                             
                                              
@@ -279,7 +249,7 @@ void main()
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 7:</h4>
+                                                    Câu 7:
                                                         
 int f1(int a, int b)
 {
@@ -291,9 +261,9 @@ int f2(int a)
     return a*a;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Will the following functions work?</p>
+                                                       Các hàm trên sẽ hoạt động?
                                                            
                                                              
                                                                                                                                                                                           
@@ -301,7 +271,7 @@ int f2(int a)
                                                                            
                                                                           
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -309,7 +279,7 @@ int f2(int a)
                                                                            
                                                                           
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -317,28 +287,18 @@ int f2(int a)
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                        
-                                                                                                                            
-                                                        
-                                                       
-                                                         
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                <p>Vì hàm f2 được gọi trước khi được define. Nên khai báo hàm f2()</p>
+                                                               B là đáp án đúng
+                                                                Vì hàm f2 được gọi trước khi được define. Nên cần khai báo hàm f2()
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 8:</h4>
+                                                    Câu 8:
                                                         
                                                         
-                                                        <p>If a function contains two return statements successively, the complier will generate warnings. Yes / No?</p>
+                                                        Nếu một hàm chứa hai câu lệnh trả về liên tiếp, trình biên dịch sẽ tạo ra các cảnh báo. Đúng  hay Sai?
                                                            
                                                              
                                                                                                                                                                                           
@@ -346,7 +306,7 @@ int f2(int a)
                                                                            
                                                                           
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -354,7 +314,7 @@ int f2(int a)
                                                                            
                                                                           
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -362,29 +322,20 @@ int f2(int a)
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                 
-                                                                                                                            
-                                                        
-                                                       
-                                                         
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                <p>Vì gặp lệnh return thứ nhất, kết thúc hàm.<br />
-Nếu 1 hàm dùng nhiều câu lệnh return liên tiếp nhau, chỉ có câu lệnh return đầu tiên có ý nghĩa, các câu lệnh sau nó ko bao giờ được thực hiện.</p>
+                                                               B là đáp án đúng
+
+                                                                Vì gặp lệnh return thứ nhất, kết thúc hàm.
+Nếu 1 hàm dùng nhiều câu lệnh return liên tiếp nhau, chỉ có câu lệnh return đầu tiên có ý nghĩa, các câu lệnh sau nó không bao giờ được thực hiện.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 9:</h4>
+                                                    Câu 9:
                                                         
                                                         
-                                                        <p>Functions can not return a floating point number</p>
+                                                        Các hàm không thể trả về một số dấu phẩy động
                                                            
                                                              
                                                                                                                                                                                           
@@ -392,7 +343,7 @@ Nếu 1 hàm dùng nhiều câu lệnh return liên tiếp nhau, chỉ có câu 
                                                                            
                                                                           
                                                                     
-                                                                          A. Yes
+                                                                          A. Đúng
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -400,7 +351,7 @@ Nếu 1 hàm dùng nhiều câu lệnh return liên tiếp nhau, chỉ có câu 
                                                                            
                                                                           
                                                                     
-                                                                          B. No
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -408,17 +359,17 @@ Nếu 1 hàm dùng nhiều câu lệnh return liên tiếp nhau, chỉ có câu 
                                                         
                                                         
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                   
                                                             
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 10:</h4>
+                                                    Câu 10:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int reverse(int);
  
@@ -438,9 +389,9 @@ int reverse(int n)
     reverse(n--);
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be the output of the program?</p>
+                                                        Output của chương trình này là gì?
                                                            
                                                              
                                                                                                                                                                                           
@@ -470,7 +421,7 @@ int reverse(int n)
                                                                            
                                                                          
                                                                     
-                                                                          D. Infinite loop
+                                                                          D. Vòng lặp vô hạn tuần hoàn
                                                                 
                                                                                                                                                                                         
 
@@ -478,31 +429,21 @@ int reverse(int n)
                                                         
                                                         
                                                                 
-                                                               <b>D</b> là đáp án đúng
-                                                                                                                                   
-                                                                                                                            
-                                                    
-                                                       
-                                                         
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                <p>Hàm reverse() là hàm đệ quy.<br />
-n = 5, câu lệnh gọi hàm reverse(n–) &lt;=&gt; reverse(5) vì biến n giảm sau khi gọi hàm.<br />
-Vì giá trị truyền vào cho hàm reverse ko thay đổi. Do vậy, chương trình đệ qui rơi vào vòng lặp vô hạn.<br />
-Để fix chương trình này, thay reverse(n–) bằng reverse(–n).</p>
+                                                               D là đáp án đúng
+ Hàm reverse() là hàm đệ quy.
+n = 5, câu lệnh gọi hàm reverse(n–) <=>; reverse(5) vì biến n giảm sau khi gọi hàm.
+Vì giá trị truyền vào cho hàm reverse ko thay đổi. Do vậy, chương trình đệ qui rơi vào vòng lặp vô hạn.
+Để fix chương trình này, thay reverse(n–) bằng reverse(–n).
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 11:</h4>
+                                                    Câu 11:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -517,9 +458,9 @@ int func(int n)
     return(n++);
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be the output of the program?</p>
+                                                        Output của chương trình này là gì?
                                                            
                                                    
                                                                           A. 4
@@ -534,7 +475,7 @@ int func(int n)
                                                                 
                                                                    
                                                                       
-                                                                          D. Another
+                                                                          D. Một giá trị khác
                                                                 
                                                                                                                                                                                         
 
@@ -542,26 +483,16 @@ int func(int n)
                                                         
                                                      
                                                                 
-                                                               <b>A</b> là đáp án đúng
-                                                                                                                                   
-                                                                                                                            
-                                                             
-                                           
-                                                                                                                                
-                                                                                                                            
-                                                    
-                                        
-                                                            
-                                                        
-                                                                <p>Ngôn ngữ C/C++, cho phép bạn khai báo hàm trong 1 hàm khác.<br />
-Hàm func(5) trả về là 5 không phải là 6, vì giá trị n được tăng sau khi thực hiện xong câu lệnh return.</p>
+                                                               A là đáp án đúng 
+                                                               Ngôn ngữ C/C++, cho phép bạn khai báo hàm trong 1 hàm khác.
+Hàm func(5) trả về là 5 không phải là 6, vì giá trị n được tăng sau khi thực hiện xong câu lệnh return.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 12:</h4>
+                                                    Câu 12:
                                                         
 f(int a, int b)
 {
@@ -570,47 +501,47 @@ f(int a, int b)
     return a;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Point out a error of the following program</p>
+                                                        Chỉ ra lỗi của chương trình sau:
                                                            
                                                                   
-                                                                          A. Missing parenthesis in return statement
+                                                                          A. Thiếu dấu ngoặc đơn trong câu lệnh return
                                                                 
                                                                                                                                                                                                                                                           
                                                                
-                                                                          B. The function should be defined as int f(int a, int b)
+                                                                          B. Hàm nên được định nghĩa là int f (int a, int b)
                                                                 
                                                                                                                                                                                                                                                           
                                                                     
-                                                                          C. Re-declaration of a
+                                                                          C. Khai báo lại biến a
                                                                 
                                                                    
-                                                                          D. None of above
+                                                                          D. Không có lỗi
                                                                 
                                                                                                                                                                                         
 
                                                         
                                                             
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                         
                                                             
                                                         
-                                                                <p>Hàm được định nghĩa chưa có kiểu trả về. Một số chương trình biên dịch sẽ không chấp nhận điều này.</p>
+                                                                Hàm được định nghĩa chưa có kiểu trả về. Một số chương trình biên dịch sẽ không chấp nhận điều này.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 13:</h4>
+                                                    Câu 13:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int f(int a)
 {
-    a &gt; 20 ? return(1) : return(0);
+    a >; 20 ? return(1) : return(0);
 }
  
 void main()
@@ -621,9 +552,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Point out the error in the program</p>
+                                                        Chỉ ra lỗi trong chương trình sau
                                                            
                                                            
                                                               
@@ -631,14 +562,14 @@ void main()
                                                                 
                                                                                                                                                                                                                                                           
                                                                 
-                                                                          B. No error
+                                                                          B. Không có lỗi
                                                                 
                                                                                                                                                                                                                                                           
                                                                     
                                                                           C. Error: return statement cannot be used with conditional operators
                                                                 
                                                                 
-                                                                          D. None of above
+                                                                          D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
@@ -646,22 +577,22 @@ void main()
                                                         
                                          
                                                                 
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
                                         
                                                             
                                                         
-                                                                <p>Sau toán tử điều kiện phải là biểu thức toán học, không thể là câu lệnh (return).<br />
-Câu lệnh “a &gt; 20 ? return(1) : return(0);” nên đổi thành “return (a &gt; 20 ? 1 : 0);”</p>
+                                                                Sau toán tử điều kiện phải là biểu thức toán học, không thể là câu lệnh (return).
+Câu lệnh “a >; 20 ? return(1) : return(0);” nên đổi thành “return (a >; 20 ? 1 : 0);”
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 14:</h4>
+                                                    Câu 14:
                                                         
-#include&lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include<stdio.h>;
+#include <conio.h>;
  
 int func(int i, int j)
 {
@@ -680,9 +611,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be the output of the program?</p>
+                                                        Output của chương trình này là gì?
                                                            
                                                             
                                                                           A. 6 6
@@ -699,34 +630,33 @@ void main()
                                                                 
                                                                     
                                                                            
-                                                                          D. None of above
-                                                                
+                                                                          D. Tất cả đều sai
                                                                                                                                                                                         
 
                                                         
                                                         
                                                       
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                         
                                                        
                                                      
                                         
                                                             
                                                         
-                                                                <p>k = i + j = 5<br />
-l = i*j = 6<br />
-Câu lệnh return(k, l) = return(5, 6) = return(6).</p>
+                                                                k = i + j = 5
+l = i*j = 6
+Câu lệnh return(k, l) = return(5, 6) = return(6).
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 15:</h4>
+                                                    Câu 15:
                                                         
-#include&lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include<stdio.h>;
+#include <conio.h>;
  
 int f1(int);
 int f2(int);
@@ -753,9 +683,9 @@ int f2(int j)
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be output of the program?</p>
+                                                        What will be output of the program?
                                                            
                                                             
                                                                                                                                                                                           
@@ -773,47 +703,44 @@ int f2(int j)
                                                                 
                                                                     
                                                                      
-                                                                          D. None of above
+                                                                          D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
                                                         
                                                         
                                                      
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                              
                                           
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 16:</h4>
+                                                    Câu 16:
                                                         
 long fun(int n)
 {
     int i;
     long f = 1;
-    for(i = 1; i &lt;= n; i++)
+    for(i = 1; i <= n; i++)
         f = f*i;
     return f;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Which of the following statements are correct about this function</p>
+                                                        Câu nào sau đây đúng về hàm này
                                                            
                                                           
-                                                                          A. The function calculates the value of 1 raised to power n
-                                                                
+                                                                          A. Hàm tính giá trị của 1 được nâng lên lũy thừa n
                                                                      
-                                                                          B. The function calculates the factorial value of an integer
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                
-                                                                          C. &nbsp;The function calculates the square root of an integer
+                                                                          B. Hàm tính giá trị giai thừa của một số nguyên
+
+                                                                          C. Hàm tính căn bậc hai của một số nguyên
                                                                 
                                                                  
-                                                                          D. None of above
+                                                                          D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
@@ -821,23 +748,23 @@ long fun(int n)
                                                         
                                                      
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                        
                                                       
                                         
                                                             
                                                         
-                                                                <p>Hàm fun() tính giai thừa của n.</p>
+                                                                Hàm fun() tính giai thừa của n.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 17:</h4>
+                                                    Câu 17:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -853,30 +780,30 @@ void f()
     printf("vncoding");
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Point out the error in the following program</p>
+                                                        Hãy chỉ ra lỗi trong chương trình trên
                                                            
                                                             
                                                                           A. Error: cannot convert ‘void’ to ‘int’
                                                                 
                                                                                                                                                                                                                                                           
                                                                  
-                                                                          B. &nbsp;Error:
+                                                                          B. Error:
                                                                 
                                                                                                                                                                                         
 
                                                         
-                                                         <b>A</b> là đáp án đúng
+                                                         A là đáp án đúng
                                                                                                                             
                                                              
                                              
                                                
                                                                                            
-                                                    <h4>Câu 18:</h4>
+                                                    Câu 18:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int main()
 {
@@ -886,9 +813,10 @@ int main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be output when you will execute following c code?&nbsp;Biết kích thước kiểu char : 1 byte, float : 4 byte, int : 4 byte, double : 8 byte, long : 4 byte.</p>
+                                                        Điều gì sẽ được xuất ra khi bạn thực hiện chương trình trên đây?
+                                                        Biết kích thước kiểu char : 1 byte, float : 4 byte, int : 4 byte, double : 8 byte, long : 4 byte.
                                                            
                                                                                                                                                                                  
                                                                     
@@ -903,32 +831,32 @@ int main()
                                                                 
                                                                     
                                                                            
-                                                                          D. &nbsp;Depend on complier
+                                                                          D. Tuỳ thuộc vào trình biên dịch mà kết quả sẽ khác
                                                                 
                                                                                                                                                                                         
 
                                                         
                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                                   
                                                             
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Toán tử sizeof() trả về kích thước của biến (đơn vị là byte). 6.5 ở đây chương trình hiểu là kiểu double, 90000 là kiểu int, 'A' là hằng kí tự kiểu char.</p>
+                                                                Toán tử sizeof() trả về kích thước của biến (đơn vị là byte). 6.5 ở đây chương trình hiểu là kiểu double, 90000 là kiểu int, 'A' là hằng kí tự kiểu char.
 
-<p>&nbsp;</p>
+
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 19:</h4>
+                                                    Câu 19:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -940,9 +868,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be output when you will execute following c code?</p>
+                                                        Output của chương trình này là gì?
                                                            
                                                             
                                                                           A. 1 4 5
@@ -953,7 +881,7 @@ int main()
                                                                           C. 8 4 7
                                                                 
                                                                  
-                                                                          D. Another
+                                                                          D. Một giá trị khác
                                                                 
                                                                                                                                                                                         
 
@@ -961,21 +889,21 @@ int main()
                                                         
                                                      
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                                  
                                                             
                                                         
-                                                                <p>Giải thích: toán tử ! trả về giá trị kiểu bool (0, 1), mà sizeof(kiểu bool) = 1. var = 15/2 = 7, sizeof(var) = 4<br />
-&nbsp;</p>
+                                                                Giải thích: toán tử ! trả về giá trị kiểu bool (0, 1), mà sizeof(kiểu bool) = 1. var = 15/2 = 7, sizeof(var) = 4
+
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 20:</h4>
+                                                    Câu 20:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -988,9 +916,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What value gets printed by the program below?</p>
+                                                      Output của chương trình này là gì?
                                                         
                                                                           A. 1
                                                                 
@@ -1003,21 +931,21 @@ int main()
 
                                                         
                                                     
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                   
                                         
                                                             
                                                         
-                                                                <p>Toán tử / lấy thương, còn toán tử % lấy phần dư. Cả 2 toán tử này có độ ưu tiên toán tử như nhau. Do vậy, x/y%w = (x/y)%w = (31/10)%3 = 0</p>
+                                                                Toán tử / lấy thương, còn toán tử % lấy phần dư. Cả 2 toán tử này có độ ưu tiên toán tử như nhau. Do vậy, x/y%w = (x/y)%w = (31/10)%3 = 0
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 21:</h4>
+                                                    Câu 21:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -1028,9 +956,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be output when you will execute following c code?</p>
+                                                        Output của chương trình này là gì?
                                                            
                                                            
                                                                           A. -6
@@ -1043,7 +971,7 @@ int main()
                                                                           C. 4
                                                                 
                                                                   
-                                                                          D. Another
+                                                                          D. Một giá trị khác
                                                                 
                                                                                                                                                                                         
 
@@ -1051,22 +979,22 @@ int main()
                                                         
                                                       
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                     
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Biến char a = 250 vượt ra khỏi dải (-128 đến 127). Nên a = 250%256 = -6 (xem thêm: ) Trong các toán tử trong phép toán. Toán tử ! ~ ++ có cùng độ ưu tiên, nhưng trình tự kết hợp từ phải sang trái. Do vậy, ++a = -5 được thực hiện trước. expr = -5 + !(-5) + ~(-5) + (-5) = -5 + 0 + 4 -5 = -6</p>
+                                                                Biến char a = 250 vượt ra khỏi dải (-128 đến 127). Nên a = 250%256 = -6 (xem thêm: ) Trong các toán tử trong phép toán. Toán tử ! ~ ++ có cùng độ ưu tiên, nhưng trình tự kết hợp từ phải sang trái. Do vậy, ++a = -5 được thực hiện trước. expr = -5 + !(-5) + ~(-5) + (-5) = -5 + 0 + 4 -5 = -6
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 22:</h4>
+                                                    Câu 22:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -1079,9 +1007,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What will be output when you will execute following c code?</p>
+                                                        Output của chương trình này là gì?
                                                             
                                                                           A. Avatar
                                                                 
@@ -1091,9 +1019,9 @@ int main()
                                                                 
                                                                                                                                                                                                                                                           
                                                                   
-                                                                          C. &nbsp;Error at (*)
+                                                                          C. Error at (*)
                                                                  
-                                                                          D. Another
+                                                                          D. Một giá trị khác
                                                                 
                                                                                                                                                                                         
 
@@ -1101,16 +1029,16 @@ int main()
                                                         
                                                     
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                           
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 23:</h4>
+                                                    Câu 23:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -1119,9 +1047,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>&nbsp;What will be output when you will execute following c code?</p>
+                                                        Output của chương trình này là gì?
                                                            
                                                              
                                                                           A. 7
@@ -1134,30 +1062,30 @@ void main()
                                                                           C. 9
                                                                 
                                                                     
-                                                                          D. Another
+                                                                          D. Một giá trị khác
                                                                 
                                                                                                                                                                                         
 
                                                         
                                                        
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                        
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Phép toán ++x sẽ được thực hiện trước tiên (x = 4), sau đó x++ + x = 4++ + 4 = 8. Sau phép toán,giá trị củax = 5</p>
+                                                                Phép toán ++x sẽ được thực hiện trước tiên (x = 4), sau đó x++ + x = 4++ + 4 = 8. Sau phép toán,giá trị củax = 5
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 24:</h4>
+                                                    Câu 24:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -1167,9 +1095,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output ?</p>
+                                                     Output của chương trình này là gì?
                                                            
                                                              
                                                                           A. 4
@@ -1190,21 +1118,21 @@ void main()
                                                         
                                                      
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                                    
                                                           
                                                         
-                                                                <p>i = 5 = 101 (hệ nhị phân), j = 6 = 110 (hệ nhị phân). Phép toán &amp; là phép toán AND bit. k = i&amp;j = 100 = 4.</p>
+                                                                i = 5 = 101 (hệ nhị phân), j = 6 = 110 (hệ nhị phân). Phép toán &amp; là phép toán AND bit. k = i&amp;j = 100 = 4.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 25:</h4>
+                                                    Câu 25:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -1213,9 +1141,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>&nbsp;What is output ?</p>
+                                                    Output của chương trình này là gì?
                                                            
                                                       
                                                                           A. 7
@@ -1234,22 +1162,22 @@ void main()
                                                         
                                          
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                       
                                         
                                                             
                                                         
-                                                                <p>i = 5 = 101 (hệ nhị phân), j = 6 = 110 (hệ nhị phân). Phép toán | là phép toán OR bit. i|j = 111 = 7.</p>
+                                                                i = 5 = 101 (hệ nhị phân), j = 6 = 110 (hệ nhị phân). Phép toán | là phép toán OR bit. i|j = 111 = 7.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 26:</h4>
+                                                    Câu 26:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 extern int x = 0; 
  
@@ -1260,9 +1188,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output ?</p>
+                                                    Output của chương trình này là gì?
                                                            
                                                      
                                                                           A. 0
@@ -1282,23 +1210,23 @@ void main()
                                                         
                                                         
                                                                       
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
                                                                                                                               
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Biến extern int x có thể thay đổi giá trị của nó.</p>
+                                                                Biến extern int x có thể thay đổi giá trị của nó.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 27:</h4>
+                                                    Câu 27:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 extern int x = 0;
  
@@ -1311,9 +1239,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output ?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                                           A. 0
                                                                 
@@ -1330,24 +1258,24 @@ void main()
                                                         
                                                        
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                          
                                                             
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Khai báo int x = 1, x ở đây là biến local và chỉ có giá trị trong {}. Hàm printf() ở ngoài {} sẽ dùng giá trị của biến x = 0.</p>
+                                                                Khai báo int x = 1, x ở đây là biến local và chỉ có giá trị trong {}. Hàm printf() ở ngoài {} sẽ dùng giá trị của biến x = 0.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 28:</h4>
+                                                    Câu 28:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int y = 0;
 void main()
@@ -1361,9 +1289,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output ?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                             
                                                                           A. 1 1
@@ -1372,7 +1300,7 @@ void main()
                                                                    
                                                                           B. 1 0
                                                                  
-                                                                          C. &nbsp;‘x’ undeclared identifier
+                                                                          C. ‘x’ undeclared identifier
                                                                 
                                                                                                                                                                                         
 
@@ -1380,20 +1308,20 @@ void main()
                                                         
                                                   
                                                                 
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
                                                               
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Biến x là biến cục bộ, nên trình biên dịch sẽ báo lỗi tại lệnh printf().</p>
+                                                                Biến x là biến cục bộ, nên trình biên dịch sẽ báo lỗi tại lệnh printf().
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 29:</h4>
+                                                    Câu 29:
                                                         
 void main()
 {
@@ -1405,9 +1333,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Output of following code?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                           
                                                                           A. 1
@@ -1423,17 +1351,17 @@ void main()
                                                         
                                                         
                                                  
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
                                                    
                                                         
-                                                                <p>Giải thích: Lỗi biến x chưa được khởi tạo</p>
+                                                                Giải thích: Lỗi biến x chưa được khởi tạo
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 30:</h4>
+                                                    Câu 30:
                                                         
 void main()
 {
@@ -1447,9 +1375,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Output of following code?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                          
                                                                           A. 1
@@ -1465,21 +1393,21 @@ void main()
                                                         
                                                         
                                                    
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
                                                        
                                                             
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Giải thích: biến x được khai báo trong ngoặc {} là biến local, hàm printf() sẽ lấy giá trị x = 0.</p>
+                                                                Giải thích: biến x được khai báo trong ngoặc {} là biến local, hàm printf() sẽ lấy giá trị x = 0.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 31:</h4>
+                                                    Câu 31:
                                                         
 void count()
 {
@@ -1491,16 +1419,16 @@ void count()
 void main()
 {
     int i;
-    for(i = 0; i &lt; 10; i++)
+    for(i = 0; i < 10; i++)
     {
         count();
     }
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Output of following code?</p>
+                                                          Output của chương trình này là gì?
                                                             
                                                                           A. 0123456789
                                                                 
@@ -1516,16 +1444,16 @@ void main()
                                                         
                                                       
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                                    '3 
-                                                                <p>Giải thích: biến page là biến static. Biến static được khai báo trong 1 hàm có đặc điểm giữ nguyên trạng thái (giá trị) giữa các lần gọi hàm.</p>
+                                                                Giải thích: biến page là biến static. Biến static được khai báo trong 1 hàm có đặc điểm giữ nguyên trạng thái (giá trị) giữa các lần gọi hàm.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 32:</h4>
+                                                    Câu 32:
                                                         
 const int x = 5;
  
@@ -1537,9 +1465,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Output of following code?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                              
                                                                           A. 1
@@ -1559,22 +1487,22 @@ void main()
                                                         
                                                         
                                                        
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                             
                                         
                                                             
                                                         
-                                                                <p>Giải thích: khai báo biến const x tương đương với việc sử dụng #define, chương trình biên dịch sẽ không cho phép người lập trình thay đổi biến này.<br />
-Theo msdn: việc sử dụng biến const để khai báo mảng trong C ko được phép.</p>
+                                                                Giải thích: khai báo biến const x tương đương với việc sử dụng #define, chương trình biên dịch sẽ không cho phép người lập trình thay đổi biến này.
+Theo msdn: việc sử dụng biến const để khai báo mảng trong C ko được phép.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 33:</h4>
+                                                    Câu 33:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -1583,9 +1511,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output?</p>
+                                                         Output của chương trình này là gì?
                                                            
                                                           
                                                                           A. Garbage Garbage Garbage
@@ -1605,13 +1533,13 @@ int main()
                                                         
                                                    
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                
                                                
                                                                                            
-                                                    <h4>Câu 34:</h4>
+                                                    Câu 34:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -1620,9 +1548,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>&nbsp;What is output?</p>
+                                                         Output của chương trình này là gì?
                                                           
                                                                           
                                                                           A. c:/tc/bin/rw.c
@@ -1635,10 +1563,10 @@ int main()
                                                                                                                                                                                                                                                           
                                                                     
                                                                           
-                                                                          C. &nbsp;c:cinw.c
+                                                                          C. c:cinw.c
                                                                 
                                                         
-                                                                          D. &nbsp;w.c in
+                                                                          D. w.c in
                                                                 
                                                                                                                                                                                         
 
@@ -1646,22 +1574,22 @@ int main()
                                                         
                                               
                                                                 
-                                                               <b>D</b> là đáp án đúng
+                                                               D là đáp án đúng
                                                                                                                       
                                         
                                                             
                                                         
-                                                                <p>Giải thích: trong chuỗi url, có các kí tự đặc biệt: ‘\t’ : cách 1 tab, ‘\b’ : đưa con trỏ trên màn hình lùi về trước 1 kí tự, ‘\r’ : quay về đầu dòng.<br />
-Chương trình sẽ in: c: c, gặp kí tự ‘\b’ đưa con trỏ lùi về 1 kí tự và kết quả tiếp theo: c: in. Khi gặp kí tự ‘\r’, con trỏ sẽ trỏ về vị trí đầu dòng và in đè lên kết quả đã có. Cuối cùng: w.c in</p>
+                                                                Giải thích: trong chuỗi url, có các kí tự đặc biệt: ‘\t’ : cách 1 tab, ‘\b’ : đưa con trỏ trên màn hình lùi về trước 1 kí tự, ‘\r’ : quay về đầu dòng.
+Chương trình sẽ in: c: c, gặp kí tự ‘\b’ đưa con trỏ lùi về 1 kí tự và kết quả tiếp theo: c: in. Khi gặp kí tự ‘\r’, con trỏ sẽ trỏ về vị trí đầu dòng và in đè lên kết quả đã có. Cuối cùng: w.c in
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 35:</h4>
+                                                    Câu 35:
                                                         
-#include &lt;stdio.h&gt;
+#include <stdio.h>;
  
 int main()
 {
@@ -1671,9 +1599,9 @@ int main()
     return 0;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output ?</p>
+                                                          Output của chương trình này là gì?
                                                        
                                                                            
                                                                           A. 5
@@ -1692,23 +1620,23 @@ int main()
                                                         
                                                         
                                                       
-                                                               <b>D</b> là đáp án đúng
+                                                               D là đáp án đúng
                                                                
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Giải thích: chương trình biên dịch sẽ không cho phép thay đổi giá trị của biến const.</p>
+                                                                Giải thích: chương trình biên dịch sẽ không cho phép thay đổi giá trị của biến const.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 36:</h4>
+                                                    Câu 36:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -1718,9 +1646,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output?</p>
+                                                         Output của chương trình này là gì?
                                                             
                                                                           A. 135
                                                                 
@@ -1740,43 +1668,43 @@ void main()
                                                         
                                                         
                                                                 
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
                                                                                                                              
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Giải thích: biến char a = 135 vượt ra khỏi dải (-128 đến 127). Nên a = 135%256 = -121</p>
+                                                                Giải thích: biến char a = 135 vượt ra khỏi dải (-128 đến 127). Nên a = 135%256 = -121
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 37:</h4>
+                                                    Câu 37:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int main()
 {
     char c = 48;
     int i, mask = 01;
-    for(i = 1; i &lt;= 5; i++)
+    for(i = 1; i <= 5; i++)
     {
         printf("%c", c|mask);
-        mask = mask &lt;&lt; 1;
+        mask = mask < 1;
     }
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>&nbsp;What is output?</p>
+                                                         Output của chương trình này là gì?
                                                            
                                                             
                                                                           
-                                                                          A. &nbsp;12480
+                                                                          A. 12480
                                                                 
                                                                   
                                                                           B. 1248@
@@ -1795,39 +1723,39 @@ int main()
                                                         
                                                      
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                                    
                                                         
-                                                                <p>Giải thích:<br />
-c|mask = 49 -&gt; in ra 1, mask = mask&lt;&lt;1 = 2<br />
-c|mask = 50 -&gt; in ra 2, mask = mask&lt;&lt;1 = 4<br />
-c|mask = 52 -&gt; in ra 4, mask = mask&lt;&lt;1 = 8<br />
-c|mask = 56 -&gt; in ra 8, mask = mask&lt;&lt;1 = 16<br />
-c|mask = 48 -&gt; in ra 0, end for()</p>
+                                                                Giải thích:
+c|mask = 49 ->; in ra 1, mask = mask<1 = 2
+c|mask = 50 ->; in ra 2, mask = mask<1 = 4
+c|mask = 52 ->; in ra 4, mask = mask<1 = 8
+c|mask = 56 ->; in ra 8, mask = mask<1 = 16
+c|mask = 48 ->; in ra 0, end for()
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 38:</h4>
+                                                    Câu 38:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int main()
 {
     float a = 0.7;
-    if(0.7 &gt; a)
+    if(0.7 >; a)
         printf("Hi\n");
     else
         printf("Hello\n");
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output?</p>
+                                                         Output của chương trình này là gì?
                                                            
                                                           
                                                                           A. Hi
@@ -1839,39 +1767,39 @@ int main()
                                                                 
                                                                  
                                                                           
-                                                                          C. None of above
+                                                                          C. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
                                                         
                                                         
                                                         
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                       
                                                
                                                                                            
-                                                    <h4>Câu 39:</h4>
+                                                    Câu 39:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
 void main()
 {
     int x = 10, y = 20, z = 5, i;
-    i = x &lt; y &lt; z;
+    i = x < y < z;
     printf("i = %d", i);
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output of program?</p>
+                                                          Output của chương trình này là gì?
                                                             
                                                                           A. i = 0
                                                                 
                                                                                                                                                                                                                                                           
                                                                   
                                                                           
-                                                                          B. &nbsp;i = 1
+                                                                          B. i = 1
                                                                 
                                                                                                                                                                                                                                                           
                                                                    
@@ -1879,32 +1807,32 @@ void main()
                                                                           C. Error
                                                                 
                                                                  
-                                                                          D. None of these
+                                                                          D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
                                                         
                                                         
                                                    
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                                 
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Toán tử so sánh có thứ tự ưu tiên từ trái sang phải. x &lt; y &lt;=&gt; 10 &lt; 20 trả về true (1). (x &lt; y) &lt; z &lt;=&gt; 1 &lt; z trả về true (1)</p>
+                                                                Toán tử so sánh có thứ tự ưu tiên từ trái sang phải. x < y <=>; 10 < 20 trả về Đúng ` (1). (x < y) < z <=>; 1 < z trả về Đúng ` (1)
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 40:</h4>
+                                                    Câu 40:
                                                         
                                                         
-                                                        <p>Which of the declaration is correct?</p>
+                                                        Kiểu khai báo nào sau đây hợp lệ?
                                                        
-                                                                          A. &nbsp;int length;
+                                                                          A. int length;
                                                                 
                                                                                                                                                                                                                                                           
                                                                   
@@ -1913,7 +1841,7 @@ void main()
                                                                                                                                                                                                                                                           
                                                                 
                                                                           
-                                                                          C. &nbsp;int long;
+                                                                          C. int long;
                                                                 
                                                                
                                                                           D. float double;
@@ -1924,16 +1852,16 @@ void main()
                                                         
                                                        
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                             
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 41:</h4>
+                                                    Câu 41:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 int N = 10;
 void main()
@@ -1943,9 +1871,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>&nbsp;What is output of program?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                              
                                                                           A. N = 20
@@ -1958,22 +1886,22 @@ void main()
                                                                  
                                                                           C. Error
                                                                 
-                                                                    D. No Output
+                                                                    D. Không có output
                                                                 
                                                                                                                                                                                         
 
                                                         
                                                       
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                        
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 42:</h4>
+                                                    Câu 42:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -1982,9 +1910,9 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output of program?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                            
                                                                           A. 0 0 0
@@ -2004,25 +1932,25 @@ void main()
                                                         
                                                       
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                      
                                                             
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Đối với mảng tĩnh,&nbsp;nếu khởi tạo thiếu cho các phần tử thì mặc định các phần tử đó được gán bằng 0.<br />
-Hay nói cách khác, câu lệnh int a[5] = {1,2}; &lt;=&gt; int a[5] = {1, 2, 0, 0, 0};</p>
+                                                                Đối với mảng tĩnh,nếu khởi tạo thiếu cho các phần tử thì mặc định các phần tử đó được gán bằng 0.
+Hay nói cách khác, câu lệnh int a[5] = {1,2}; <=>; int a[5] = {1, 2, 0, 0, 0};
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 43:</h4>
+                                                    Câu 43:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -2038,9 +1966,9 @@ int func(float a)
     return (int)++a;
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is output of program?</p>
+                                                          Output của chương trình này là gì?
                                                            
                                                             
                                                                           A. 3
@@ -2062,24 +1990,24 @@ int func(float a)
                                                         
                                                      
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                            
                                         
                                                             
                                                         
-                                                                <p>Toán tử ++ dùng cho cả số nguyên và số thập phân.</p>
+                                                                Toán tử ++ dùng cho cả số nguyên và số thập phân.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 44:</h4>
+                                                    Câu 44:
                                                         
                                                         
-                                                        <p>Which of the following operations are INCORRECT?</p>
+                                                        Which of the following operations are INCORRECT?
                                                             
-                                                                          A. &nbsp;int i = 35; i = i%5
+                                                                          A. int i = 35; i = i%5
                                                                 
                                                                                                                                                                                                                                                           
                                                                
@@ -2094,22 +2022,22 @@ int func(float a)
 
                                                         
                                                             
-                                                               <b>D</b> là đáp án đúng
+                                                               D là đáp án đúng
                                                                                                                  
                                         
                                                             
                                                         
-                                                                <p>Toán tử % chỉ dùng cho số nguyên</p>
+                                                                Toán tử % chỉ dùng cho số nguyên
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 45:</h4>
+                                                    Câu 45:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -2118,41 +2046,41 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Point out a error in the following program</p>
+                                                       Chỉ ra lỗi trong chương trình sau
                                                            
                                                             
                                                                           A. Error: Declaration syntax error v (or) ‘v’: illegal use of type ‘void’
                                                                 
                                                                                                                                                                                                                                                           
                                                                
-                                                                          B. &nbsp;Program terminate abnormally
+                                                                          B. Chương trình kết thúc bất thường
                                                                 
                                                                  
-                                                                          C. No error
+                                                                          C. Không có lỗi
                                                                
-                                                                          D. None of these
+                                                                          D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
  
                                                                 
-                                                               <b>A</b> là đáp án đúng 
+                                                               A là đáp án đúng 
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Dùng kiểu con trỏ void* để trỏ đến kiểu dữ liệu khác.</p>
+                                                                Dùng kiểu con trỏ void* để trỏ đến kiểu dữ liệu khác.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 46:</h4>
+                                                    Câu 46:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -2161,19 +2089,19 @@ void main()
     getch();
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>In the following program how long will the for loop get executed?</p>
+                                                        Trong chương trình sau, vòng lặp for sẽ được thực thi trong bao lâu?
                                                            
-                                                                          A. The for loop would not get executed at all
+                                                                          A. Vòng lặp for hoàn toàn không được thực thi
                                                                  
-                                                                          B. The for loop would get executed only once
+                                                                          B. Vòng lặp for sẽ chỉ được thực thi một lần
                                                                  
-                                                                          C. &nbsp;The for loop would get executed 5 times
+                                                                          C. Vòng lặp for sẽ được thực thi 5 lần
                                                                  
-                                                                          D. The for loop would get executed infinite times
+                                                                          D. Vòng lặp for sẽ được thực thi vô hạn lần
                                                                
-                                                               <b>D</b> là đáp án đúng
+                                                               D là đáp án đúng
                                                                                                                      
                                                                                                                         
                                                             
@@ -2181,17 +2109,17 @@ void main()
                                         
                                                             
                                                         
-                                                                <p>Hàm scanf() đợi người dùng nhập giá trị vào từ bàn phím. Đồng thời trong đoạn code này, hàm scanf() luôn trả về 1 (vòng lặp vô hạn), hàm printf() in ra giá trị nhập vào.</p>
+                                                                Hàm scanf() đợi người dùng nhập giá trị vào từ bàn phím. Đồng thời trong đoạn code này, hàm scanf() luôn trả về 1 (vòng lặp vô hạn), hàm printf() in ra giá trị nhập vào.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 47:</h4>
+                                                    Câu 47:
                                                         
-#include &lt;stdio.h&gt;
-#include &lt;conio.h&gt;
+#include <stdio.h>;
+#include <conio.h>;
  
 void main()
 {
@@ -2204,9 +2132,9 @@ void display()
     printf("vncoding.net");
 }
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Point out the error in the following program (if it is compiled with Turbo C complier)</p>
+                                                        Hãy chỉ ra lỗi trong chương trình trên (if it is compiled with Turbo C complier)
                                                           
                                                                           A. No error
                                                                 
@@ -2214,23 +2142,23 @@ void display()
                                                                           B. display( ) is not declared
                                                                 
                                                                  
-                                                                          C. None of these
+                                                                          C. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
-                                                          <b>B</b> là đáp án đúng
+                                                          B là đáp án đúng
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 48:</h4>
+                                                    Câu 48:
                                                         
                                                         
-                                                        <p>Which of the following are unary operators in C?<br />
-1. !<br />
-2. sizeof<br />
-3. ~<br />
-4. &amp;&amp;</p> 
+                                                        Đâu là toán tử 1 ngôi trong C/C++
+1. !
+2. sizeof
+3. ~
+4. <>
                                                                           A. 1, 2
                                                                 
                                                                   
@@ -2245,54 +2173,54 @@ void display()
                                                         
                                                        
                                                                 
-                                                               <b>D</b> là đáp án đúng
+                                                               D là đáp án đúng
                                                          
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 49:</h4>
+                                                    Câu 49:
                                                         
                                                         
-                                                        <p>In the expression a = b = 5 the order of Assignment is NOT decided by Associativity of operators.</p>
+                                                       Trong biểu thức a = b = 5, thứ tự của phép gán KHÔNG được quyết định bởi tính liên kết của các toán tử.
                                                            
                                                              
-                                                                          A. True
+                                                                          A. Đúng 
                                                                  
-                                                                          B. False
+                                                                          B. Sai
                                                                 
                                                                                                                                                                                         
  
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                          
                                                      
                                                                 
                                         
                                                             
                                                         
-                                                                <p>Toán tử ‘=’ có trình tự kết hợp từ phải sang trái, b = 5 sau đó a = b.</p>
+                                                                Toán tử ‘=’ có trình tự kết hợp từ phải sang trái, b = 5 sau đó a = b.
                                                             
                                                         
                                                         
                                                     
                                                
                                                                                            
-                                                    <h4>Câu 50:</h4>
+                                                    Câu 50:
                                                         
 a = f1(11, 16) * f2(12/8)  +  f3();
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Which of the following is the correct order if calling functions in the below code?</p>
+                                                        Which of the following is the correct order if calling functions in the below code?
                                                            
                                                                           A. f1, f2, f3
                                                                
                                                                           B. f3, f2, f1
                                                              
-                                                                          C. Order may vary from complier to complier
+                                                                          C. Thứ tự có thể thay đổi tuỳ theo trình biên dịch
                                                                  
-                                                                          D. None of above
+                                                                          D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
   
-                                                               <b>C</b> là đáp án đúng
+                                                               C là đáp án đúng
