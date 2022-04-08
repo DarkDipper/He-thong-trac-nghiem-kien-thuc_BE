@@ -1,0 +1,2126 @@
+<div class=exam-content>
+
+
+    <h4>Câu 1:</h4>
+
+
+    <p>Which of the following functions compares two strings?</p>
+
+
+
+
+
+
+
+
+
+
+    A. compare();
+
+
+
+
+
+
+
+
+    B. stringcompare();
+
+
+
+
+
+
+
+
+    C. cmp();
+
+
+
+
+
+
+
+
+    D. strcmp();
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+
+
+
+    <h4>Câu 2:</h4>
+
+
+    <p>&nbsp;Which of the following adds one string to the end of another?</p>
+
+
+
+
+
+
+
+
+
+
+    A. append();
+
+
+
+
+
+
+
+
+    B. stringadd();
+
+
+
+
+
+
+
+
+    C. strcat();
+
+
+
+
+
+
+
+
+    D. stradd();
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 3:</h4>
+
+
+    <p>&nbsp;In which standard library file is the function printf( ) located?</p>
+
+
+
+
+
+
+
+
+
+    A. stdio.h
+
+
+
+
+
+
+
+
+    B. conio.h
+
+
+
+
+
+
+
+
+    C. stdlib.h
+
+
+
+
+
+
+
+
+    D. ouput.h
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 4:</h4>
+
+
+    <p>Which function is used to read the input from console?<br />
+        &nbsp;</p>
+
+
+
+
+
+
+
+
+
+    A. scanf( )
+
+
+
+
+
+
+    B. printf( )
+
+
+
+
+
+
+
+    C. getch( )
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 5:</h4>
+
+
+    <p>Which of the following are NOT relational operator?</p>
+
+
+
+
+
+
+    A. &nbsp;&gt;
+
+
+
+
+    B. &nbsp;&gt;
+
+
+
+    C. &lt;=
+
+
+
+
+    D. None above
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+    4
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 6:</h4>
+
+
+    <p>In the C program, the first statement that will be executed?</p>
+
+
+
+
+
+    A. The first statement of main( )
+
+
+
+    B. The first statement of program
+
+
+
+    C. The first statement after the comment /**/
+
+
+
+
+    D. The first statement of end function
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 7:</h4>
+
+
+    <p>Why are a function phototypes useful?</p>
+
+
+    A. Because they tell the complier that a function is declared later
+
+
+
+    B. Because they make program readable
+
+
+
+    C. Because they allow the programmer to see a quick list of function in the program along with the argument for each
+    function.
+
+
+
+    D. All of the above
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+    <p><br />
+        Function phototype chính là việc khai báo hàm. Nếu việc gọi hàm trước khi hàm được khai báo. Trình biên dịch
+        thông báo lỗi.</p>
+
+
+
+
+
+
+    <h4>Câu 8:</h4>
+
+
+    <p>Which of the following statements should be used to obtain a remainder after dividing 3.14 by 2.1?<br />
+        &nbsp;</p>
+
+
+
+
+
+
+
+    A. rem = 3.14%2.1;
+
+
+
+
+
+    B. rem = fmod(3.14, 2.1);
+
+
+
+
+    C. rem = modf(3.14, 2.1);
+
+
+
+
+
+
+    D. Remainder cannot be obtain in floating point division.
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+    <p><br />
+        Toán tử % lấy phần dư của phép chia 2 số nguyên. Hàm fmod() lấy phần dư của phép chia 2 số thập phân. Hàm modf()
+        tách phần nguyên và phần thập phân.</p>
+
+
+
+
+
+
+    <h4>Câu 9:</h4>
+    <p>1.&nbsp;</p>
+
+
+    struct book
+    {
+    char name[10];
+    float price;
+    int page; };
+
+    <p>2.&nbsp;</p>
+
+
+    long int l = 2.3;
+
+    <p>3.&nbsp;</p>
+
+
+    enum day{Monday, Tuesday, Wednesday};
+
+    <p>&nbsp;</p>
+
+    <p>Which of the following is not user define data type?</p>
+
+
+    8/>
+
+
+    1','8')
+    l8
+
+    18/>
+    8
+    A. 1
+
+
+
+    '8')
+    l8
+
+    28/>
+    8
+    B. 2
+
+
+
+    '8')
+    l8
+
+    38/>
+    8
+    C. 3
+
+
+
+    '8')
+    l8
+
+    48/>
+    8
+    D. 1 &amp; 2 &amp; 3
+
+
+
+
+
+
+    t8
+
+    <b>B</b> là đáp án đúng
+    8
+
+    8
+
+    8
+
+
+
+
+    <p><br />
+        User define data type là kiểu dữ liệu (struct, class, enum,..) do người dùng tự định nghĩa từ các kiểu dữ liệu
+        cơ bản</p>
+
+
+
+
+
+
+    <h4>Câu 10:</h4>
+
+    extern int x;
+    float func(float x) { … }
+    double pow(double, double);
+
+    <p>&nbsp;</p>
+
+    <p>Identify which of the following are declarations<br />
+        &nbsp;</p>
+
+
+
+
+
+    1','9')
+    l9
+
+    1
+    9
+    A. 1
+
+
+
+    '9')
+    l9
+
+    2
+    9
+    B. 2
+
+
+
+    '9')
+    l9
+
+    3
+    9
+    C. 3
+
+
+
+    '9')
+    l9
+
+    4
+    9
+    D. 1 and 3
+
+
+
+
+
+
+    t9
+
+    <b>D</b> là đáp án đúng
+
+    9
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 11:</h4>
+
+    extern int i;
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;Is the following statement a declaration or definition?</p>
+
+
+
+
+
+
+    A. Declaration
+
+
+    B. Definition
+
+
+    C. A &amp; B
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+    <h4>Câu 12:</h4>
+
+    extern int fun( ) ;
+    int fun( );
+
+    <p>&nbsp;</p>
+
+    <p>Is there any difference between following declarations?</p>
+
+
+
+
+
+
+    A. Both are identical
+
+
+
+    B. No difference, except extern int fun( ); is probably in another file
+
+
+
+    C. &nbsp;int fun( ); is overrided with extern int fun( );
+
+
+
+    D. None of these
+
+
+    <b>B</b> là đáp án đúng
+
+    <p><br />
+        Khi bạn cần gọi hàm từ file .c vào file .cpp, bạn cần phải extern function</p>
+
+
+
+
+
+
+    <h4>Câu 13:</h4>
+
+    #include &lt;stdio.h&gt;
+    void main()
+    {
+    extern int a;
+    printf(\n a = %d, a);
+    }
+    int a = 20;
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;In the following program where is the variable a getting defined and where it is getting declared?</p>
+
+
+
+
+
+
+    A. Extern int a is declaration, int a = 20 is the definition
+
+
+
+
+
+    B. &nbsp;Int a = 20 is declaration, extern int a is the definition
+
+
+
+
+
+    C. Int a = 20 is definition, a is not defined
+
+
+
+
+
+    D. a is declared, a is not defined
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 14:</h4>
+
+
+    <p>What are the types of linkages?</p>
+
+
+
+
+
+    A. Internal and External
+
+
+
+
+    B. External, Internal and None
+
+
+
+    C. External and None
+
+
+
+
+    D. Internal
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 15:</h4>
+
+
+    <p>Which of the following special symbol allowed in a variable name?</p>
+
+
+
+    A. * (asterisk)
+
+
+
+
+    B. &nbsp;| (pipeline)
+
+
+
+
+    C. – (hyphen)
+
+
+
+
+    D. _ (underscore)
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+    <h4>Câu 16:</h4>
+
+
+    <p>By default a real number is treated as a</p>
+
+
+    A. &nbsp;float
+
+
+
+
+    B. double
+
+
+
+    C. long double
+
+
+
+    D. far double
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+    <h4>Câu 17:</h4>
+
+
+    <p>How would you round off a value from 1.66 to 2.0?</p>
+
+
+    A. ceil(1.66)
+
+
+
+    B. floor(1.66)
+
+
+
+
+    C. roundup(1.66)
+
+
+
+    D. roundto(1.66)
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p><br />
+        Hàm ceil(x) làm tròn số thập phân thành số nguyên nhỏ nhất, lớn hơn hoặc bằng x. Hàm floor(x) làm tròn số thập
+        phân thành số nguyên lớn nhất, nhỏ hơn hoặc bằng x. Hàm roundup() và roundto() không tồn tại trong thư viện ngôn
+        ngữ C/C++</p>
+
+
+
+
+
+
+    <h4>Câu 18:</h4>
+
+    int func(int arr[]);
+    int func(int arr[20]);
+
+    <p>&nbsp;</p>
+
+    <p>Is there any difference in the following declaration?</p>
+
+
+
+    A. Yes
+
+
+
+
+    B. No
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p>Câu lệnh int func(int arr[]) chấp nhận đầu vào là mảng nguyên với kích thước bất kì.<br />
+        Câu lệnh int func(int arr[20]) chấp nhận đầu vào là mảng nguyên với kích thước là 12.</p>
+
+
+
+
+
+
+    <h4>Câu 19:</h4>
+
+
+    <p>A long double can be used if range of a double is not enough to accommodate a real number?</p>
+
+
+    A. True
+
+
+
+    B. False
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+    <h4>Câu 20:</h4>
+
+
+    <p>&nbsp;A float is 4 byte wide, whereas a double is 8 byte wide</p>
+
+
+    A. True
+
+
+    B. False
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+    <h4>Câu 21:</h4>
+
+
+    <p>Size of short integer and long integer can be verified using the sizeof( ) operator</p>
+
+
+
+
+
+    A. True
+
+
+
+    B. False
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    20
+
+
+
+
+
+
+
+
+    <h4>Câu 22:</h4>
+
+
+    <p>If the definition of external variable occurs in the source file before its use in a particular function, then
+        there is no need for an extern declaration in the function</p>
+
+
+
+
+    A. True
+
+
+
+    B. False
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+    <h4>Câu 23:</h4>
+
+
+    <p>Global variable are available to all functions. Does there exist a mechanism by way of which it available to some
+        and not to others</p>
+
+
+
+
+
+
+    A. Yes
+
+
+    B. No
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 24:</h4>
+
+
+    <p>Size of short integer and long integer would vary from one platform to another</p>
+
+
+
+    A. True
+
+
+
+    B. False
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 25:</h4>
+
+
+    <p>A float occupies 4 bytes. If the hexadecimal equivalent of these 4 bytes A, B, C and D, then when this float is
+        stored in memory in which of the following order do these bytes gets stored?</p>
+
+
+
+    A. ABCD
+
+
+
+    B. DCBA
+
+
+
+    C. 0xABCD
+
+
+
+    D. Depend on big endian or little endian architecture.
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+    <h4>Câu 26:</h4>
+
+
+    <p>What are the difference types of real data type in C?</p>
+
+
+    A. &nbsp;float, double
+
+
+
+    B. short int, double, long int
+
+
+    C. float, double, long double
+
+
+    D. double, long int, float
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 27:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;math.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    float n = 1.34;
+    printf(%f %f,ceil(n), floor(n));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be the ouput of the program?</p>
+
+
+
+    A. 1.000000 &nbsp;2.000000
+
+
+
+    B. 1.500000 &nbsp;1.000000
+
+
+
+    C. 2.000000 &nbsp;1.000000
+
+
+
+    D. 1.300000 &nbsp;2.000000
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+    <p>&nbsp;</p>
+
+    <p>Xem thêm: hàm&nbsp;ceil()&nbsp;và&nbsp;floor()</p>
+
+
+
+
+
+
+    <h4>Câu 28:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    printf(%f, log(1.9));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>Which library will you add in the following program to work it correctly?</p>
+
+
+
+    A. &nbsp;math.h
+
+
+
+
+    B. stdlib.h
+
+
+
+
+    C. log.h
+
+
+    D. dos.h
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+    <h4>Câu 29:</h4>
+
+
+    <p>What will you do to treat the constant 3.14 as a long double?</p>
+
+
+
+    A. &nbsp;use 3.14LD
+
+
+
+    B. use 3.14L
+
+    C. use 3.14DL
+
+
+
+    D. &nbsp;use 3.14LF
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+    <p>Hằng số 3.14 là kiểu double, 3.14L là kiểu long double</p>
+
+
+
+
+
+
+    <h4>Câu 30:</h4>
+
+
+    <p>What will you do to treat the constant 3.14 as a float?</p>
+
+
+
+    A. use float(3.14f)
+
+
+
+    B. use 3.14f
+
+
+
+    C. use f(3.14)
+
+
+
+    D. use (f)(3.14)
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+    <p>Bạn có thể test bằng câu lệnh: sizeof(3.14f) = 4 (byte) (Visual C++ 2008 x86)</p>
+
+
+
+
+
+
+    <h4>Câu 31:</h4>
+
+
+    <p>We want to round off x, a float, to an int value, The correct way to do is:</p>
+
+
+
+
+    A. &nbsp;y = (int)(x + 0.5)
+
+
+
+    B. &nbsp;y = int(x + 0.5)
+
+
+
+    C. y = (int)x + 0.5
+
+
+
+    D. y = (int)((int)x + 0.5)
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p>Round off ở đây có nghĩa là làm tròn số thập phân.<br />
+        Ví dụ: 3.45 –&gt; 3, 3.5 –&gt; 4.<br />
+        Do vậy, ở đây để làm tròn x ta cộng thêm 0.5.<br />
+        Đáp án B cũng có thể đúng, nhưng đáp án A là chuẩn nhất, đảm bảo đúng trên mọi compiler.</p>
+
+
+
+
+
+
+    <h4>Câu 32:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    float n = 1.67;
+    printf(%e, , n);
+    printf(%f, , n);
+    printf(%g, , n);
+    printf(%lf, , n);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of the program?</p>
+
+
+
+
+
+    A. 1.670000e+000, 1.670000, 1.67, 1.670000,
+
+
+
+
+    B. Complier Error
+
+
+    C. 1.67e, 1.67000, 1.670, 1.67
+
+
+
+    D. 1.67e, 1.67, 1.67000, 1.67f
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p>%e: in ra kiểu số mũ.<br />
+        %f: in ra kiểu dấu phẩy động<br />
+        %g: in ra dạng rút gọn của %f hoặc %e<br />
+        %lf: in ra kiểu dấu phẩy động.</p>
+
+
+
+
+
+
+    <h4>Câu 33:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    float n = 0.7;
+    if(n &lt; 0.7f)
+    printf(LaptrinhC++);
+    else
+    printf(abc);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of program?</p>
+
+
+
+
+    A. LaptrinhC++
+
+
+
+
+    B. abc
+
+
+
+    C. Complier error
+
+
+
+    D. None of these
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+    <p>0.7f là hằng số kiểu float. Biểu thức so sánh 0.7 &lt; 0.7f trả về false.</p>
+
+
+
+
+
+
+    <h4>Câu 34:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    float n = 0.7;
+    if(n &lt; 0.7)
+    printf(LaptrinhC++);
+    else
+    printf(abc);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of program?</p>
+
+
+
+
+    A. LaptrinhC++
+
+
+
+    B. abc
+
+
+
+    C. Complier error
+
+
+    D. None of these
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 35:</h4>
+
+
+    <p>If the file tobe included does not exist, the preprocessor flashes an error message</p>
+
+
+
+    A. True
+
+
+
+
+    B. False
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p>Complier sẽ thông báo lỗi nếu thiếu file #include</p>
+
+
+
+
+
+
+    <h4>Câu 36:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int y = 100;
+    const int x = y;
+    printf(%d, x);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output of the program?</p>
+
+
+
+    A. 100
+
+
+
+    B. Garbage value
+
+
+
+
+    C. &nbsp;Error
+
+
+
+    D. 0
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+    <p>hằng số x được khởi tạo bằng 100.</p>
+
+
+
+
+
+
+    <h4>Câu 37:</h4>
+
+
+    <p>What will happen if in the C program you assign a value to a array element whose subscript exceeds the size of
+        array?</p>
+
+
+
+    A. The element will be set to 0.
+
+
+
+
+    B. The complier would report an error.
+
+
+
+    C. The program may crash if some important data gets overwritten
+
+
+
+
+    D. The array size would appropriately grow
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+    <p>Khi bạn assign giá trị cho phần tử vượt quá&nbsp;kích thước của mảng. Xảy ra problem là buffer overrun. Có nghĩa
+        là sử dụng vùng nhớ ko hợp lệ (ví dụ: đang lưu giá trị của một biến khác,…), làm cho chương trình bị crash.</p>
+
+
+
+
+
+
+    <h4>Câu 38:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;math.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    printf(%f, sqrt(36.0));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of the program?</p>
+
+
+
+    A. 6.000000
+
+
+
+    B. 6
+
+
+    C. Error
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p>Xem thêm hàm&nbsp;sqrt()</p>
+
+
+
+
+
+
+    <h4>Câu 39:</h4>
+
+    #include &lt;stdio.h&gt;
+
+    <p>&nbsp;</p>
+
+    <p>In which stage the following code.&nbsp;Gets replaced by the contents of the file stdio.h</p>
+
+
+    A. During editing
+
+
+
+
+    B. During linking
+
+
+
+    C. During execution
+
+
+
+    D. During preprocessing
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 40:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    printf(%d %d %d, sizeof(3.14), sizeof(3.14f), sizeof(3.14l));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of the program?</p>
+
+
+    A. 8 4 8
+
+
+
+    B. 4 4 8
+
+    C. 4 8 10
+
+
+
+
+    D. 4 8 12
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+    <p>3.14 là hằng số kiểu double<br />
+        3.14f là hằng số kiểu float<br />
+        3.14l là hằng số kiểu long double</p>
+
+
+
+
+
+
+    <h4>Câu 41:</h4>
+
+
+    <p>A function cannot be defined inside another function</p>
+
+
+
+
+
+    A. True
+
+
+
+
+    B. False
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+    <p>Không thể define 1 hàm trong 1 hàm khác, ta chỉ có thể gọi hàm trong 1 hàm khác.</p>
+
+
+
+
+
+
+    <h4>Câu 42:</h4>
+    <p>1.&nbsp;</p>
+
+
+    int func(int a, int b)
+    {
+    /*Some code*/
+    }
+
+    <p>2.&nbsp;</p>
+
+
+    int func(a, b)
+    int a; int b;
+    {
+    /*Some code*/
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is the notation for following functions?</p>
+
+
+
+
+
+
+    A. 1. KR Notation and 2. ANSI Notation
+
+
+
+    B. 1. Pre ANSI C Notation and 2. KR Notation
+
+
+
+
+    C. &nbsp;1. ANSI Notation and 2. KR Notation
+
+
+
+    D. 1. ANSI Notation and 2. Pre ANSI Notation
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 43:</h4>
+
+
+    <p>Name of functions in two different files linked together must be unique.</p>
+
+
+
+
+
+
+    A. True
+
+
+
+    B. False
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <h4>Câu 44:</h4>
+
+
+    <p>If return type for a function is not specified, it defaults to int</p>
+
+
+
+
+
+    A. True
+
+
+
+
+    B. &nbsp;False
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 45:</h4>
+
+
+    <p>A function may have ant number of return statements each returning different values.</p>
+
+
+
+    A. True
+
+
+
+    B. &nbsp;False
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+    <p>Một hàm có thể sử dụng nhiều cầu lệnh return với các giá trị trả về khác nhau</p>
+
+
+
+
+
+
+    <h4>Câu 46:</h4>
+
+
+    <p>Functions cannot return more than one value at a time</p>
+
+
+
+    A. True
+
+
+
+
+    B. False
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+    <h4>Câu 47:</h4>
+
+
+    <p>Function can be called either by value or reference</p>
+
+
+    A. True
+
+
+
+
+    B. False
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+    <p>Hàm gọi theo cách&nbsp;tham trị và tham chiếu</p>
+
+
+
+
+
+
+    <h4>Câu 48:</h4>
+
+    #include&lt;stdio.h&gt;
+
+    void main()
+    {
+    printf(laptrinhc++);
+    main();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>How many times the program will print “laptrinhc++”?</p>
+
+
+
+    A. Infinite times
+
+
+
+    B. 65535 times
+
+
+
+    C. Till stack overflows
+
+
+
+    D. Cannot call main( ) in main( )
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+    <h4>Câu 49:</h4>
+
+
+    <p>In C all function except main( ) can be called recursively</p>
+
+
+
+    A. True
+
+
+
+    B. &nbsp;False
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+    <p>Tất cả các hàm bao gồm cả hàm main đều có thể đệ quy.</p>
+
+
+
+
+
+
+    <h4>Câu 50:</h4>
+
+
+    <p>Is it true that too many recursive calls may result into stack overflow?</p>
+
+
+
+    A. Yes
+
+
+
+    B. No
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+    <p>Vì khi hàm được gọi, địa chỉ hàm + giá trị trả về của hàm +… được lưu stack.</p>

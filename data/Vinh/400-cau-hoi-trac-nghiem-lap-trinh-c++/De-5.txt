@@ -1,0 +1,3794 @@
+<div class="exam-content">
+
+
+    <h4>Câu 1:</h4>
+
+    void main()
+    {
+    int i = 5, k;
+    if (i == 0)
+    goto label;
+    label: printf("%d", i);
+    printf("Hey");
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. Hey
+
+
+
+
+
+
+
+
+    B. 5
+
+
+
+
+
+
+
+
+    C. 5Hey
+
+
+
+
+
+
+
+
+    D. Complie error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Lệnh goto label không được thực hiện, nhưng lệnh label: printf("%d", i); vẫn được thực hiện.</p>
+
+
+
+
+
+
+    <h4>Câu 2:</h4>
+
+    void main()
+    {
+    printf("%d ", 1);
+    goto l1;
+    printf("%d ", 2);
+    l1:goto l2;
+    printf("%d ",);
+    l2:printf("%d ", 4);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output?</p>
+
+
+
+
+    A. 1 4
+
+
+
+    B. 1 2 4
+
+
+
+
+
+
+
+
+    C. &nbsp;Syntax error
+
+
+
+
+
+
+
+
+    D. Syntax error
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu:</h4>
+
+    #include &lt;conio.h&gt;
+    #include &lt;stdio.h&gt;
+    void foo();
+    int main()
+    {
+    printf("%d ", 1);
+    goto l1;
+    printf("%d ", 2);
+    }
+    void foo()
+    {
+    l1: printf("3 ");
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. Complie error
+
+
+
+
+
+
+
+    B.
+
+
+
+
+
+
+
+
+    C. 1
+
+
+
+
+
+
+
+
+    D. 1
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Lệnh goto chỉ có thể nhảy tới label trong cùng 1 hàm. Chương trình sẽ báo lỗi label l1 chưa được khai báo.</p>
+
+
+
+
+
+
+    <h4>Câu 4:</h4>
+
+    #include &lt;conio.h&gt;
+    #include &lt;stdio.h&gt;
+    int main()
+    {
+    int i = 0, j = 0;
+    while (i &lt; 2)
+    {
+    l1: i++;
+    while (j &lt;)
+    {
+    printf("loop\n");
+    goto l1;
+    }
+    }
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. loop loop loop
+
+
+
+
+
+
+
+
+    B. Infinite loop
+
+
+
+
+
+
+
+
+    C. Complie error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Label của lệnh goto không được đặt trong biểu thức điều kiện của vòng lặp.</p>
+
+
+
+
+
+
+    <h4>Câu 5:</h4>
+
+    void main()
+    {
+    int a = 15, b = 10, c = 5;
+    if(a &gt; b &gt; c)
+    printf("True");
+    else
+    printf("False");
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. True
+
+
+
+
+
+
+
+
+    B. False
+
+
+
+
+
+
+
+
+    C. Complier Error
+
+
+
+
+
+
+
+
+    D. Run time error
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Biểu thức a&gt;b&gt;c sẽ được thực hiện từ trái sang phải. a&gt;b trả về giá trị 1, 1&gt;c (c=5) trả về giá trị
+        là 0. Do vậy, lệnh printf("False"); sẽ được thực hiện.</p>
+
+
+
+
+
+
+    <h4>Câu 6:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    void main()
+    {
+    int i = 0;
+    switch (i)
+    {
+    case '0': printf("A");
+    break;
+    case '1': printf("B");
+    break;
+    defa: printf("ABC");
+    }
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. A
+
+
+
+
+
+
+
+
+    B. B
+
+
+
+
+
+
+
+
+    C. ABC
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Trong lệnh switch(&lt;biểu thức điều kiện&gt;), biểu thức điều kiện phải là số nguyên, giá trị của kí tự '0'
+        trong bảng mã ASCII là 48, của kí tự '1' là 49.</p>
+
+    <p>Do vậy, chương trình sẽ nhảy vào case defa.</p>
+
+
+
+
+
+
+    <h4>Câu 7:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include "conio.h"
+    void main()
+    {
+    int i =;
+    switch (i)
+    {
+    case 0+1: printf("A");
+    break;
+    case 1+2: printf("B");
+    break;
+    defa: printf("ABC");
+    }
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. A
+
+
+
+
+
+
+
+
+    B. B
+
+
+
+
+
+
+
+
+    C. ABC
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 8:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #define A 0
+    #define B 1
+    int main()
+    {
+    int i =;
+    switch (i &amp; 1)
+    {
+    case A: printf("FALSE");
+    break;
+    case B: printf("TRUE");
+    break;
+    defa: printf("Defa");
+    }
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. FALSE
+
+
+
+
+
+
+
+
+    B. TRUE
+
+
+
+
+
+
+
+
+    C. &nbsp;Defa
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>i&amp;1 = 101&amp;1 = 1.</p>
+
+
+
+
+
+
+    <h4>Câu 9:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    int i;
+    if (printf("))
+    i =;
+    else
+    i = 5;
+    printf("%d", i);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A.
+
+
+
+
+
+
+
+
+    B. 5
+
+
+
+
+
+
+
+
+    C. 03
+
+
+
+
+
+
+
+
+    D. 05
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Hàm printf() trả về số lượng kí tự in ra màn hình. printf(") trả về giá trị 1.</p>
+
+
+
+
+
+
+    <h4>Câu 10:</h4>
+
+    #include&lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    int a = 5;
+    switch(a)
+    {
+    defa:
+    a = 4;
+    case 6:
+    a--;
+    case 5:
+    a = a + 1;
+    case 1:
+    a = a - 1;
+    }
+    printf("%d \n", a);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+    A.
+
+
+
+
+
+
+
+    B. 4
+
+
+
+
+
+    C. 5
+
+
+
+
+
+
+
+
+    D. 6
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Chương trình sẽ nhảy vào case 5 và thực hiện lệnh a = a+1 = 6. Nhưng vì không có lệnh break nên a = a - 1 = 5 sẽ
+        được thực hiện.</p>
+
+
+
+
+
+
+    <h4>Câu 11:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    int x =;
+    if (x == 2); x = 0;
+    if (x ==) x++;
+    else x += 2;
+
+    printf("x = %d", x);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output?</p>
+
+
+
+    A. x = 2
+
+
+
+
+    B. &nbsp;x = 6
+
+
+
+
+    C. x = 0
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+    <p>x =, x = 0, x += 2 được thực hiện.</p>
+
+
+
+
+
+
+    <h4>Câu 12:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    int check = 20, arr[] = {10, 20,0};
+    switch (check)
+    {
+    case arr[0]: printf("A ");
+    case arr[1]: printf("B");
+    case arr[2]: printf("C");
+    }
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+    A. ABC
+
+
+
+
+    B. BC
+
+
+
+    C. B
+
+
+    D. Complier Error
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+
+    <p>Case &lt;biểu thức&gt;, biểu thức phải là hằng số nguyên. arr[0], arr[1], arr[2] không phải là hằng số nguyên.
+    </p>
+
+
+
+
+
+
+    <h4>Câu 13:</h4>
+
+    void main()
+    {
+    if ((1 || 0) &amp;&amp; (0 || 1))
+    {
+    printf("ABC");
+    }
+    else
+    {
+    printf("DEF");
+    }
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+    A. ABC
+
+
+
+    B. DEF
+
+
+
+
+    C. Syntax error
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+    <p>Biểu thức logic ((1 || 0) &amp;&amp; (0 || 1)) = (1 &amp;&amp; 1) = 1.</p>
+
+
+
+
+
+
+    <h4>Câu 14:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;string.h&gt;
+
+    void main()
+    {
+    char str1[] = "vncoding";
+    char str2[] = "vncoding";
+    if (strcmp(str1, str2))
+    printf("Equal");
+    else
+    printf("Unequal");
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+    A. Equal
+
+
+
+    B. Unequal
+
+    C. nothing is printed
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 15:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int i;
+    i = 10;
+    if(i == 20 ||0)
+    printf("True");
+    else
+    printf("False");
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output of code?</p>
+
+
+    A. True
+
+
+    B. False
+
+
+    C. Complier error
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 16:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    if(1,0)
+    printf("True");
+    else
+    printf("False");
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+    A. True&nbsp;
+
+
+    B. False
+
+
+    C. Complier error
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 17:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int i, j, *ptr, *ptr1;
+    i = 10;
+    j = 10;
+    ptr = &amp;i;
+    ptr1 = &amp;j;
+
+    if(ptr == ptr1)
+    printf("True");
+    else
+    printf("False");
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+    A. True
+
+
+    B. False
+
+
+
+    '16')"
+    1
+
+
+    1
+    C. Complier error
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 18:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int i;
+    i = 2;
+    DES:
+    printf("%d", i);
+    i = i + 2;
+    if(i &lt;= 20)
+    goto DES;
+
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+
+
+    '17')"
+    1
+
+
+    1
+    A. 2468101214161820
+
+
+
+    '17')"
+    1
+
+
+    1
+    B. 468101214161820
+
+
+
+    '17')"
+    1
+
+
+    1
+    C. nothing is printed
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 19:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int i;
+    i = 0;
+    if(i = 15, 10, 5)
+    printf("C/C++ %d", i);
+    else
+    printf("Java %d", i);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+
+
+
+
+
+
+    A. C/C++ 15
+
+
+
+
+
+
+
+    B. Java 15
+
+
+
+
+
+
+    C. Java 5
+
+
+
+
+    D. Complier error
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 20:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int a = 80;
+    if(a++ &gt; 80)
+    printf("C/C++ %d", a);
+    else
+    printf("Java %d", a);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output of code?</p>
+
+
+
+
+
+    A. C/C++ 80
+
+
+
+    B. &nbsp;C/C++ 81
+
+
+    C. &nbsp;Java 80
+
+
+
+    D. Java 81
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 21:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int a;
+    a = 1;
+    while(a &lt;= 1)
+    if(a%2)
+    printf("%d ", a++);
+    else
+    printf("%d ", ++a);
+    printf("%d ", a+10);
+
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+    A. 12
+
+
+    B. 2 12
+
+
+
+    C. 2 11
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 22:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;string.h&gt;
+    #include &lt;stdlib.h&gt;
+
+    void myfunc(char** param)
+    {
+    ++param;
+    }
+    void main()
+    {
+    char* string = (char*)malloc(64);
+    strcpy(string, "hello_World");
+    myfunc(&amp;string);
+    myfunc(&amp;string);
+    printf("%s\n", string);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output ?</p>
+
+    A. hello_World
+
+
+
+
+
+
+
+
+    B. ello_World
+
+
+
+
+
+
+
+
+    C. llo_World
+
+
+
+
+
+
+
+
+    D. lo_World
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Biến string sẽ chứa địa chỉ của chuỗi. &amp;string là địa chỉ của biến con trỏ string (xem hình vẽ).</p>
+
+    <p>Khi truyền &amp;string cho hàm myfunc(), thì param = &amp;string (tức là con trỏ 2 chiều param trỏ tới địa chỉ
+        của biến string).</p>
+
+    <p>Trong hàm myfunc(), phép toán ++param làm thay đổi vùng nhớ mà param trỏ tới mà không làm thay đổi địa chỉ mà
+        biến string trỏ tới.</p>
+
+
+
+
+
+
+    <h4>Câu 23:</h4>
+
+    void myfunc(char** param)
+    {
+    ++*param;
+    }
+    void main()
+    {
+    char* string = (char*)malloc(64);
+    strcpy(string, "hello_World");
+    myfunc(&amp;string);
+    myfunc(&amp;string);
+    printf("%s\n", string);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. hello_World
+
+
+
+
+
+
+
+
+    B. ello_World
+
+
+
+
+
+
+
+
+    C. llo_World
+
+
+
+
+
+
+
+
+    D. lo_World
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>biến string sẽ chứa địa chỉ của chuỗi. &amp;string là địa chỉ của biến con trỏ string (xem hình vẽ).</p>
+
+    <p>Khi truyền &amp;string cho hàm myfunc(), thì param = &amp;string (tức là con trỏ 2 chiều param trỏ tới địa chỉ
+        của biến string).</p>
+
+    <p>Trong hàm myfunc(), phép toán ++*param = ++string làm thay đổi vùng nhớ mà string trỏ tới.</p>
+
+    <p><img alt="" src="https://s.tracnghiem.net/images/fckeditor/upload/2020/20201018/images/Poin  Pointer.PNG"
+            style="width: 525px; height: 212px;" </p>
+
+
+
+
+
+
+    <h4>Câu 24:</h4>
+
+    void main()
+    {
+    int ints[] = { 0, 1, 2, };
+    int* i1 = ints + 1;
+    int a = ++*i1;
+    int b = a + *i1;
+    printf("%d\n", b);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A.
+
+
+
+
+
+
+
+
+    B. 4
+
+
+
+
+
+
+
+
+    C. 5
+
+
+
+
+
+
+
+
+    D. 6
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>&nbsp;i1 = ints+1, i1 sẽ trỏ tới phần tử thứ 2 của mảng ints[] và *i1 = 1.</p>
+
+    <p>Lệnh ++*i1 = ++(*i)1, lệnh này sẽ thay đổi giá trị tại vùng nhớ mà i1 trỏ tới (sau khi lệnh này được thực
+        hiện,*i1 = 2 hay nói cách khác ints[] = {0,2,2,3}. Xem hình vẽ:</p>
+
+
+
+
+
+
+
+    <h4>Câu 25:</h4>
+
+    void main()
+    {
+    int ints[] = { 0, 5, 10, 15 };
+    int* i2 = ints + 2;
+    int a = *i2++; // a = *(i2++);
+    printf("%d#%d\n", a, *i2);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. 10#15
+
+
+
+
+
+
+
+
+    B. 10#10
+
+
+
+
+
+
+
+
+    C. 15#15
+
+
+
+
+
+
+
+
+    D. 11#15
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>i2++ được thực hiện nhưng giá trị của i2 sẽ được thay đổi sau khi sử dụng. \</p>
+
+    <p>Sau khi thực hiện a = *(i2++), a = *i2 = 10, i2 = i2 + 1.</p>
+
+
+
+
+
+
+    <h4>Câu 26:</h4>
+
+    void main()
+    {
+    int ints[] = { 0, 1, 2, };
+    int* i1 = ints + 1;
+    int* i2 = ints + 2;
+    int a = ++*i1 + *i2++;
+    int b = *++i1 + *i2--;
+    printf("%d#%d", a, b);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of following code?</p>
+
+
+
+
+
+
+
+
+
+    A. 4#4
+
+
+
+
+
+
+
+
+    B. 4#5
+
+
+
+
+
+
+
+
+    C. 5#6
+
+
+
+
+
+
+
+
+    D. 4#6
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>– Lệnh int a = ++*i1 + *i2++;, toán tử * và ++ cùng thứ tự ưu tiên nhưng có thứ tự kết hợp từ phải sang trái.
+        i2++ sẽ được thực hiện trước nhưng i2 sẽ trỏ tới phần tử tiếp theo sau khi i2 được sử dụng( nghĩa là *(i2++) =
+        2). ++*i1 = ++(i*) = ints[1] = 2. a = 2 + 2 = 4. Sau lệnh này, i2 trỏ tới phần tử cuối cùng của mảng ints[],i1
+        trỏ tới phần tử thứ 2 của mảng ints[], giá trị ints[1] bị thay đổi (=2).<br /> – Lệnh int b = *++i1 + *i2–;,
+        toán tử * và — cùng thứ tự ưu tiên nhưng có thứ tự kết hợp từ phải sang trái. i2– được thực hiện trước nhưng i2
+        sẽ trỏ tới phần tử thứ của mảng sau khi i2 được sử dụng( nghĩa là *(i2–) =). *++i1 = *(++i1) = ints[2] = 2. b =
+        2 + = 5.</p>
+
+
+
+
+
+
+    <h4>Câu 27:</h4>
+
+    void main()
+    {
+    int i = 400;
+    int *ptr = &amp;i;
+    *++ptr = 2;
+    printf("%d %d", i, *ptr);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output of following code?</p>
+
+
+
+
+
+
+
+
+
+    A. 400 2
+
+
+
+
+
+
+
+
+    B. 400 400
+
+
+
+
+
+
+
+
+    C. 400 401
+
+
+
+
+
+
+
+
+    D. Complier error
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Lệnh *++ptr = 2&lt;=&gt; *(++ptr) = 2, ptr sẽ trỏ đến vùng nhớ khác và gán giá trị cho vùng nhớ đó = 2.</p>
+
+
+
+
+
+
+    <h4>Câu 28:</h4>
+
+    void main()
+    {
+    char str[] = {"pvpit"};
+    char *s1 = str;
+    s1++;
+    printf("%c", *s1);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+    A. pvpit
+
+
+
+
+
+
+
+    B. vpit
+
+
+
+
+
+
+
+    C. v
+
+
+
+
+
+
+
+    D. Another
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>s1 = str, s1 trỏ tới phần tử đầu tiên của chuỗi “pvpit”. s1++, s1 trỏ tới phần tử thứ 2 của chuỗi “pvpit”. *s1 =
+        ‘v’.</p>
+
+
+
+
+
+
+    <h4>Câu 29:</h4>
+
+    void main()
+    {
+    char *s = "\12345s\n";
+    printf("%d", strlen(s));
+    printf("\n%s", s);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. 5
+
+
+
+
+
+
+
+
+    B. 7
+
+
+
+
+
+
+
+
+    C. 9
+
+
+
+
+
+
+
+
+    D. 10
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu0:</h4>
+
+    int main(int argc, char** argv)
+    {
+    const char* foo = "wow"; // line 1
+    foo = "top"; // line 2
+    foo[0] = 1; // line
+    return 0;
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;For the code below which lines should be reported as errors by a compiler?</p>
+
+
+
+
+
+
+
+
+    A. 1
+
+
+
+
+
+
+
+    B. 2
+
+
+
+
+
+
+
+    C.
+
+
+
+
+
+
+
+    D. None of the lines
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Biến foo là biến const, trình biên dịch không cho phép thay đổi giá trị của biến foo.</p>
+
+
+
+
+
+
+    <h4>Câu1:</h4>
+
+    void main()
+    {
+    int x = 5,y = 6;
+    int* const p = &amp;x;
+    p = &amp;y;
+    printf("%d", (*p));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+    A. Complier error
+
+
+
+
+
+
+
+    B. 6
+
+
+
+
+
+
+
+    C. 5
+
+
+
+
+
+
+
+    D. Another
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>p là hằng con trỏ (constant pointer). Khi khai báo hằng con trỏ, ta cần khởi tạo luôn cho hằng con trỏ (Nếu không
+        khởi tạo, chương trình biên dịch (complier) gây ra lỗi).</p>
+
+    <p>Trình biên dịch sẽ không cho phép thay đổi vùng nhớ mà con trỏ p trỏ tới. p = &amp;y → gây ra lỗi.</p>
+
+
+
+
+
+
+    <h4>Câu2:</h4>
+
+    void main()
+    {
+    int x = 5, y = 8;
+    const int* p;
+    p = &amp;x;
+    p = &amp;y;
+    x++;
+    printf("%d", *p);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. 5
+
+
+
+
+
+
+
+
+    B. 6
+
+
+
+
+
+
+
+
+    C. 8
+
+
+
+
+
+
+
+
+    D. Complier Error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>p là con trỏ tới hằng số (pointer to constant), nói cách khác ta không thể dùng p để thay đổi giá trị của vùng
+        nhớ mà p trỏ đến.</p>
+
+    <p>Chú ý: p có thể trỏ tới vùng nhớ khác.</p>
+
+
+
+
+
+
+    <h4>Câu3:</h4>
+
+    void main()
+    {
+    int x = 5;
+    const int* p;
+    p = &amp;x;
+    x++;
+    *p = 4;
+    printf("%d", *p);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What is output of code?</p>
+
+
+
+
+
+
+
+
+
+    A. 4
+
+
+
+
+
+
+
+
+    B. 5
+
+
+
+
+
+
+
+
+    C. 6
+
+
+
+
+
+
+
+
+    D. Complier Error
+
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>p là con trỏ tới hằng số (pointer to constant), nói cách khác ta không thể dùng p để thay đổi giá trị của vùng
+        nhớ mà p trỏ đến.</p>
+
+    <p>Nhưng ta có thể thay đổi giá trị của vùng nhớ đó bằng chính biến đó (x++ là OK). *p = 4 –&gt; gây lỗi.</p>
+
+
+
+
+
+
+    <h4>Câu4:</h4>
+
+    #include &lt;stdio.h&gt;
+
+    int main()
+    {
+    int a =20;
+    char *ptr;
+    ptr = (char*)&amp;a;
+    printf("%d ", *ptr);
+    return 0;
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output of code?</p>
+
+
+
+
+
+
+
+
+
+    A.20
+
+
+
+
+
+
+
+
+    B. 64
+
+
+
+
+
+
+
+
+    C. Complier Error
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu5:</h4>
+
+    #include &lt;stdio.h&gt;
+
+    int main()
+    {
+    int i =;
+    int *j;
+    int **k;
+    j = &amp;i;
+    k = &amp;j;
+    printf("%u , %u , %d ", k, *k, **k);
+    return 0;
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A. Address of j , Address of &nbsp;i ,
+
+
+
+
+
+
+
+
+    B. Complier Error
+
+
+
+
+
+
+
+
+    C. , ,
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>k = &amp;j &lt;=&gt; *k = *&amp;j &lt;=&gt; *k = j &lt;=&gt; **k = *j.</p>
+
+
+
+
+
+
+    <h4>Câu6:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;string.h&gt;
+
+    int main()
+    {
+    char *ptr1 = NULL;
+    char *ptr2 = 0;
+    printf("\n%d", ptr2);
+    strcpy(ptr1, "c");
+    strcpy(ptr2, "questions");
+    printf("\n%s %s", ptr1, ptr2);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A. &nbsp;printf("\n%d", ptr2);
+
+
+
+
+
+
+
+
+    B. strcpy(ptr1, "c");
+
+
+
+
+
+
+
+
+    C. strcpy(ptr2, "questions");
+
+
+
+
+
+
+
+
+    D. printf("\n%s %s", ptr1, ptr2);
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Chương trình biên dịch (Complier) báo lỗi tại dòng strcpy(ptr1," c");. Vì biến ptr1 chưa được cấp phát.</p>
+
+
+
+
+
+
+    <h4>Câu7:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    int main()
+    {
+    int a = 10;
+    void *p = &amp;a;
+    int *ptr = p;
+    printf("%u\n", *ptr);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A. &nbsp;int a = 10;
+
+
+
+
+
+
+
+
+    B. void *p = &amp;a;
+
+
+
+
+
+
+
+
+    C. int *ptr = p;
+
+
+
+
+
+
+
+
+    D. printf("%u\n", *ptr);
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Lỗi tại dòng int *ptr = p;</p>
+
+
+
+
+
+
+    <h4>Câu8:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    int main()
+    {
+    int a = 5, b = 10, c;
+    int *p = &amp;a, *q = &amp;b;
+    c = p - q;
+    printf("%d" , c);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A.
+
+
+
+
+
+
+
+
+    B. 4
+
+
+
+
+
+
+
+
+    C. 5
+
+
+
+
+
+
+
+
+    D. 6
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu9:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    int main()
+    {
+    int i = 5, j;
+    int *p , *q;
+    p = &amp;i;
+    q = &amp;j;
+    j = 5;
+    printf("%d %d", *p, *q);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A. &nbsp;5 5
+
+
+
+
+
+
+
+
+    B. Complier Error
+
+
+
+
+
+
+
+
+    C. 5 Garbage value
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 40:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    void main()
+    {
+    int i = 5;
+    int *p;
+    p = &amp;i;
+    printf(" %u %u", *&amp;p , &amp;*p);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A. Address of i Address of i
+
+
+
+
+
+
+
+
+    B. Garbage value Garbage value
+
+
+
+
+
+
+
+
+    C. Complier Error
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>*&amp;p = &amp;*p = p = &amp;i</p>
+
+
+
+
+
+
+    <h4>Câu 41:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    int array[2][2][3]={0, 1, 2,, 4, 5, 6, 7, 8, 9, 10, 11};
+    printf("%d", array[1][0][2]);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. 6
+
+
+
+
+
+
+
+
+    B. 7
+
+
+
+
+
+
+
+
+    C. 8
+
+
+
+
+
+
+
+
+    D. 9
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 42:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    void main()
+    {
+    char arr[8]={'V''I''E''T''N''A''M'};
+    char *p;
+    p=(char *)(arr+2)[2];
+    printf("%c", p);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. I
+
+
+
+
+
+
+
+
+    B. E
+
+
+
+
+
+
+
+
+    C. M
+
+
+
+
+
+
+
+
+    D. N
+
+
+
+
+
+
+
+
+
+    <b>D</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 43:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    void main()
+    {
+    char ch[]={'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    int *p = (int*)ch;
+    p++;
+    printf("%x", *p);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What will be output of following program?</p>
+
+
+
+
+
+
+
+
+
+    A.7363534
+
+
+
+
+
+
+
+
+    B.4353637
+
+
+
+
+
+
+
+
+    C. 45673333
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 44:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+
+    int main()
+    {
+    int i = 11;
+    int const * p = &amp;i;
+    p++;
+    printf("%d", *p);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. 11
+
+
+
+
+
+
+
+
+    B. 12
+
+
+
+
+
+
+
+
+    C. Garbage value
+
+
+
+
+
+
+
+
+    D. Complier error
+
+
+
+
+
+
+
+
+
+    <b>C</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 45:</h4>
+
+
+    <p>Which of the following statements are correct about an array?</p>
+
+    <p>1. The array int num[26]; can store 26 elements<br />
+        2. The expression num[1] designates the very first element in the array
+        <<br />
+        3. It is necessary to initialize the array at the time of declaration.<br />r
+        4. The declaration num[SIZE] is allowed if SIZE is a macro.<br />>
+
+
+
+
+
+
+
+
+
+        A. 1,4
+
+
+
+
+
+
+
+
+        B.
+
+
+
+
+
+
+
+
+        C. 1,2
+
+
+
+
+
+
+
+
+        D. 1
+
+
+
+
+
+
+
+
+
+        <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 46:</h4>
+
+
+    <p>The library function used to find the last occurrence of a character in a string is<br />
+        &nbsp;</p>
+
+
+
+
+
+
+
+
+
+    A. strnstr()
+
+
+
+
+
+
+
+
+    B. strrchr()
+
+
+
+
+
+
+
+
+    C. laststr()
+
+
+
+
+
+
+
+
+    D. strstr()
+
+
+
+
+
+
+
+
+
+    <b>B</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 47:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    int a[3][4] = { 1, 2,, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+    printf("%u, %u, %u\n", a[0]+1, *(a[0]+1), *(*(a+0)+1));
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output? (assuming that the array begins at the location 1002 and size of an integer is 4 bytes)</p>
+
+
+
+
+
+
+
+
+
+    A. 1006, 2, 2
+
+
+
+
+
+
+
+
+    B. 1006, 4, 4
+
+
+
+
+
+
+
+
+    C. 1002, 5, 5
+
+
+
+
+
+
+
+
+    D. Error
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 48:</h4>
+
+    int (*ptr)[10];
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;What does the following declaration mean?</p>
+
+
+
+
+
+
+
+
+
+    A. ptr is array of pointers to 10 integers
+
+
+
+
+
+
+
+
+    B. ptr is a pointer to an array of 10 integers
+
+
+
+
+
+
+
+
+    C. ptr is an array of 10 integers
+
+
+
+
+
+
+
+
+    D. ptr is an pointer to array
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 49:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    int main()
+    {
+    char str[] = "LAPTRINHC++\0\.NET\;
+    printf("%s\n", str);
+    getch();
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+    A. LAPTRINHC++
+
+
+
+
+
+
+
+    B. LAPTRINHC++\0\.NET\0
+
+
+
+
+
+
+
+    C. LAPTRINHC++\0\.NET
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>Câu 50:</h4>
+
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    void swap(char *, char *);
+
+    int main()
+    {
+    char *pstr[2] = {"LAPTRINHC++", ".NET"};
+    swap(pstr[0], pstr[1]);
+    printf("%s%s", pstr[0], pstr[1]);
+    getch();
+    }
+    void swap(char *, char * )
+    {
+    char *t;
+    t=;
+    = ;
+    =t;
+    }
+
+    <p>&nbsp;</p>
+
+    <p>What is output?</p>
+
+
+
+
+
+
+
+
+
+    A. LAPTRINHC++.NET
+
+
+
+
+
+
+
+
+    B. &nbsp;.NETLAPTRINHC++
+
+
+
+
+
+
+
+
+    C. &nbsp;Address of pstr[0] Address of pstr[1]
+
+
+
+
+
+
+
+
+
+    <b>A</b> là đáp án đúng
