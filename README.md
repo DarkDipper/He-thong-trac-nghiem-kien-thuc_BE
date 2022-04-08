@@ -26,6 +26,8 @@ Góp ý:
     - [x] Lộc phải bỏ file data vào folder data và tạo riêng ra folder riêng
     - [x] [LearnCPP](https://www.learncpp.com/)  - Vinh
     - [x] [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)  - Phong
+- [ ] Cào câu hỏi + Dịch (23h59 5/4 - 23h59 8/4)  - Vinh
+- [ ] Phân loại câu hỏi theo nội dung (0h 9/4 - 23h59 10/4) - Lộc, Vinh
 - [ ] Phân loại (0h 4/4 - 23h59 10/4):
 	Phân loại theo khuôn mẫu file SL.xlxs
 	Database : MongoDB
