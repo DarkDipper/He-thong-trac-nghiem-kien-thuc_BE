@@ -1,12 +1,12 @@
 
-                                    <div class="exam-content">
+                                
                                         
                                                                                            
-                                                    <h4>Câu 1:</h4>
+                                                  Câu 1:
                                                         
                                                         
-                                                        <p>Class members are public by default.</p>
-                                                    
+                                                        Class members are public by default.
+                                                        Các thành viên của Class được mặc định là public
                                                             
                                                             
                                                                                                                                                                                             
@@ -16,7 +16,7 @@
                                                                            
                                                                           
                                                                    
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -25,7 +25,7 @@
                                                                           
                                                                          
                                                                    
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -35,7 +35,7 @@
                                                         
                                                              
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                                                                                         
                                                         
                                                         
@@ -44,17 +44,17 @@
                                                                 
                                                             
                                                            
-                                                                <p>Nếu member của class không khai báo private/public/protected, thì compiler hiểu là private.</p>
+                                                                Nếu member của class không khai báo private/public/protected, thì compiler hiểu là private.
                                                             
                                                         
                                                        
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 2:</h4>
+                                                  Câu 2:
                                                         
                                                         
-                                                        <p>Friend functions have access only to public members of the class.</p>
+                                                        Hàm `Friend chỉ có quyền truy cập đối với các thành viên công khai của lớp..
                                                     
                                                             
                                                             
@@ -65,7 +65,7 @@
                                                                            
                                                                           
                                                                 
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -74,7 +74,7 @@
                                                                           
                                                                          
                                                                 
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -84,7 +84,7 @@
                                                         
                                                           
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                                   
                                                           
                                             
@@ -97,19 +97,16 @@
                                                                 
                                                             
                                                            
-                                                                <p>Friend function có thể truy xuất đến thành phần private của class</p>
+                                                                Friend function có thể truy xuất đến thành phần private của class
                                                             
                                                         
                                                        
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 3:</h4>
+                                                  Câu 3:
                                                         
-                                                        
-                                                        <p>A function designed as public can be accessible by non-members of a class.</p>
-                                                    
-                                                            
+                                                        Một hàm khai báo ở kiểu publiccó thể được truy cập bởi những phương thức không phải là thành viên của class đó
                                                               
                                                                                                                                                                                             
                                                                     
@@ -118,7 +115,7 @@
                                                                            
                                                                            
                                                                   
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -127,7 +124,7 @@
                                                                           
                                                                           
                                                                   
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -137,7 +134,7 @@
                                                         
                                                             
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                             
                                             
@@ -157,10 +154,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 4:</h4>
+                                                  Câu 4:
                                                         
                                                         
-                                                        <p>Friendship is commutative.</p>
+                                                        Các hàm friend, class friend có tính chất giao hoán
                                                     
                                                             
                                                              
@@ -171,7 +168,7 @@
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -180,7 +177,7 @@
                                                                           
                                                                           
                                                                  
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -190,30 +187,19 @@
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                                                                                                  
-                                                           
-                                            
-                                                                                                                               
-                                                        
-                                                        
-                                                      
-                                                           
-                                                                
-                                                                
-                                                            
-                                                           
-                                                                <p>Tính chất hàm bạn, class bạn không có tính chất giao hoán.</p>
+                                                               B là đáp án đúng
+                                                          
+                                                                Tính chất hàm friend, class friend không có tính chất giao hoán.
                                                             
                                                         
                                                        
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 5:</h4>
+                                                  Câu 5:
                                                         
                                                         
-                                                        <p>New and delete are operators.</p>
+                                                        New và delete là các toán tử
                                                     
                                                             
                                                               
@@ -224,7 +210,7 @@
                                                                            
                                                                            
                                                                   
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -233,7 +219,7 @@
                                                                           
                                                                           
                                                                   
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -243,7 +229,7 @@
                                                         
                                                             
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                             
                                             
@@ -263,10 +249,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 6:</h4>
+                                                  Câu 6:
                                                         
                                                         
-                                                        <p>We can implement generic classes using templates</p>
+                                                        Chúng ta có thể triển khai các lớp chung bằng cách sử dụng các khuôn mẫu (templates)
                                                     
                                                             
                                                              
@@ -277,7 +263,7 @@
                                                                            
                                                                           
                                                                    
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -286,7 +272,7 @@
                                                                           
                                                                          
                                                                    
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -296,7 +282,7 @@
                                                         
                                                              
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                              
                                             
@@ -316,10 +302,11 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 7:</h4>
+                                                  Câu 7:
                                                         
                                                         
-                                                        <p>Using operator overloading we can invent new operators.</p>
+                                                        Using operator overloading we can invent new operators.
+                                                        Sử dụng quá tải toán tử có thể thiết kế ra các loại toán tử mới
                                                     
                                                             
                                                            
@@ -330,7 +317,7 @@
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -339,7 +326,7 @@
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -349,7 +336,7 @@
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -369,10 +356,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 8:</h4>
+                                                  Câu 8:
                                                         
                                                         
-                                                        <p>Inheritance helps in making a general class into a more specific class.</p>
+                                                       Kế thừa giúp biến một lớp chung thành một lớp cụ thể hơn.
                                                     
                                                             
                                                              
@@ -383,7 +370,7 @@
                                                                            
                                                                           
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -392,7 +379,7 @@
                                                                           
                                                                          
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -402,7 +389,7 @@
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -422,10 +409,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 9:</h4>
+                                                  Câu 9:
                                                         
                                                         
-                                                        <p>A base class is never used to create objects.</p>
+                                                        Một lớp cơ sở không bao giờ được sử dụng để tạo các đối tượng.
                                                     
                                                             
                                                            
@@ -434,14 +421,14 @@
                                                                         
                                                                            
                                                                          
-                                                                      A. TRUE
+                                                                      A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
                                                                        
                                                                           
                                                                         
-                                                                      B. FALSE
+                                                                      B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -451,7 +438,7 @@
                                                         
                                                           
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                           
                                             
@@ -471,10 +458,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 10:</h4>
+                                                  Câu 10:
                                                         
                                                         
-                                                        <p>Classes can be inherited privately.</p>
+                                                        Các lớp có thể được kế thừa một cách riêng tư.
                                                     
                                                             
                                                               
@@ -485,7 +472,7 @@
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -494,7 +481,7 @@
                                                                           
                                                                           
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -504,7 +491,7 @@
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -524,11 +511,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 11:</h4>
+                                                  Câu 11:
                                                         
                                                         
-                                                        <p>&nbsp;It Is legal to return local variables from a function which returns by reference.</p>
-                                                    
+Việc trả về các biến cục bộ từ một hàm trả về bằng tham chiếu là hợp lệ.                                                    
                                                             
                                                              
                                                                                                                                                                                             
@@ -538,7 +524,7 @@
                                                                            
                                                                            
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -547,7 +533,7 @@
                                                                           
                                                                           
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -557,7 +543,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -577,10 +563,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 12:</h4>
+                                                  Câu 12:
                                                         
                                                         
-                                                        <p>Constructors can be virtual like virtual destructors</p>
+                                                        Constructors có thể áo hoá như destructors ảo
                                                     
                                                             
                                                        
@@ -591,7 +577,7 @@
                                                                            
                                                                      
                                                             
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -600,7 +586,7 @@
                                                                           
                                                                     
                                                             
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -610,7 +596,7 @@
                                                         
                                                       
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                       
                                             
@@ -630,10 +616,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 13:</h4>
+                                                  Câu 13:
                                                         
                                                         
-                                                        <p>C++ is a pure object oriented programming language.</p>
+                                                        C++ là ngôn ngữ lập trình thuần hướng đối tượng.
                                                     
                                                             
                                                          
@@ -644,7 +630,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -653,7 +639,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -663,7 +649,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -683,10 +669,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 14:</h4>
+                                                  Câu 14:
                                                         
                                                         
-                                                        <p>&nbsp;In C++ one can define a function within another function.</p>
+                                                        Trong C ++, người ta có thể định nghĩa một hàm trong một hàm khác.
                                                     
                                                             
                                                          
@@ -697,7 +683,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -706,7 +692,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -716,7 +702,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -736,10 +722,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 15:</h4>
+                                                  Câu 15:
                                                         
                                                         
-                                                        <p>A class encapsulates the implementation and interface of a user-defined data type and constitutes an abstract data type.</p>
+                                                        Một lớp đóng gói việc triển khai và giao diện của một kiểu dữ liệu do người dùng định nghĩa và tạo thành một kiểu dữ liệu trừu tượng.
                                                     
                                                             
                                                           
@@ -750,7 +736,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -759,7 +745,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -769,7 +755,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -789,10 +775,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 16:</h4>
+                                                  Câu 16:
                                                         
                                                         
-                                                        <p>In c++ an identifier can begin with a $ sign.</p>
+                                                        Trong c ++, một mã định danh có thể bắt đầu bằng dấu $.
                                                     
                                                             
                                                               
@@ -802,7 +788,7 @@
                                                                            
                                                                            
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -810,7 +796,7 @@
                                                                           
                                                                           
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -820,7 +806,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -840,10 +826,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 17:</h4>
+                                                  Câu 17:
                                                         
                                                         
-                                                        <p>“My Variable” is a valid identifier in C++.</p>
+                                                        “My Variable” là giá trị nhận dạng hợp lệ trong C ++.
                                                     
                                                             
                                                         
@@ -854,7 +840,7 @@
                                                                            
                                                                      
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -863,7 +849,7 @@
                                                                           
                                                                     
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -873,7 +859,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -893,10 +879,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 18:</h4>
+                                                  Câu 18:
                                                         
                                                         
-                                                        <p>In C++ one can get the memory addresses of variables and functions.</p>
+                                                        Trong C ++ người ta có thể lấy địa chỉ bộ nhớ của các biến và hàm.
                                                     
                                                             
                                                         
@@ -907,7 +893,7 @@
                                                                            
                                                                      
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -916,7 +902,7 @@
                                                                           
                                                                     
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -926,7 +912,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -946,10 +932,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 19:</h4>
+                                                  Câu 19:
                                                         
                                                         
-                                                        <p>%= is not a operator in C++</p>
+                                                        %= không phải là toán tử trong C++
                                                     
                                                             
                                                        
@@ -960,7 +946,7 @@
                                                                            
                                                                      
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -969,7 +955,7 @@
                                                                           
                                                                     
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -979,7 +965,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -999,10 +985,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 20:</h4>
+                                                  Câu 20:
                                                         
                                                         
-                                                        <p>std::cout is a standard input stream.</p>
+                                                        std::cout là lệnh nhập chuẩn.
                                                     
                                                             
                                                          
@@ -1013,7 +999,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1022,7 +1008,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1032,7 +1018,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1052,10 +1038,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 21:</h4>
+                                                  Câu 21:
                                                         
                                                         
-                                                        <p>Preprocessor #define macro and inline functions use the same mechanism.</p>
+                                                        Tiền xử lý #define các hàm macro và hàm inline sử dụng cùng một cơ chế.
                                                     
                                                             
                                                             
@@ -1066,7 +1052,7 @@
                                                                            
                                                                           
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1075,7 +1061,7 @@
                                                                           
                                                                          
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1085,7 +1071,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1105,10 +1091,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 22:</h4>
+                                                  Câu 22:
                                                         
                                                         
-                                                        <p>All C++ functions are recursive.</p>
+                                                        Tất cả các hàm C ++ là đệ quy.
                                                     
                                                             
                                                              
@@ -1119,7 +1105,7 @@
                                                                            
                                                                           
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1128,7 +1114,7 @@
                                                                           
                                                                          
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1138,7 +1124,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1158,10 +1144,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 23:</h4>
+                                                  Câu 23:
                                                         
                                                         
-                                                        <p>The ‘break’ keyword is only used in the switch..case statement.</p>
+                                                        Từ khóa 'break' chỉ được sử dụng trong câu lệnh switch..case.
                                                     
                                                             
                                                          
@@ -1172,7 +1158,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1181,7 +1167,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1191,7 +1177,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1211,10 +1197,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 24:</h4>
+                                                  Câu 24:
                                                         
                                                         
-                                                        <p>The new operator returns the address and size of the memory block that it allocates.</p>
+                                                        Toán tử new trả về địa chỉ và kích thước của khối bộ nhớ mà nó cấp phát.
                                                     
                                                             
                                                          
@@ -1225,7 +1211,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1234,7 +1220,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1244,7 +1230,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1264,10 +1250,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 25:</h4>
+                                                  Câu 25:
                                                         
                                                         
-                                                        <p>The heap storage is used for local objects.</p>
+                                                        Bộ nhớ heap được sử dụng cho các đối tượng cục bộ.
                                                     
                                                             
                                                          
@@ -1278,7 +1264,7 @@
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1287,7 +1273,7 @@
                                                                           
                                                                       
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1297,7 +1283,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1317,10 +1303,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 26:</h4>
+                                                  Câu 26:
                                                         
                                                         
-                                                        <p>It is not necessary to initialize a reference to real object when it is declared.</p>
+                                                        Không cần thiết phải khởi tạo một tham chiếu đến đối tượng thực khi nó được khai báo.
                                                     
                                                             
                                                             
@@ -1331,7 +1317,7 @@
                                                                            
                                                                           
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1340,7 +1326,7 @@
                                                                           
                                                                          
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1350,7 +1336,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1370,10 +1356,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 27:</h4>
+                                                  Câu 27:
                                                         
                                                         
-                                                        <p>There can be a null reference.</p>
+                                                       Có thể có một tham chiếu rỗng.
                                                     
                                                             
                                                             
@@ -1384,7 +1370,7 @@
                                                                            
                                                                           
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1393,7 +1379,7 @@
                                                                           
                                                                          
                                                                
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1403,7 +1389,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1423,10 +1409,10 @@
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 28:</h4>
+                                                  Câu 28:
                                                         
                                                         
-                                                        <p>One can reassign reference after it is initialized.</p>
+                                                            Người ta có thể gán lại tham chiếu sau khi nó được khởi tạo.
                                                     
                                                             
                                                             
@@ -1437,7 +1423,7 @@
                                                                            
                                                                           
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1446,7 +1432,7 @@
                                                                           
                                                                          
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1456,7 +1442,7 @@
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                                 
                                                          
                                             
@@ -1469,21 +1455,21 @@
                                                                 
                                                             
                                                            
-                                                                <p>Tham chiếu phải được khởi tạo ngay khi khai báo biến. Và không reassign biến tham chiếu cho vào địa chỉ mới<br />
-Ví dụ:<br />
-int x, y;<br />
-int &amp;r = x;<br />
-&amp;r = y; // error</p>
+                                                                Tham chiếu phải được khởi tạo ngay khi khai báo biến. Và không khai báo lại biến tham chiếu cho vào địa chỉ mới
+Ví dụ:
+int x, y;
+int &r = x;
+&r = y; // error
                                                             
                                                         
                                                        
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 29:</h4>
+                                                  Câu 29:
                                                         
                                                         
-                                                        <p>It is nothing wrong that a function returning a reference to an automatic variable.</p>
+                                                        Không có gì sai khi một hàm trả về một tham chiếu đến một biến tự động.
                                                     
                                                             
                                                             
@@ -1494,7 +1480,7 @@ int &amp;r = x;<br />
                                                                            
                                                                           
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1503,7 +1489,7 @@ int &amp;r = x;<br />
                                                                           
                                                                          
                                                                
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1513,7 +1499,7 @@ int &amp;r = x;<br />
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                          
                                             
@@ -1533,10 +1519,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 30:</h4>
+                                                  Câu 30:
                                                         
                                                         
-                                                        <p>One can apply pointer arithmetic with reference variables.&nbsp;</p>
+                                                       Người ta có thể áp dụng phép toán con trỏ với các biến tham chiếu.
                                                     
                                                             
                                                          
@@ -1546,7 +1532,7 @@ int &amp;r = x;<br />
                                                                            
                                                                        
                                                                
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1554,7 +1540,7 @@ int &amp;r = x;<br />
                                                                           
                                                                       
                                                                
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1564,30 +1550,19 @@ int &amp;r = x;<br />
                                                         
                                                          
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                                                                                                 
-                                                         
-                                            
-                                                                                                                              
-                                                        
-                                                        
-                                                    
-                                                           
-                                                                
-                                                                
+                                                               B là đáp án đúng
                                                             
-                                                           
-                                                                <p>Không apply phép toán con trỏ vào biến tham chiếu</p>
+                                                                Không apply phép toán con trỏ vào biến tham chiếu
                                                             
                                                         
                                                        
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 31:</h4>
+                                                  Câu 31:
                                                         
                                                         
-                                                        <p>The preprocessor processes source code before the compiler does.</p>
+                                                        Bộ xử lý tiền xử lý mã nguồn trước khi trình biên dịch thực hiện.
                                                     
                                                             
                                                               
@@ -1598,7 +1573,7 @@ int &amp;r = x;<br />
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1607,7 +1582,7 @@ int &amp;r = x;<br />
                                                                           
                                                                           
                                                                  
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1617,7 +1592,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -1637,10 +1612,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 32:</h4>
+                                                  Câu 32:
                                                         
                                                         
-                                                        <p>&nbsp;A class is a basic unit of object-oriented programming.</p>
+                                                    Một lớp là một đơn vị nhỏ nhất của lập trình hướng đối tượng.
                                                     
                                                             
                                                              
@@ -1651,7 +1626,7 @@ int &amp;r = x;<br />
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1660,7 +1635,7 @@ int &amp;r = x;<br />
                                                                           
                                                                           
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1670,30 +1645,18 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
-                                                                                                                                
-                                                           
-                                            
-                                                                                                                             
-                                                        
-                                                        
-                                                      
-                                                           
-                                                                
-                                                                
-                                                            
-                                                           
-                                                                <p>Đơn vị nhỏ nhất của lập trình hướng đối tượng là object.</p>
+                                                               B là đáp án đúng
+                                                                 Đơn vị nhỏ nhất của lập trình hướng đối tượng là object.
                                                             
                                                         
                                                        
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 33:</h4>
+                                                  Câu 33:
                                                         
                                                         
-                                                        <p>A function template defines a parameterized nonmember function, which enables a program to call the same function with different types of arguments.</p>
+                                                      Một mẫu hàm định nghĩa một hàm không có tham số hóa, cho phép một chương trình gọi cùng một hàm với các kiểu đối số khác nhau.
                                                     
                                                             
                                                             
@@ -1704,7 +1667,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1713,7 +1676,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1723,7 +1686,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -1743,10 +1706,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 34:</h4>
+                                                  Câu 34:
                                                         
                                                         
-                                                        <p>Destructors can be overloaded.</p>
+                                                        Destructors có thể nạp chồng?
                                                     
                                                             
                                                            
@@ -1757,7 +1720,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1766,7 +1729,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1776,7 +1739,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -1796,10 +1759,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 35:</h4>
+                                                  Câu 35:
                                                         
                                                         
-                                                        <p>Static data members cannot be private.</p>
+                                                        Static data members không thể private.
                                                     
                                                             
                                                            
@@ -1810,7 +1773,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1819,7 +1782,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1829,7 +1792,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -1849,10 +1812,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 36:</h4>
+                                                  Câu 36:
                                                         
                                                         
-                                                        <p>Static member functions can use this pointer.</p>
+                                                        Static member functions có thể dùng con trỏ this.
                                                     
                                                             
                                                              
@@ -1863,7 +1826,7 @@ int &amp;r = x;<br />
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1872,7 +1835,7 @@ int &amp;r = x;<br />
                                                                           
                                                                           
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1882,7 +1845,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -1902,10 +1865,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 37:</h4>
+                                                  Câu 37:
                                                         
                                                         
-                                                        <p>One cannot use enumerations in a class.</p>
+                                                        Người ta không thể sử dụng các phép liệt kê trong một lớp.
                                                     
                                                             
                                                               
@@ -1916,7 +1879,7 @@ int &amp;r = x;<br />
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1925,7 +1888,7 @@ int &amp;r = x;<br />
                                                                           
                                                                           
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1935,7 +1898,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -1955,10 +1918,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 38:</h4>
+                                                  Câu 38:
                                                         
                                                         
-                                                        <p>One cannot create an object of a virtual class.</p>
+                                                        Người ta không thể tạo một đối tượng của một lớp ảo.
                                                     
                                                             
                                                              
@@ -1969,7 +1932,7 @@ int &amp;r = x;<br />
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -1978,7 +1941,7 @@ int &amp;r = x;<br />
                                                                           
                                                                           
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -1988,7 +1951,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2008,10 +1971,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 39:</h4>
+                                                  Câu 39:
                                                         
                                                         
-                                                        <p>A class that builds a linked list should destroy the list in the class destructor.</p>
+                                                        Một lớp xây dựng danh sách liên kết sẽ hủy danh sách trong trình hủy của lớp.
                                                     
                                                             
                                                               
@@ -2022,7 +1985,7 @@ int &amp;r = x;<br />
                                                                            
                                                                            
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2031,7 +1994,7 @@ int &amp;r = x;<br />
                                                                           
                                                                           
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2041,7 +2004,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2061,10 +2024,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 40:</h4>
+                                                  Câu 40:
                                                         
                                                         
-                                                        <p>Once an exception has been thrown, it is not possible for the program to jump back to the throw point.</p>
+                                                        Khi một ngoại lệ đã được ném ra, chương trình sẽ không thể quay trở lại điểm ném.
                                                     
                                                             
                                                             
@@ -2075,7 +2038,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2084,7 +2047,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2094,7 +2057,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2114,10 +2077,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 41:</h4>
+                                                  Câu 41:
                                                         
                                                         
-                                                        <p>In C++, only one catch block can handle all the exceptions.</p>
+                                                        Trong C++, chỉ một khối catch có thể xử lý tất cả các trường hợp ngoại lệ.
                                                     
                                                             
                                                             
@@ -2128,7 +2091,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2137,7 +2100,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. &nbsp;FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2147,7 +2110,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2167,11 +2130,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 42:</h4>
+                                                  Câu 42:
                                                         
                                                         
-                                                        <p>There can be only one catch block in a program.</p>
-                                                    
+                                                        Chỉ có thể có một khối catch trong chương trình
                                                             
                                                            
                                                                                                                                                                                             
@@ -2181,7 +2143,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2190,7 +2152,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2200,7 +2162,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2220,10 +2182,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 43:</h4>
+                                                  Câu 43:
                                                         
                                                         
-                                                        <p>When an exception if throw, but not caught, the program ignores the error.</p>
+                                                        Khi một ngoại lệ nếu ném, nhưng không bị bắt, chương trình sẽ bỏ qua lỗi.
                                                     
                                                             
                                                            
@@ -2234,7 +2196,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2243,7 +2205,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2253,7 +2215,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2273,10 +2235,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 44:</h4>
+                                                  Câu 44:
                                                         
                                                         
-                                                        <p>A class object passed to a function template must overload any operators used on the class object by the template.</p>
+                                                       Một lớp đối tượng được truyền cho một hàm template phải nạp chồng cho bất kỳ toán tử nào được sử dụng trên lớp đối tượng bởi khuôn mẫu.
                                                     
                                                             
                                                             
@@ -2287,7 +2249,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2296,7 +2258,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2306,7 +2268,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>A</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2326,10 +2288,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 45:</h4>
+                                                  Câu 45:
                                                         
                                                         
-                                                        <p>In the function template definition it is not necessary to use each type parameter declared in the template prefix.</p>
+                                                        Trong định nghĩa mẫu hàm, không nhất thiết phải sử dụng từng tham số kiểu được khai báo trong tiền tố mẫu.
                                                     
                                                             
                                                            
@@ -2340,7 +2302,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2349,7 +2311,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2359,7 +2321,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               B là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2379,10 +2341,10 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 46:</h4>
+                                                  Câu 46:
                                                         
                                                         
-                                                        <p>&nbsp;It is possible to overload a function template and an ordinary (non-template) function.</p>
+                                                       Có thể quá tải một mẫu hàm và một hàm thông thường (không phải mẫu).
                                                     
                                                             
                                                             
@@ -2393,166 +2355,7 @@ int &amp;r = x;<br />
                                                                            
                                                                          
                                                                  
-                                                                           A. TRUE
-                                                                
-                                                                                                                                                                                                                                                            
-                                                                    
-                                                                       
-                                                                         
-                                                                          
-                                                                        
-                                                                 
-                                                                           B. FALSE
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                        
-                                                           
-                                                                
-                                                               <b>A</b> là đáp án đúng
-                                                                                                                            
-                                                           
-                                            
-                                                                                                                            
-                                                        
-                                                        
-                                                      
-                                                           
-                                                                
-                                                                
-                                                            
-                                                           
-                                                                
-                                                            
-                                                        
-                                                       
-                                                    
-                                                
-                                                                                           
-                                                    <h4>Câu 47:</h4>
-                                                        
-                                                        
-                                                        <p>A class template may not be used as a base class.</p>
-                                                    
-                                                            
-                                                           
-                                                                                                                                                                                            
-                                                                    
-                                                                          
-                                                                         
-                                                                           
-                                                                         
-                                                                 
-                                                                           A. TRUE
-                                                                
-                                                                                                                                                                                                                                                            
-                                                                    
-                                                                         
-                                                                         
-                                                                          
-                                                                        
-                                                                 
-                                                                           B. FALSE
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                        
-                                                           
-                                                                
-                                                               <b>B</b> là đáp án đúng
-                                                                                                                            
-                                                           
-                                            
-                                                                                                                            
-                                                        
-                                                        
-                                                      
-                                                           
-                                                                
-                                                                
-                                                            
-                                                           
-                                                                
-                                                            
-                                                        
-                                                       
-                                                    
-                                                
-                                                                                           
-                                                    <h4>Câu 48:</h4>
-                                                        
-                                                        
-                                                        <p>When declaring an iterator from the STL, the compiler automatically creates the right kind, depending upon the container it is used with.</p>
-                                                    
-                                                            
-                                                            
-                                                                                                                                                                                            
-                                                                    
-                                                                         
-                                                                         
-                                                                           
-                                                                         
-                                                                 
-                                                                           A. TRUE
-                                                                
-                                                                                                                                                                                                                                                            
-                                                                    
-                                                                        
-                                                                         
-                                                                          
-                                                                        
-                                                                 
-                                                                           B. FALSE
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                        
-                                                           
-                                                                
-                                                               <b>A</b> là đáp án đúng
-                                                                                                                            
-                                                           
-                                            
-                                                                                                                            
-                                                        
-                                                        
-                                                      
-                                                           
-                                                                
-                                                                
-                                                            
-                                                           
-                                                                
-                                                            
-                                                        
-                                                       
-                                                    
-                                                
-                                                                                           
-                                                    <h4>Câu 49:</h4>
-                                                        
-                                                        
-                                                        <p>‘ios’ stream is derived from iostream.</p>
-                                                    
-                                                            
-                                                           
-                                                                                                                                                                                            
-                                                                    
-                                                                        
-                                                                         
-                                                                           
-                                                                         
-                                                                 
-                                                                           A. TRUE
+                                                                           A. Đúng
                                                                 
                                                                                                                                                                                                                                                             
                                                                     
@@ -2561,7 +2364,7 @@ int &amp;r = x;<br />
                                                                           
                                                                         
                                                                  
-                                                                           B. FALSE
+                                                                           B. Sai
                                                                 
                                                                                                                                                                                         
 
@@ -2571,7 +2374,7 @@ int &amp;r = x;<br />
                                                         
                                                            
                                                                 
-                                                               <b>B</b> là đáp án đúng
+                                                               A là đáp án đúng
                                                                                                                             
                                                            
                                             
@@ -2591,25 +2394,184 @@ int &amp;r = x;<br />
                                                     
                                                 
                                                                                            
-                                                    <h4>Câu 50:</h4>
+                                                  Câu 47:
+                                                        
+                                                        
+                                                        Một lớp mẫu có thể không được sử dụng làm lớp cơ sở.
+                                                    
+                                                            
+                                                           
+                                                                                                                                                                                            
+                                                                    
+                                                                          
+                                                                         
+                                                                           
+                                                                         
+                                                                 
+                                                                           A. Đúng
+                                                                
+                                                                                                                                                                                                                                                            
+                                                                    
+                                                                         
+                                                                         
+                                                                          
+                                                                        
+                                                                 
+                                                                           B. Sai
+                                                                
+                                                                                                                                                                                        
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                           
+                                                                
+                                                               B là đáp án đúng
+                                                                                                                            
+                                                           
+                                            
+                                                                                                                            
+                                                        
+                                                        
+                                                      
+                                                           
+                                                                
+                                                                
+                                                            
+                                                           
+                                                                
+                                                            
+                                                        
                                                        
- #include &lt;iostream&gt;
+                                                    
+                                                
+                                                                                           
+                                                  Câu 48:
+                                                        
+                                                        
+                                                        Khi khai báo một iterator từ STL, trình biên dịch sẽ tự động tạo ra đúng loại, tùy thuộc vào vùng chứa mà nó được sử dụng.
+                                                    
+                                                            
+                                                            
+                                                                                                                                                                                            
+                                                                    
+                                                                         
+                                                                         
+                                                                           
+                                                                         
+                                                                 
+                                                                           A. Đúng
+                                                                
+                                                                                                                                                                                                                                                            
+                                                                    
+                                                                        
+                                                                         
+                                                                          
+                                                                        
+                                                                 
+                                                                           B. Sai
+                                                                
+                                                                                                                                                                                        
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                           
+                                                                
+                                                               A là đáp án đúng
+                                                                                                                            
+                                                           
+                                            
+                                                                                                                            
+                                                        
+                                                        
+                                                      
+                                                           
+                                                                
+                                                                
+                                                            
+                                                           
+                                                                
+                                                            
+                                                        
+                                                       
+                                                    
+                                                
+                                                                                           
+                                                  Câu 49:
+                                                        
+                                                        
+                                                        ‘ios’ stream có nguồn gốc từ iostream.
+                                                    
+                                                            
+                                                           
+                                                                                                                                                                                            
+                                                                    
+                                                                        
+                                                                         
+                                                                           
+                                                                         
+                                                                 
+                                                                           A. Đúng
+                                                                
+                                                                                                                                                                                                                                                            
+                                                                    
+                                                                       
+                                                                         
+                                                                          
+                                                                        
+                                                                 
+                                                                           B. Sai
+                                                                
+                                                                                                                                                                                        
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                           
+                                                                
+                                                               B là đáp án đúng
+                                                                                                                            
+                                                           
+                                            
+                                                                                                                            
+                                                        
+                                                        
+                                                      
+                                                           
+                                                                
+                                                                
+                                                            
+                                                           
+                                                                
+                                                            
+                                                        
+                                                       
+                                                    
+                                                
+                                                                                           
+                                                  Câu 50:
+                                                       
+ #include <iostream>
  
 using namespace std;
  
 int main()
 {
     int a = 20;
-    int &amp;n = a;
+    int &n = a;
     n = a++;
     a = n++;
-    cout &lt;&lt; a &lt;&lt; "," &lt;&lt; n &lt;&lt; endl;
+    cout << a << "," << n << endl;
     system("pause");
 } 
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is the output of the following code?</p>
+                                                        Output của chương trình là gì?
                                                     
                                                             
                                                             
@@ -2647,7 +2609,7 @@ int main()
                                                                           
                                                                          
                                                                  
-                                                                           D. none of above
+                                                                           D. Tất cả đều sai
                                                                 
                                                                                                                                                                                         
 
@@ -2657,7 +2619,7 @@ int main()
                                                         
                                                            
                                                                 
-                                                               <b>D</b> là đáp án đúng
+                                                               D là đáp án đúng
                                                                                                                                   
                                             
                                                                                                                                
@@ -2669,4 +2631,4 @@ int main()
                                                                 
                                                             
                                                            
-                                                                <p>Kết quả: 22,22</p>
+                                                                Kết quả: 22,22

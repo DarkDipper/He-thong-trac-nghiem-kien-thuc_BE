@@ -1,21 +1,28 @@
-<div classexam-content">
 
 
-    <h4>Câu 1:</h4>
 
+    Câu 1:
 
-    <p>Which of the following is the correct usage of condition operators used in C?</p>
 
+    Cách sử dụng đúng các toán tử điều kiện được sử dụng trong C/C++?
 
+    A. a > b ? c = 20 : c = 21;
+    B. a > b ? c = 20;
+    C. max = a>b ? a>c ? a : c : b>c ? b : c;
+    D. return (a>b)?(a:b);
+    
+    C là đáp án đúng
+        Câu lệnh max = a>b ? a>c ? a : c : b>c ? b : c;  => max = a > b ? (a > c ? a : c):(b > c ? b : c);
 
 
 
 
 
 
+    Câu 2:
 
-    A. a&gt;b? c = 20 : c = 21;
 
+    Biểu thức bên tay phải của || toán tử không được đánh giá nếu phía bên trái xác định kết quả.
 
 
 
@@ -23,111 +30,51 @@
 
 
 
-    B. a&gt;b? c = 20;
 
 
+    A. Đúng
 
 
 
 
 
 
-    C. max = a&gt;b? a&gt;c?a:c:b&gt;c?b:c;
 
 
+    B. Sai
 
 
 
 
 
 
-    D. return (a&gt;b)?(a:b);
 
 
 
+    A là đáp án đúng
 
 
 
 
 
 
-    <b>C</b> là đáp án đúng
 
 
 
 
 
 
+    Ví dụ: if(a || b) nếu a là khác 0, b sẽ không được đánh giá.
 
 
 
 
 
 
-    <p>Câu lệnh max = a&gt;b? a&gt;c?a:c:b&gt;c?b:c; &lt;=&gt; max = a&gt;b? (a&gt;c?a:c):(b&gt;c?b:c);</p>
+    Câu 3:
 
 
-
-
-
-
-    <h4>Câu 2:</h4>
-
-
-    <p>The expression of the right hand side of || operators does not get evaluated if the left hand side determines
-        the&nbsp;outcome.</p>
-
-
-
-
-
-
-
-
-
-    A. True
-
-
-
-
-
-
-
-
-    B. &nbsp;False
-
-
-
-
-
-
-
-
-
-    <b>A</b> là đáp án đúng</span>
-
-
-
-
-
-
-
-
-
-
-
-
-    <p>Ví dụ: if(a || b) nếu a là khác 0, b sẽ không được đánh giá.</p>
-
-
-
-
-
-
-    <h4>Câu 3:</h4>
-
-
-    <p>&nbsp;Which of the following correctly shows the hierarchy of arithmetic operator in C?</p>
+    Điều nào sau đây thể hiện đúng thứ bậc của toán tử số học trong C?
 
 
 
@@ -174,7 +121,7 @@
 
 
 
-    <b>D</b> là đáp án đúng</span>
+    D là đáp án đúng
 
 
 
@@ -194,12 +141,12 @@
 
 
 
-    <h4>Câu 4:</h4>
+    Câu 4:
 
 
-    <p>hich of the following is the correct order of evaluation for the below expression? z = x + y * z / 4 % 2 –
-        1;<br />
-        &nbsp;</p>
+   Thứ tự đánh giá biểu thức nào sau đây là đúng? 
+   z = x + y * z / 4% 2 - 1;
+        
 
 
 
@@ -236,7 +183,7 @@
 
 
 
-    D. &nbsp;* % / – + =
+    D. * % / – + =
 
 
 
@@ -244,15 +191,7 @@
 
 
 
-    < <b>A</b> là đáp án đúng</span>
-
-
-
-
-
-
-
-
+     A là đáp án đúng
 
 
 
@@ -264,25 +203,32 @@
 
 
 
-        <h4>Câu 5:</h4>
 
-        #include&lt;stdio.h&gt;
-        #include&lt;conio.h&gt;
 
-        int main()
-        {
-        int i = 4, j = -1, k = 0, w, x, y, z;
-        w = i||j||k;
-        x = i&amp;&amp;j&amp;&amp;k;
-        y = i||j&amp;&amp;k;
-        z = i&amp;&amp;j||k;
-        printf("%d %d %d %d", w, x, y, z);
-        getch();
+
+
+
+
+
+
+        Câu 5:
+
+        #include<stdio.h>
+        #include<conio.h>
+
+        int main(){
+            int i = 4, j = -1, k = 0, w, x, y, z;
+            w = i || j || k;
+            x = i && j && k;
+            y = i || j && k;
+            z = i && j || k;
+            printf("%d %d %d %d", w, x, y, z);
+            getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be the output of the program?</p>
+        Output của chương trình này là gì?
 
 
 
@@ -298,7 +244,7 @@
 
 
 
-        24"/>
+
 
         B. 1 0 0 1
 
@@ -307,7 +253,7 @@
 
 
 
-        34"/>
+        
 
         C. 1 0 1 1
 
@@ -318,7 +264,7 @@
 
 
 
-        D. Other
+        D. Kết quả khác
 
 
 
@@ -328,7 +274,7 @@
 
 
 
-        <b>C</b> là đáp án đúng</span>
+        C là đáp án đúng
 
 
 
@@ -348,13 +294,12 @@
 
 
 
-        <h4>Câu 6:</h4>
+        Câu 6:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
-        void main()
-        {
+        void main(){
         static int a[20];
         int i = 0;
         a[i] = i;
@@ -362,9 +307,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be the output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 1 0 1
@@ -383,7 +328,7 @@
 
 
 
-        3/>
+        
 
         C. 0 0 0
 
@@ -404,7 +349,7 @@
 
 
 
-        <b>C</b> là đáp án đúng</span>
+        C là đáp án đúng
 
 
 
@@ -413,17 +358,17 @@
 
 
 
-        <p>Mảng static được tự động khởi tạo với giá trị 0</p>
+        Mảng static được tự động khởi tạo với giá trị 0
 
 
 
 
 
 
-        <h4>Câu 7:</h4>
+        Câu 7:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
@@ -433,9 +378,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>&nbsp;What will be the output of the program?</p>
+        Output của chương trình này là gì?
 
 
 
@@ -482,7 +427,7 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
@@ -490,36 +435,17 @@
 
 
 
-        <p>z = x != 4 || y == 2 = (x != 4) || (y == 2) = 1 || 0 = 1</p>
+        z = x != 4 || y == 2 = (x != 4) || (y == 2) = 1 || 0 = 1
 
 
 
 
 
 
-        <h4>Câu 8:</h4>
+        Câu 8:
 
 
-        <p>Every operators has an Associativity</p>
-
-
-
-
-
-
-
-
-
-        A. &nbsp;Yes
-
-
-
-
-
-
-
-
-        B. No
+        Mỗi toán tử đều có một trình tự kết hợp
 
 
 
@@ -529,7 +455,16 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        A. Có
+
+
+
+
+
+
+
+
+        B. Không
 
 
 
@@ -539,32 +474,31 @@
 
 
 
+        B là đáp án đúng
+
+        Trình tự kết hợp của mỗi toán tử phụ thuộc vào nó đi kèm với toán tử nào.
 
 
 
-        <p>Trình tự kết hợp của mỗi toán tử phụ thuộc vào nó đi kèm với toán tử nào.</p>
 
 
 
+        Câu 9:
 
-
-
-        <h4>Câu 9:</h4>
-
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int i = 3, j = 2, k = -1, m;
-        m = ++i||++j&amp;&amp;++k;
+        m = ++i||++j&&++k;
         printf("%d %d %d %d", i, j, k, m);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be the output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 4 2 -1 1
@@ -587,37 +521,37 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
 
 
-        <p>m = ++i||++j&amp;&amp;++k = (++i) || (++j&amp;&amp;++k). Vì ++i = 4 != 0 nên (++j&amp;&amp;++k) không được
-            thực hiện.</p>
+        m = ++i || ++j && ++k = (++i) || (++j && ++k). Vì ++i = 4 != 0 nên (++j && ++k) không được
+            thực hiện.
 
 
 
 
 
 
-        <h4>Câu 10:</h4>
+        Câu 10:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int i = 3, j = 2, k = -1, m;
-        m = ++i&amp;&amp;++j&amp;&amp;++k;
+        m = ++i&&++j&&++k;
         printf("%d %d %d %d", i, j, k, m);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 4 3 0 0
@@ -631,7 +565,7 @@
 
 
 
-        D. None of these
+        D. Tất cả đều sai
 
 
 
@@ -640,59 +574,59 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
 
 
-        <p>m = ++i&amp;&amp;++j&amp;&amp;++k = (++i)&amp;&amp;(++j)&amp;&amp;(++k) = 4 &amp;&amp; 3 &amp;&amp; 0 = 0</p>
+        m = ++i && ++j && ++k = (++i) && (++j) && (++k) = 4 && 3 && 0 = 0
 
 
 
 
 
 
-        <h4>Câu 11:</h4>
+        Câu 11:
 
-        a &lt;= 20 ? (b = 30) : (c = 30);
-        (a &lt;= 20) ? b : (c = 30);
+        a <= 20 ? (b = 30) : (c = 30);
+        (a <= 20) ? b : (c = 30);
 
-        <p>&nbsp;</p>
+        
 
-        <p>Are the following two statement same?</p>
-
-
-        A. Yes
+        Hai câu lệnh sau có giống nhau không?
 
 
-
-        B. No
+        A. Có
 
 
 
-
-
-
-        <b>A</b> là đáp án đúng</span>
-
-
-
-
-        <p>a &lt;= 20 ? (b = 30) : (c = 30) luôn trả về 30</p>
-
-        <p>Giá trị của “(a &lt;= 20) ? b : (c = 30)” phụ thuộc vào giá trị của b</p>
+        B. Không
 
 
 
 
 
 
-        <h4>Câu 12:</h4>
+        A là đáp án đúng
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+
+
+        a <= 20 ? (b = 30) : (c = 30) luôn trả về 30
+
+        Giá trị của “(a <= 20) ? b : (c = 30)” phụ thuộc vào giá trị của b
+
+
+
+
+
+
+        Câu 12:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
@@ -702,9 +636,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>&nbsp;What will be the output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 6
@@ -730,31 +664,31 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
-        <p>j = i + (1, 2, 3, 4) = i + 4 = 6</p>
-
-
-
+        j = i + (1, 2, 3, 4) = i + 4 = 6
 
 
 
-        <h4>Câu 13:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+
+        Câu 13:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int n = 2;
-        printf("%d %d %d", n &lt;= 3, n = 4, n &gt;= 2);
+        printf("%d %d %d", n <= 3, n = 4, n >= 2);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 0 4 1
@@ -766,27 +700,27 @@
 
 
 
-        C. &nbsp;4 4 1
+        C. 4 4 1
 
-        D. None of these
-
-
-        <b>A</b> là đáp án đúng</span>
-
-        <p>Thứ tự thực hiện các phép toán trong printf từ phải sang trái.<br />
-            (n &gt;= 2) = (2 &gt;= 2) = 1<br />
-            n = 4<br />
-            n &lt;= 3 = (4 &lt;= 3) = 0</p>
+        D. Tất cả đều sai
 
 
+        A là đáp án đúng
+
+        Thứ tự thực hiện các phép toán trong printf từ phải sang trái.
+            (n >= 2) = (2 >= 2) = 1
+            n = 4
+            n <= 3 = (4 <= 3) = 0
 
 
 
 
-        <h4>Câu 14:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+        Câu 14:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
@@ -795,9 +729,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output of the program?</p>
+        Output của chương trình này là gì?
 
         A. 4 4
 
@@ -820,27 +754,27 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
-        <h4>Câu 15:</h4>
+        Câu 15:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int a = 10, b = 19;
         int c;
-        c = (a == 10 || b &lt; 20);
+        c = (a == 10 || b < 20);
         printf("c = %d", c);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output of the program?</p>
+        Output của chương trình này là gì?
 
         A. c = 1
 
@@ -863,12 +797,12 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
-        <h4>Câu 16:</h4>
+        Câu 16:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
@@ -879,9 +813,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output of the program?</p>
+        Output của chương trình này là gì?
 
         A. 4 3 2
 
@@ -901,7 +835,7 @@
 
 
 
-        <b>D</b> là đáp án đúng</span>
+        D là đáp án đúng
 
 
 
@@ -914,22 +848,22 @@
 
 
 
-        <h4>Câu 17:</h4>
+        Câu 17:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int k, num = 20;
-        k = (num&gt;5 ? (num &lt;= 10 ? 10 : 30): 40);
+        k = (num>5 ? (num <= 10 ? 10 : 30): 40);
         printf("%d", k);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 20
@@ -952,13 +886,13 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
-        <h4>Câu 18:</h4>
+        Câu 18:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
@@ -968,9 +902,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output of the program?</p>
+        Output của chương trình này là gì?
 
 
         A. 4
@@ -993,7 +927,7 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
@@ -1005,21 +939,21 @@
 
 
 
-        <h4>Câu 19:</h4>
+        Câu 19:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int arr[3] = {3};
         int i;
-        for(i = 0; i &lt;= 2; i++)
+        for(i = 0; i <= 2; i++)
         printf("%d, ", arr[i]);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
 
         A. 3, 0, 0,
@@ -1030,28 +964,28 @@
 
         C. 3, garbage, garbage
 
-        D. Another
+        D. Kết quả khác
 
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
-        <h4>Câu 20:</h4>
+        Câu 20:
 
         float func()
         {
         int r = 0, d = 0, i = 0;
-        for (i; i &lt; 2; i++)
+        for (i; i < 2; i++)
         {
         r += 5 / d;
         }
         return r;
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is returned by function func()?</p>
+        What is returned by function func()?
 
 
         A. 5
@@ -1061,11 +995,9 @@
 
         C. Exception
 
-        D. Another
+        D. Kết quả khác
 
-        <b>C</b> là đáp án đúng</span>
-
-
+        C là đáp án đúng
 
 
 
@@ -1076,7 +1008,9 @@
 
 
 
-        <h4>Câu 21:</h4>
+
+
+        Câu 21:
 
         void main()
         {
@@ -1087,39 +1021,39 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output when you will execute following c code?</p>
+        What will be output when you will execute following c code?
 
         A. mmmm aaaa nnnn
 
-        B. &nbsp;mmm aaa nnn
+        B. mmm aaa nnn
 
         C. mmmm aaa nnn
 
-        D. Another
+        D. Kết quả khác
 
 
 
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
 
 
-        <p>Vòng for() sẽ bắt đầu với i = 0, vòng for() sẽ kết thúc khi s[i] = NULL (kết thúc chuỗi s).<br />
-            s[i] = *(s+i) = *(i+s) = i[s] : kí tự thứ i của mảng s.</p>
+        Vòng for() sẽ bắt đầu với i = 0, vòng for() sẽ kết thúc khi s[i] = NULL (kết thúc chuỗi s).
+            s[i] = *(s+i) = *(i+s) = i[s] : kí tự thứ i của mảng s.
 
 
 
 
 
 
-        <h4>Câu 22:</h4>
+        Câu 22:
 
         void main()
         {
@@ -1129,13 +1063,13 @@
         {
         putchar(ch);
         }
-        while(i++ &lt; 5 || ++ch &lt;= 'F');
+        while(i++ < 5 || ++ch <= 'F');
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What will be output when you will execute following c code?</p>
+        What will be output when you will execute following c code?
 
         A. AAAAAABCDEF
 
@@ -1143,7 +1077,7 @@
 
         C. ABCDEF
 
-        D. Another
+        D. Kết quả khác
 
 
 
@@ -1153,39 +1087,39 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
 
-        <p>Vòng lặp do while(). Vòng lặp này kết thúc khi biểu thức trong while là FALSE. i = 0 ---&gt; in ra kí tự: A ,
-            i++ &lt; 5 ---&gt; giá trị i sẽ được so sánh với 5 trước. Sau đó, i++ mới được thực hiện.</p>
+        Vòng lặp do while(). Vòng lặp này kết thúc khi biểu thức trong while là Sai. i = 0 ---> in ra kí tự: A ,
+            i++ < 5 ---> giá trị i sẽ được so sánh với 5 trước. Sau đó, i++ mới được thực hiện.
 
-        <p>Vì i = 0 nên biểu thức i++ &lt; 5 là TRUE nên biếu thức ++ch &lt;= 'F' sẽ không được thực hiện.</p>
+        Vì i = 0 nên biểu thức i++ < 5 là Đúng nên biếu thức ++ch <= 'F' sẽ không được thực hiện.
 
-        <p>i = 1 ---&gt; in ra kí tự: AA</p>
+        i = 1 ---> in ra kí tự: AA
 
-        <p>...</p>
+        ...
 
-        <p>i = 4 ---&gt; in ra kí tự :AAAAA</p>
+        i = 4 ---> in ra kí tự :AAAAA
 
-        <p>i = 5 ---&gt; in ra kí tự :AAAAAA, thì i++ &lt; 5 là FALSE. Biểu thức ++ch &lt;= 'F' sẽ được thực hiện. Vòng
-            lặp sẽ tiếp tục in ra: BCDEF.</p>
-
-
+        i = 5 ---> in ra kí tự :AAAAAA, thì i++ < 5 là Sai. Biểu thức ++ch <= 'F' sẽ được thực hiện. Vòng
+            lặp sẽ tiếp tục in ra: BCDEF.
 
 
 
 
-        <h4>Câu 23:</h4>
+
+
+        Câu 23:
 
         void main()
         {
         int array[2][2] = {0, 1, 2, 3};
         int i;
         int sum = 0;
-        for (i = 0; i &lt; 4; ++i)
+        for (i = 0; i < 4; ++i)
         {
         int x, y;
         x = i % 2;
@@ -1203,9 +1137,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What gets printed?</p>
+        Output của chương trình là gì?
 
         A. 3
 
@@ -1223,40 +1157,40 @@
 
 
 
-        <b>D</b> là đáp án đúng</span>
+        D là đáp án đúng
 
 
 
 
-        <p>i = 0 →&nbsp;x = 0,y = 1 → array[0][1] = 1</p>
+        i = 0 →x = 0,y = 1 → array[0][1] = 1
 
-        <p>i = 1 → x = 1,y = 0 → array[1][0] = 2</p>
+        i = 1 → x = 1,y = 0 → array[1][0] = 2
 
-        <p>i = 2 → x = 0,y = 1 → array[0][1] = 1</p>
+        i = 2 → x = 0,y = 1 → array[0][1] = 1
 
-        <p>i = 3 → x = 1,y = 0 → array[1][0] = 2</p>
-
-
+        i = 3 → x = 1,y = 0 → array[1][0] = 2
 
 
 
 
-        <h4>Câu 24:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+        Câu 24:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int k;
-        for (k = -3; k &lt; -5; k++)
+        for (k = -3; k < -5; k++)
         printf("Hello");
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>&nbsp;What is output?</p>
+        Output của chương trình là gì?
 
         A. Hello
         B.Nothing
@@ -1274,39 +1208,39 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
 
-        <p>Ở trên là cách viết tắt của vòng lặp for. Dạng đầy đủ là:<br />
-            for (k = -3; k &lt; -5; k++){&nbsp;&nbsp;&nbsp; printf("Hello");}<br />
-            Với k = -3 ( k &gt; -5) nên các lệnh trong vòng for không được thực hiện.</p>
+        Ở trên là cách viết tắt của vòng lặp for. Dạng đầy đủ là:
+            for (k = -3; k < -5; k++){ printf("Hello");}
+            Với k = -3 ( k > -5) nên các lệnh trong vòng for không được thực hiện.
 
 
 
 
 
 
-        <h4>Câu 25:</h4>
+        Câu 25:
 
         void main()
         {
         double k = 0;
-        for (k = 0.0; k &lt; 3.0; k++);
+        for (k = 0.0; k < 3.0; k++);
         printf("%lf", k);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
         A. 012
 
-        B. &nbsp;Run time error
+        B. Run time error
 
         C. 3
 
@@ -1320,24 +1254,24 @@
 
 
 
-        <b>C</b> là đáp án đúng</span>
+        C là đáp án đúng
 
 
 
 
 
 
-        <p>Cách viết for (k = 0.0; k &lt; 3.0; k++); tương đương với cách viết đầy đủ: for (k = 0.0; k &lt; 3.0; k++) {}
-            khi vòng for kết thúc, lệnh printf("%lf", k) mới được thực hiện.</p>
+        Cách viết for (k = 0.0; k < 3.0; k++); tương đương với cách viết đầy đủ: for (k = 0.0; k < 3.0; k++) {}
+            khi vòng for kết thúc, lệnh printf("%lf", k) mới được thực hiện.
 
 
 
 
 
 
-        <h4>Câu 26:</h4>
+        Câu 26:
 
-        #include &lt;stdio.h&gt;
+        #include <stdio.h>
         int main()
         {
         int i = 0;
@@ -1346,19 +1280,17 @@
         printf("After loop\n");
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
-        A. Complie time error
-
-
-        B. Infinite Loop
+        A. Biên dịch lỗi thời gian
 
 
-        C. Nothing
+        B. Vòng lặp vô hạn tuần hoàn
 
 
+        C. Không có gì cả
 
 
 
@@ -1366,23 +1298,25 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+
+
+        A là đáp án đúng
 
 
 
 
 
-        <p>Vòng lặp for() không có biểu thức khởi tạo.</p>
+        Vòng lặp for() không có biểu thức khởi tạo.
 
 
 
 
 
 
-        <h4>Câu 27:</h4>
+        Câu 27:
 
-        #include &lt;conio.h&gt;
-        #include &lt;stdio.h&gt;
+        #include <conio.h>
+        #include <stdio.h>
         int foo();
         void main()
         {
@@ -1397,9 +1331,9 @@
         return 1;
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
         A. In for loop
@@ -1417,47 +1351,47 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
-        <p>Biến i = 0, giá trị logic của biểu thức “i == 1” = FALSE → vòng for kết thúc. Lệnh printf(“In for loop\n”)
-            không được thực hiện.</p>
+        Biến i = 0, giá trị logic của biểu thức “i == 1” = Sai → vòng for kết thúc. Lệnh printf(“In for loop\n”)
+            không được thực hiện.
 
 
 
 
 
 
-        <h4>Câu 28:</h4>
+        Câu 28:
 
-        #include &lt;conio.h&gt;
-        #include &lt;stdio.h&gt;
+        #include <conio.h>
+        #include <stdio.h>
 
         int main()
         {
         int i = 0;
         while (i = 0)
-        printf("True\n");
-        printf("False\n");
+        printf("Đúng\n");
+        printf("Sai\n");
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>&nbsp;What is output?</p>
+        Output của chương trình là gì?
 
-        A. True
+        A. Đúng
 
 
-        B. &nbsp;False
+        B. Sai
 
         C. Complie Error
 
 
-        D. Another
+        D. Kết quả khác
 
 
 
@@ -1467,27 +1401,27 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
-        <p>Vòng while sẽ kết thúc khi biểu thức trong while là FALSE. Biểu thức i = 0 chỉ là phép gán. Giá trị của biểu
-            thức này là 0 tương đương với FALSE. Lệnh printf(“True\n”) sẽ không được thực hiện.</p>
+        Vòng while sẽ kết thúc khi biểu thức trong while là Sai. Biểu thức i = 0 chỉ là phép gán. Giá trị của biểu
+            thức này là 0 tương đương với Sai. Lệnh printf(“Đúng\n”) sẽ không được thực hiện.
 
 
 
 
 
 
-        <h4>Câu 29:</h4>
+        Câu 29:
 
-        #include &lt;conio.h&gt;
-        #include &lt;stdio.h&gt;
+        #include <conio.h>
+        #include <stdio.h>
         int main()
         {
         int i = 0, j = 0;
-        while (i &lt; 5, j &lt; 10)
+        while (i < 5, j < 10)
         {
         i++;
         j++;
@@ -1496,9 +1430,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output ?</p>
+        Output của chương trình là gì?
 
         A. 5, 5
 
@@ -1515,30 +1449,30 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
 
-        <p>Biểu thức của vòng lặp while có thể là nhiều biểu thức và vòng lặp while sẽ chỉ quan tâm đến biểu thức cuối
-            cùng.</p>
+        Biểu thức của vòng lặp while có thể là nhiều biểu thức và vòng lặp while sẽ chỉ quan tâm đến biểu thức cuối
+            cùng.
 
 
 
 
 
 
-        <h4>Câu 30:</h4>
+        Câu 30:
 
-        #include &lt;conio.h&gt;
-        #include &lt;stdio.h&gt;
+        #include <conio.h>
+        #include <stdio.h>
 
         int main()
         {
         int a = 0, i = 0, b = 0 ;
-        for (i = 0; i &lt; 5; i++)
+        for (i = 0; i < 5; i++)
         {
         a++;
         continue;
@@ -1548,9 +1482,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
         A. a = 5,b = 5
 
@@ -1559,7 +1493,7 @@
         C. a = 5,b = 0
 
 
-        D. Another
+        D. Kết quả khác
 
 
 
@@ -1569,27 +1503,27 @@
 
 
 
-        <b>C</b> là đáp án đúng</span>
+        C là đáp án đúng
 
 
 
 
 
-        <p>Gặp lệnh continue, complier sẽ bỏ qua các câu lệnh tiếp theo và thực hiện hiện 1 vòng lặp mới. Như vậy, câu
-            lệnh b++ sẽ không bao giờ được thực hiện.</p>
+        Gặp lệnh continue, complier sẽ bỏ qua các câu lệnh tiếp theo và thực hiện hiện 1 vòng lặp mới. Như vậy, câu
+            lệnh b++ sẽ không bao giờ được thực hiện.
 
 
 
 
 
 
-        <h4>Câu 31:</h4>
+        Câu 31:
 
         void main()
         {
         int i = 0;
-        for (i = 0; i &lt; 5; i++)
-        if (i &lt; 4)
+        for (i = 0; i < 5; i++)
+        if (i < 4)
         {
         printf("Hello");
         break;
@@ -1597,19 +1531,17 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output ?</p>
+        Output của chương trình là gì?
 
-        A. &nbsp;Hello
+        A. Hello
 
-        B. Hello is printed 3 times
+        B. Hello được in ra màn hình 3 lần
 
-        C. Hello is prined 4 times
+        C. Hello được in ra màn hình 4 lần
 
-        D. Hello is printed 5 times
-
-
+        D. Hello được in ra màn hình 5 lần
 
 
 
@@ -1617,35 +1549,37 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+
+
+        A là đáp án đúng
 
 
 
 
 
 
-        <p>Khi gặp lệnh break chương trình sẽ thoát khỏi vòng lặp gần nhất với nó.</p>
+        Khi gặp lệnh break chương trình sẽ thoát khỏi vòng lặp gần nhất với nó.
 
 
 
 
 
 
-        <h4>Câu 32:</h4>
+        Câu 32:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
         void main()
         {
         int i = 0;
-        for(; i &lt;= 2; )
+        for(; i <= 2; )
         printf(" %d", ++i);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
         A. 1 2 3
 
@@ -1661,7 +1595,7 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
@@ -1671,21 +1605,21 @@
 
 
 
-        <h4>Câu 33:</h4>
+        Câu 33:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
         void main()
         {
         int x;
-        for(x = 1; x &lt;= 5; x++);
+        for(x = 1; x <= 5; x++);
         printf("%d", x);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output ?</p>
+        Output của chương trình là gì?
 
 
         A. 12345
@@ -1696,21 +1630,14 @@
         C. 6
 
         D. 1234
+        C là đáp án đúng
 
 
 
+        Câu 34:
 
-
-
-
-
-
-        <b>C</b> là đáp án đúng</span>
-
-        <h4>Câu 34:</h4>
-
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
         int main()
         {
         int i = 3;
@@ -1723,9 +1650,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
         A. 99 99 99
 
@@ -1741,67 +1668,66 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
-        <p>Nếu chương trình được biên dịch bằng trình biên dịch C, chương trình biên dịch báo lỗi vì biến chỉ được khai
-            báo đầu hàm.</p>
+        Nếu chương trình được biên dịch bằng trình biên dịch C, chương trình biên dịch báo lỗi vì biến chỉ được khai
+            báo đầu hàm.
 
-        <p>Chương trình được biên dịch C++, không xảy ra lỗi</p>
+        Chương trình được biên dịch C++, không xảy ra lỗi
 
-        <p>– Câu lệnh int i = 3 là biến global. Giá trị i trong biểu thức while có giá trị khởi tạo là 3.<br />
-            – Câu lệnh int i = 100 là biến local. Câu lệnh trong vòng lặp lấy giá trị i = 100.</p>
-
-
+        – Câu lệnh int i = 3 là biến global. Giá trị i trong biểu thức while có giá trị khởi tạo là 3.
+            – Câu lệnh int i = 100 là biến local. Câu lệnh trong vòng lặp lấy giá trị i = 100.
 
 
 
 
-        <h4>Câu 35:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+        Câu 35:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         int main()
         {
         int i = 1024;
-        for (; i; i &gt;&gt;= 1)
+        for (; i; i >>= 1)
         printf("\nlaptrinhc++");
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>How many times will “vncoding” is printed on screen?</p>
+        Bao nhiêu lần "laptrinhc++" sẽ được in trên màn hình?
 
         A. 10
 
         B. 11
 
-        C. Infinite
+        C. Vô hạn
 
 
 
-        <b>A</b> là đáp án đúng</span>
-
-
-
-
-
-        <p>Vì&nbsp; i &gt;&gt;=1 -&gt; i = i &gt;&gt; 1 = i/2. Mà 1024 = 2^10 = 1000000000 -&gt; "laptrinhc++" sẽ được
-            in ra 10 lần.</p>
+        A là đáp án đúng
 
 
 
 
 
+        Vì i >>=1 -> i = i >> 1 = i/2. Mà 1024 = 2^10 = 1000000000 -> "laptrinhc++" sẽ được in ra 10 lần.
 
-        <h4>Câu 36:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+
+
+
+        Câu 36:
+
+        #include <stdio.h>
+        #include <conio.h>
         void main()
         {
         int i = 2, j = 2;
@@ -1810,9 +1736,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>&nbsp;What is output?</p>
+        Output của chương trình là gì?
 
         A. 1
 
@@ -1828,38 +1754,38 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
 
-        <p>i+1 = 3 (trong ngôn ngữ C, 3 có nghĩa là TRUE) -&gt; lệnh --i = 1 được thực hiện.</p>
+        i+1 = 3 (trong ngôn ngữ C/C++, 3 có nghĩa là Đúng) -> lệnh --i = 1 được thực hiện.
 
-        <p>Trong ngôn ngữ C, 1 có nghĩa là TRUE -&gt; in 1 ra màn hình.</p>
-
-
+        Trong ngôn ngữ C/C++, 1 có nghĩa là Đúng -> in 1 ra màn hình.
 
 
 
 
-        <h4>Câu 37:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+        Câu 37:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int i, j;
         i = j = 2;
-        while(--i&amp;&amp;j++)
+        while(--i&&j++)
         printf("%d %d", i, j);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
 
@@ -1880,31 +1806,31 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
 
 
 
 
-        <p>--i&amp;&amp;j++ = 1&amp;&amp;2 = 1 (TRUE), sau lệnh này i = 1 và j = 3 -&gt; in 1 3 ra màn hình.(chú ý:
-            trong ngôn ngữ C, vớitoán tử &amp;&amp; cả hai toán hạng khác không thì kết quả sẽ bằng 1)</p>
+        --i && j++ = 1 && 2 = 1 (Đúng), sau lệnh này i = 1 và j = 3 -> in 1 3 ra màn hình.(chú ý:
+            trong ngôn ngữ C/C++, với toán tử && cả hai toán hạng khác không thì kết quả sẽ bằng 1)
 
-        <p>--i&amp;&amp;j++ = 0&amp;&amp;3 = 0 (FALSE) -&gt; thoát khỏi vòng lặp</p>
-
-
+        --i && j++ = 0 && 3 = 0 (Sai) -> thoát khỏi vòng lặp
 
 
 
 
-        <h4>Câu 38:</h4>
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+
+        Câu 38:
+
+        #include <stdio.h>
+        #include <conio.h>
 
         int main()
         {
         int x = 011, i;
-        for(i = 0; i &lt; x; i += 3)
+        for(i = 0; i < x; i += 3)
         {
         printf("Start ");
         continue;
@@ -1913,9 +1839,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
         A. Start End Start End
@@ -1936,39 +1862,39 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
-        <p>011 là số octal = 9. Lệnh printf("Start"); sẽ thực hiện 3 lần.</p>
+        011 là số octal = 9. Lệnh printf("Start"); sẽ thực hiện 3 lần.
 
 
 
 
 
 
-        <h4>Câu 39:</h4>
+        Câu 39:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int s = 0;
-        while (s++ &lt; 10)
+        while (s++ < 10)
         {
-        if (s &lt; 4 &amp;&amp; s &lt; 9)
+        if (s < 4 && s < 9)
         continue;
         printf(" %d ", s);
         }
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output of the following code?</p>
+        Output của chương trình này là gì?d
 
 
         A. 1 2 3 4 5 6 7 8 9
@@ -1989,38 +1915,38 @@
 
 
 
-        <b>D</b> là đáp án đúng</span>
+        D là đáp án đúng
 
 
 
 
 
 
-        <p>Xét biểu thức (s++ &lt; 10). Giá trị của biến s được tăng sau khi so sánh s &lt; 10. Do vậy, giá trị của biến
-            s trong vòng while từ 1 đến 10. Khi s = 1&nbsp;→ 3, biểu thức logic (s &lt; 4 &amp;&amp; s &lt; 9) = TRUE,
-            lệnh continue được thực hiện và câu lệnh printf bị bỏ qua. Kết quả: 4 5 6 7 8 9 10 được in ra.</p>
+        Xét biểu thức (s++ < 10). Giá trị của biến s được tăng sau khi so sánh s < 10. Do vậy, giá trị của biến
+            s trong vòng while từ 1 đến 10. Khi s = 1→ 3, biểu thức logic (s < 4 && s < 9) = Đúng,
+            lệnh continue được thực hiện và câu lệnh printf bị bỏ qua. Kết quả: 4 5 6 7 8 9 10 được in ra.
 
 
 
 
 
 
-        <h4>Câu 40:</h4>
+        Câu 40:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int i = 6;
         while(i)
         {
-        if (i &gt; 5)
+        if (i > 5)
         {
         i--;
         }
         i = i + 5;
-        if (i &gt; 34)
+        if (i > 34)
         {
         break;
         }
@@ -2029,12 +1955,12 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
-        A. Infinite loop
+        A. Vòng lặp vô hạn
 
 
         B. 35
@@ -2050,16 +1976,16 @@
 
 
 
-        <b>C</b> là đáp án đúng</span>
+        C là đáp án đúng
 
 
 
 
 
-        <h4>Câu 41:</h4>
+        Câu 41:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         int print(int i);
 
@@ -2076,9 +2002,9 @@
         return 0;
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
         A. 6, 5, 4, 3, 2, 1,
 
@@ -2088,8 +2014,8 @@
 
         C. Complier Error
 
-        4
-        D. Infinite loop
+     
+        D. Vòng lặp vô hạn
 
 
 
@@ -2099,19 +2025,19 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
-        <h4>Câu 42:</h4>
+        Câu 42:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         int func(int* i);
 
         void main()
         {
         int i = 15;
-        while(func(&amp;i) &amp;&amp; i++ &gt; 0);
+        while(func(&i) && i++ > 0);
         printf("%d", i);
         getch();
         }
@@ -2122,9 +2048,9 @@
         return(*i);
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
         A. 0
@@ -2144,19 +2070,19 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
-        <h4>Câu 43:</h4>
+        Câu 43:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         static int i;
         int j;
-        for(j = 0; j &lt;= 5; j++)
+        for(j = 0; j <= 5; j++)
         switch(j)
         {
         case 1:
@@ -2176,9 +2102,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
         A. 0
@@ -2201,7 +2127,7 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
@@ -2210,31 +2136,31 @@
 
 
 
-        <h4>Câu 44:</h4>
+        Câu 44:
 
-        #include &lt;stdio.h&gt;
-        #include &lt;conio.h&gt;
+        #include <stdio.h>
+        #include <conio.h>
 
         void main()
         {
         int i, j;
-        for(i = 0, j = 0; i &lt; 5, j &lt; 6; i++, j++)
+        for(i = 0, j = 0; i < 5, j < 6; i++, j++)
         {
         printf("i = %d \t j = %d\n", i, j);
         }
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
 
-        A. &nbsp;print i and j from 0 till 4
+        A. Xuất ra i và j từ 0 đến 4
 
-        B. print i and j from 0 till 5
+        B. Xuất ra i và j từ 0 đến 5
 
-        C. print i from 0 to 4, print j from 0 to 5
+        C. Xuất ra i từ 0 đến 4 và j từ 0 đến 5
 
         D. Complier Error
 
@@ -2246,13 +2172,13 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
-        <h4>Câu 45:</h4>
+        Câu 45:
 
         void main()
         {
@@ -2268,9 +2194,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What gets printed?</p>
+        Output của chương trình là gì?
 
 
         A. 5
@@ -2280,7 +2206,7 @@
         C. 7
 
 
-        D. Another
+        D. Kết quả khác
 
 
 
@@ -2289,42 +2215,42 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
-        <p>Vì !i = 0 nên câu lệnh i++ đầu tiên không được thực hiện, câu lệnh i++ tiếp theo được thực hiện (i = 4).</p>
+        Vì !i = 0 nên câu lệnh i++ đầu tiên không được thực hiện, câu lệnh i++ tiếp theo được thực hiện (i = 4).
 
-        <p>Gặp lệnh if tiếp theo không thỏa mãn, câu lệnh i+=2 thứ 2 được thực hiện.</p>
-
-
+        Gặp lệnh if tiếp theo không thỏa mãn, câu lệnh i+=2 thứ 2 được thực hiện.
 
 
 
 
-        <h4>Câu 46:</h4>
+
+
+        Câu 46:
 
         void main()
         {
         int x;
         if(x = 0)
-        printf ("Value of x is );
+        printf ("Value of x is");
         else
-        printf ("Value of x is not );
+        printf ("Value of x is not");
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What gets printed?</p>
-
-
-        A. of x is 0
+        Output của chương trình là gì?
 
 
-        B. of x is not 0
+        A. Value of x is
+
+
+        B. Value of x is not
 
 
         C. Error
@@ -2337,26 +2263,26 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
 
 
 
 
-        <p>Vì biểu thức x=0 của lệnh if(x=0) là phép gán 0 cho biến x mà ko phải biểu thức so sánh. Biểu thức gán này có
-            giá trị là 0 nên câu lệnh của else sẽ được thực hiện.</p>
+        Vì biểu thức x=0 của lệnh if(x=0) là phép gán 0 cho biến x mà ko phải biểu thức so sánh. Biểu thức gán này có
+            giá trị là 0 nên câu lệnh của else sẽ được thực hiện.
 
 
 
 
 
 
-        <h4>Câu 47:</h4>
+        Câu 47:
 
         void main()
         {
         int i;
-        for(i = 0; i &lt; 20; i++)
+        for(i = 0; i < 20; i++)
         {
         switch(i)
         {
@@ -2371,9 +2297,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What gets printed?</p>
+        Output của chương trình là gì?
 
         A. 14,18,
 
@@ -2389,37 +2315,37 @@
 
 
 
-        <b>C</b> là đáp án đúng</span>
+        C là đáp án đúng
 
 
 
 
 
-        <p>i=0. Do không có lệnh break giữa các case nên tất cả các case được thực hiện i = 16, gặp lệnh break thoát ra
-            khỏi switch case, in ra : 16</p>
+        i=0. Do không có lệnh break giữa các case nên tất cả các case được thực hiện i = 16, gặp lệnh break thoát ra
+            khỏi switch case, in ra : 16
 
-        <p>Vòng lặp mới i++ (i = 17), nhảy vào case default i = 17+4 = 21, gặp lệnh break thoát khỏi switch case và in
-            ra: 16,21. Vì i = 21 &gt; 20, vòng for kết thúc.</p>
-
-
+        Vòng lặp mới i++ (i = 17), nhảy vào case default i = 17+4 = 21, gặp lệnh break thoát khỏi switch case và in
+            ra: 16,21. Vì i = 21 > 20, vòng for kết thúc.
 
 
 
 
-        <h4>Câu 48:</h4>
+
+
+        Câu 48:
 
         void main()
         {
         static int i;
-        while(i &lt;= 10&amp;&amp;i &gt;= 0)
-        (i &gt; 2 ? i++ : i--);
+        while(i <= 10&&i >= 0)
+        (i > 2 ? i++ : i--);
         printf("%d", i);
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What gets printed ?</p>
+        Output của chương trình là gì?
 
 
         A. -1
@@ -2439,17 +2365,17 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
-        <p>Biến i là biến static nên complier sẽ tự động khởi tạo cho i = 0. Vì i &lt; 2, nên i-- được thực hiện i = -1.
-        </p>
-
-
+        Biến i là biến static nên complier sẽ tự động khởi tạo cho i = 0. Vì i < 2, nên i-- được thực hiện i = -1.
+        
 
 
 
 
-        <h4>Câu 49:</h4>
+
+
+        Câu 49:
 
         void main()
         {
@@ -2461,9 +2387,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output ?</p>
+        Output của chương trình là gì?
 
 
         A. Hello
@@ -2480,17 +2406,17 @@
 
 
 
-        <b>A</b> là đáp án đúng</span>
+        A là đáp án đúng
 
-        <p>i = 20 là biểu thức gán (không phải biểu thức so sánh). Giá trị của biểu thức này trả về là #0.Nên lệnh
-            printf(" Hello"); được thực hiện</p>
-
-
+        i = 20 là biểu thức gán (không phải biểu thức so sánh). Giá trị của biểu thức này trả về là #0.Nên lệnh
+            printf(" Hello"); được thực hiện
 
 
 
 
-        <h4>Câu 50:</h4>
+
+
+        Câu 50:
 
         void main()
         {
@@ -2501,9 +2427,9 @@
         getch();
         }
 
-        <p>&nbsp;</p>
+        
 
-        <p>What is output?</p>
+        Output của chương trình là gì?
 
         A. x=0 y=1
 
@@ -2519,6 +2445,6 @@
 
 
 
-        <b>B</b> là đáp án đúng</span>
+        B là đáp án đúng
 
-        <p>Biểu thức so sánh x == 0 là TRUE nên biểu thức ++y sẽ không được thực hiện.</p>
+        Biểu thức so sánh x == 0 là Đúng nên biểu thức ++y sẽ không được thực hiện.

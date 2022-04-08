@@ -1,17 +1,17 @@
-<div class="exam-content">
 
 
-    <h4>Câu 1:</h4>
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    Câu 1:
+
+    #include <stdio.h>
+    #include <conio.h>
 
     void swap(char **, char **);
 
     int main()
     {
     char *pstr[2] = {"LAPTRINHC++", ".NET"};
-    swap(&amp;pstr[0], &amp;pstr[1]);
+    swap(&pstr[0], &pstr[1]);
     printf("%s%s", pstr[0], pstr[1]);
     getch();
     }
@@ -23,9 +23,9 @@
     *t2=t;
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-    C. Address of pstr[0] Address of pstr[1]
+    C. Địa chỉ của pstr[0] Địa chỉ của pstr[1]
 
 
 
@@ -64,7 +64,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -75,10 +75,10 @@
 
 
 
-    <h4>Câu 2:</h4>
+    Câu 2:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     typedef struct
     {
@@ -93,9 +93,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?&nbsp;Giả sử dùng VC++ 2008 trên hệ điều hành 32 bit</p>
+    Output của chương trình là gì?Giả sử dùng VC++ 2008 trên hệ điều hành 32 bit
 
 
 
@@ -143,7 +143,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -154,10 +154,10 @@
 
 
 
-    <h4>Câu 3:</h4>
+    Câu 3:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     typedef struct
     {
@@ -173,9 +173,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -223,7 +223,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -234,10 +234,10 @@
 
 
 
-    <h4>Câu 4:</h4>
+    Câu 4:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     struct birthday
     {
@@ -258,9 +258,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -273,7 +273,7 @@
 
 
 
-    B. ID =009, dd/mm/yyyy = garbage value/garbage value/garbage value (garbage value: giá trị rác)
+    B. ID =009, dd/mm/yyyy = Giá trị rác/Giá trị rác/Giá trị rác (Giá trị rác: giá trị rác)
 
 
 
@@ -292,7 +292,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -303,10 +303,10 @@
 
 
 
-    <h4>Câu 5:</h4>
+    Câu 5:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     void main()
     {
@@ -316,15 +316,15 @@
     int year = 2;
     };
     struct site *ptr;
-    printf("%s ", ptr-&gt;name);
-    printf("%d", ptr-&gt;year);
+    printf("%s ", ptr->name);
+    printf("%d", ptr->year);
 
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -353,7 +353,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -364,17 +364,17 @@
 
 
 
-    <p>Chỉ có member static của struct mới được phép khởi tạo bên trong struct</p>
+    Chỉ có member static của struct mới được phép khởi tạo bên trong struct
 
 
 
 
 
 
-    <h4>Câu 6:</h4>
+    Câu 6:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     typedef struct
     {
@@ -388,9 +388,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -429,7 +429,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -440,10 +440,10 @@
 
 
 
-    <h4>Câu 7:</h4>
+    Câu 7:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     struct
     {
@@ -461,9 +461,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -511,7 +511,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -522,10 +522,10 @@
 
 
 
-    <h4>Câu 8:</h4>
+    Câu 8:
 
 
-    <p>Which of the following operators can be applied on structure variables?</p>
+   Toán tử nào sau đây có thể được áp dụng trên biến cấu trúc?
 
 
 
@@ -536,7 +536,7 @@
 
 
 
-    A. Equality comparison ( == )
+    A. Toán tử so sánh bằng ( == )
 
 
 
@@ -545,7 +545,7 @@
 
 
 
-    B. &nbsp;Assignment ( = )
+    B. Toán tử gán ( = )
 
 
 
@@ -554,7 +554,7 @@
 
 
 
-    C. Both of the above
+    C. Cả hai câu trên
 
 
 
@@ -563,7 +563,7 @@
 
 
 
-    D. None of the above
+    D. Tất cả đều sai
 
 
 
@@ -573,7 +573,7 @@
 
 
 
-    <b>D</b> là đáp án đúng
+    D là đáp án đúng
 
 
 
@@ -584,10 +584,10 @@
 
 
 
-    <h4>Câu 9:</h4>
+    Câu 9:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define x 5+2
 
@@ -599,9 +599,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>&nbsp;What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -649,7 +649,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -660,10 +660,10 @@
 
 
 
-    <h4>Câu 10:</h4>
+    Câu 10:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define call(x,y) x##y
 
@@ -674,11 +674,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
-
-
+    Output của chương trình là gì?
 
 
 
@@ -687,7 +685,9 @@
 
 
 
-    A. &nbsp;530
+
+
+    A. 530
 
 
 
@@ -724,7 +724,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -735,10 +735,10 @@
 
 
 
-    <h4>Câu 11:</h4>
+    Câu 11:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #if X == 3
     #define Y 3
@@ -752,9 +752,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -783,7 +783,7 @@
 
 
 
-    C. Garbage value
+    C. Giá trị rác
 
 
 
@@ -793,7 +793,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -804,10 +804,10 @@
 
 
 
-    <h4>Câu 12:</h4>
+    Câu 12:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define X 3
     #if !X
@@ -821,9 +821,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -862,7 +862,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -873,10 +873,10 @@
 
 
 
-    <h4>Câu 13:</h4>
+    Câu 13:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define ISEQUAL(X, Y) X == Y
 
@@ -890,9 +890,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -931,7 +931,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -942,10 +942,10 @@
 
 
 
-    <h4>Câu 14:</h4>
+    Câu 14:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define SQUARE(x) x*x
 
@@ -957,9 +957,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -1007,7 +1007,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -1018,10 +1018,10 @@
 
 
 
-    <h4>Câu 15:</h4>
+    Câu 15:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define a0
 
@@ -1033,9 +1033,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -1074,7 +1074,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -1085,10 +1085,10 @@
 
 
 
-    <h4>Câu 16:</h4>
+    Câu 16:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define MAX000
 
@@ -1099,9 +1099,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
+    Output của chương trình là gì?
 
 
 
@@ -1140,7 +1140,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -1151,14 +1151,14 @@
 
 
 
-    <h4>Câu 17:</h4>
+    Câu 17:
 
-    #include &lt;stdio.h&gt;
-    #include &lt;conio.h&gt;
+    #include <stdio.h>
+    #include <conio.h>
 
     #define PRINT(i, limit) do \
     { \
-    if (i++ &lt; limit) \
+    if (i++ < limit) \
     { \
     printf("laptrinhc++"); \
     continue; \
@@ -1171,11 +1171,9 @@
     getch();
     }
 
-    <p>&nbsp;</p>
+    
 
-    <p>What is output?</p>
-
-
+    Output của chương trình là gì?
 
 
 
@@ -1184,7 +1182,9 @@
 
 
 
-    A. &nbsp;‘laptrinhc++’ is printed 3 times
+
+
+    A. ‘laptrinhc++’ được in ra 3 lần
 
 
 
@@ -1193,7 +1193,7 @@
 
 
 
-    B. ‘laptrinhc++’ is printed 2 times
+    B. ‘laptrinhc++’ được in ra 2 lần
 
 
 
@@ -1212,7 +1212,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -1223,10 +1223,10 @@
 
 
 
-    <h4>Câu 18:</h4>
+    Câu 18:
 
 
-    <p>A ____ is a special member function used to initialize the data members of a class.</p>
+    ____ là một hàm thành viên đặc biệt được sử dụng để khởi tạo các thành viên dữ liệu của một lớp.
 
 
 
@@ -1237,7 +1237,7 @@
 
 
 
-    A. constructor
+    A. Constructor
 
 
 
@@ -1246,7 +1246,7 @@
 
 
 
-    B. destructor
+    B. Destructor
 
 
 
@@ -1255,7 +1255,7 @@
 
 
 
-    C. static method
+    C. Static method
 
 
 
@@ -1265,28 +1265,18 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
+    Hàm tạo được gọi khi tạo đối tượng (object), hàm tạo khởi tạo member data của class
 
 
 
 
 
 
+    Câu 19:
 
 
-
-
-    <p>Hàm tạo được gọi khi tạo đối tượng (object), hàm tạo khởi tạo member data của class</p>
-
-
-
-
-
-
-    <h4>Câu 19:</h4>
-
-
-    <p>The default access for members of a class is ___ .</p>
+    Quyền truy cập mặc định cho các thành viên của một lớp là ___.
 
 
 
@@ -1334,7 +1324,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -1345,13 +1335,10 @@
 
 
 
-    <h4>Câu 20:</h4>
+    Câu 20:
 
 
-    <p>Member functions of a class are normally made ___ and data members of a class are normally<br made ___ .</p>
-
-
-
+   Các hàm thành viên của một lớp thường được tạo ở kiểu ___ và các thành viên dữ liệu của một lớp thường được tạo ở kiểu ___.
 
 
 
@@ -1359,7 +1346,10 @@
 
 
 
-        A. &nbsp;private, public
+
+
+
+        A. private, public
 
 
 
@@ -1396,31 +1386,31 @@
 
 
 
-        <b>C</b> là đáp án đúng
+        C là đáp án đúng
 
+    Khi design class, dữ liệu được đóng gói, và truy xuất dữ liệu thông qua các phương thức. Do vậy, dữ liệu kiểu
+            private, phương thức kiểu public.
 
 
 
 
 
 
+    Câu 21:
 
 
+Tính kế thừa cho phép ___ giúp tiết kiệm thời gian phát triển và khuyến khích sử dụng phần mềm chất lượng.
 
-    <p>Khi design class, dữ liệu được đóng gói, và truy xuất dữ liệu thông qua các phương thức.<br Do vậy, dữ liệu kiểu
-            private, phương thức kiểu public.</p>
 
 
 
 
 
 
-    <h4>Câu 21:</h4>
 
 
-    <p>Inheritance enables ___ which saves time in development , and encourages using previously<br proven and high
-            quality software.</p>
 
+        A. khả năng tái sử dụng (reusability)
 
 
 
@@ -1429,17 +1419,17 @@
 
 
 
+        B. tính đóng gói (encapsulation)
 
-        A. reusability
 
 
 
 
 
 
+        C. tính phát triển (development)
 
 
-        B. encapsulation
 
 
 
@@ -1447,8 +1437,8 @@
 
 
 
+        A là đáp án đúng
 
-        C. development
 
 
 
@@ -1458,21 +1448,10 @@
 
 
 
-        <b>A</b> là đáp án đúng
+    Câu 22:
 
 
-
-
-
-
-
-
-
-
-    <h4>Câu 22:</h4>
-
-
-    <p>The three member access specifiers are ___, ___ and ___ .</p>
+    Ba phương thức chỉ định truy cập hamf thành viên là ___, ___ và ___.
 
 
 
@@ -1511,7 +1490,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -1522,11 +1501,11 @@
 
 
 
-    <h4>Câu 23:</h4>
+    Câu 23:
 
 
-    <p>A “has a” relationship between classes represents ___ and an “is a” relationship between<br classes represent ___
-            .</p>
+    A “has a” relationship between classes represents ___ and an “is a” relationship between classes represent ___
+            .
 
 
 
@@ -1565,7 +1544,7 @@
 
 
 
-        <b>A</b> là đáp án đúng
+        A là đáp án đúng
 
 
 
@@ -1576,11 +1555,10 @@
 
 
 
-    <h4>Câu 24:</h4>
+    Câu 24:
 
 
-    <p>&nbsp;A pure virtual function is specified by placing ___ at the end of its prototype in the class<br
-            definition.</p>
+Một hàm ảo (pure virtual) được chỉ định bằng cách đặt ___ ở cuối nguyên mẫu của nó trong lớp Định nghĩa.
 
 
 
@@ -1619,7 +1597,7 @@
 
 
 
-        <b>A</b> là đáp án đúng
+        A là đáp án đúng
 
 
 
@@ -1630,27 +1608,27 @@
 
 
 
-    <p>Hàm pure virtual được define như sau: virtual int fnc() =0;</p>
+    Hàm pure virtual được define như sau: virtual int fnc() =0;
 
 
 
 
 
 
-    <h4>Câu 25:</h4>
+    Câu 25:
 
 
-    <p>A operator ___ is called as de-referencing operator.</p>
-
-
-
+    A operator ___ is called as de-referencing operator.
 
 
 
 
 
 
-    A. &amp;
+
+
+
+    A. &
 
 
 
@@ -1666,7 +1644,7 @@
 
 
 
-    C. &amp;&amp;
+    C. &&
 
 
 
@@ -1676,7 +1654,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -1687,10 +1665,10 @@
 
 
 
-    <h4>Câu 26:</h4>
+    Câu 26:
 
 
-    <p>The size of a class with no data members and member functions is ___ bytes</p>
+    Kích thước của một lớp không có thành viên dữ liệu và các hàm thành viên là ___ byte
 
 
 
@@ -1726,7 +1704,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -1737,10 +1715,10 @@
 
 
 
-    <h4>Câu 27:</h4>
+    Câu 27:
 
 
-    <p>A class is called as abstract base class if it has a ___ function</p>
+Một lớp được gọi là lớp cơ sở trừu tượng nếu nó có hàm ___
 
 
 
@@ -1779,7 +1757,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -1790,10 +1768,10 @@
 
 
 
-    <h4>Câu 28:</h4>
+    Câu 28:
 
 
-    <p>Run-time or dynamic allocation of memory may be done using the C++ operator ___ .</p>
+   Thời gian chạy hoặc cấp phát động của bộ nhớ có thể được thực hiện bằng cách sử dụng toán tử ___ trong C++.
 
 
 
@@ -1832,7 +1810,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -1843,11 +1821,10 @@
 
 
 
-    <h4>Câu 29:</h4>
+    Câu 29:
 
 
-    <p>Operator overloading permits to extend the applicability of existing C++ operators so that they work with new ___
-        or ___.</p>
+    Việc nạp chồng toán tử cho phép mở rộng khả năng áp dụng của các toán tử C ++ hiện có để chúng hoạt động với ___ mới hoặc ___.
 
 
 
@@ -1886,7 +1863,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -1897,10 +1874,10 @@
 
 
 
-    <h4>Câu 30:</h4>
+    Câu 30:
 
 
-    <p>A ___ is a set of instance or values.</p>
+    ___ là một tập hợp các thực thể hoặc các giá trị.
 
 
 
@@ -1911,7 +1888,7 @@
 
 
 
-    A. &nbsp;class
+    A. Class
 
 
 
@@ -1920,7 +1897,7 @@
 
 
 
-    B. object
+    B. Object
 
 
 
@@ -1929,7 +1906,7 @@
 
 
 
-    C. function
+    C. Function
 
 
 
@@ -1939,7 +1916,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -1950,10 +1927,10 @@
 
 
 
-    <h4>Câu 31:</h4>
+    Câu 31:
 
 
-    <p>C++ programming language was designed and developed by ___ at ___.</p>
+  Ngôn ngữ lập trình C ++ được thiết kế và phát triển bởi ___ tại ___.
 
 
 
@@ -1964,7 +1941,7 @@
 
 
 
-    A. Steven Job, AT&amp;T Bell Labs
+    A. Steven Job, AT&T Bell Labs
 
 
 
@@ -1973,7 +1950,7 @@
 
 
 
-    B. Bjarne Stroustrup, AT&amp;T Bell Labs
+    B. Bjarne Stroustrup, AT&T Bell Labs
 
 
 
@@ -1982,7 +1959,7 @@
 
 
 
-    C. Guido van Rossum, M&amp;D Lab
+    C. Guido van Rossum, M&D Lab
 
 
 
@@ -1992,7 +1969,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -2003,10 +1980,10 @@
 
 
 
-    <h4>Câu 32:</h4>
+    Câu 32:
 
 
-    <p>&nbsp;C++ is a ___ programming language with ___ extensions.</p>
+  C ++ là ngôn ngữ lập trình ___ có phần mở rộng ___.
 
 
 
@@ -2017,7 +1994,7 @@
 
 
 
-    A. procedural, object oriented
+    A. thủ tục, hướng đối tượng
 
 
 
@@ -2026,7 +2003,7 @@
 
 
 
-    B. object, procedural
+    B. đối tượng, thủ tục
 
 
 
@@ -2035,7 +2012,7 @@
 
 
 
-    C. procedural, STL
+    C. thủ tục, STL
 
 
 
@@ -2045,7 +2022,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -2056,10 +2033,10 @@
 
 
 
-    <h4>Câu 33:</h4>
+    Câu 33:
 
 
-    <p>Pointers are ___ that contain the addresses of other variables and ____ .</p>
+ Con trỏ là ___ chứa địa chỉ của các biến khác và ____.
 
 
 
@@ -2070,7 +2047,7 @@
 
 
 
-    A. value, object
+    A. giá trị, đối tượng
 
 
 
@@ -2079,7 +2056,7 @@
 
 
 
-    B. object, class
+    B. đối tượng, lớp
 
 
 
@@ -2088,7 +2065,7 @@
 
 
 
-    C. variables, functions
+    C. biến, hàm
 
 
 
@@ -2098,7 +2075,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -2109,11 +2086,10 @@
 
 
 
-    <h4>Câu 34:</h4>
+    Câu 34:
 
 
-    <p>A program can use the address of any variable in an expression, except variables declared with the ___ storage
-        class.</p>
+Một chương trình có thể sử dụng địa chỉ của bất kỳ biến nào trong một biểu thức, ngoại trừ các biến được khai báo __.
 
 
 
@@ -2124,7 +2100,7 @@
 
 
 
-    A. static
+    A. tĩnh
 
 
 
@@ -2133,7 +2109,7 @@
 
 
 
-    B. register
+    B. ở thanh ghi
 
 
 
@@ -2141,8 +2117,8 @@
 
 
 
+    C. tự động
 
-    C. auto
 
 
 
@@ -2151,8 +2127,8 @@
 
 
 
+    B là đáp án đúng
 
-    <b>B</b> là đáp án đúng
 
 
 
@@ -2162,18 +2138,17 @@
 
 
 
+    Register storage class là biến được lưu ở thanh ghi, và không thể lấy địa chỉ thanh ghi bằng toán tử &
 
-    <p>Register storage class là biến được lưu ở thanh ghi, và không thể lấy địa chỉ thanh ghi bằng toán tử &amp;</p>
 
 
 
 
 
+    Câu 35:
 
-    <h4>Câu 35:</h4>
 
-
-    <p>New operator allocates memory blocks from the ___.</p>
+  Toán tử mới cấp phát các khối bộ nhớ từ ___.
 
 
 
@@ -2212,7 +2187,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -2223,11 +2198,10 @@
 
 
 
-    <h4>Câu 36:</h4>
+    Câu 36:
 
 
-    <p>The new operator throws a ___ when heap is exhausted.</p>
-
+   The new operator throws a ___ when heap is exhausted.
 
 
 
@@ -2265,7 +2239,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -2276,10 +2250,10 @@
 
 
 
-    <h4>Câu 37:</h4>
+    Câu 37:
 
 
-    <p>The&nbsp;(assert.h) header is used for ___ .</p>
+    The(assert.h) header được sử dụng cho việc ___ .
 
 
 
@@ -2299,7 +2273,7 @@
 
 
 
-    B. checking memory leak
+    B. kiểm tra rò rỉ bộ nhớ
 
 
 
@@ -2318,7 +2292,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -2329,17 +2303,17 @@
 
 
 
-    <p>Thư viện&nbsp;(assert.h) define các function&nbsp;assert()&nbsp;sử dụng cho việc debug</p>
+    Thư viện(assert.h) define các functionassert()sử dụng cho việc debug
 
 
 
 
 
 
-    <h4>Câu 38:</h4>
+    Câu 38:
 
 
-    <p>The constructor and destructor of a class in C++ are called ___</p>
+   Hàm tạo và hàm hủy của một lớp trong C ++ được gọi ___
 
 
 
@@ -2350,7 +2324,7 @@
 
 
 
-    A. &nbsp;automatically
+    A. tự động
 
 
 
@@ -2359,7 +2333,7 @@
 
 
 
-    B. manually
+    B. thủ công
 
 
 
@@ -2368,7 +2342,7 @@
 
 
 
-    C. none of above
+    C. Tất cả đều đúng
 
 
 
@@ -2378,28 +2352,29 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
+    Hàm tạo và hàm hủy trong C/C++ được gọi tự động
 
 
 
 
 
 
+    Câu 39:
 
 
+   Hai hoặc nhiều hàm có thể có cùng tên, miễn là ___ của chúng khác nhau.
 
 
-    <p>Hàm tạo và hàm hủy trong C/C++ được gọi tự động</p>
 
 
 
 
 
 
-    <h4>Câu 39:</h4>
 
 
-    <p>Two or more functions may have the same name, as long as their ___ are different.</p>
+    A. giá trị trả về
 
 
 
@@ -2408,18 +2383,18 @@
 
 
 
+    B. danh sách các tham số
 
 
-    A. &nbsp;return type
 
 
 
 
 
 
+    C. Tất cả đều đúng
 
 
-    B. parameter lists
 
 
 
@@ -2427,43 +2402,23 @@
 
 
 
+    B là đáp án đúng
 
-    C. none of above
+    Trong C++, có thể define nhiều hàm số có cùng tên được gọi là chồng hàm (overloading). Tuy nhiên, cần tuân thủ
+        quy tắc: các hàm số cùng tên phải có tập tham số truyền vào là khác nhau (về số lượng hoặc kiểu).
 
+    Nếu 2 hàm trùng tên và cả bộ tham số truyền vào thì khi biên dịch sẽ báo lỗi kể cả 2 hàm đó khác kiểu dữ liệu trả
+        về.
 
 
 
 
 
 
+    Câu 40:
 
 
-    <b>B</b> là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    <p>Trong C++, có thể define nhiều hàm số có cùng tên được gọi là chồng hàm (overloading). Tuy nhiên, cần tuân thủ
-        rule: các hàm số cùng tên phải có tập tham số truyền vào là khác nhau (về số lượng hoặc kiểu).</p>
-
-    <p>Nếu 2 hàm trùng tên và cả bộ tham số truyền vào thì khi biên dịch sẽ báo lỗi kể cả 2 hàm đó khác kiểu dữ liệu trả
-        về.</p>
-
-
-
-
-
-
-    <h4>Câu 40:</h4>
-
-
-    <p>A constructor with default arguments for all its parameters is called a ___ constructor.</p>
+    Constructor được tạo với các đối số mặc định cho tất cả các tham số của nó được gọi là ___ constructor.
 
 
 
@@ -2499,7 +2454,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -2510,10 +2465,10 @@
 
 
 
-    <h4>Câu 41:</h4>
+    Câu 41:
 
 
-    <p>Static member functions can access only the ___ data members of a class.</p>
+    Static member functions chỉ có thể truy cập các ___ data members của một lớp
 
 
 
@@ -2552,7 +2507,7 @@
 
 
 
-    <b>B</b> là đáp án đúng
+    B là đáp án đúng
 
 
 
@@ -2563,10 +2518,10 @@
 
 
 
-    <h4>Câu 42:</h4>
+    Câu 42:
 
 
-    <p>The two types of polymorphism is : ____ &amp; ____ .</p>
+Hai kiểu đa hình là: ____ & ____.
 
 
 
@@ -2604,7 +2559,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -2615,10 +2570,10 @@
 
 
 
-    <h4>Câu 43:</h4>
+    Câu 43:
 
 
-    <p>&nbsp;A file stream is an extension of a ___ stream.</p>
+  Luồng tệp là phần mở rộng của luồng ___.
 
 
 
@@ -2647,7 +2602,7 @@
 
 
 
-    C. none of above
+    C. Tát cả đều đúng
 
 
 
@@ -2657,7 +2612,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -2668,10 +2623,10 @@
 
 
 
-    <h4>Câu 44:</h4>
+    Câu 44:
 
 
-    <p>The Standard Template Library(STL) is a library of ___ templates.</p>
+    The Standard Template Library(STL) là thư viện ___ templates.
 
 
 
@@ -2691,7 +2646,7 @@
 
 
 
-    B. &nbsp;time class
+    B. time class
 
 
 
@@ -2700,7 +2655,7 @@
 
 
 
-    C. none of above
+    C. Tất cả đều đúng
 
 
 
@@ -2710,7 +2665,7 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A là đáp án đúng
 
 
 
@@ -2721,10 +2676,10 @@
 
 
 
-    <h4>Câu 45:</h4>
+    Câu 45:
 
 
-    <p>Run time polymorphism is ___ than the compile time polymorphism.</p>
+  Đa hình thời gian chạy ___ so với đa hình thời gian biên dịch.
 
 
 
@@ -2734,8 +2689,8 @@
 
 
 
+    A. ít linh hoạt hơn
 
-    A. less flexible
 
 
 
@@ -2743,17 +2698,17 @@
 
 
 
+    B. linh hoạt hơn
 
-    B. more flexible
 
 
 
 
 
 
+    C. Tất cả đều sai
 
 
-    C. none of above
 
 
 
@@ -2761,29 +2716,18 @@
 
 
 
+    B là đáp án đúng
+     Đa hình động (run-time polymorphism) thì mềm dẻo, linh hoạt hơn đa hình tĩnh (compile time polymorphism).
 
 
-    <b>B</b> là đáp án đúng
 
 
 
 
+    Câu 46:
 
 
-
-
-    <p>Đa hình động (run-time) thì mềm dẻo, linh hoạt hơn đa hình tĩnh.</p>
-
-
-
-
-
-
-    <h4>Câu 46:</h4>
-
-
-    <p>With private inheritance, public and protected members of the base class become ___ members of<br the derived
-            class.</p>
+  Với tính kế thừa, các thành viên public và được bảo vệ của lớp cơ sở trở thành thành viên ___ của lớp dẫn xuất.
 
 
 
@@ -2803,7 +2747,7 @@
 
 
 
-        B. &nbsp;public
+        B. public
 
 
 
@@ -2822,7 +2766,7 @@
 
 
 
-        <b>A</b> là đáp án đúng
+        A là đáp án đúng
 
 
 
@@ -2833,11 +2777,9 @@
 
 
 
-    <h4>Câu 47:</h4>
+    Câu 47:
 
-
-    <p>The STL Container adapters contains the ___ , ___ and ___ STL containers.</p>
-
+    Thư viện STL chứa các ___, ____ và ____ STL containers
 
 
 
@@ -2875,7 +2817,7 @@
 
 
 
-    <b>C</b> là đáp án đúng
+    C là đáp án đúng
 
 
 
@@ -2886,10 +2828,10 @@
 
 
 
-    <h4>Câu 48:</h4>
+    Câu 48:
 
 
-    <p>The ___ block contains code that directly or indirectly might cause an exception to be thrown.</p>
+    Khối ___ chứa mã trực tiếp hoặc gián tiếp có thể gây ra một ngoại lệ.
 
 
 
@@ -2918,7 +2860,16 @@
 
 
 
-    C. none of above
+    C. Tất cả đều sai
+
+
+
+
+
+
+
+
+    B là đáp án đúng
 
 
 
@@ -2928,21 +2879,11 @@
 
 
 
-    <b>B</b> là đáp án đúng
+
+    Câu 49:
 
 
-
-
-
-
-
-
-
-
-    <h4>Câu 49:</h4>
-
-
-    <p>When writing function or class template, one use a ___ to specify a generic data type.</p>
+   Khi viết hàm hoặc mẫu lớp, người ta sử dụng ___ để chỉ định kiểu dữ liệu chung.
 
 
 
@@ -2971,7 +2912,7 @@
 
 
 
-    C. none of above
+    C. Tất cả đều đúng
 
 
 
@@ -2980,22 +2921,7 @@
 
 
 
-
-    <b>A</b> là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    <h4>Câu 50:</h4>
-
-
-    <p>Data items in a class may be public.</p>
+    A là đáp án đúng
 
 
 
@@ -3006,16 +2932,11 @@
 
 
 
-    A. TRUE
+    Câu 50:
 
 
+Các mục dữ liệu trong một lớp có thể là công khai.
 
-
-
-
-
-
-    B. FALSE
 
 
 
@@ -3025,4 +2946,23 @@
 
 
 
-    <b>A</b> là đáp án đúng
+    A. Đúng
+
+
+
+
+
+
+
+
+    B. Sai
+
+
+
+
+
+
+
+
+
+    A là đáp án đúng

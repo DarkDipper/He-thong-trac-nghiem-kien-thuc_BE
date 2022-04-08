@@ -1,26 +1,26 @@
 
-                                    <div class="exam-content">
+                                   
                                        
                                                                                            
-                                                    <h4>Câu 1:</h4>
+                                                    Câu 1:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
 int main()
 {
     int a = 20, b = 100;
-    int &amp;n = a;
+    int &n = a;
     n = a++;
-    n = &amp;b;
-    cout &lt;&lt; a &lt;&lt; "," &lt;&lt; n &lt;&lt; endl;
+    n = &b;
+    cout << a << "," << n << endl;
     system("pause");
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is the output of the following code?</p>
+                                                        Output của chương trình là gì?
                                                     
                                                            
                                                               
@@ -49,7 +49,7 @@ int main()
                                                                           
                                                                            
                                                                     
-                                                                           C. &nbsp;21,22
+                                                                           C. 21,22
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -67,7 +67,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                                      
                                                                                                                            
                                                              
@@ -81,16 +81,16 @@ int main()
                                                                 
                                                            
                                                             
-                                                                <p>n = &amp;b; ==&gt; lỗi ‘=’: cannot convert from ‘int *’ to ‘int’</p>
+                                                                n = &b; ==>; lỗi ‘=’: cannot convert from ‘int *’ to ‘int’
                                                            
                                                        
                                                         
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 2:</h4>
+                                                    Câu 2:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
@@ -98,13 +98,13 @@ int main()
 {
     int main;
     main = 100;
-    cout &lt;&lt; main++ &lt;&lt; endl;
+    cout << main++ << endl;
     system("pause");
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is the output of the following code?</p>
+                                                        Output của chương trình là gì?
                                                     
                                                            
                                                             
@@ -151,7 +151,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -170,10 +170,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 3:</h4>
+                                                    Câu 3:
                                                         
                                                         
-                                                        <p>The design of classes in a way that hides the details of implementation from the user is known as:</p>
+                                                        Việc thiết kế các lớp theo cách ẩn các chi tiết của việc triển khai khỏi người dùng được gọi là:
                                                     
                                                            
                                                              
@@ -184,7 +184,7 @@ int main()
                                                                           
                                                                         
                                                                   
-                                                                           A. Encapsulation
+                                                                           A. Tính đóng gói (Encapsulation)
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -193,7 +193,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           B. Information Hiding
+                                                                           B. Ẩn thông tin (Information Hiding)
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -202,7 +202,7 @@ int main()
                                                                           
                                                                           
                                                                     
-                                                                           C. Data abstraction
+                                                                           C. Trừu tượng dữ liệu (Data abstraction)
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -211,7 +211,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           D. &nbsp;All of the above
+                                                                           D. Tất cả đều đúng
                                                                
                                                                                                                                                                                         
 
@@ -220,7 +220,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -239,13 +239,13 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 4:</h4>
+                                                    Câu 4:
                                                         
                                                         
-                                                        <p>&nbsp;Which of the following keywords do you think can be used when declaring static members in a class?<br
-(i) Public<br
-(ii) Private<br
-(iii) Protected</p>
+                                                        Bạn nghĩ từ khóa nào sau đây có thể được sử dụng khi khai báo các thành viên tĩnh trong một lớp?
+(i) Public
+(ii) Private
+(iii) Protected
                                                     
                                                            
                                                             
@@ -256,7 +256,7 @@ int main()
                                                                           
                                                                         
                                                                   
-                                                                           A. all of above
+                                                                           A. Tất cả
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -283,7 +283,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -302,10 +302,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 5:</h4>
+                                                    Câu 5:
                                                         
                                                         
-                                                        <p>I want a nonmember function to have access to the private members of a class. The class must declare that function:</p>
+                                                       Tôi muốn một hàm nonmember có quyền truy cập vào các thành viên riêng của một lớp. Class phải khai báo hàm đó:
                                                     
                                                            
                                                             
@@ -352,7 +352,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -371,10 +371,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 6:</h4>
+                                                    Câu 6:
                                                         
                                                         
-                                                        <p>The ability to reuse objects already defined, perhaps for a different purpose, with modification appropriate to the new purpose, is referred to as</p>
+                                                        Khả năng sử dụng lại các đối tượng đã được xác định, có thể cho một mục đích khác, với sự sửa đổi phù hợp với mục đích mới, được gọi là
                                                     
                                                            
                                                              
@@ -385,7 +385,7 @@ int main()
                                                                           
                                                                         
                                                                   
-                                                                           A. Information hiding
+                                                                           A. Ẩn thông tin (Information Hiding)
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -394,7 +394,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           B. &nbsp;Inheritance
+                                                                           B. Tính kế thừa (Inheritance)
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -403,7 +403,7 @@ int main()
                                                                           
                                                                           
                                                                     
-                                                                           C. Redefinition
+                                                                           C. Tái định nghĩa (Redefinition)
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -412,7 +412,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           D. Overloading
+                                                                           D. Quá tải/ Nạp chồng (Overloading)
                                                                
                                                                                                                                                                                         
 
@@ -421,7 +421,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -440,10 +440,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 7:</h4>
+                                                    Câu 7:
                                                         
                                                         
-                                                        <p>What do you think is the outcome of calling a redefined non-virtual function using a base-class pointer?</p>
+                                                        Bạn nghĩ kết quả của việc gọi một hàm không ảo được xác định lại bằng con trỏ lớp cơ sở là gì?
                                                     
                                                            
                                                              
@@ -454,7 +454,7 @@ int main()
                                                                           
                                                                         
                                                                   
-                                                                           A. The appropriate redefined version of the function will be used
+                                                                           A. Phiên bản được xác định lại thích hợp của hàm sẽ được sử dụng
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -463,7 +463,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           B. The base-class version of the function will always be used
+                                                                           B. Phiên bản lớp cơ sở của hàm sẽ luôn được sử dụng
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -472,7 +472,7 @@ int main()
                                                                           
                                                                           
                                                                     
-                                                                           C. The outcome is unpredictable
+                                                                           C. Kết quả là không thể đoán trước
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -481,8 +481,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           D. A run-time error will occur
-                                                               
+                                                                           D. Lỗi run-time error                                                               
                                                                                                                                                                                         
 
                                                        
@@ -490,7 +489,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -509,10 +508,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 8:</h4>
+                                                    Câu 8:
                                                         
                                                         
-                                                        <p>A class member that is to be shared among all objects of a class is called</p>
+                                                        A class member that is to be shared among all objects of a class is called
                                                     
                                                            
                                                             
@@ -559,7 +558,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -578,79 +577,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 9:</h4>
+                                                    Câu 9:
                                                         
                                                         
-                                                        <p>What is a base class?</p>
-                                                    
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                  
-                                                                           
-                                                                           
-                                                                          
-                                                                        
-                                                                  
-                                                                           A. An abstract class that is at the top of the inheritance hierarchy.
-                                                               
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                           
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                           B. A class with a pure virtual function in it.
-                                                               
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                           
-                                                                           
-                                                                          
-                                                                          
-                                                                    
-                                                                           C. A class that inherits from another class
-                                                               
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                         
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                           D. A class that is inherited by another class, and thus is included in that class.
-                                                               
-                                                                                                                                                                                        
-
-                                                       
-                                                        
-                                                        
-                                                       
-                                                              
-                                                                <b>D</b> là đáp án đúng 
-                                                                                                                           
-                                                             
-                                             
-                                                                                                                           
-                                                       
-                                                         
-                                                           
-                                                            
-                                                                
-                                                           
-                                                            
-                                                                
-                                                           
-                                                       
-                                                        
-                                                   
-                                                
-                                                                                           
-                                                    <h4>Câu 10:</h4>
-                                                        
-                                                        
-                                                        <p>A variable that is declared protected:</p>
+                                                        Lớp cơ sở là gì?
                                                     
                                                            
                                                              
@@ -661,7 +591,7 @@ int main()
                                                                           
                                                                         
                                                                   
-                                                                           A. Is visible only in the subclasses (and not in the class it is declared in)
+                                                                           A. Một lớp trừu tượng ở trên cùng của hệ thống phân cấp kế thừa.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -670,7 +600,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           B. Is visible only in the class it is declared in
+                                                                           B. Một lớp với một hàm thuần ảo trong đó.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -679,7 +609,7 @@ int main()
                                                                           
                                                                           
                                                                     
-                                                                           C. Is visible to all classes, but modifiable only in the class where it is declared
+                                                                           C. Một lớp kế thừa từ một lớp khác
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -688,7 +618,7 @@ int main()
                                                                            
                                                                           
                                                                     
-                                                                           D. &nbsp;Is visible in the class it is declared in, and all of its sub-classes
+                                                                           D. Một lớp được kế thừa bởi một lớp khác và do đó được bao gồm trong lớp đó.
                                                                
                                                                                                                                                                                         
 
@@ -697,7 +627,7 @@ int main()
                                                         
                                                        
                                                               
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                              
                                              
@@ -716,10 +646,79 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 11:</h4>
+                                                    Câu 10:
                                                         
                                                         
-                                                        <p>What is a destructor?</p>
+                                                        Một biến được khai báo là protected:
+                                                    
+                                                           
+                                                             
+                                                                                                                                                                                          
+                                                                  
+                                                                           
+                                                                           
+                                                                          
+                                                                        
+                                                                  
+                                                                           A. Chỉ hiển thị trong các lớp con (và không hiển thị trong lớp mà nó được khai báo)
+                                                               
+                                                                                                                                                                                                                                                          
+                                                                  
+                                                                           
+                                                                           
+                                                                           
+                                                                          
+                                                                    
+                                                                           B. Chỉ hiển thị trong lớp mà nó được khai báo
+                                                               
+                                                                                                                                                                                                                                                          
+                                                                  
+                                                                           
+                                                                           
+                                                                          
+                                                                          
+                                                                    
+                                                                           C. Hiển thị cho tất cả các lớp, nhưng chỉ có thể sửa đổi trong lớp mà nó được khai báo
+                                                               
+                                                                                                                                                                                                                                                          
+                                                                  
+                                                                         
+                                                                           
+                                                                           
+                                                                          
+                                                                    
+                                                                           D. Hiển thị trong lớp mà nó được khai báo và tất cả các lớp con của nó
+                                                               
+                                                                                                                                                                                        
+
+                                                       
+                                                        
+                                                        
+                                                       
+                                                              
+                                                                D là đáp án đúng 
+                                                                                                                           
+                                                             
+                                             
+                                                                                                                           
+                                                       
+                                                         
+                                                           
+                                                            
+                                                                
+                                                           
+                                                            
+                                                                
+                                                           
+                                                       
+                                                        
+                                                   
+                                                
+                                                                                           
+                                                    Câu 11:
+                                                        
+                                                        
+                                                        Destructor là gì?
                                                     
                                                            
                                                                
@@ -730,7 +729,7 @@ int main()
                                                                           
                                                                           
                                                                 
-                                                                           A. &nbsp;A function called when an instance of a class is initialized
+                                                                           A. Một hàm được gọi khi một lớp được khởi tạo
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -739,7 +738,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           B. A function that is called when an instance of a class is deleted
+                                                                           B. Một hàm được gọi khi một lớp bị xóa
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -748,7 +747,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. A special function to change the value of dynamically allocated memory
+                                                                           C. Một chức năng đặc biệt để thay đổi giá trị của bộ nhớ được cấp phát động
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -757,7 +756,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           D. A function that is called in order to change the value of a variable
+                                                                           D. Một hàm được gọi để thay đổi giá trị của một biến
                                                                
                                                                                                                                                                                         
 
@@ -766,7 +765,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -785,10 +784,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 12:</h4>
+                                                    Câu 12:
                                                         
                                                         
-                                                        <p>In protected inheritance:</p>
+                                                        In protected inheritance:
                                                     
                                                            
                                                                
@@ -799,7 +798,7 @@ int main()
                                                                           
                                                                           
                                                                 
-                                                                           A. The public members of the base class become public
+                                                                           A. Các thành viên public của lớp cơ sở trở thành public
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -808,7 +807,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           B. The public members of the base class become protected
+                                                                           B. Các thành viên public của lớp cơ sở được bảo vệ
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -817,7 +816,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. The protected members of the base class become private
+                                                                           C. Các thành viên được bảo vệ của lớp cơ sở trở thành private
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -826,7 +825,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           D. The public members of the base class become inaccessible
+                                                                           D. Các thành viên public của lớp cơ sở trở nên không thể truy cập được
                                                                
                                                                                                                                                                                         
 
@@ -835,7 +834,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -854,10 +853,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 13:</h4>
+                                                    Câu 13:
                                                         
                                                         
-                                                        <p>If a class declares a variable static, this means:</p>
+                                                       Nếu một lớp khai báo một biến static, điều này có nghĩa là:
                                                     
                                                            
                                                               
@@ -868,7 +867,7 @@ int main()
                                                                           
                                                                           
                                                                 
-                                                                           A. &nbsp;Each instance of a class will have its own copy of the variable
+                                                                           A. Mỗi phiên bản của một lớp sẽ có một bản sao biến riêng của nó
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -877,7 +876,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           B. Changing the variable in one instance will have no effect on other instances of the class
+                                                                           B. Thay đổi biến trong một trường hợp sẽ không ảnh hưởng đến các trường hợp khác của lớp
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -886,7 +885,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. Changing the variable in one instance will have no effect on other instances of the class
+                                                                           C. Thay đổi biến trong một trường hợp sẽ không ảnh hưởng đến các trường hợp khác của lớp
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -895,7 +894,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           D. Every instance of the class must consider the value of the static variable before initializing
+                                                                           D. Mọi cá thể của lớp phải xem xét giá trị của biến tĩnh trước khi khởi tạo
                                                                
                                                                                                                                                                                         
 
@@ -904,7 +903,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -923,13 +922,13 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 14:</h4>
+                                                    Câu 14:
                                                         
                                                         
-                                                        <p>In case of a copy constructor, which of the following is true?</p>
+                                                     
                                                     
                                                            
-                                                               
+                                                               Trong trường hợp một hàm tạo copy constructor, điều nào sau đây là đúng?
                                                                                                                                                                                           
                                                                   
                                                                        
@@ -937,7 +936,7 @@ int main()
                                                                           
                                                                           
                                                                 
-                                                                           A. Used to instantiate an object from another existing object
+                                                                           A. Được sử dụng để khởi tạo một đối tượng từ một đối tượng hiện có khác
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -946,7 +945,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           B. To copy one object to another existing object
+                                                                           B. Để sao chép một đối tượng này sang một đối tượng hiện có khác
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -955,7 +954,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. Can be a substitute for a ‘=’ operator
+                                                                           C. Có thể thay thế cho toán tử ‘=’
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -964,7 +963,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           D. All of the above
+                                                                           D. Tất cả đều đúng
                                                                
                                                                                                                                                                                         
 
@@ -973,7 +972,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -992,10 +991,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 15:</h4>
+                                                    Câu 15:
                                                         
                                                         
-                                                        <p>A class declaring another class as a friend will:</p>
+                                                        A class declaring another class as a friend will:
                                                     
                                                            
                                                               
@@ -1024,7 +1023,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. &nbsp;Allow the other class (the one declared as friend) to access to the declaring class’s private variables
+                                                                           C. Allow the other class (the one declared as friend) to access to the declaring class’s private variables
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1042,7 +1041,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -1061,10 +1060,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 16:</h4>
+                                                    Câu 16:
                                                         
                                                         
-                                                        <p>Which of the following can be virtual?</p>
+                                                        Which of the following can be virtual?
                                                     
                                                            
                                                                
@@ -1108,7 +1107,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -1127,10 +1126,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 17:</h4>
+                                                    Câu 17:
                                                         
                                                         
-                                                        <p>Where is an exception generated?</p>
+                                                        Trường hợp ngoại lệ được tạo ra?
                                                     
                                                            
                                                                
@@ -1141,7 +1140,7 @@ int main()
                                                                           
                                                                           
                                                                 
-                                                                           A. &nbsp;In the catch block
+                                                                           A. Trong khối catch
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1150,7 +1149,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           B. &nbsp;In the throw clause
+                                                                           B. Trong mệnh đề throw
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1159,7 +1158,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. &nbsp;In the constructor of a class
+                                                                           C. Trong constructor của một lớp
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1168,7 +1167,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           D. Only when memory allocation fails
+                                                                           D. Chỉ khi cấp phát bộ nhớ không thành công
                                                                
                                                                                                                                                                                         
 
@@ -1177,7 +1176,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -1196,10 +1195,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 18:</h4>
+                                                    Câu 18:
                                                         
                                                         
-                                                        <p>Static member functions ___</p>
+                                                        Static member functions ___
                                                     
                                                            
                                                               
@@ -1246,7 +1245,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -1265,10 +1264,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 19:</h4>
+                                                    Câu 19:
                                                         
                                                         
-                                                        <p>What makes a class abstract?</p>
+                                                        Điều gì làm cho một lớp trở nên trừu tượng?
                                                     
                                                            
                                                               
@@ -1279,7 +1278,7 @@ int main()
                                                                           
                                                                           
                                                                 
-                                                                           A. The class must not have method
+                                                                           A. Lớp không được có phương thức
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1288,7 +1287,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           B. The class must have a constructor that takes no arguments
+                                                                           B. Lớp phải có một phương thức khởi tạo không có tham số
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1297,7 +1296,7 @@ int main()
                                                                           
                                                                             
                                                                   
-                                                                           C. The class must have a function definition equal to zero
+                                                                           C. Lớp phải có định nghĩa hàm bằng 0
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1306,7 +1305,7 @@ int main()
                                                                            
                                                                             
                                                                   
-                                                                           D. The class may only exist during the planning phase
+                                                                           D. Lớp chỉ có thể tồn tại trong giai đoạn lập kế hoạch
                                                                
                                                                                                                                                                                         
 
@@ -1315,7 +1314,7 @@ int main()
                                                         
                                                        
                                                             
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -1334,9 +1333,9 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 20:</h4>
+                                                    Câu 20:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
@@ -1344,7 +1343,7 @@ class Base
 {
     int static i;
 public:
-    Base() { cout &lt;&lt; "Base's constructor"; };
+    Base() { cout << "Base's constructor"; };
 };
  
 class Sub1 : public virtual Base {};
@@ -1357,9 +1356,9 @@ void main()
     system("pause");
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>In the following program, how many times Base’s constructor will be called?</p>
+                                                        Trong chương trình sau, phương thức khởi tạo của Base sẽ được gọi bao nhiêu lần?
                                                     
                                                            
                                                                
@@ -1406,7 +1405,7 @@ void main()
                                                         
                                                        
                                                             
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                            
                                              
@@ -1425,9 +1424,9 @@ void main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 21:</h4>
+                                                    Câu 21:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
@@ -1443,16 +1442,16 @@ void main()
 {
     using N1::f;
     int i1 = f(1.0);
-    cout &lt;&lt; "i1 = " &lt;&lt; i1;
+    cout << "i1 = " << i1;
     using N2::f;
     int i2 = f(1.0);
-    cout &lt;&lt; "i1 = " &lt;&lt; i2;
+    cout << "i1 = " << i2;
     system("pause");
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>In the following code what would be the values of i1 and i2</p>
+                                                        Trong đoạn mã sau, giá trị của i1 và i2 sẽ là gì?
                                                     
                                                            
                                                            
@@ -1499,7 +1498,7 @@ void main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -1518,7 +1517,7 @@ void main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 22:</h4>
+                                                    Câu 22:
                                                        
 class Base
 {
@@ -1537,9 +1536,9 @@ class Friend
     Derived derived;
 };  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>In the following code, which of the following variables can be accessed in “Friend”?</p>
+                                                        Trong đoạn mã sau, biến nào sau đây có thể được truy cập trong “Friend”?
                                                     
                                                            
                                                            
@@ -1550,7 +1549,7 @@ class Friend
                                                                           
                                                                       
                                                                
-                                                                           A. only a and b
+                                                                           A. chỉ có a và b
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1559,7 +1558,7 @@ class Friend
                                                                            
                                                                         
                                                                  
-                                                                           B. a,b and c
+                                                                           B. a,b và c
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1568,7 +1567,7 @@ class Friend
                                                                           
                                                                         
                                                                  
-                                                                           C. only a
+                                                                           C. chỉ có a
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1586,31 +1585,18 @@ class Friend
                                                         
                                                        
                                                            
-                                                                <b>D</b> là đáp án đúng 
-                                                                                                                             
-                                                                                                                           
-                                                          
-                                             
-                                                                                                                          
-                                                                                                                           
-                                                       
-                                                         
-                                                        
-                                                            
-                                                                
-                                                           
-                                                            
-                                                                <p>Việc khai báo class Derived : Base có nghĩa là class Derived kế thừa kiểu private từ class Base.<br/>
-Do vậy, các member của class Derived (kể cả class Friend) không thể access member của class Base.</p>
+                                                                D là đáp án đúng 
+                                                                  Việc khai báo class Derived : Base có nghĩa là class Derived kế thừa kiểu private từ class Base.
+Do vậy, các member của class Derived (kể cả class Friend) không thể access member của class Base.
                                                            
                                                        
                                                         
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 23:</h4>
+                                                    Câu 23:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 int count = 0;
  
@@ -1627,13 +1613,13 @@ int main()
     {
         obj G;
     }
-    std::cout &lt;&lt; count;
+    std::cout << count;
     return 0;
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is the output of the following code?</p>
+                                                        Output của chương trình là gì?
                                                     
                                                            
                                                           
@@ -1680,7 +1666,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                                    
                                                                                                                            
                                                           
@@ -1694,16 +1680,16 @@ int main()
                                                                 
                                                            
                                                             
-                                                                <p>có 7 đối tượng A,B,C,D,E,F,G được tạo -&gt; hàm tạo được gọi 7 lần -&gt; count = 7. Tuy nhiên, đối tượng G bị hủy khi ra khỏi dấu }, hàm hủy được gọi -&gt; count = 6</p>
+                                                                có 7 đối tượng A, B, C, D, E, F, G được tạo -> hàm tạo được gọi 7 lần -> count = 7. Tuy nhiên, đối tượng G bị hủy khi ra khỏi dấu }, hàm hủy được gọi -> count = 6
                                                            
                                                        
                                                         
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 24:</h4>
+                                                    Câu 24:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 class Base
 {
@@ -1724,9 +1710,9 @@ int main()
     return 0;
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is wrong in the following code?</p>
+                                                        Hãy chỉ ra lỗi trong đoạn code trên:
                                                     
                                                            
                                                            
@@ -1737,7 +1723,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. There is nothing wrong
+                                                                           A. Không có gì sai cả
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1746,7 +1732,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. One cannot have a ‘Base’ pointer to ‘Derived’ since it is not derived publicly
+                                                                           B. Người ta không thể có con trỏ "Base" đến "Derived" vì nó không được public
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1755,7 +1741,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. One need a derived class pointer to point to a derived class
+                                                                           C. Cần một con trỏ lớp Derived để trỏ đến một lớp Derived
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -1764,7 +1750,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. One required to code a constructor for Derived
+                                                                           D. Cần phải code một constructor cho Derived
                                                                
                                                                                                                                                                                         
 
@@ -1773,54 +1759,41 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
-                                                                                                                               
-                                                                                                                           
-                                                          
-                                             
-                                                                                                                            
-                                                                                                                           
-                                                       
-                                                         
-                                                        
-                                                            
-                                                                
-                                                           
-                                                            
-                                                                <p>Class Derived kế thừa class Base kiểu protected, hàm tạo Base() là thành phần protected của class Derived.</p>
+                                                                B là đáp án đúng 
+                                                                Class Derived kế thừa class Base kiểu protected, hàm tạo Base() là thành phần protected của class Derived.
                                                            
                                                        
                                                         
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 25:</h4>
+                                                    Câu 25:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
 class professor 
 { 
 public:
-    professor() { cout &lt;&lt; "professor "; }; 
+    professor() { cout << "professor "; }; 
 };
  
 class researcher 
 { 
 public: 
-    researcher() { cout &lt;&lt; "researcher "; }; 
+    researcher() { cout << "researcher "; }; 
 };
 class teacher : public professor 
 { 
 public: 
-    teacher() { cout &lt;&lt; "teacher "; }; 
+    teacher() { cout << "teacher "; }; 
 };
  
 class myprofessor : public teacher, public virtual researcher
 {
 public:
-    myprofessor() { cout &lt;&lt; "myprofessor "; };
+    myprofessor() { cout << "myprofessor "; };
 };
  
 int main()
@@ -1830,9 +1803,9 @@ int main()
     return 0;
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is the output of the following code?</p>
+                                                        Output của chương trình là gì?
                                                     
                                                            
                                                            
@@ -1879,7 +1852,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -1898,9 +1871,9 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 26:</h4>
+                                                    Câu 26:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
@@ -1909,23 +1882,23 @@ class Parent
 public:
     Parent() { Status(); }
     virtual ~Parent() { Status(); }
-    virtual void Status() { cout &lt;&lt; "Parent "; }
+    virtual void Status() { cout << "Parent "; }
 };
 class Child : public Parent
 {
 public:
     Child() { Status(); }
     virtual ~Child() { Status(); }
-    virtual void Status() { cout &lt;&lt; "Child "; }
+    virtual void Status() { cout << "Child "; }
 };
 void main()
 {
     Child c;
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is the output of the following code?</p>
+                                                        Output của chương trình là gì?
                                                     
                                                            
                                                            
@@ -1972,7 +1945,7 @@ void main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                                 
                                                                                                                            
                                                           
@@ -1986,18 +1959,18 @@ void main()
                                                                 
                                                            
                                                             
-                                                                <p>Class Child kế thừa từ class Parent.<br/>
-– Khi đối tượng Child được tạo, hàm tạo của class cơ sở sẽ được gọi trước, sau đó mới gọi đến hàm tạo class kế thừa.<br/>
-– Khi kết thúc chương trình, đối tượng Child bị hủy, hàm hủy của lớp kế thừa được gọi trước, sau đó mới đến hàm hủy lớp cơ sở.</p>
+                                                                Class Child kế thừa từ class Parent.
+– Khi đối tượng Child được tạo, hàm tạo của class cơ sở sẽ được gọi trước, sau đó mới gọi đến hàm tạo class kế thừa.
+– Khi kết thúc chương trình, đối tượng Child bị hủy, hàm hủy của lớp kế thừa được gọi trước, sau đó mới đến hàm hủy lớp cơ sở.
                                                            
                                                        
                                                         
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 27:</h4>
+                                                    Câu 27:
                                                        
-#include &lt;iostream&gt;
+#include <iostream>;
  
 using namespace std;
  
@@ -2022,9 +1995,9 @@ int main()
     return 0;
 }  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>What is wrong in the following code?</p>
+                                                        Hãy chỉ ra lỗi trong đoạn code trên:
                                                     
                                                            
                                                           
@@ -2035,7 +2008,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. There is no error
+                                                                           A. Không có lỗi
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2044,7 +2017,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. There is a syntax error in the declaration of “Method”
+                                                                           B. Lỗi cú pháp trong việc khai báo class “Method”
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2053,7 +2026,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. Class D2 does not have access to “Method”
+                                                                           C. Class D2 không có quyền truy cập class “Method”
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2062,7 +2035,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. Class D1 must define “Method”
+                                                                           D. Class D1 phải khai báo “Method”
                                                                
                                                                                                                                                                                         
 
@@ -2071,7 +2044,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2090,10 +2063,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 28:</h4>
+                                                    Câu 28:
                                                         
                                                         
-                                                        <p>Quy tắc đặt tên biến nào sau đây là đúng?</p>
+                                                        Quy tắc đặt tên biến nào sau đây là đúng?
                                                     
                                                            
                                                            
@@ -2140,7 +2113,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2159,10 +2132,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 29:</h4>
+                                                    Câu 29:
                                                         
                                                         
-                                                        <p>Kích thước của dữ liệu kiểu char là bao nhiêu byte?</p>
+                                                        Kích thước của dữ liệu kiểu char là bao nhiêu byte?
                                                     
                                                            
                                                           
@@ -2209,7 +2182,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2228,10 +2201,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 30:</h4>
+                                                    Câu 30:
                                                         
                                                         
-                                                        <p>Khai báo biến nào sau đây là SAI?</p>
+                                                        Khai báo biến nào sau đây là SAI?
                                                     
                                                            
                                                            
@@ -2251,7 +2224,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;int num = 10;
+                                                                           B. int num = 10;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2260,7 +2233,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;long lint = 8;
+                                                                           C. long lint = 8;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2269,7 +2242,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;short int = 5;
+                                                                           D. short int = 5;
                                                                
                                                                                                                                                                                         
 
@@ -2278,7 +2251,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2297,10 +2270,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 31:</h4>
+                                                    Câu 31:
                                                         
                                                         
-                                                        <p>Khai báo nào sau đây là ĐÚNG?</p>
+                                                        Khai báo nào sau đây là ĐÚNG?
                                                     
                                                            
                                                           
@@ -2311,7 +2284,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;signed a;
+                                                                           A. signed a;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2320,7 +2293,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;sign double d;
+                                                                           B. sign double d;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2338,7 +2311,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;longth t;
+                                                                           D. longth t;
                                                                
                                                                                                                                                                                         
 
@@ -2347,7 +2320,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>C</b> là đáp án đúng 
+                                                                C là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2366,10 +2339,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 32:</h4>
+                                                    Câu 32:
                                                         
                                                         
-                                                        <p>Biến toàn cục là gì?</p>
+                                                        Biến toàn cục là gì?
                                                     
                                                            
                                                            
@@ -2389,7 +2362,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;Biến khai báo trong thân main, hoặc bên ngoài tất cả các hàm.
+                                                                           B. Biến khai báo trong thân main, hoặc bên ngoài tất cả các hàm.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2398,7 +2371,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;Cả hai đáp án đầu đúng.
+                                                                           C. Cả hai đáp án đầu đúng.
                                                                
                                                                                                                                                                                         
 
@@ -2407,7 +2380,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2426,10 +2399,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 33:</h4>
+                                                    Câu 33:
                                                         
                                                         
-                                                        <p>Biến cục bộ là dạng biến gì? Chọn câu trả lời đúng nhất.</p>
+                                                        Biến cục bộ là dạng biến gì? Chọn câu trả lời đúng nhất.
                                                     
                                                            
                                                            
@@ -2440,7 +2413,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;Là biến khai báo trong thân hàm main
+                                                                           A. Là biến khai báo trong thân hàm main
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2449,7 +2422,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;Là biến khai báo trong thân một khối lệnh
+                                                                           B. Là biến khai báo trong thân một khối lệnh
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2458,7 +2431,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;Là biến khai báo trong thân một hàm
+                                                                           C. Là biến khai báo trong thân một hàm
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2467,7 +2440,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;Là biến khai báo trong một hàm hoặc một khối lệnh
+                                                                           D. Là biến khai báo trong một hàm hoặc một khối lệnh
                                                                
                                                                                                                                                                                         
 
@@ -2476,7 +2449,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2495,10 +2468,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 34:</h4>
+                                                    Câu 34:
                                                         
                                                         
-                                                        <p>Chuỗi ký tự (string) là gì?</p>
+                                                        Chuỗi ký tự (string) là gì?
                                                     
                                                            
                                                            
@@ -2509,7 +2482,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;Các giá trị không phải là số và có độ dài là 1
+                                                                           A. Các giá trị không phải là số và có độ dài là 1
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2518,7 +2491,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;Các giá trị số lớn hơn 0
+                                                                           B. Các giá trị số lớn hơn 0
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2527,7 +2500,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;Các biến có giá trị true hoặc false
+                                                                           C. Các biến có giá trị true hoặc false
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2536,7 +2509,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;Các giá trị cả chữ và số, nằm trong 2 dấu nháy “” và kết thúc với ký tự null
+                                                                           D. Các giá trị cả chữ và số, nằm trong 2 dấu nháy “” và kết thúc với ký tự null
                                                                
                                                                                                                                                                                         
 
@@ -2545,7 +2518,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2564,10 +2537,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 35:</h4>
+                                                    Câu 35:
                                                         
                                                         
-                                                        <p>Lệnh nào sau đây là SAI?</p>
+                                                        Lệnh nào sau đây là SAI?
                                                     
                                                            
                                                            
@@ -2578,7 +2551,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;string s = 1234;
+                                                                           A. string s = 1234;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2587,7 +2560,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;string s (“Hello world!”);
+                                                                           B. string s (“Hello world!”);
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2614,7 +2587,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2633,10 +2606,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 36:</h4>
+                                                    Câu 36:
                                                         
                                                         
-                                                        <p>Khai báo nào sau đây là SAI?</p>
+                                                        Khai báo nào sau đây là SAI?
                                                     
                                                            
                                                           
@@ -2647,7 +2620,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;char c = “a”;
+                                                                           A. char c = “a”;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2656,7 +2629,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           B. &nbsp;int i = 75ul;
+                                                                           B. int i = 75ul;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2665,7 +2638,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;int i = 0013;
+                                                                           C. int i = 0013;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2674,7 +2647,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;int i = 0x4b;
+                                                                           D. int i = 0x4b;
                                                                
                                                                                                                                                                                         
 
@@ -2683,7 +2656,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2702,10 +2675,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 37:</h4>
+                                                    Câu 37:
                                                         
                                                         
-                                                        <p>Lệnh nào sau đây định nghĩa một hằng giá trị?</p>
+                                                        Lệnh nào sau đây định nghĩa một hằng giá trị?
                                                     
                                                            
                                                            
@@ -2716,7 +2689,7 @@ int main()
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;const PI = 3.1415;
+                                                                           A. const PI = 3.1415;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2734,7 +2707,7 @@ int main()
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;#define PI = 3.1415
+                                                                           C. #define PI = 3.1415
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2743,7 +2716,7 @@ int main()
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;const float PI;
+                                                                           D. const float PI;
                                                                
                                                                                                                                                                                         
 
@@ -2752,7 +2725,7 @@ int main()
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2771,10 +2744,10 @@ int main()
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 38:</h4>
+                                                    Câu 38:
                                                         
                                                         
-                                                        <p>Đoạn lệnh sau có kết quả bao nhiêu?</p>
+                                                        Đoạn lệnh sau có kết quả bao nhiêu?
 int main(){ 
     int a,b;
     a = 2 + b = 5;
@@ -2792,7 +2765,7 @@ int main(){
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;Một giá trị bất kỳ
+                                                                           A. Một giá trị bất kỳ
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2819,7 +2792,7 @@ int main(){
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;Lỗi biên dịch
+                                                                           D. Lỗi biên dịch
                                                                
                                                                                                                                                                                         
 
@@ -2828,7 +2801,7 @@ int main(){
                                                         
                                                        
                                                            
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2847,10 +2820,10 @@ int main(){
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 39:</h4>
+                                                    Câu 39:
                                                         
                                                         
-                                                        <p>Lệnh nào sau đây là SAI?</p>
+                                                        Lệnh nào sau đây là SAI?
                                                     
                                                            
                                                            
@@ -2861,7 +2834,7 @@ int main(){
                                                                           
                                                                       
                                                                
-                                                                           A. cout &lt;&lt; 120;
+                                                                           A. cout << 120;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2879,7 +2852,7 @@ int main(){
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;int x; cout &lt;&lt; x;
+                                                                           C. int x; cout << x;
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2888,7 +2861,7 @@ int main(){
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;int age = 33; cout &lt;&lt; “My age is “ &lt;&lt; age &lt;&lt; “.\n”;
+                                                                           D. int age = 33; cout << “My age is “ << age << “.\n”;
                                                                
                                                                                                                                                                                         
 
@@ -2897,7 +2870,7 @@ int main(){
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2916,10 +2889,10 @@ int main(){
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 40:</h4>
+                                                    Câu 40:
                                                         
                                                         
-                                                        <p>Nguyên lý của cấu trúc while là:</p>
+                                                        Nguyên lý của cấu trúc while là:
                                                     
                                                            
                                                            
@@ -2930,7 +2903,7 @@ int main(){
                                                                           
                                                                       
                                                                
-                                                                           A. &nbsp;Chương trình sẽ lặp đi lặp lại khối lệnh cho đến khi biểu thức điều kiện bằng 0.
+                                                                           A. Chương trình sẽ lặp đi lặp lại khối lệnh cho đến khi biểu thức điều kiện bằng 0.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2948,7 +2921,7 @@ int main(){
                                                                           
                                                                         
                                                                  
-                                                                           C. &nbsp;Chương trình sẽ lặp đi lặp lại khối lệnh cho đến khi biểu thức điều kiện đúng.
+                                                                           C. Chương trình sẽ lặp đi lặp lại khối lệnh cho đến khi biểu thức điều kiện đúng.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -2957,7 +2930,7 @@ int main(){
                                                                            
                                                                         
                                                                  
-                                                                           D. &nbsp;Không có đáp án đúng.
+                                                                           D. Không có đáp án đúng.
                                                                
                                                                                                                                                                                         
 
@@ -2966,7 +2939,7 @@ int main(){
                                                         
                                                        
                                                            
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                           
                                              
@@ -2985,13 +2958,13 @@ int main(){
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 41:</h4>
+                                                    Câu 41:
                                                        
-For (int i = 0; i &lt; 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;  
+For (int i = 0; i < 3; i++) cout << i*i << “,”;  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Kết quả đoạn lệnh sau là bao nhiêu?&nbsp;</p>
+                                                        Kết quả đoạn lệnh sau là bao nhiêu?
                                                     
                                                            
                                                         
@@ -3002,7 +2975,7 @@ For (int i = 0; i &lt; 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                                           
                                                                    
                                                            
-                                                                           A. &nbsp;Lỗi biên dịch
+                                                                           A. Lỗi biên dịch
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3038,7 +3011,7 @@ For (int i = 0; i &lt; 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3057,13 +3030,13 @@ For (int i = 0; i &lt; 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 42:</h4>
+                                                    Câu 42:
                                                        
-For (int i = 0; i &lt;= 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;  
+For (int i = 0; i <= 3; i++) cout << i*i << “,”;  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Kết quả đoạn lệnh sau là bao nhiêu?&nbsp;</p>
+                                                        Kết quả đoạn lệnh sau là bao nhiêu?
                                                     
                                                            
                                                         
@@ -3083,7 +3056,7 @@ For (int i = 0; i &lt;= 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           B. &nbsp;Lặp vĩnh viễn
+                                                                           B. Lặp vĩnh viễn
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3092,7 +3065,7 @@ For (int i = 0; i &lt;= 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                                           
                                                                      
                                                              
-                                                                           C. &nbsp;Lỗi biên dịch
+                                                                           C. Lỗi biên dịch
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3101,7 +3074,7 @@ For (int i = 0; i &lt;= 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           D. &nbsp;0,1,4,9,
+                                                                           D. 0,1,4,9,
                                                                
                                                                                                                                                                                         
 
@@ -3110,7 +3083,7 @@ For (int i = 0; i &lt;= 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>D</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3129,13 +3102,13 @@ For (int i = 0; i &lt;= 3; i++) cout &lt;&lt; i*i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 43:</h4>
+                                                    Câu 43:
                                                        
-For (;;) cout &lt;&lt; i*i &lt;&lt; “,”;”  
+For (;;) cout << i*i << “,”;”  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Kết quả đoạn lệnh sau là bao nhiêu?&nbsp;</p>
+                                                        Kết quả đoạn lệnh sau là bao nhiêu?
                                                     
                                                            
                                                         
@@ -3146,7 +3119,7 @@ For (;;) cout &lt;&lt; i*i &lt;&lt; “,”;”
                                                                           
                                                                    
                                                            
-                                                                           A. &nbsp;Lỗi biên dịch
+                                                                           A. Lỗi biên dịch
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3173,7 +3146,7 @@ For (;;) cout &lt;&lt; i*i &lt;&lt; “,”;”
                                                                            
                                                                      
                                                              
-                                                                           D. &nbsp;0,1,4,9,
+                                                                           D. 0,1,4,9,
                                                                
                                                                                                                                                                                         
 
@@ -3182,7 +3155,7 @@ For (;;) cout &lt;&lt; i*i &lt;&lt; “,”;”
                                                         
                                                        
                                                        
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3201,13 +3174,13 @@ For (;;) cout &lt;&lt; i*i &lt;&lt; “,”;”
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 44:</h4>
+                                                    Câu 44:
                                                        
-For (int i = 0,n = 4; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;  
+For (int i = 0,n = 4; n != i; i++,n--) cout << i << “,”;  
 
-<p>&nbsp;</p>
+
                                                         
-                                                        <p>Kết quả đoạn lệnh sau là bao nhiêu?&nbsp;</p>
+                                                        Kết quả đoạn lệnh sau là bao nhiêu?
                                                     
                                                            
                                                         
@@ -3218,7 +3191,7 @@ For (int i = 0,n = 4; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                    
                                                            
-                                                                           A. &nbsp;Lặp vĩnh viễn
+                                                                           A. Lặp vĩnh viễn
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3227,7 +3200,7 @@ For (int i = 0,n = 4; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           B. &nbsp;0,1,2,
+                                                                           B. 0,1,2,
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3236,79 +3209,7 @@ For (int i = 0,n = 4; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                      
                                                              
-                                                                           C. &nbsp;Lỗi biên dịch
-                                                               
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                     
-                                                                    
-                                                                           
-                                                                     
-                                                             
-                                                                           D. &nbsp;0,1,
-                                                               
-                                                                                                                                                                                        
-
-                                                       
-                                                        
-                                                        
-                                                       
-                                                       
-                                                                <b>D</b> là đáp án đúng 
-                                                                                                                           
-                                                      
-                                             
-                                                                                                                           
-                                                       
-                                                         
-                                                    
-                                                            
-                                                                
-                                                           
-                                                            
-                                                                
-                                                           
-                                                       
-                                                        
-                                                   
-                                                
-                                                                                           
-                                                    <h4>Câu 45:</h4>
-                                                       
-For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;  
-
-<p>&nbsp;</p>
-                                                        
-                                                        <p>Kết quả đoạn lệnh sau là bao nhiêu? For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;</p>
-                                                    
-                                                           
-                                                        
-                                                                                                                                                                                          
-                                                                  
-                                                                       
-                                                                    
-                                                                          
-                                                                   
-                                                           
-                                                                           A. &nbsp;0,1,2,
-                                                               
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                       
-                                                                    
-                                                                           
-                                                                     
-                                                             
-                                                                           B. &nbsp;Lặp vĩnh viễn
-                                                               
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                       
-                                                                    
-                                                                          
-                                                                     
-                                                             
-                                                                           C. &nbsp;Lỗi biên dịch
+                                                                           C. Lỗi biên dịch
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3326,7 +3227,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>B</b> là đáp án đúng 
+                                                                D là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3345,10 +3246,13 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 46:</h4>
+                                                    Câu 45:
+                                                       
+For (int i = 0,n = 5; n != i; i++,n--) cout << i << “,”;  
+
+
                                                         
-                                                        
-                                                        <p>Cách khai báo hàm nào sau đây là đúng?</p>
+                                                        Kết quả đoạn lệnh sau là bao nhiêu? For (int i = 0,n = 5; n != i; i++,n--) cout << i << “,”;
                                                     
                                                            
                                                         
@@ -3359,7 +3263,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                    
                                                            
-                                                                           A. &nbsp;&lt;Tên hàm&gt; { Khối lệnh }
+                                                                           A. 0,1,2,
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3368,7 +3272,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           B. &nbsp;&lt;Kiểu dữ liệu trả về&gt; &lt;Tên hàm&gt; (Tham số 1, Tham số 2,..) { Khối lệnh }
+                                                                           B. Lặp vĩnh viễn
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3377,7 +3281,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                      
                                                              
-                                                                           C. &lt;Tên hàm&gt; (Tham số 1, Tham số 2,..) { Khối lệnh }
+                                                                           C. Lỗi biên dịch
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3386,7 +3290,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           D. &lt;Kiểu dữ liệu trả về&gt; :&lt;Tên hàm&gt; (Tham số 1, Tham số 2,..) { Khối lệnh }
+                                                                           D. 0,1,
                                                                
                                                                                                                                                                                         
 
@@ -3395,7 +3299,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>B</b> là đáp án đúng 
+                                                                B là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3414,10 +3318,79 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 47:</h4>
+                                                    Câu 46:
                                                         
                                                         
-                                                        <p>Thế nào là truyền tham trị? Chọn câu trả lời đúng nhất</p>
+                                                        Cách khai báo hàm nào sau đây là đúng?
+                                                    
+                                                           
+                                                        
+                                                                                                                                                                                          
+                                                                  
+                                                                       
+                                                                    
+                                                                          
+                                                                   
+                                                           
+                                                                           A. <Tên hàm>; { Khối lệnh }
+                                                               
+                                                                                                                                                                                                                                                          
+                                                                  
+                                                                       
+                                                                    
+                                                                           
+                                                                     
+                                                             
+                                                                           B. <Kiểu dữ liệu trả về>; <Tên hàm>; (Tham số 1, Tham số 2,..) { Khối lệnh }
+                                                               
+                                                                                                                                                                                                                                                          
+                                                                  
+                                                                       
+                                                                    
+                                                                          
+                                                                     
+                                                             
+                                                                           C. <Tên hàm>; (Tham số 1, Tham số 2,..) { Khối lệnh }
+                                                               
+                                                                                                                                                                                                                                                          
+                                                                  
+                                                                     
+                                                                    
+                                                                           
+                                                                     
+                                                             
+                                                                           D. <Kiểu dữ liệu trả về>; :<Tên hàm>; (Tham số 1, Tham số 2,..) { Khối lệnh }
+                                                               
+                                                                                                                                                                                        
+
+                                                       
+                                                        
+                                                        
+                                                       
+                                                       
+                                                                B là đáp án đúng 
+                                                                                                                           
+                                                      
+                                             
+                                                                                                                           
+                                                       
+                                                         
+                                                    
+                                                            
+                                                                
+                                                           
+                                                            
+                                                                
+                                                           
+                                                       
+                                                        
+                                                   
+                                                
+                                                                                           
+                                                    Câu 47:
+                                                        
+                                                        
+                                                        Thế nào là truyền tham trị? Chọn câu trả lời đúng nhất
                                                     
                                                            
                                                        
@@ -3446,7 +3419,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                      
                                                              
-                                                                           C. &nbsp;Truyền giá trị của tham số vào biến.
+                                                                           C. Truyền giá trị của tham số vào biến.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3455,7 +3428,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           D. &nbsp;Truyền bản sao của biến vào hàm chứ không phải là bản thân biến.
+                                                                           D. Truyền bản sao của biến vào hàm chứ không phải là bản thân biến.
                                                                
                                                                                                                                                                                         
 
@@ -3464,7 +3437,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3483,10 +3456,10 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 48:</h4>
+                                                    Câu 48:
                                                         
                                                         
-                                                        <p>Thế nào là truyền tham biến? Chọn câu trả lời đúng nhất</p>
+                                                        Thế nào là truyền tham biến? Chọn câu trả lời đúng nhất
                                                     
                                                            
                                                        
@@ -3497,7 +3470,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                    
                                                            
-                                                                           A. &nbsp;Truyền giá trị của tham số vào biến.
+                                                                           A. Truyền giá trị của tham số vào biến.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3515,7 +3488,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                      
                                                              
-                                                                           C. &nbsp;Truyền địa chỉ của biến vào hàm.
+                                                                           C. Truyền địa chỉ của biến vào hàm.
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3524,7 +3497,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           D. &nbsp;Truyền bản sao của biến vào hàm chứ không phải là bản thân biến.
+                                                                           D. Truyền bản sao của biến vào hàm chứ không phải là bản thân biến.
                                                                
                                                                                                                                                                                         
 
@@ -3533,7 +3506,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3552,10 +3525,10 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 49:</h4>
+                                                    Câu 49:
                                                         
                                                         
-                                                        <p>Hàm overloaded là những hàm như thế nào?</p>
+                                                        Hàm overloaded là những hàm như thế nào?
                                                     
                                                            
                                                        
@@ -3566,7 +3539,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                    
                                                            
-                                                                           A. &nbsp;Các hàm trùng tên nhưng khác về cách khai báo tham số
+                                                                           A. Các hàm trùng tên nhưng khác về cách khai báo tham số
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3575,7 +3548,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           B. &nbsp;Các hàm có cùng kiểu dữ liệu trả về
+                                                                           B. Các hàm có cùng kiểu dữ liệu trả về
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3584,7 +3557,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                           
                                                                      
                                                              
-                                                                           C. &nbsp;Không có đáp án đúng
+                                                                           C. Không có đáp án đúng
                                                                
                                                                                                                                                                                                                                                           
                                                                   
@@ -3602,7 +3575,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>A</b> là đáp án đúng 
+                                                                A là đáp án đúng 
                                                                                                                            
                                                       
                                              
@@ -3621,10 +3594,10 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                    
                                                 
                                                                                            
-                                                    <h4>Câu 50:</h4>
+                                                    Câu 50:
                                                         
                                                         
-                                                        <p>Mảng là gì? Chọn câu trả lời đúng nhất</p>
+                                                        Mảng là gì? Chọn câu trả lời đúng nhất
                                                     
                                                            
                                                        
@@ -3662,7 +3635,7 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                                            
                                                                      
                                                              
-                                                                           D. &nbsp;Không có đáp án đúng
+                                                                           D. Không có đáp án đúng
                                                                
                                                                                                                                                                                         
 
@@ -3671,4 +3644,4 @@ For (int i = 0,n = 5; n != i; i++,n--) cout &lt;&lt; i &lt;&lt; “,”;
                                                         
                                                        
                                                        
-                                                                <b>C</b> là đáp án đúng
+                                                                C là đáp án đúng
