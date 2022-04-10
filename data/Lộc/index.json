@@ -1,0 +1,784 @@
+{
+    "ten_noi_dung": "Biến trong C++",
+    "Phan_muc": [{
+        "idx": 0,
+        "ten_muc": "Cú pháp khai báo biến"
+    }, {
+        "idx": 1,
+        "ten_muc": "Quy tắc khai báo biến "
+    }, {
+        "idx": 2,
+        "ten_muc": "Các kiểu biến trong C++"
+    }]
+} {
+    "ten_noi_dung": "Các hàm Math trong C++",
+    "Phan_muc": [{
+        "idx": 3,
+        "ten_muc": "Các hàm tìm min, max"
+    }, {
+        "idx": 4,
+        "ten_muc": "Các hàm lượng giác"
+    }, {
+        "idx": 5,
+        "ten_muc": "Hàm lũy thừa"
+    }, {
+        "idx": 6,
+        "ten_muc": "Các hàm làm tròn số"
+    }, {
+        "idx": 7,
+        "ten_muc": "Hàm giá trị tuyệt đối"
+    }]
+} {
+    "ten_noi_dung": "Các loại hàm trong C++",
+    "Phan_muc": [{
+        "idx": 8,
+        "ten_muc": "Hàm không có đối số và giá trị trả về"
+    }, {
+        "idx": 9,
+        "ten_muc": "Hàm không có đối số nhưng có trả về giá trị"
+    }, {
+        "idx": 10,
+        "ten_muc": "Hàm có đối số nhưng không trả về giá trị"
+    }, {
+        "idx": 11,
+        "ten_muc": "Hàm có đối số và có trả về giá trị"
+    }]
+} {
+    "ten_noi_dung": "Cài đặt môi trường lập trình C++",
+    "Phan_muc": [{
+        "idx": 12,
+        "ten_muc": "Các công cụ cần thiết"
+    }, {
+        "idx": 13,
+        "ten_muc": "Cài đặt môi trường lập trình C++"
+    }]
+} {
+    "ten_noi_dung": "Call by value & Call by reference trong C++",
+    "Phan_muc": [{
+        "idx": 14,
+        "ten_muc": "Phương thức call by value trong C++ "
+    }, {
+        "idx": 15,
+        "ten_muc": "Phương thức call by reference trong C++"
+    }, {
+        "idx": 16,
+        "ten_muc": "So sánh tham trị và tham chiếu"
+    }]
+} {
+    "ten_noi_dung": "Chuỗi (String) trong C/C++",
+    "Phan_muc": [{
+        "idx": 17,
+        "ten_muc": "Chuỗi theo phong cách C"
+    }, {
+        "idx": 18,
+        "ten_muc": "Lớp String trong C/C++"
+    }]
+} {
+    "ten_noi_dung": "Chương trình C++ đầu tiên",
+    "Phan_muc": [{
+        "idx": 19,
+        "ten_muc": "Chương trình đầu tiên"
+    }, {
+        "idx": 20,
+        "ten_muc": "Làm thế nào để biên dịch và chạy chương trình C++"
+    }, {
+        "idx": 21,
+        "ten_muc": "Biên dịch và chạy chương trình trên"
+    }]
+} {
+    "ten_noi_dung": "Con trỏ NULL trong C++",
+    "Phan_muc": [{
+        "idx": 22,
+        "ten_muc": "Giá trị null và con trỏ null"
+    }, {
+        "idx": 23,
+        "ten_muc": "Dereferencing một con trỏ null"
+    }, {
+        "idx": 24,
+        "ten_muc": "Null macro"
+    }, {
+        "idx": 25,
+        "ten_muc": "nullptr trong C++ 11"
+    }, {
+        "idx": 26,
+        "ten_muc": "std::nullptr_t trong C++11"
+    }]
+} {
+    "ten_noi_dung": "Con trỏ số học trong C++",
+    "Phan_muc": [{
+        "idx": 27,
+        "ten_muc": "Con trỏ số học là gì?"
+    }, {
+        "idx": 28,
+        "ten_muc": "Tăng con trỏ trong C++"
+    }, {
+        "idx": 29,
+        "ten_muc": "Giảm con trỏ trong C++"
+    }, {
+        "idx": 30,
+        "ten_muc": "So sánh con trỏ trong C++"
+    }]
+} {
+    "ten_noi_dung": "Con trỏ this trong C++",
+    "Phan_muc": [{
+        "idx": 31,
+        "ten_muc": "Con trỏ this là gì?"
+    }, {
+        "idx": 32,
+        "ten_muc": "Ví dụ con trỏ this trong C++"
+    }]
+} {
+    "ten_noi_dung": "Con trỏ tới con trỏ & truyền con trỏ tới hàm trong C++",
+    "Phan_muc": [{
+        "idx": 33,
+        "ten_muc": "Con trỏ tới con trỏ trong C++"
+    }, {
+        "idx": 34,
+        "ten_muc": "Truyền con trỏ tới hàm trong C++"
+    }]
+} {
+    "ten_noi_dung": "Con trỏ trong C++",
+    "Phan_muc": [{
+        "idx": 35,
+        "ten_muc": "Giới thiệu về con trỏ trong C++"
+    }, {
+        "idx": 36,
+        "ten_muc": "Con trỏ là gì?"
+    }, {
+        "idx": 37,
+        "ten_muc": "Cách sử dụng con trỏ trong C++"
+    }, {
+        "idx": 38,
+        "ten_muc": "Chi tiết về con trỏ trong C++"
+    }]
+} {
+    "ten_noi_dung": "Con trỏ và mảng trong C++",
+    "Phan_muc": [{
+        "idx": 39,
+        "ten_muc": "Mối quan hệ giữa con trỏ và mảng"
+    }, {
+        "idx": 40,
+        "ten_muc": "Sự khác nhau giữa con trỏ và mảng trong C++"
+    }]
+} {
+    "ten_noi_dung": "Constructor trong C++",
+    "Phan_muc": [{
+        "idx": 41,
+        "ten_muc": "Constructor trong C++ "
+    }, {
+        "idx": 42,
+        "ten_muc": "Constructor mặc định trong C++"
+    }, {
+        "idx": 43,
+        "ten_muc": "Constructor có tham số trong C++"
+    }, {
+        "idx": 44,
+        "ten_muc": "Destructor trong C++"
+    }]
+} {
+    "ten_noi_dung": "cout, cin và endl trong C++",
+    "Phan_muc": [{
+        "idx": 45,
+        "ten_muc": "Vào / ra (input / output) dữ liệu cơ bản trong C++"
+    }, {
+        "idx": 46,
+        "ten_muc": "I/O Library Header"
+    }, {
+        "idx": 47,
+        "ten_muc": "Ouput stream tiêu chuẩn (cout)"
+    }, {
+        "idx": 48,
+        "ten_muc": "Input stream tiêu chuẩn (cin)"
+    }, {
+        "idx": 49,
+        "ten_muc": "Xuống dòng tiêu chuẩn (endl)"
+    }]
+} {
+    "ten_noi_dung": "Đa luồng trong C++",
+    "Phan_muc": [{
+        "idx": 50,
+        "ten_muc": "Đa luồng (Multithread) trong C++"
+    }, {
+        "idx": 51,
+        "ten_muc": "Tạo Thread trong C++"
+    }, {
+        "idx": 52,
+        "ten_muc": "Kết thúc Thread trong C++"
+    }, {
+        "idx": 53,
+        "ten_muc": "Ví dụ đa luồng trong C++"
+    }, {
+        "idx": 54,
+        "ten_muc": "Truyền tham số tới Thread trong C++"
+    }, {
+        "idx": 55,
+        "ten_muc": "Kết hợp và Tháo gỡ các Thread trong C++"
+    }]
+} {
+    "ten_noi_dung": "Đệ quy trong C++",
+    "Phan_muc": [{
+        "idx": 56,
+        "ten_muc": "Đệ quy trong C++ là gì?"
+    }, {
+        "idx": 57,
+        "ten_muc": "Ví dụ về đệ quy trong C++"
+    }]
+} {
+    "ten_noi_dung": "Enum trong C++",
+    "Phan_muc": [{
+        "idx": 58,
+        "ten_muc": "Kiểu dữ liệu Enum là gì?"
+    }, {
+        "idx": 59,
+        "ten_muc": "Những điểm cần nhớ về Enum trong C++"
+    }, {
+        "idx": 60,
+        "ten_muc": "Ví dụ Enum trong C++"
+    }]
+} {
+    "ten_noi_dung": "Ép kiểu trong C++",
+    "Phan_muc": [{
+        "idx": 61,
+        "ten_muc": "Ép kiểu trong C++ "
+    }, {
+        "idx": 62,
+        "ten_muc": "Phân loại ép kiểu trong C++"
+    }]
+} {
+    "ten_noi_dung": "Hàm do người dùng tự định nghĩa trong C++",
+    "Phan_muc": [{
+        "idx": 63,
+        "ten_muc": "Hàm tự định nghĩa là gì?"
+    }, {
+        "idx": 64,
+        "ten_muc": "Ví dụ"
+    }, {
+        "idx": 65,
+        "ten_muc": "Nguyên mẫu (prototype) của hàm"
+    }]
+} {
+    "ten_noi_dung": "Hàm Friend trong C++",
+    "Phan_muc": [{
+        "idx": 66,
+        "ten_muc": "Khai báo hàm friend trong C++"
+    }, {
+        "idx": 67,
+        "ten_muc": "Ví dụ hàm friend trong C++"
+    }, {
+        "idx": 68,
+        "ten_muc": "Lớp Friend trong C++"
+    }]
+} {
+    "ten_noi_dung": "Hàm trong C++",
+    "Phan_muc": [{
+        "idx": 69,
+        "ten_muc": "Hàm trong C++ là gì?"
+    }, {
+        "idx": 70,
+        "ten_muc": "Lợi thế của các hàm trong C++"
+    }, {
+        "idx": 71,
+        "ten_muc": "Định nghĩa một hàm"
+    }, {
+        "idx": 72,
+        "ten_muc": "Ví dụ hàm trong C++"
+    }, {
+        "idx": 73,
+        "ten_muc": "Khai báo hàm trong C++"
+    }, {
+        "idx": 74,
+        "ten_muc": "Gọi một hàm trong C++"
+    }, {
+        "idx": 75,
+        "ten_muc": "Các đối số của hàm trong C++"
+    }]
+} {
+    "ten_noi_dung": "Hằng số trong C++",
+    "Phan_muc": [{
+        "idx": 76,
+        "ten_muc": "Danh sách hằng số trong C++"
+    }, {
+        "idx": 77,
+        "ten_muc": "Sử dụng từ khóa const trong C++"
+    }]
+} {
+    "ten_noi_dung": "Interface trong C++",
+    "Phan_muc": [{
+        "idx": 78,
+        "ten_muc": "Interface trong C++"
+    }, {
+        "idx": 79,
+        "ten_muc": "Ví dụ về Lớp trừu tượng trong C++"
+    }, {
+        "idx": 80,
+        "ten_muc": "Chiến lược thiết kế trong C++"
+    }]
+} {
+    "ten_noi_dung": "Kiểu dữ liệu trong C++",
+    "Phan_muc": [{
+        "idx": 81,
+        "ten_muc": "Kiểu dữ liệu nguyên thủy trong C++"
+    }, {
+        "idx": 82,
+        "ten_muc": "Các loại dữ liệu nguyên thủy"
+    }, {
+        "idx": 83,
+        "ten_muc": "Ví dụ"
+    }]
+} {
+    "ten_noi_dung": "Ký tự đặc biệt trong C++",
+    "Phan_muc": [{
+        "idx": 84,
+        "ten_muc": "Danh sách ký tự đặc biệt trong C++"
+    }, {
+        "idx": 85,
+        "ten_muc": "Ví dụ ký tự đặc biệt trong C++"
+    }]
+} {
+    "ten_noi_dung": "Lập trình hướng đối tượng trong C++",
+    "Phan_muc": [{
+        "idx": 86,
+        "ten_muc": "OOP (Hệ thống lập trình hướng đối tượng)"
+    }, {
+        "idx": 87,
+        "ten_muc": "Lợi thế của lập trình hướng đối tượng so với hướng thủ tục"
+    }]
+} {
+    "ten_noi_dung": "Lệnh break và continue trong C++",
+    "Phan_muc": [{
+        "idx": 88,
+        "ten_muc": "Câu lệnh break trong C++ "
+    }, {
+        "idx": 89,
+        "ten_muc": "Câu lệnh continue trong C++"
+    }]
+} {
+    "ten_noi_dung": "Lệnh goto trong C++",
+    "Phan_muc": [{
+        "idx": 90,
+        "ten_muc": "Câu lệnh goto trong C++ là gì?"
+    }, {
+        "idx": 91,
+        "ten_muc": "Cú pháp"
+    }, {
+        "idx": 92,
+        "ten_muc": "Ví dụ sử dụng lệnh goto trong C++"
+    }]
+} {
+    "ten_noi_dung": "Lớp và đối tượng trong C++",
+    "Phan_muc": [{
+        "idx": 93,
+        "ten_muc": "Đối tượng (Object) trong C++"
+    }, {
+        "idx": 94,
+        "ten_muc": "Lớp (Class) trong C++"
+    }, {
+        "idx": 95,
+        "ten_muc": "Ví dụ lớp và đối tượng trong C++"
+    }, {
+        "idx": 96,
+        "ten_muc": "Ví dụ về lớp C++: Khởi tạo và hiển thị dữ liệu thông qua phương thức"
+    }]
+} {
+    "ten_noi_dung": "Mảng 2 chiều trong C++",
+    "Phan_muc": [{
+        "idx": 97,
+        "ten_muc": "Mảng 2 chiều là gì?"
+    }, {
+        "idx": 98,
+        "ten_muc": "Khai báo mảng 2 chiều trong C++"
+    }, {
+        "idx": 99,
+        "ten_muc": "Khởi tạo mảng 2 chiều trong C++"
+    }]
+} {
+    "ten_noi_dung": "Mảng (array) trong C++",
+    "Phan_muc": [{
+        "idx": 100,
+        "ten_muc": "Mảng (array) trong C++ là gì?"
+    }, {
+        "idx": 101,
+        "ten_muc": "Lợi thế của mảng trong C++"
+    }, {
+        "idx": 102,
+        "ten_muc": "Bất lợi của mảng trong C++"
+    }, {
+        "idx": 103,
+        "ten_muc": "Khai báo mảng (array) trong C++"
+    }, {
+        "idx": 104,
+        "ten_muc": "Khởi tạo mảng (array) trong C++"
+    }, {
+        "idx": 105,
+        "ten_muc": "Ví dụ mảng trong C++"
+    }, {
+        "idx": 106,
+        "ten_muc": "Khai báo với khởi tạo mảng nặc danh trong C++"
+    }]
+} {
+    "ten_noi_dung": "Mảng con trỏ trong C++",
+    "Phan_muc": [{
+        "idx": 107,
+        "ten_muc": "Ví dụ 1"
+    }, {
+        "idx": 108,
+        "ten_muc": "Ví dụ 2"
+    }]
+} {
+    "ten_noi_dung": "Mệnh đề if-else trong C++",
+    "Phan_muc": [{
+        "idx": 109,
+        "ten_muc": "Mệnh đề if-else trong C++ là gì?"
+    }, {
+        "idx": 110,
+        "ten_muc": "Mệnh đề if trong C++"
+    }, {
+        "idx": 111,
+        "ten_muc": "Mệnh đề if-else trong C++"
+    }, {
+        "idx": 112,
+        "ten_muc": "Mệnh đề if-elseif-else trong C++"
+    }]
+} {
+    "ten_noi_dung": "Mệnh đề switch-case trong C++",
+    "Phan_muc": [{
+        "idx": 113,
+        "ten_muc": "Mệnh đề switch-case trong C++"
+    }, {
+        "idx": 114,
+        "ten_muc": "Ví dụ mệnh đề switch-case trong C++"
+    }]
+} {
+    "ten_noi_dung": "Modifier trong C/C++",
+    "Phan_muc": [{
+        "idx": 115,
+        "ten_muc": "Modifier trong C/C++"
+    }, {
+        "idx": 116,
+        "ten_muc": "Qualifier trong C/C++"
+    }]
+} {
+    "ten_noi_dung": "Namespace trong C++",
+    "Phan_muc": [{
+        "idx": 117,
+        "ten_muc": "Định nghĩa namespace"
+    }, {
+        "idx": 118,
+        "ten_muc": "Chỉ thị using"
+    }, {
+        "idx": 119,
+        "ten_muc": "Namespace không liên quan"
+    }, {
+        "idx": 120,
+        "ten_muc": "Namespace lồng nhau"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử gán trong C++",
+    "Phan_muc": [{
+        "idx": 121,
+        "ten_muc": "Nạp chồng toán tử gán trong C++"
+    }, {
+        "idx": 122,
+        "ten_muc": "Ví dụ Nạp chồng toán tử gán trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử gọi hàm () trong C++",
+    "Phan_muc": [{
+        "idx": 123,
+        "ten_muc": "Nạp chồng toán tử gọi hàm () trong C++"
+    }, {
+        "idx": 124,
+        "ten_muc": "Ví dụ Nạp chồng toán tử gọi hàm () trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử Input/Output trong C++",
+    "Phan_muc": [{
+        "idx": 125,
+        "ten_muc": "Nạp chồng toán tử Input/Output trong C++"
+    }, {
+        "idx": 126,
+        "ten_muc": "Ví dụ Nạp chồng toán tử Input/Output trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử một ngôi trong C++",
+    "Phan_muc": [{
+        "idx": 127,
+        "ten_muc": "Nạp chồng toán tử một ngôi trong C++"
+    }, {
+        "idx": 128,
+        "ten_muc": "Ví dụ nạp chồng toán tử một ngôi trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử nhị phân trong C++",
+    "Phan_muc": [{
+        "idx": 129,
+        "ten_muc": "Nạp chồng toán tử nhị phân trong C++"
+    }, {
+        "idx": 130,
+        "ten_muc": "Ví dụ nạp chồng toán tử nhị phân trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử quan hệ trong C++",
+    "Phan_muc": [{
+        "idx": 131,
+        "ten_muc": "Nạp chồng toán tử quan hệ trong C++"
+    }, {
+        "idx": 132,
+        "ten_muc": "Ví dụ Nạp chồng toán tử quan hệ trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử subscript [] trong C++",
+    "Phan_muc": [{
+        "idx": 133,
+        "ten_muc": "Nạp chồng toán tử subscript [] trong C++"
+    }, {
+        "idx": 134,
+        "ten_muc": "Ví dụ Nạp chồng toán tử subscript [] trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử truy cập thành viên lớp (->) trong C++",
+    "Phan_muc": [{
+        "idx": 135,
+        "ten_muc": "Nạp chồng toán tử truy cập thành viên lớp (->) trong C++"
+    }, {
+        "idx": 136,
+        "ten_muc": "Ví dụ Nạp chồng toán tử truy cập thành viên lớp (->) trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử và Nạp chồng hàm trong C++",
+    "Phan_muc": [{
+        "idx": 137,
+        "ten_muc": "Nạp chồng toán tử và Nạp chồng hàm trong C++"
+    }, {
+        "idx": 138,
+        "ten_muc": "Nạp chồng hàm trong C++"
+    }, {
+        "idx": 139,
+        "ten_muc": "Nạp chồng toán tử trong C++"
+    }, {
+        "idx": 140,
+        "ten_muc": "Toán tử có thể nạp chồng và không thể nạp chồng trong C++"
+    }, {
+        "idx": 141,
+        "ten_muc": "dụ về Nạp chồng toán tử trong C++"
+    }]
+} {
+    "ten_noi_dung": "Nạp chồng toán tử ++ và -- trong C++",
+    "Phan_muc": [{
+        "idx": 142,
+        "ten_muc": "Nạp chồng toán tử ++ và -- trong C++"
+    }, {
+        "idx": 143,
+        "ten_muc": "Ví dụ Nạp chồng toán tử ++ và -- trong C++"
+    }]
+} {
+    "ten_noi_dung": "Ngân hàng câu hỏi trắc nghiệm C++ có đáp án",
+    "Phan_muc": []
+} {
+    "ten_noi_dung": "Struct trong C++",
+    "Phan_muc": [{
+        "idx": 144,
+        "ten_muc": "Struct trong C++"
+    }, {
+        "idx": 145,
+        "ten_muc": "Cú pháp"
+    }, {
+        "idx": 146,
+        "ten_muc": "Làm thế nào để tạo thể hiện của struct"
+    }, {
+        "idx": 147,
+        "ten_muc": "Cách truy cập biến struct"
+    }, {
+        "idx": 148,
+        "ten_muc": "Ví dụ về cấu trúc C++: Sử dụng phương thức và Constructor"
+    }]
+} {
+    "ten_noi_dung": "Tài liệu tham khảo C++",
+    "Phan_muc": [{
+        "idx": 149,
+        "ten_muc": "Link hữu ích về C++"
+    }, {
+        "idx": 150,
+        "ten_muc": "Sách hữu ích về C++"
+    }]
+} {
+    "ten_noi_dung": "Template trong C++",
+    "Phan_muc": [{
+        "idx": 151,
+        "ten_muc": "Template trong C++ là gì?"
+    }, {
+        "idx": 152,
+        "ten_muc": "Function Template trong C++"
+    }, {
+        "idx": 153,
+        "ten_muc": "Class Template trong C++"
+    }]
+} {
+    "ten_noi_dung": "Tính đa hình trong C++",
+    "Phan_muc": [{
+        "idx": 154,
+        "ten_muc": "Tính đa hình trong C++"
+    }, {
+        "idx": 155,
+        "ten_muc": "Hàm virtual trong C++"
+    }, {
+        "idx": 156,
+        "ten_muc": "Hàm pure virtual trong C++"
+    }]
+} {
+    "ten_noi_dung": "Tính đóng gói trong C++",
+    "Phan_muc": [{
+        "idx": 157,
+        "ten_muc": "Tính đóng gói trong C++"
+    }, {
+        "idx": 158,
+        "ten_muc": "Ví dụ về tính đóng gói trong C++"
+    }, {
+        "idx": 159,
+        "ten_muc": "Chiến lược thiết kế trong C++"
+    }]
+} {
+    "ten_noi_dung": "Tính kế thừa trong C++",
+    "Phan_muc": [{
+        "idx": 160,
+        "ten_muc": "Tính kế thừa trong C++"
+    }, {
+        "idx": 161,
+        "ten_muc": "Lớp cơ sở (Base Class) và Lớp thừa kế (Derived Class) trong C++"
+    }, {
+        "idx": 162,
+        "ten_muc": "Điều khiển truy cập và Tính kế thừa trong C++"
+    }, {
+        "idx": 163,
+        "ten_muc": "Kiểu kế thừa trong C++"
+    }, {
+        "idx": 164,
+        "ten_muc": "Đa kế thừa trong C++"
+    }]
+} {
+    "ten_noi_dung": "Tính trừu tượng trong C++",
+    "Phan_muc": [{
+        "idx": 165,
+        "ten_muc": "Tính trừu tượng trong C++"
+    }, {
+        "idx": 166,
+        "ten_muc": "Nhãn truy cập (Access Label) trong C++"
+    }, {
+        "idx": 167,
+        "ten_muc": "Lợi ích của Trừu tượng hóa dữ liệu trong C++"
+    }, {
+        "idx": 168,
+        "ten_muc": "Ví dụ về Trừu tượng hóa dữ liệu trong C++"
+    }, {
+        "idx": 169,
+        "ten_muc": "Chiến lược thiết kế trong C++"
+    }]
+} {
+    "ten_noi_dung": "Toán tử trong C++",
+    "Phan_muc": [{
+        "idx": 170,
+        "ten_muc": "Toán tử số học trong C++"
+    }, {
+        "idx": 171,
+        "ten_muc": "Toán tử quan hệ trong C++"
+    }, {
+        "idx": 172,
+        "ten_muc": "Toán tử logic trong C++"
+    }, {
+        "idx": 173,
+        "ten_muc": "Toán tử bit trong C++"
+    }, {
+        "idx": 174,
+        "ten_muc": "Toán tử gán trong C++"
+    }, {
+        "idx": 175,
+        "ten_muc": "Toán tử hỗn hợp trong C++"
+    }, {
+        "idx": 176,
+        "ten_muc": "Thứ tự ưu tiên"
+    }]
+} {
+    "ten_noi_dung": "Trả về con trỏ từ hàm trong C++",
+    "Phan_muc": [{
+        "idx": 177,
+        "ten_muc": "Trả về con trỏ từ hàm trong C++"
+    }, {
+        "idx": 178,
+        "ten_muc": "Ví dụ"
+    }]
+} {
+    "ten_noi_dung": "Truyền mảng vào hàm trong C++",
+    "Phan_muc": [{
+        "idx": 179,
+        "ten_muc": "Truyền mảng tới hàm trong C++"
+    }, {
+        "idx": 180,
+        "ten_muc": "Truyền một phần tử của mảng một chiều vào hàm trong C++"
+    }, {
+        "idx": 181,
+        "ten_muc": "Truyền toàn bộ mảng một chiều vào hàm"
+    }, {
+        "idx": 182,
+        "ten_muc": "Truyền mảng đa chiều vào hàm"
+    }]
+} {
+    "ten_noi_dung": "Từ khóa static trong C++",
+    "Phan_muc": [{
+        "idx": 183,
+        "ten_muc": "Từ khóa static"
+    }, {
+        "idx": 184,
+        "ten_muc": "Lợi thế của từ khóa static trong C++"
+    }, {
+        "idx": 185,
+        "ten_muc": "Biến static trong C++"
+    }, {
+        "idx": 186,
+        "ten_muc": "Ví dụ sử dụng từ khóa static trong C++"
+    }]
+} {
+    "ten_noi_dung": "Từ khóa và comment trong C++",
+    "Phan_muc": [{
+        "idx": 187,
+        "ten_muc": "Từ khóa trong C++"
+    }, {
+        "idx": 188,
+        "ten_muc": "Comment trong C++"
+    }]
+} {
+    "ten_noi_dung": "Vòng lặp For trong C++",
+    "Phan_muc": [{
+        "idx": 189,
+        "ten_muc": "Cú pháp"
+    }, {
+        "idx": 190,
+        "ten_muc": "Ví dụ vòng lặp for trong C++"
+    }]
+} {
+    "ten_noi_dung": "Vòng lặp while, do while trong C++",
+    "Phan_muc": [{
+        "idx": 191,
+        "ten_muc": "Vòng lặp while trong C++"
+    }, {
+        "idx": 192,
+        "ten_muc": "Vòng lặp do while"
+    }]
+} {
+    "ten_noi_dung": "Xử lý ngoại lệ trong C++",
+    "Phan_muc": [{
+        "idx": 193,
+        "ten_muc": "Xử lý ngoại lệ (Exception Handling) trong C++"
+    }, {
+        "idx": 194,
+        "ten_muc": "Ném (throw) Exception trong C++"
+    }, {
+        "idx": 195,
+        "ten_muc": "Bắt (catch) Exception trong C++"
+    }, {
+        "idx": 196,
+        "ten_muc": "Standard Exception trong C++"
+    }, {
+        "idx": 197,
+        "ten_muc": "Định nghĩa Exception mới trong C++"
+    }]
+}
