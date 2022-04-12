@@ -1,0 +1,919 @@
+Câu 1:
+void main()
+{
+int i = 5, k;
+if (i == 0)
+goto label;
+label: printf("%d", i);
+printf("Hey");
+getch();
+}
+Output của chương trình là gì?
+A. Hey
+B. 5
+C. 5Hey
+D. Complie error
+C là đáp án đúng
+Lệnh goto label không được thực hiện, nhưng lệnh label: printf("%d", i); vẫn được thực hiện.
+Câu 2:
+void main()
+{
+printf("%d ", 1);
+goto l1;
+printf("%d ", 2);
+l1:goto l2;
+printf("%d ",);
+l2:printf("%d ", 4);
+getch();
+}
+Output của chương trình là gì?
+A. 1 4
+B. 1 2 4
+C. Syntax error
+D. Syntax error
+A là đáp án đúng
+Câu:
+#include <conio.h>
+#include <stdio.h>
+void foo();
+int main()
+{
+printf("%d ", 1);
+goto l1;
+printf("%d ", 2);
+}
+void foo()
+{
+l1: printf("3 ");
+}
+Output của chương trình là gì?
+A. Complie error
+B.
+C. 1
+D. 1
+A là đáp án đúng
+Lệnh goto chỉ có thể nhảy tới label trong cùng 1 hàm. Chương trình sẽ báo lỗi label l1 chưa được khai báo.
+Câu 4:
+#include <conio.h>
+#include <stdio.h>
+int main()
+{
+int i = 0, j = 0;
+while (i < 2)
+{
+l1: i++;
+while (j <)
+{
+printf("loop\n");
+goto l1;
+}
+}
+getch();
+}
+Output của chương trình là gì?
+A. loop loop loop
+B. Vòng lặp vô hạn
+C. Complie error
+C là đáp án đúng
+Label của lệnh goto không được đặt trong biểu thức điều kiện của vòng lặp.
+Câu 5:
+void main()
+{
+int a = 15, b = 10, c = 5;
+if(a > b > c)
+printf("True");
+else
+printf("False");
+getch();
+}
+Output của chương trình là gì?
+A. True
+B. False
+C. Complier Error
+D. Run time error
+B là đáp án đúng
+Biểu thức a > b > c sẽ được thực hiện từ trái sang phải. a > b trả về giá trị 1, 1 > c (c=5) trả về giá trị là 0. Do vậy, lệnh printf("False"); sẽ được thực hiện.
+Câu 6:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int i = 0;
+switch (i)
+{
+case '0': printf("A");
+break;
+case '1': printf("B");
+break;
+defa: printf("ABC");
+}
+getch();
+}
+Output của chương trình là gì?
+A. A
+B. B
+C. ABC
+C là đáp án đúng
+Trong lệnh switch(&lt;biểu thức điều kiện>), biểu thức điều kiện phải là số nguyên, giá trị của kí tự '0'
+trong bảng mã ASCII là 48, của kí tự '1' là 49.
+Do vậy, chương trình sẽ nhảy vào case defa.
+Câu 7:
+#include <stdio.h>
+#include "conio.h"
+void main()
+{
+int i =;
+switch (i)
+{
+case 0+1: printf("A");
+break;
+case 1+2: printf("B");
+break;
+defa: printf("ABC");
+}
+getch();
+}
+Output của chương trình là gì?
+A. A
+B. B
+C. ABC
+B là đáp án đúng
+Câu 8:
+#include <stdio.h>
+#include <conio.h>
+#define A 0
+#define B 1
+int main()
+{
+int i =;
+switch (i  & 1)
+{
+case A: printf("FALSE");
+break;
+case B: printf("TRUE");
+break;
+defa: printf("Defa");
+}
+getch();
+}
+Output của chương trình là gì?
+A. FALSE
+B. TRUE
+C. Defa
+B là đáp án đúng
+i & 1 = 101 & 1 = 1.
+Câu 9:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int i;
+if (printf("))
+i =;
+else
+i = 5;
+printf("%d", i);
+getch();
+}
+Output của chương trình là gì?
+A.
+B. 5
+C. 03
+D. 05
+C là đáp án đúng
+Hàm printf() trả về số lượng kí tự in ra màn hình. printf(") trả về giá trị 1.
+Câu 10:
+#include&lt;stdio.h>
+#include <conio.h>
+int main()
+{
+int a = 5;
+switch(a)
+{
+defa:
+a = 4;
+case 6:
+a--;
+case 5:
+a = a + 1;
+case 1:
+a = a - 1;
+}
+printf("%d \n", a);
+getch();
+}
+Output của chương trình là gì?
+A.
+B. 4
+C. 5
+D. 6
+C là đáp án đúng
+Chương trình sẽ nhảy vào case 5 và thực hiện lệnh a = a+1 = 6. Nhưng vì không có lệnh break nên a = a - 1 = 5 sẽ
+được thực hiện.
+Câu 11:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int x =;
+if (x == 2); x = 0;
+if (x ==) x++;
+else x += 2;
+printf("x = %d", x);
+getch();
+}
+Output của chương trình là gì?
+A. x = 2
+B. x = 6
+C. x = 0
+A là đáp án đúng
+x =, x = 0, x += 2 được thực hiện.
+Câu 12:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int check = 20, arr[] = {10, 20,0};
+switch (check)
+{
+case arr[0]: printf("A ");
+case arr[1]: printf("B");
+case arr[2]: printf("C");
+}
+getch();
+}
+Output của chương trình là gì?
+A. ABC
+B. BC
+C. B
+D. Complier Error
+D là đáp án đúng
+Case <biểu thức>, biểu thức phải là hằng số nguyên. arr[0], arr[1], arr[2] không phải là hằng số nguyên.
+Câu 13:
+void main()
+{
+if ((1 || 0)  & & (0 || 1))
+{
+printf("ABC");
+}
+else
+{
+printf("DEF");
+}
+getch();
+}
+Output của chương trình là gì?
+A. ABC
+B. DEF
+C. Syntax error
+A là đáp án đúng
+Biểu thức logic ((1 || 0)  & & (0 || 1)) = (1  & & 1) = 1.
+Câu 14:
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main()
+{
+char str1[] = "vncoding";
+char str2[] = "vncoding";
+if (strcmp(str1, str2))
+printf("Equal");
+else
+printf("Unequal");
+getch();
+}
+Output của chương trình là gì?
+A. Equal
+B. Unequal
+C. Không xuất gì cả
+B là đáp án đúng
+Câu 15:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int i;
+i = 10;
+if(i == 20 ||0)
+printf("True");
+else
+printf("False");
+getch();
+}
+Output của chương trình là gì?
+A. True
+B. False
+C. Complier error
+A là đáp án đúng
+Câu 16:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+if(1,0)
+printf("True");
+else
+printf("False");
+getch();
+}
+Output của chương trình là gì?
+A. True
+B. False
+C. Complier error
+B là đáp án đúng
+Câu 17:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int i, j, *ptr, *ptr1;
+i = 10;
+j = 10;
+ptr =  &i;
+ptr1 =  &j;
+if(ptr == ptr1)
+printf("True");
+else
+printf("False");
+getch();
+}
+Output của chương trình là gì?
+A. True
+B. False
+'16')"
+C. Complier error
+B là đáp án đúng
+Câu 18:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int i;
+i = 2;
+DES:
+printf("%d", i);
+i = i + 2;
+if(i <= 20)
+goto DES;
+Output của chương trình là gì?
+A. 2468101214161820
+B. 468101214161820
+C. Không xuất gì cả
+A là đáp án đúng
+Câu 19:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int i;
+i = 0;
+if(i = 15, 10, 5)
+printf("C/C++ %d", i);
+else
+printf("Java %d", i);
+getch();
+}
+Output của chương trình là gì?
+A. C/C++ 15
+B. Java 15
+C. Java 5
+D. Complier error
+A là đáp án đúng
+Câu 20:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int a = 80;
+if(a++ > 80)
+printf("C/C++ %d", a);
+else
+printf("Java %d", a);
+getch();
+}
+Output của chương trình là gì?
+A. C/C++ 80
+B. C/C++ 81
+C. Java 80
+D. Java 81
+B là đáp án đúng
+Câu 21:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int a;
+a = 1;
+while(a <= 1)
+if(a%2)
+printf("%d ", a++);
+else
+printf("%d ", ++a);
+printf("%d ", a+10);
+getch();
+}
+Output của chương trình là gì?
+A. 12
+B. 2 12
+C. 2 11
+A là đáp án đúng
+Câu 22:
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+#include <stdlib.h>
+void myfunc(char** param)
+{
+++param;
+}
+void main()
+{
+char* string = (char*)malloc(64);
+strcpy(string, "hello_World");
+myfunc( &string);
+myfunc( &string);
+printf("%s\n", string);
+getch();
+}
+Output của chương trình là gì?
+A. hello_World
+B. ello_World
+C. llo_World
+D. lo_World
+A là đáp án đúng
+Biến string sẽ chứa địa chỉ của chuỗi.  &string là địa chỉ của biến con trỏ string (xem hình vẽ).
+Khi truyền  &string cho hàm myfunc(), thì param =  &string (tức là con trỏ 2 chiều param trỏ tới địa chỉ
+của biến string).
+Trong hàm myfunc(), phép toán ++param làm thay đổi vùng nhớ mà param trỏ tới mà không làm thay đổi địa chỉ mà
+biến string trỏ tới.
+Câu 23:
+void myfunc(char** param)
+{
+++*param;
+}
+void main()
+{
+char* string = (char*)malloc(64);
+strcpy(string, "hello_World");
+myfunc( &string);
+myfunc( &string);
+printf("%s\n", string);
+getch();
+}
+Output của chương trình là gì?
+A. hello_World
+B. ello_World
+C. llo_World
+D. lo_World
+C là đáp án đúng
+biến string sẽ chứa địa chỉ của chuỗi.  &string là địa chỉ của biến con trỏ string (xem hình vẽ).
+Khi truyền  &string cho hàm myfunc(), thì param =  &string (tức là con trỏ 2 chiều param trỏ tới địa chỉ
+của biến string).
+Trong hàm myfunc(), phép toán ++*param = ++string làm thay đổi vùng nhớ mà string trỏ tới.
+Câu 24:
+void main()
+{
+int ints[] = { 0, 1, 2, };
+int* i1 = ints + 1;
+int a = ++*i1;
+int b = a + *i1;
+printf("%d\n", b);
+getch();
+}
+Output của chương trình là gì?
+A.
+B. 4
+C. 5
+D. 6
+B là đáp án đúng
+i1 = ints+1, i1 sẽ trỏ tới phần tử thứ 2 của mảng ints[] và *i1 = 1.
+Lệnh ++*i1 = ++(*i)1, lệnh này sẽ thay đổi giá trị tại vùng nhớ mà i1 trỏ tới (sau khi lệnh này được thực
+hiện,*i1 = 2 hay nói cách khác ints[] = {0,2,2,3}. Xem hình vẽ:
+Câu 25:
+void main()
+{
+int ints[] = { 0, 5, 10, 15 };
+int* i2 = ints + 2;
+int a = *i2++; // a = *(i2++);
+printf("%d#%d\n", a, *i2);
+getch();
+}
+Output của chương trình là gì?
+A. 10#15
+B. 10#10
+C. 15#15
+D. 11#15
+A là đáp án đúng
+i2++ được thực hiện nhưng giá trị của i2 sẽ được thay đổi sau khi sử dụng. \
+Sau khi thực hiện a = *(i2++), a = *i2 = 10, i2 = i2 + 1.
+Câu 26:
+void main()
+{
+int ints[] = { 0, 1, 2, };
+int* i1 = ints + 1;
+int* i2 = ints + 2;
+int a = ++*i1 + *i2++;
+int b = *++i1 + *i2--;
+printf("%d#%d", a, b);
+getch();
+}
+What is output of following code?
+A. 4#4
+B. 4#5
+C. 5#6
+D. 4#6
+B là đáp án đúng
+– Lệnh int a = ++*i1 + *i2++;, toán tử * và ++ cùng thứ tự ưu tiên nhưng có thứ tự kết hợp từ phải sang trái.
+i2++ sẽ được thực hiện trước nhưng i2 sẽ trỏ tới phần tử tiếp theo sau khi i2 được sử dụng( nghĩa là *(i2++) =
+2). ++*i1 = ++(i*) = ints[1] = 2. a = 2 + 2 = 4. Sau lệnh này, i2 trỏ tới phần tử cuối cùng của mảng ints[],i1
+trỏ tới phần tử thứ 2 của mảng ints[], giá trị ints[1] bị thay đổi (=2). – Lệnh int b = *++i1 + *i2–;,
+toán tử * và — cùng thứ tự ưu tiên nhưng có thứ tự kết hợp từ phải sang trái. i2– được thực hiện trước nhưng i2
+sẽ trỏ tới phần tử thứ của mảng sau khi i2 được sử dụng( nghĩa là *(i2–) =). *++i1 = *(++i1) = ints[2] = 2. b =
+2 + = 5.
+Câu 27:
+void main()
+{
+int i = 400;
+int *ptr =  &i;
+*++ptr = 2;
+printf("%d %d", i, *ptr);
+getch();
+}
+What is output of following code?
+A. 400 2
+B. 400 400
+C. 400 401
+D. Complier error
+A là đáp án đúng
+Lệnh *++ptr = 2&lt;=> *(++ptr) = 2, ptr sẽ trỏ đến vùng nhớ khác và gán giá trị cho vùng nhớ đó = 2.
+Câu 28:
+void main()
+{
+char str[] = {"pvpit"};
+char *s1 = str;
+s1++;
+printf("%c", *s1);
+getch();
+}
+Output của chương trình là gì?
+A. pvpit
+B. vpit
+C. v
+D. Kết quả khác
+C là đáp án đúng
+s1 = str, s1 trỏ tới phần tử đầu tiên của chuỗi “pvpit”. s1++, s1 trỏ tới phần tử thứ 2 của chuỗi “pvpit”. *s1 =
+‘v’.
+Câu 29:
+void main()
+{
+char *s = "\12345s\n";
+printf("%d", strlen(s));
+printf("\n%s", s);
+getch();
+}
+Output của chương trình là gì?
+A. 5
+B. 7
+C. 9
+D. 10
+A là đáp án đúng
+Câu 30:
+int main(int argc, char** argv)
+{
+const char* foo = "wow"; // line 1
+foo = "top"; // line 2
+foo[0] = 1; // line 3
+return 0;
+}
+Đối với đoạn mã dưới đây, dòng nào sẽ được trình biên dịch báo cáo là lỗi?
+A. 1
+B. 2
+C. 3
+D. Tất cả đều sai
+C là đáp án đúng
+Biến foo là biến const, trình biên dịch không cho phép thay đổi giá trị của biến foo.
+Câu 31:
+void main()
+{
+int x = 5,y = 6;
+int* const p =  &x;
+p =  &y;
+printf("%d", (*p));
+getch();
+}
+Output của chương trình là gì?
+A. Complier error
+B. 6
+C. 5
+D. Kết quả khác
+A là đáp án đúng
+p là hằng con trỏ (constant pointer). Khi khai báo hằng con trỏ, ta cần khởi tạo luôn cho hằng con trỏ (Nếu không
+khởi tạo, chương trình biên dịch (complier) gây ra lỗi).
+Trình biên dịch sẽ không cho phép thay đổi vùng nhớ mà con trỏ p trỏ tới. p =  &y → gây ra lỗi.
+Câu 32:
+void main()
+{
+int x = 5, y = 8;
+const int* p;
+p =  &x;
+p =  &y;
+x++;
+printf("%d", *p);
+getch();
+}
+Output của chương trình là gì?
+A. 5
+B. 6
+C. 8
+D. Complier Error
+C là đáp án đúng
+p là con trỏ tới hằng số (pointer to constant), nói cách khác ta không thể dùng p để thay đổi giá trị của vùng
+nhớ mà p trỏ đến.
+Chú ý: p có thể trỏ tới vùng nhớ khác.
+Câu 33:
+void main()
+{
+int x = 5;
+const int* p;
+p =  &x;
+x++;
+*p = 4;
+printf("%d", *p);
+getch();
+}
+Output của chương trình là gì?
+A. 4
+B. 5
+C. 6
+D. Complier Error
+D là đáp án đúng
+p là con trỏ tới hằng số (pointer to constant), nói cách khác ta không thể dùng p để thay đổi giá trị của vùng
+nhớ mà p trỏ đến.
+Nhưng ta có thể thay đổi giá trị của vùng nhớ đó bằng chính biến đó (x++ là OK). *p = 4 –> gây lỗi.
+Câu 34:
+#include <stdio.h>
+int main()
+{
+int a =20;
+char *ptr;
+ptr = (char*) &a;
+printf("%d ", *ptr);
+return 0;
+}
+Output của chương trình là gì?
+A.20
+B. 64
+C. Complier Error
+B là đáp án đúng
+Câu 35:
+#include <stdio.h>
+int main()
+{
+int i =;
+int *j;
+int **k;
+j =  &i;
+k =  &j;
+printf("%u , %u , %d ", k, *k, **k);
+return 0;
+}
+Output của chương trình là gì?
+A. Địa chỉ của i, địa chỉ của j
+B. Complier Error
+C. , ,
+A là đáp án đúng
+k =  &j <=> *k = * &j <=> *k = j <=> **k = *j.
+Câu 36:
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+char *ptr1 = NULL;
+char *ptr2 = 0;
+printf("\n%d", ptr2);
+strcpy(ptr1, "c");
+strcpy(ptr2, "questions");
+printf("\n%s %s", ptr1, ptr2);
+getch();
+}
+Chương trình sẽ báo lỗi ở dòng nào?
+A. printf("\n%d", ptr2);
+B. strcpy(ptr1, "c");
+C. strcpy(ptr2, "questions");
+D. printf("\n%s %s", ptr1, ptr2);
+B là đáp án đúng
+Chương trình biên dịch (Complier) báo lỗi tại dòng strcpy(ptr1," c");. Vì biến ptr1 chưa được cấp phát.
+Câu 37:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int a = 10;
+void *p =  &a;
+int *ptr = p;
+printf("%u\n", *ptr);
+getch();
+}
+Chương trình sẽ báo lỗi ở dòng nào?
+A. int a = 10;
+B. void *p =  &a;
+C. int *ptr = p;
+D. printf("%u\n", *ptr);
+C là đáp án đúng
+Lỗi tại dòng int *ptr = p;
+Câu 38:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int a = 5, b = 10, c;
+int *p =  &a, *q =  &b;
+c = p - q;
+printf("%d" , c);
+getch();
+}
+Output của chương trình là gì?
+A.
+B. 4
+C. 5
+D. 6
+A là đáp án đúng
+Câu 39:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int i = 5, j;
+int *p , *q;
+p =  &i;
+q =  &j;
+j = 5;
+printf("%d %d", *p, *q);
+getch();
+}
+Output của chương trình là gì?
+A. 5 5
+B. Complier Error
+C. 5 giá trị rác
+A là đáp án đúng
+Câu 40:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int i = 5;
+int *p;
+p =  &i;
+printf(" %u %u", * &p ,  &*p);
+getch();
+}
+Output của chương trình là gì?
+A. Địa chỉ của i
+B. Giá trị rác
+C. Complier Error
+A là đáp án đúng
+* &p =  &*p = p =  &i
+Câu 41:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int array[2][2][3]={0, 1, 2,, 4, 5, 6, 7, 8, 9, 10, 11};
+printf("%d", array[1][0][2]);
+getch();
+}
+Output của chương trình là gì?
+A. 6
+B. 7
+C. 8
+D. 9
+C là đáp án đúng
+Câu 42:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char arr[8]={'V''I''E''T''N''A''M'};
+char *p;
+p=(char *)(arr+2)[2];
+printf("%c", p);
+getch();
+}
+Output của chương trình là gì?
+A. I
+B. E
+C. M
+D. N
+D là đáp án đúng
+Câu 43:
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char ch[]={'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+int *p = (int*)ch;
+p++;
+printf("%x", *p);
+getch();
+}
+Output của chương trình là gì?
+A.7363534
+B.4353637
+C. 45673333
+A là đáp án đúng
+Câu 44:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int i = 11;
+int const * p =  &i;
+p++;
+printf("%d", *p);
+getch();
+}
+Output của chương trình là gì?
+A. 11
+B. 12
+C. Giá trị rác
+D. Complier error
+C là đáp án đúng
+Câu 45:
+Câu nào sau đây đúng về mảng?
+1. Mảng int num[26]; có thể lưu trữ 26 phần tử
+2. Biểu thức num[1] chỉ định phần tử đầu tiên trong mảng
+3. Cần khởi tạo mảng tại thời điểm khai báo.
+4. Khai báo num[SIZE] hợp lệ nếu SIZE là một macro.
+A. 1,4
+B.
+C. 1,2
+D. 1
+A là đáp án đúng
+Câu 46:
+Hàm thư viện được sử dụng để tìm lần xuất hiện cuối cùng của một ký tự trong một chuỗi là
+A. strnstr()
+B. strrchr()
+C. laststr()
+D. strstr()
+B là đáp án đúng
+Câu 47:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int a[3][4] = { 1, 2,, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+printf("%u, %u, %u\n", a[0]+1, *(a[0]+1), *(*(a+0)+1));
+getch();
+}
+Output của chương trình là gì? (giả sử rằng mảng bắt đầu ở vị trí 1002 và kích thước của kiểu integer là 4 byte)
+A. 1006, 2, 2
+B. 1006, 4, 4
+C. 1002, 5, 5
+D. Error
+A là đáp án đúng
+Câu 48:
+int (*ptr)[10];
+Khai báo sau có nghĩa là gì?
+A. ptr là mảng con trỏ có 10 số nguyên
+B. ptr là một con trỏ tới một mảng 10 số nguyên
+C. ptr là một mảng gồm 10 số nguyên
+D. ptr là một con trỏ tới mảng
+A là đáp án đúng
+Câu 49:
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str[] = "LAPTRINHC++\0\.NET\;
+printf("%s\n", str);
+getch();
+}
+Output của chương trình là gì?
+A. LAPTRINHC++
+B. LAPTRINHC++\0\.NET\0
+C. LAPTRINHC++\0\.NET
+A là đáp án đúng
+Câu 50:
+#include <stdio.h>
+#include <conio.h>
+void swap(char *, char *);
+int main()
+{
+char *pstr[2] = {"LAPTRINHC++", ".NET"};
+swap(pstr[0], pstr[1]);
+printf("%s%s", pstr[0], pstr[1]);
+getch();
+}
+void swap(char *, char * )
+{
+char *t;
+t=;
+= ;
+=t;
+}
+Output của chương trình là gì?
+A. LAPTRINHC++.NET
+B. .NETLAPTRINHC++
+C. Address of pstr[0] Address of pstr[1]
+A là đáp án đúng
