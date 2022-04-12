@@ -1,629 +1,114 @@
-    Câu 1:
 Đâu là hàm dùng để so sánh sự giống nhau của 2 chuỗi?
-
-
-
-
-
-
-
-
-
-    A. compare();
-
-
-
-
-
-
-
-
-    B. stringcompare();
-
-
-
-
-
-
-
-
-    C. cmp();
-
-
-
-
-
-
-
-
-    D. strcmp();
-
-
-
-
-
-
-
-
-    D là đáp án đúng
-
-
-
-
-
-
-
-
-    Câu 2:
-
-
-    Đâu là lệnh thêm một chuỗi vào cuối chuỗi khác?
-
-
-
-
-
-
-
-
-
-
-    A. append();
-
-
-
-
-
-
-
-
-    B. stringadd();
-
-
-
-
-
-
-
-
-    C. strcat();
-
-
-
-
-
-
-
-
-    D. stradd();
-
-
-
-
-
-
-
-
-    C là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 3:
-
-    Hàm printf( ) được khai báo ở thư viện nào?
-
-
-
-
-
-
-
-
-    A. stdio.h
-
-
-
-
-
-
-
-
-    B. conio.h
-
-
-
-
-
-
-
-
-    C. stdlib.h
-
-
-
-
-
-
-
-
-    D. ouput.h
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 4:
-
-        
-    Lệnh nào dùng để đọc giá trị từ console?
-
-
-
-
-
-
-
-
-    A. cin 
-
-
-
-
-
-
-    B. cout
-
-
-
-
-
-
-
-    C. getch( )
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 5:
-
-
-
-    Đâu không phải là toán tử quan hệ?
-
-
-
-
-
-    A. +
-
-
-
-
-    B. !=
-
-
-
-    C. ==
-
-
-
-
-    D. Khôngne above
-    D là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 6:
-
-    Trong chương trình C++, dòng lệnh nào được thực hiện đầu tiên?
-
-
-
-
-    A. Lệnh đầu tiên trong hàm main()
-
-
-
-
-    B. Lệnh đầu tiên của chương trình
-
-
-
-    C. Lệnh đầu tiên trong khối comment /* */
-
-
-
-
-    D. Câu lệnh đầu tiên của hàm kết thúc
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 7:
-
+A. compare();
+B. stringcompare();
+C. cmp();
+D. strcmp();
+D. strcmp();
+6252a66141a9bed830e0418a
+@
+Đâu là lệnh thêm một chuỗi vào cuối chuỗi khác?
+A. append();
+B. stringadd();
+C. strcat();
+D. stradd();
+C. strcat();
+6252a66141a9bed830e0418a
+@
+Hàm printf( ) được khai báo ở thư viện nào?
+A. stdio.h
+B. conio.h
+C. stdlib.h
+D. ouput.h
+A. stdio.h
+62551233f214278e765adeed
+@
+Lệnh nào dùng để đọc giá trị từ console?
+A. cin 
+B. cout
+C. getch( )
+D. printf()
+A. cin 
+6252a66341a9bed830e041a9
+@
+Đâu không phải là toán tử quan hệ?
+A. +
+B. !=
+C. ==
+D. >
+A. +
+6252a66e41a9bed830e04224
+@
+Trong chương trình C++, dòng lệnh nào được thực hiện đầu tiên?
+A. Lệnh đầu tiên trong hàm main()
+B. Lệnh đầu tiên của chương trình
+C. Lệnh đầu tiên trong khối comment /* */
+D. Câu lệnh đầu tiên của hàm kết thúc
+A. Lệnh đầu tiên trong hàm main()
+6252a66541a9bed830e041be
+@
 Tại sao các prototype lại hữu ích?
-
-
-     A. Bởi vì chúng nói với trình biên dịch rằng một hàm được khai báo sau
-
-
-
-     B. Vì chúng làm cho chương trình có thể chạy được
-
-
-
-     C. Vì chúng cho phép người lập trình xem nhanh danh sách các hàm trong chương trình cùng với đối số cho mỗi
-     hàm số.
-
-    D. Tất cả những điều trên
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-        Function phototype chính là việc khai báo hàm. Nếu việc gọi hàm trước khi hàm được khai báo. Trình biên dịch
-        thông báo lỗi.
-
-
-
-
-
-
-    Câu 8:
-
-
-    Which of the following statements should be Sử dụngd to obtain a remainder after dividing 3.14 by 2.1?
-        
+A. Bởi vì chúng nói với trình biên dịch rằng một hàm được khai báo sau
+B. Vì chúng làm cho chương trình có thể chạy được
+C. Vì chúng cho phép người lập trình xem nhanh danh sách các hàm trong chương trình cùng với đối số cho mỗi hàm số.
+D. Tất cả điều đúng
+A. Bởi vì chúng nói với trình biên dịch rằng một hàm được khai báo sau
+6252a66541a9bed830e041ba
+@
 Câu lệnh nào sau đây được sử dụng để nhận được phần dư sau khi chia 3,14 cho 2,1?
-
-
-
-
-
-
-    A. rem = 3.14%2.1;
-
-
-
-
-
-    B. rem = mod(3.14, 2.1);
-
-
-
-
-    C. rem = div(3.14, 2.1);
-
-
-
-
-
-
-    D. Số dư không thể được chứa trong phép chia dấu phẩy động.
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-        Toán tử % lấy phần dư của phép chia 2 số nguyên. Hàm mod() lấy phần dư của phép chia 2 số thập phân. Hàm div() lấy phần nguyên của phép chia 2 số thập phân.
-
-
-
-
-
-
-    Câu 9:
-    1.
-
-
+A. rem = 3.14%2.
+B. rem = 3.14%2.1;
+C. rem = 3.14/2.1;
+D. Số dư không thể được chứa trong phép chia dấu phẩy động.
+B. rem = 3.14%2.1;
+6252a66e41a9bed830e04223
+@
+1.
     struct book{
         char name[10];
         float price;
         int page; 
     };
-
-    2.
-
-
-    long int l = 2.3;
-
-    3.
-
-
-    enum day{Monday, Tuesday, Wednesday};
-
-    
-
-    Đâu không phải là kiểu dữ liệu do người dùng xác định?
-
-
-
-
-
-   
-
-
-
-
-    A. 1
-
-
-
-
-
-
-
-
-    B. 2
-
-
-
-
-
-
-
-
-    C. 3
-
-
-
-
-
-
-   
-
-    D. 1, 2, 3
-
-
-
-
-
-
-   
-
-    B là đáp án đúng
-
-
-
-
-
-
-
-
-
-    
-        Sử dụngr define data type là kiểu dữ liệu (struct, class, enum,..) do người dùng tự định nghĩa từ các kiểu dữ liệu
-        cơ bản
-
-
-
-
-
-
-    Câu 10:
-
-    1. extern int x;
-    2. float func(float x) { … }
-    3. double pow(double, double);
-
-    
-
+2. long int l = 2.3;
+3. enum day{Monday, Tuesday, Wednesday};
+@
+Đâu không phải là kiểu dữ liệu do người dùng xác định?
+A. 1
+B. 2
+C. 3
+D. 1, 2, 3
+B. 2
+6252a66441a9bed830e041b3;6252a66c41a9bed830e04209
+@
+1. extern int x;
+2. float func(float x) { … }
+3. double pow(double, double);
     Xác định đâu là khai báo?
-        
-
-
-
-
-
-    
-  
-
-  
-  
-    A. 1
-
-
-
-  
-  
-
-  
-  
-    B. 2
-
-
-
-  
-  
-
-  
-  
-    C. 3
-
-
-
-  
-  
-
-  
-  
-    D. 1 and 3
-
-
-
-
-
-
-  
-
-    D là đáp án đúng
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 11:
-
-    extern int i;
-
-    
-
-    Câu lệnh trên là khai báo hay định nghĩa?
-
-
-
-
-
-    A. Khai Báo
-
-
-    B. Định nghĩa
-
-
-    C. A & B
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-    Câu 12:
-
-    extern int fun( ) ;
-    int fun( );
-
-    
-
-    Is there any difference between following declarations?
+A. 1
+B. 2
+C. 3
+D. 1 và 3
+D. 1 và 3
+6252a65f41a9bed830e04179
+@
+extern int i;
+Câu lệnh trên là khai báo hay định nghĩa?
+A. Khai Báo
+B. Định nghĩa
+C. A & B
+D. Cả A và B đều sai
+A. Khai Báo
+6252a65f41a9bed830e0417b
+@
+extern int fun( ) ;
+int fun( );
 Có sự khác biệt nào giữa các khai báo sau đây?
-
-
-
-
-
-    A. Cả hai đều giống hệt nhau
-
-
-
-    B. Không có sự khác biệt, ngoại trừ extern int fun (); có thể nằm trong một tệp khác
-
-
-
-    C. int fun( ); được ghi đè bằng extern int fun( );
-
-
-
-    D. Tất cả đều sai
-
-
-    B là đáp án đúng
-
-    
-        Khi bạn cần gọi hàm từ file .c vào file .cpp, bạn cần phải extern function
-
-
-
-
-
-
-    Câu 13:
-
+A. Cả hai đều giống hệt nhau
+B. Không có sự khác biệt, ngoại trừ extern int fun (); có thể nằm trong một tệp khác
+C. int fun( ); được ghi đè bằng extern int fun( );
+D. Tất cả đều sai
+B. Không có sự khác biệt, ngoại trừ extern int fun (); có thể nằm trong một tệp khác
+6252a65f41a9bed830e0417b
+@
     #include <stdio.h>
     void main()
     {
@@ -631,803 +116,185 @@ Có sự khác biệt nào giữa các khai báo sau đây?
     printf(\n a = %d, a);
     }
     int a = 20;
-
-    
-
    Trong chương trình sau, biến a được định nghĩa ở đâu và được khai báo ở đâu?
-
-
-
-
-
-
-    A. Extern int a là khai báo, int a = 20 là định nghĩa
-
-
-
-
-    B. Int a = 20 là khai báo, extern int a là định nghĩa
-
-
-
-
-
-    C. Int a = 20 là định nghĩa, a không được định nghĩa
-
-
-
-
-
-    D. a được khai báo, a không được định nghĩa
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 14:
-
-
-    Các kiểu liên kết file gồm:
-
-
-
-
-
-    A. Trong và ngoài
-
-
-
-
-    B. Bên ngoài, Bên trong và Không có
-
-
-
-    C.  Bên ngoài và Không có
-
-
-
-
-    D. Nội bộ
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 15:
-
-
-   Ký hiệu đặc biệt nào sau đây được phép sử dụng trong một tên biến?
-
-
-
-    A. * (asterisk)
-
-
-
-
-    B. | (pipeline)
-
-
-
-
-    C. – (hyphen)
-
-
-
-
-    D. _ (underscore)
-
-
-
-
-
-
-
-
-    D là đáp án đúng
-
-
-
-
-
-    Câu 16:
-
-
-    Theo mặc định, một số thực được coi là
-
-
-    A. float
-
-
-
-
-    B. double
-
-
-
-    C. long double
-
-
-
-    D. far double
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-
-
-
-    Câu 17:
-
-
-    Bạn sẽ làm tròn giá trị từ 1,66 thành 2,0 như thế nào?
-
-
-    A. ceil(1.66)
-
-
-
-    B. floor(1.66)
-
-
-
-
-    C. roundup(1.66)
-
-
-
-    D. roundto(1.66)
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
+A. Extern int a là khai báo, int a = 20 là định nghĩa
+B. Int a = 20 là khai báo, extern int a là định nghĩa
+C. Int a = 20 là định nghĩa, a không được định nghĩa
+D. a được khai báo, a không được định nghĩa
+A. Extern int a là khai báo, int a = 20 là định nghĩa
+6252a65f41a9bed830e0417b
+@
+Ký hiệu đặc biệt nào sau đây được phép sử dụng trong một tên biến?
+A. * (asterisk)
+B. | (pipeline)
+C. – (hyphen)
+D. _ (underscore)
+D. _ (underscore)
+6252a65f41a9bed830e0417a
+Theo mặc định, một số thực được coi là
+A. float
+B. double
+C. long double
+D. far double
+B. double
+6252a66641a9bed830e041ca
+@
+Bạn sẽ làm tròn giá trị từ 1,66 thành 2,0 như thế nào?
+A. ceil(1.66)
+B. floor(1.66)
+C. roundup(1.66)
+D. roundto(1.66)
+A. ceil(1.66)
+6252a66041a9bed830e0417f
+@
+int func(int arr[]);
+int func(int arr[20]);
     
-        Hàm ceil(x) làm tròn số thập phân thành số nguyên nhỏ nhất, lớn hơn hoặc bằng x. Hàm floor(x) làm tròn số thập
-        phân thành số nguyên lớn nhất, nhỏ hơn hoặc bằng x. Hàm roundup() và roundto() không tồn tại trong thư viện ngôn
-        ngữ C/C++
-
-
-
-
-
-
-    Câu 18:
-
-    int func(int arr[]);
-    int func(int arr[20]);
-
-    
-
-   Trong khai báo trên đây có sự khác biệt?
-
-
-
-    A. Có
-
-
-    B. Không
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-    Câu lệnh int func(int arr[]) chấp nhận đầu vào là mảng nguyên với kích thước bất kì.
-        Câu lệnh int func(int arr[20]) chấp nhận đầu vào là mảng nguyên với kích thước là 12.
-
-
-
-
-
-
-    Câu 19:
-
-
-    Kiểu dữ liệu long double có thể được sử dụng nếu phạm vi của long double không đủ để chứa một số thực?
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-
-
-
-
-
-
-    Câu 20:
-
-    Một float có dung lượng 4 byte, trong khi  double có dung lượng 8 byte
-
-
-    A. Đúng
-
-
-    B. Sai
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-    Câu 21:
-
-
-    Kích thước của số nguyên ngắn và số nguyên dài có thể được xác minh bằng cách sử dụng toán tử sizeof ()
-
-
-
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 22:
-
-
+Trong khai báo trên đây có sự khác biệt?
+A. Có
+B. Không
+C.	
+D.	
+A. Có
+6252a66641a9bed830e041c2
+@
+Kiểu dữ liệu long double có thể được sử dụng nếu phạm vi của long double không đủ để chứa một số thực?
+A. Đúng
+B. Sai
+C.	
+D. 	
+B. Sai
+6252a66641a9bed830e041cb
+@
+Một float có dung lượng 4 byte, trong khi  double có dung lượng 8 byte
+A. Đúng
+B. Sai
+C.	
+D.	
+A. Đúng
+6252a66641a9bed830e041cb
+@
+Kích thước của số nguyên ngắn và số nguyên dài có thể được xác minh bằng cách sử dụng toán tử sizeof ()
+A. Đúng
+B. Sai
+C.	
+D.	
+A. Đúng
+6252a66641a9bed830e041cc
+@
  Nếu định nghĩa của biến bên ngoài xuất hiện trong tệp nguồn trước khi nó được sử dụng trong một hàm cụ thể, thì không cần khai báo bên ngoài trong hàm
-
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-    Câu 23:
-
-
-    Biến toàn cục có sẵn cho tất cả các hàm. Có tồn tại một cơ chế mà nó có sẵn cho một số và không cho các số khác
-
-
-
-
-
-    A. Có
-
-
-    B. Không
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 24:
-
-
+A. Đúng
+B. Sai
+C.	
+D.	
+A. Đúng
+6252a65f41a9bed830e0417b
+@
+Biến toàn cục có sẵn cho tất cả các hàm. Có tồn tại một cơ chế mà nó có sẵn cho một số và không cho các số khác
+A. Có
+B. Không
+C.	
+D.	
+B. Không
+6252a65f41a9bed830e0417b
+@
 Kích thước của short integer và long integer sẽ khác nhau tùy theo nền tảng
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 25:
-    Một float có dung lượng 4 byte. Nếu tương đương hệ thập lục phân của 4 byte A, B, C và D này, thì khi float này được lưu trữ trong bộ nhớ theo thứ tự nào sau đây ?
-
-
-
-    A. ABCD
-
-
-
-    B. DCBA
-
-
-
-    C. 0xABCD
-
-
-
-    D. Phụ thuộc vào kiến trúc endian lớn hoặc endian nhỏ.
-
-
-
-
-
-
-    D là đáp án đúng
-
-
-    Câu 26:
-
-
-    Các kiểu khác nhau của kiểu dữ liệu thực trong C++ là gì?
-
-
-    A. float, double
-
-
-
-    B. short int, double, long int
-
-
-    C. float, double, long double
-
-
-    D. double, long int, float
-
-
-    C là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 27:
-
+A. Đúng
+B. Sai
+C.	
+D.	
+B. Sai
+6252a66641a9bed830e041cb
+@:
+Một float có dung lượng 4 byte. Nếu tương đương hệ thập lục phân của 4 byte A, B, C và D này, thì khi float này được lưu trữ trong bộ nhớ theo thứ tự nào sau đây ?
+A. ABCD
+B. DCBA
+C. 0xABCD
+D. Phụ thuộc vào kiến trúc endian lớn hoặc endian nhỏ.
+D. Phụ thuộc vào kiến trúc endian lớn hoặc endian nhỏ.
+6252a66641a9bed830e041cb
+@
+Các kiểu khác nhau của kiểu dữ liệu thực trong C++ là gì?
+A. float, double
+B. short int, double, long int
+C. float, double, long double
+D. double, long int, float
+C. float, double, long double
+6252a66641a9bed830e041cb
+@
     #include <stdio.h>
     #include <math.h>
     #include <conio.h>
-
     void main()
     {
     float n = 1.34;
     printf(%f %f,ceil(n), floor(n));
     getch();
     }
-
     
-
     Output của chương trình là gì?
-
-
-
-    A. 1.000000 2.000000
-
-
-
-    B. 1.500000 1.000000
-
-
-
-    C. 2.000000 1.000000
-
-
-
-    D. 1.300000 2.000000
-
-
-
-
-
-
-
-    C là đáp án đúng
-
-    
-
-    Xem thêm: hàm ceil() và floor()
-
-
-
-
-
-
-    Câu 28:
-
+A. 1.000000 2.000000
+B. 1.500000 1.000000
+C. 2.000000 1.000000
+D. 1.300000 2.000000
+C. 2.000000 1.000000
+6252a66041a9bed830e0417f
+@
     #include <stdio.h>
     #include <conio.h>
-
     void main()
     {
     printf(%f, log(1.9));
     getch();
     }
-
     
-
     Bạn sẽ thêm thư viện nào vào chương trình sau để chương trình hoạt động chính xác?
-
-
-
-    A. math.h
-
-
-
-
-    B. stdlib.h
-
-
-
-
-    C. log.h
-
-
-    D. dos.h
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-    Câu 29:
-
-
-    Bạn sẽ làm gì để coi hằng số 3,14 là kiểu long double?
-
-
-
-    A. Sử dụng 3.14LD
-
-
-
-    B. Sử dụng 3.14L
-
-    C. Sử dụng 3.14DL
-
-
-
-    D. Sử dụng 3.14LF
-
-
-
-
-
-
-    B là đáp án đúng
-
-    Hằng số 3.14 là kiểu double, 3.14L là kiểu long double
-
-
-
-
-
-
-    Câu 30:
-
-
-    Bạn sẽ làm gì để coi hằng số 3,14 là kiểu float?
-
-
-
-    A. Sử dụng float(3.14f)
-
-
-
-    B. Sử dụng 3.14f
-
-
-
-    C. Sử dụng f(3.14)
-
-
-
-    D. Sử dụng (f)(3.14)
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-    Bạn có thể test bằng câu lệnh: sizeof(3.14f) = 4 (byte) 
-
-
-
-
-
-
-    Câu 31:
-
-
+A. math.h
+B. stdlib.h
+C. log.h
+D. dos.h
+A. math.h
+62551233f214278e765adeed
+@
+Câu 30:
+Bạn sẽ làm gì để coi hằng số 3,14 là kiểu float?
+A. const float(3.14)
+B. const float P = 3.14
+C. const float = 3.14
+D. Sử dụng (f)(3.14)
+B. Sử dụng 3.14f
+
+@:
    Ta muốn làm tròn x ở kiểu float thành một giá trị int, Cách đúng để làm là:
-
-
-
-
-    A. y = (int)(x + 0.5)
-
-
-
-    B. y = int(x + 0.5)
-
-
-
-    C. y = (int)x + 0.5
-
-
-
-    D. y = (int)((int)x + 0.5)
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-    Round off ở đây có nghĩa là làm tròn số thập phân.
-        Ví dụ: 3.45 –> 3, 3.5 –> 4.
-        Do vậy, ở đây để làm tròn x ta cộng thêm 0.5.
-        Đáp án B cũng có thể đúng, nhưng đáp án A là chuẩn nhất, đảm bảo đúng trên mọi compiler.
-
-
-
-
-
-
-    Câu 32:
-
+A. y = (int)(x + 0.5)
+B. y = int(x + 0.5)
+C. y = (int)x + 0.5
+D. y = (int)((int)x + 0.5)
+A. y = (int)(x + 0.5)
+6252a66541a9bed830e041b6 
+@
     #include <stdio.h>
     #include <conio.h>
-
     void main()
     {
-    float n = 1.67;
-    printf(%e, , n);
-    printf(%f, , n);
-    printf(%g, , n);
-    printf(%lf, , n);
-
-    getch();
+        float n = 1.67;
+        printf(%e, , n);
+        printf(%f, , n);
+        printf(%g, , n);
+        printf(%lf, , n);
+        getch();
     }
-
     
-
     Output của chương trình là gì?
-
-
-
-
-
-    A. 1.670000e+000, 1.670000, 1.67, 1.670000,
-
-
-
-
-    B. Lỗi biên dịch
-
-
-    C. 1.67e, 1.67000, 1.670, 1.67
-
-
-
-    D. 1.67e, 1.67, 1.67000, 1.67f
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-    %e: in ra kiểu số mũ.
-        %f: in ra kiểu dấu phẩy động
-        %g: in ra dạng rút gọn của %f hoặc %e
-        %lf: in ra kiểu dấu phẩy động.
-
-
-
-
-
-
-    Câu 33:
-
+A. 1.670000e+000, 1.670000, 1.67, 1.670000,
+B. Lỗi biên dịch
+C. 1.67e, 1.67000, 1.670, 1.67
+D. 1.67e, 1.67, 1.67000, 1.67f
+A. 1.670000e+000, 1.670000, 1.67, 1.670000,
+62551233f214278e765adeed
+@
     #include <stdio.h>
     #include <conio.h>
-
-    void main()
-    {
-    float n = 0.7;
-    if(n < 0.7f)
-    printf(LaptrinhC++);
-    else
-    printf(abc);
-
-    getch();
-    }
-
-    
-
-    Output của chương trình là gì?
-
-
-
-
-    A. LaptrinhC++
-
-
-
-
-    B. abc
-
-
-
-    C. Lỗi biên dịch
-
-
-
-    D. Tất cả đều sai
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-
-
-    0.7f là hằng số kiểu float. Biểu thức so sánh 0.7 < 0.7f trả về Sai.
-
-
-
-
-
-
-    Câu 34:
-
-    #include <stdio.h>
-    #include <conio.h>
-
     void main()
     {
     float n = 0.7;
@@ -1435,625 +302,144 @@ Kích thước của short integer và long integer sẽ khác nhau tùy theo n�
     printf(LaptrinhC++);
     else
     printf(abc);
-
     getch();
     }
-
     
-
     Output của chương trình là gì?
-
-
-
-
-    A. LaptrinhC++
-
-
-
-    B. abc
-
-
-
-    C. Lỗi biên dịch
-
-
-    D. Tất cả đều sai
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 35:
-
-
- Nếu tệp được đưa vào không tồn tại, khâu tiền xử lý sẽ thông báo lỗi
-
-
-
-    A. Đúng
-
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-    Complier sẽ thông báo lỗi nếu thiếu file #include
-
-
-
-
-
-
-    Câu 36:
-
+A. LaptrinhC++
+B. abc
+C. Lỗi biên dịch
+D. Tất cả đều sai
+A. LaptrinhC++
+6252a66941a9bed830e041e8
+@
     #include <stdio.h>
     #include <conio.h>
-
     void main()
     {
-    int y = 100;
-    const int x = y;
-    printf(%d, x);
-
-    getch();
+        int y = 100;
+        const int x = y;
+        printf(%d, x);
+        getch();
     }
-
     
-
     Output của chương trình này là gì?
-
-
-
-    A. 100
-
-
-
-    B. Garbage value
-
-
-
-
-    C. Error
-
-
-
-    D. 0
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-    hằng số x được khởi tạo bằng 100.
-
-
-
-
-
-
-    Câu 37:
-
-
+A. 100
+B. Garbage value
+C. Error
+D. 0
+A. 100
+6252a66641a9bed830e041c6
+@
     Điều gì sẽ xảy ra nếu trong chương trình C++ bạn gán giá trị cho một phần tử mảng có chỉ số con vượt quá kích thước của mảng?
-
-
-
-    A. Phần tử sẽ được đặt thành 0.
-
-
-
-
-    B. Trình biên dịch sẽ báo lỗi.
-
-
-
-    C. Chương trình có thể bị lỗi nếu một số dữ liệu quan trọng bị ghi đè
-
-
-
-
-    D. Kích thước mảng sẽ phát triển một cách thích hợp
-
-
-
-
-
-
-    C là đáp án đúng
-
-
-    Khi bạn assign giá trị cho phần tử vượt quákích thước của mảng. Xảy ra problem là buffer overrun. Có nghĩa
-        là sử dụng vùng nhớ ko hợp lệ (ví dụ: đang lưu giá trị của một biến khác,…), làm cho chương trình bị crash.
-
-
-
-
-
-
-    Câu 38:
-
+A. Phần tử sẽ được đặt thành 0.
+B. Trình biên dịch sẽ báo lỗi.
+C. Chương trình có thể bị lỗi nếu một số dữ liệu quan trọng bị ghi đè
+D. Kích thước mảng sẽ phát triển một cách thích hợp
+C. Chương trình có thể bị lỗi nếu một số dữ liệu quan trọng bị ghi đè
+6252a66841a9bed830e041df
+@
     #include <stdio.h>
     #include <math.h>
     #include <conio.h>
-
     void main()
     {
     printf(%f, sqrt(36.0));
     getch();
     }
-
     
-
     Output của chương trình này là gì?
-
-
-
-    A. 6.000000
-
-
-
-    B. 6
-
-
-    C. Error
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-    Xem thêm hàm sqrt()
-
-
-
-
-
-
-    Câu 39:
-
-    #include <stdio.h>
-
-    
-
-    Đoạn mã sau được thay thế bằng nội dung của tệp stdio.h
-
-
-    A. Trong quá trình chỉnh sửa
-
-
-
-
-    B. Trong quá trình liên kết
-
-
-
-    C. Trong quá trình thực thi
-
-
-
-    D. Trong quá trình tiền xử lý
-
-
-
-
-
-
-
-    D là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 40:
-
+A. 6.000000
+B. 6
+C. Error
+A. 6.000000
+6252a66041a9bed830e0417e
+@
     #include <stdio.h>
     #include <conio.h>
-
+    float a = 3.14
+    long double b = 3.14
     void main()
     {
-    printf(%d %d %d, sizeof(3.14), sizeof(3.14f), sizeof(3.14l));
-    getch();
+        printf(%d %d %d, sizeof(3.14), sizeof(a), sizeof(b));
+        getch();
     }
-
     
-
     Output của chương trình là gì?
-
-
-    A. 8 4 8
-
-
-
-    B. 4 4 8
-
-    C. 4 8 10
-
-
-
-
-    D. 4 8 12
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-    3.14 là hằng số kiểu double
-        3.14f là hằng số kiểu float
-        3.14l là hằng số kiểu long double
-
-
-
-
-
-
-    Câu 41:
-
-
+A. 8 4 8
+B. 4 4 8
+C. 4 8 10
+D. 4 8 12
+A. 8 4 8
+6252a66641a9bed830e041cc
+@
 Một hàm không thể được khai báo bên trong một hàm khác
-
-
-
-
-
-    A. Đúng
-
-
-
-
-    B. Sai
-
-
-
-
-
-    A là đáp án đúng
-
-
-    Không thể define 1 hàm trong 1 hàm khác, ta chỉ có thể gọi hàm trong 1 hàm khác.
-
-
-
-
-
-
-    Câu 42:
-    1.
-
-
-    int func(int a, int b)
-    {
-    /*Some code*/
-    }
-
-    2.
-
-
-    int func(a, b)
-    int a; int b;
-    {
-    /*Some code*/
-    }
-
-    
-
-    Kí hiệu (notation) cho các chức năng sau là gì?
-
-
-
-
-
-
-    A. 1. KR notation and 2. ANSI notation
-
-
-
-    B. 1. Pre ANSI C notation and 2. KR notation
-
-
-
-
-    C. 1. ANSI notation and 2. KR notation
-
-
-
-    D. 1. ANSI notation and 2. Pre ANSI notation
-
-
-
-
-
-
-    C là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 43:
-
-
-Tên của các hàm trong hai tệp khác nhau được liên kết với nhau phải là duy nhất.
-
-
-
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-    Câu 44:
-
-
+A. Đúng
+B. Sai
+C.  
+D.  
+A. Đúng
+6252a66641a9bed830e041c2
+@
 Nếu kiểu trả về cho một hàm không được chỉ định, nó sẽ mặc định là int
-
-
-
-
-    A. Đúng
-
-
-
-
-    B. Sai
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 45:
-
-
+A. Đúng
+B. Sai
+C.  
+D.  
+A. Đúng
+6252a66541a9bed830e041c0
+@
 Một hàm có thể có bất kỳ số lượng câu lệnh trả về nào, mỗi câu trả về sẽ trả về các giá trị khác nhau.
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-    Một hàm có thể sử dụng nhiều cầu lệnh return với các giá trị trả về khác nhau
-
-
-
-
-
-
-    Câu 46:
-
-
+A. Đúng
+B. Sai
+C.  
+D.  
+A. Đúng
+6252a66541a9bed830e041c0
+@
 Các hàm không thể trả về nhiều hơn một giá trị cùng một lúc
-
-
-    A. Đúng
-
-
-
-
-    B. Sai
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-
-
-
-
-
-    Câu 47:
-
-
+A. Đúng
+B. Sai
+C.  
+D.  
+A. Đúng
+6252a66541a9bed830e041c0
+@
 Hàm có thể được gọi theo tham trị hoặc tham chiếu
-
-    A. Đúng
-
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-
-    A là đáp án đúng
-
-
-    Hàm gọi theo cách tham trị và tham chiếu
-
-
-
-
-
-
-    Câu 48:
-
+A. Đúng
+B. Sai
+C.  
+D.  
+A. Đúng
+6252a66041a9bed830e04187;6252a66041a9bed830e04188
+@
     #include<stdio.h>
-
     void main()
     {
-    printf(laptrinhc++);
-    main();
+        printf(laptrinhc++);
+        main();
     }
-
     
-
    Chương trình sẽ in “laptrinhc ++” bao nhiêu lần?
-
-
-
-    A. Vô hạn lần
-
-
-
-    B. 65535 lần
-
-
-
-    C. Cho đến khi tràn bộ nhớ
-
-
-
-    D. Không thể gọi hàm main( ) trong main( )
-
-
-
-
-
-
-
-    C là đáp án đúng
-
-
-
-
-
-
-
-    Câu 49:
-
-
+A. Vô hạn lần
+B. 65535 lần
+C. Cho đến khi tràn bộ nhớ
+D. Không thể gọi hàm main( ) trong main( )
+C. Cho đến khi tràn bộ nhớ
+6252a66441a9bed830e041b2
+@
     Trong C/C++, tất cả các hàm ngoại trừ hàm main () có thể được gọi một cách đệ quy
-
-
-
-    A. Đúng
-
-
-
-    B. Sai
-
-
-
-
-
-
-
-
-    B là đáp án đúng
-
-
-    Tất cả các hàm bao gồm cả hàm main đều có thể đệ quy.
-
-
-
-
-
-
-    Câu 50:
-
-
+A. Đúng
+B. Sai
+C.  
+D.  
+B. Sai
+6252a66441a9bed830e041b1
+@
 Quá nhiều lệnh gọi đệ quy có thể dẫn đến tràn bộ nhớ không?
-
-
-    A. Có
-
-
-
-    B. Không
-
-
-
-
-
-
-    A là đáp án đúng
-
-    Vì khi hàm được gọi, địa chỉ hàm + giá trị trả về của hàm +… được lưu stack.
+A. Có
+B. Không
+C.  
+D.  
+A. Có
+6252a66441a9bed830e041b2
