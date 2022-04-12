@@ -1,499 +1,141 @@
-
-                                   
-                                       
-                                                                                           
-                                                    Câu 1:
-                                                        
-                                                        
-                                                        Tham số tối đa một hàm có thể nhận được là 12
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-                                                                                                                            
-                                                             
-                                             
-                                                            
-                                                    
-                                               
-                                                                                           
-                                                    Câu 2:
-                                                        
-                                                        
-                                                        Thường thì đệ quy hoạt động chậm hơn các vòng lặp
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                          
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                            
-                                                             
-                                             
-                                                            
-                                                    
-                                               
-                                                                                           
-                                                    Câu 3:
-                                                        
-                                                        
-                                                        Trong một hàm, hai câu lệnh return sẽ không bao giờ xảy ra.
-                                                           
-                                             
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                              
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-                              
-                                                                Trong ngôn ngữ C/C++, có thể sử dụng nhiều câu lệnh return trong 1 hàm. Ngoại trừ, viết 2 câu lệnh return liên tiếp nhau.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 4:
-                                                        
-#include<stdio.h>;
- 
-void main()
-{
+Tham số tối đa một hàm có thể nhận được là 12
+A. Đúng
+B. Sai
+C.                                                                  
+D.  
+B. Sai
+6252a66541a9bed830e041c0
+@                                                                                                                                                                                      
+Thường thì đệ quy hoạt động chậm hơn các vòng lặp
+A. Đúng
+B. Sai
+C.  
+D.  
+6252a66441a9bed830e041b1
+A. Đúng
+@
+Trong một hàm, hai câu lệnh return sẽ không bao giờ xảy ra.
+A. Đúng
+B. Sai
+C.  
+D.  
+B. Sai
+6252a66541a9bed830e041b8                              
+@
+#include<iostream>;
+int main(){
     int a;
     a = f(1, 3.14);
 }
  
-float f(int a, float b)
-{
+float f(int a, float b){
     return ((float)a + b);
 }
 
-
-                                                        
 Có một lỗi trong chương trình dưới đây. Bạn sẽ thêm/xoá câu lệnh nào?                                                          
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                          
-                                                                          
-                                                                   
-                                                                          A. Add prototype: float f(int, float);
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                          
-                                                                           
-                                                                          
-                                                                   
-                                                                          B. Add prototype: float f(a, b);
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          
-                                                                          
-                                                                         
-                                                                   
-                                                                          C. Add prototype: float f(float a, int b)
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                       
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                            
-                                                            
-                                            
-                                                            
-                                                    
-                                               
-                                                                                           
-                                                    Câu 5:
-                                                        
-                                                        
-                                                        Mọi hàm phải trả về một giá trị
-                                                           
-                                                            
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                         
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                         
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-                                                                         Hàm có kiểu trả về là void thì trong thân hàm không cần gọi lệnh return.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 6:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
- 
-void main()
-{
-    printf("%p", main());
+A. Add prototype: float f(int, float);
+B. Add prototype: float f(a, b);
+C. Add prototype: float f(float a, int b)
+D.  
+A. Add prototype: float f(int, float);
+6252a66541a9bed830e041ba
+@
+Mọi hàm phải trả về một giá trị
+A. Đúng
+B. Sai
+C.  
+D.  
+B. Sai
+6252a66041a9bed830e04183
+@                                                                        
+#include <iostream>; 
+int main(){
+    cout<< main();
     getch();
 }
-
-
-                                                        
-                                                        Câu nào sau đây là đúng về chương trình?
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                    
-                                                                          A. Nó in vô hạn các giá trị rác
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. Chạy vô hạn mà không cần in bất cứ thứ gì
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                         
-                                                                   
-                                                                          C. Lỗi: không thể gọi main () bên trong printf ()
-                                                                
-                                                                    
-                                                                           
-                                                                         
-                                                                    
-                                                                          D. Không có lỗi và không in gì
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-                                                                                                                            
-                                                            
-                                             
-                                                            
-                                                    
-                                               
-                                                                                           
-                                                    Câu 7:
-                                                        
-int f1(int a, int b)
-{
+Câu nào sau đây là đúng về chương trình?
+A. Nó in vô hạn các giá trị rác
+B. Chạy vô hạn mà không cần in bất cứ thứ gì
+C. Lỗi: không thể gọi main() bên trong hàm main
+D. Không có lỗi và không in gì
+B. Chạy vô hạn mà không cần in bất cứ thứ gì
+6252a66441a9bed830e041b1
+@
+int f1(int a, int b){
     return(f2(20));
 }
  
-int f2(int a)
-{
+int f2(int a){
     return a*a;
 }
 
-
-                                                        
-                                                       Các hàm trên sẽ hoạt động?
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-                                                                Vì hàm f2 được gọi trước khi được define. Nên cần khai báo hàm f2()
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 8:
-                                                        
-                                                        
-                                                        Nếu một hàm chứa hai câu lệnh trả về liên tiếp, trình biên dịch sẽ tạo ra các cảnh báo. Đúng  hay Sai?
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-
-                                                                Vì gặp lệnh return thứ nhất, kết thúc hàm.
-Nếu 1 hàm dùng nhiều câu lệnh return liên tiếp nhau, chỉ có câu lệnh return đầu tiên có ý nghĩa, các câu lệnh sau nó không bao giờ được thực hiện.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 9:
-                                                        
-                                                        
-                                                        Các hàm không thể trả về một số dấu phẩy động
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                    
-                                                                          A. Đúng
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               B là đáp án đúng
-                                                                                                                            
-                                                  
-                                                            
-                                                    
-                                               
-                                                                                           
-                                                    Câu 10:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
- 
+Các hàm trên sẽ hoạt động?
+A. Đúng
+B. Sai
+B. Sai
+6252a66541a9bed830e041ba
+@                                                          
+Nếu một hàm chứa hai câu lệnh trả về liên tiếp, trình biên dịch sẽ tạo ra các cảnh báo. Đúng hay Sai?
+A. Đúng
+B. Sai
+C.  
+D.  
+B. Sai
+6252a66041a9bed830e04184
+@
+Các hàm không thể trả về một số dấu phẩy động
+A. Đúng
+B. Sai
+C.  
+D.  
+B. Sai
+6252a66041a9bed830e04184                                                                                                                           
+@                                    
+#include <iostream>;
+using namespace std;
 int reverse(int);
- 
-void main()
-{
+
+int main(){
     int n = 5;
     reverse(n);
-    getch();
 }
  
-int reverse(int n)
-{
+int reverse(int n){
     if(n == 0)
         return 0;
     else
-        printf("%d", n);
+        cout<< n;
     reverse(n--);
 }
 
-
-                                                        
-                                                        Output của chương trình này là gì?
-                                                           
-                                                             
-                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                    
-                                                                          A. 543210
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                           
-                                                                           
-                                                                          
-                                                                    
-                                                                          B. 54321
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                           
-                                                                          
-                                                                         
-                                                                   
-                                                                          C. 12345
-                                                                
-                                                                    
-                                                                           
-                                                                         
-                                                                    
-                                                                          D. Vòng lặp vô hạn tuần hoàn
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               D là đáp án đúng
- Hàm reverse() là hàm đệ quy.
-n = 5, câu lệnh gọi hàm reverse(n–) <=>; reverse(5) vì biến n giảm sau khi gọi hàm.
-Vì giá trị truyền vào cho hàm reverse ko thay đổi. Do vậy, chương trình đệ qui rơi vào vòng lặp vô hạn.
-Để fix chương trình này, thay reverse(n–) bằng reverse(–n).
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 11:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
- 
-void main()
-{
+Output của chương trình này là gì?
+A. 543210
+B. 54321
+C. 12345
+D. Vòng lặp vô hạn tuần hoàn
+D. Vòng lặp vô hạn tuần hoàn
+6252a66441a9bed830e041b2
+@
+#include <iostream>;
+using namespace std;
+int main(){
     int func(int);
     int i = func(5);
-    printf("%d", --i);
-    getch();
+    cout<< --i;
 }
  
-int func(int n)
-{
+int func(int n){
     return(n++);
 }
 
-
-                                                        
-                                                        Output của chương trình này là gì?
-                                                           
-                                                   
-                                                                          A. 4
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                      
-                                                                          B. 5
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                       C. 6
-                                                                
-                                                                   
-                                                                      
-                                                                          D. Một giá trị khác
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                     
-                                                                
-                                                               A là đáp án đúng 
-                                                               Ngôn ngữ C/C++, cho phép bạn khai báo hàm trong 1 hàm khác.
-Hàm func(5) trả về là 5 không phải là 6, vì giá trị n được tăng sau khi thực hiện xong câu lệnh return.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 12:
-                                                        
+Output của chương trình này là gì?
+A. 4
+B. 5
+C. 6
+D. Một giá trị khác
+A. 4
+6252a66641a9bed830e041c3
+@                                              
 f(int a, int b)
 {
     int a;
@@ -501,226 +143,72 @@ f(int a, int b)
     return a;
 }
 
-
-                                                        
-                                                        Chỉ ra lỗi của chương trình sau:
-                                                           
-                                                                  
-                                                                          A. Thiếu dấu ngoặc đơn trong câu lệnh return
-                                                                
-                                                                                                                                                                                                                                                          
-                                                               
-                                                                          B. Hàm nên được định nghĩa là int f (int a, int b)
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          C. Khai báo lại biến a
-                                                                
-                                                                   
-                                                                          D. Không có lỗi
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                            
-                                                               B là đáp án đúng
-                                        
-                                                            
-                                                        
-                                                                Hàm được định nghĩa chưa có kiểu trả về. Một số chương trình biên dịch sẽ không chấp nhận điều này.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 13:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Chỉ ra lỗi của chương trình sau:
+A. Thiếu dấu ngoặc đơn trong câu lệnh return
+B. Hàm nên được định nghĩa là int f (int a, int b)
+C. Khai báo lại biến a
+D. Không có lỗi
+B. Hàm nên được định nghĩa là int f (int a, int b)
+6252a66641a9bed830e041c2
+@                                                      
+#include <iostream>;
+using namespace std;
  
-int f(int a)
-{
-    a >; 20 ? return(1) : return(0);
-}
- 
-void main()
-{
-    int f(int);
-    int b = f(20);
-    printf("%d", b);
-    getch();
-}
-
-
-                                                        
-                                                        Chỉ ra lỗi trong chương trình sau
-                                                           
-                                                           
-                                                              
-                                                                          A. Error: Prototype declaration
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                
-                                                                          B. Không có lỗi
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          C. Error: return statement cannot be used with conditional operators
-                                                                
-                                                                
-                                                                          D. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                         
-                                                                
-                                                               C là đáp án đúng
-                                        
-                                                            
-                                                        
-                                                                Sau toán tử điều kiện phải là biểu thức toán học, không thể là câu lệnh (return).
-Câu lệnh “a >; 20 ? return(1) : return(0);” nên đổi thành “return (a >; 20 ? 1 : 0);”
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 14:
-                                                        
-#include<stdio.h>;
-#include <conio.h>;
- 
-int func(int i, int j)
-{
+int func(int i, int j){
     int k, l;
     k = i + j;
     l = i * j;
     return (k, l);
 }
  
-void main()
-{
+int main(){
     int i = 2, j = 3, k, l;
     k = func(i, j);
     l = func(i, j);
-    printf("%d  %d", k, l);
-    getch();
+    cout<<k<<" "<<l;
 }
 
-
-                                                        
-                                                        Output của chương trình này là gì?
-                                                           
-                                                            
-                                                                          A. 6 6
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                    
-                                                                          B. 5 6
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                  
-                                                                          C. Complier error
-                                                                
-                                                                    
-                                                                           
-                                                                          D. Tất cả đều sai
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                      
-                                                                
-                                                               A là đáp án đúng
-                                                        
-                                                       
-                                                     
-                                        
-                                                            
-                                                        
-                                                                k = i + j = 5
-l = i*j = 6
-Câu lệnh return(k, l) = return(5, 6) = return(6).
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 15:
-                                                        
-#include<stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 6 6
+B. 5 6
+C. Complie error
+D. Tất cả đều sai
+A.6 6
+6252a66441a9bed830e041b2
+@                                                        
+#include <iostream>;
+using namespace std;
  
 int f1(int);
 int f2(int);
  
-void main()
-{
-    extern int i;
+int main(){
+    int i;
     int j = 3;
     f1(j);
-    printf("%d,", j);
+    cout<< j;
     f2(j);
-    printf("%d", j);
-    getch();
+    cout<< j;
 }
  
-int f1(int i)
-{
-    printf("%d,",++i);
+int f1(int i){
+    cout<< ++i;
     return 0;
 }
-int f2(int j)
-{
-    printf("%d,", ++j);
+int f2(int j){
+    cout<< ++j;
     return 0;
 }
 
-
-                                                        
-                                                        What will be output of the program?
-                                                           
-                                                            
-                                                                                                                                                                                          
-                                                                    
-                                                                       
-                                                                          A. 4, 3, 4, 3
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                          B. 4, 4, 5, 5
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          C. 3, 4, 3, 4
-                                                                
-                                                                    
-                                                                     
-                                                                          D. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                     
-                                                               A là đáp án đúng
-                                                                                                                            
-                                                             
-                                          
-                                                    
-                                               
-                                                                                           
-                                                    Câu 16:
-                                                        
-long fun(int n)
-{
+Output của chương trình này là gì?
+A. 4, 3, 4, 3
+B. 4, 4, 5, 5
+C. 3, 4, 3, 4
+D. Tất cả đều sai
+A. 4, 3, 4, 3
+6252a66441a9bed830e041b2
+@                                              
+long fun(int n){
     int i;
     long f = 1;
     for(i = 1; i <= n; i++)
@@ -728,1499 +216,547 @@ long fun(int n)
     return f;
 }
 
-
-                                                        
-                                                        Câu nào sau đây đúng về hàm này
-                                                           
-                                                          
-                                                                          A. Hàm tính giá trị của 1 được nâng lên lũy thừa n
-                                                                     
-                                                                          B. Hàm tính giá trị giai thừa của một số nguyên
-
-                                                                          C. Hàm tính căn bậc hai của một số nguyên
-                                                                
-                                                                 
-                                                                          D. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                     
-                                                                
-                                                               B là đáp án đúng
-                                                       
-                                                      
-                                        
-                                                            
-                                                        
-                                                                Hàm fun() tính giai thừa của n.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 17:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Câu nào sau đây đúng về hàm này
+A. Hàm tính giá trị của 1 được nâng lên lũy thừa n
+B. Hàm tính giá trị giai thừa của một số nguyên
+C. Hàm tính căn bậc hai của một số nguyên
+D. Tất cả đều sai
+B. Hàm tính giá trị giai thừa của một số nguyên
+6252a66641a9bed830e041c1
+@                                                       
+#include <iostream>;
+using namespace std;
  
-void main()
-{
+int main(){
     int a = 10;
     void f();
     a = f();
-    printf("%d", a);
-    getch();
+    cout<< a;
 }
  
-void f()
-{
-    printf("vncoding");
+void f(){
+    cout<<"vncoding";
 }
 
-
-                                                        
-                                                        Hãy chỉ ra lỗi trong chương trình trên
-                                                           
-                                                            
-                                                                          A. Error: cannot convert ‘void’ to ‘int’
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                          B. Error:
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                         A là đáp án đúng
-                                                                                                                            
-                                                             
-                                             
-                                               
-                                                                                           
-                                                    Câu 18:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Hãy chỉ ra lỗi trong chương trình trên
+A. Error: cannot convert ‘void’ to ‘int’
+B. Compile Error
+C.  
+D.  
+A. Error: cannot convert ‘void’ to ‘int’
+6252a66641a9bed830e041c1                                                                                                                           
+@                                                             
+#include <iostream>;
+#include <cmath>;
+using namespace std;
  
-int main()
-{
-    printf("%d\t", sizeof(6.5));
-    printf("%d\t", sizeof(90000));
-    printf("%d", sizeof('A'));
-    getch();
+int main(){
+    cout<< sizeof(6.5);
+    cout<< sizeof(90000);
+    cout<< sizeof('A');
 }
-
-
-                                                        
-                                                        Điều gì sẽ được xuất ra khi bạn thực hiện chương trình trên đây?
-                                                        Biết kích thước kiểu char : 1 byte, float : 4 byte, int : 4 byte, double : 8 byte, long : 4 byte.
-                                                           
-                                                                                                                                                                                 
-                                                                    
-                                                                          A. 8 4 1
-                                                                
-                                                                   
-                                                                          B. 8 2 1
-                                                                
-                                                                    
-                                                                        
-                                                                          C. 4 4 1
-                                                                
-                                                                    
-                                                                           
-                                                                          D. Tuỳ thuộc vào trình biên dịch mà kết quả sẽ khác
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                           
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                                  
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Toán tử sizeof() trả về kích thước của biến (đơn vị là byte). 6.5 ở đây chương trình hiểu là kiểu double, 90000 là kiểu int, 'A' là hằng kí tự kiểu char.
-
-
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 19:
-                                                        
-#include <stdio.h>;
+Điều gì sẽ được xuất ra khi bạn thực hiện chương trình trên đây?
+Biết kích thước kiểu char : 1 byte, float : 4 byte, int : 4 byte, double : 8 byte, long : 4 byte.
+A. 8 4 1
+B. 8 2 1
+C. 4 4 1
+D. Tuỳ thuộc vào trình biên dịch mà kết quả sẽ khác
+A. 8 4 1
+6252a66641a9bed830e041cc
+@
+#include <iostream>;
+using namespace std;;
  
-int main()
-{
+int main(){
     double num = 5.2;
     int var = 5;
-    printf("%d\t", sizeof(!num));
-    printf("%d\t", sizeof(var=15/2));
-    printf("%d", var);
+    cout<< sizeof(!num);
+    cout<< sizeof(var=15/2);
+    cout<< var;
     return 0;
 }
-
-
-                                                        
-                                                        Output của chương trình này là gì?
-                                                           
-                                                            
-                                                                          A. 1 4 5
-                                                         
-                                                                          B. 1 4 7
-                                                                
-                                                                    
-                                                                          C. 8 4 7
-                                                                
-                                                                 
-                                                                          D. Một giá trị khác
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                     
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                                 
-                                                            
-                                                        
-                                                                Giải thích: toán tử ! trả về giá trị kiểu bool (0, 1), mà sizeof(kiểu bool) = 1. var = 15/2 = 7, sizeof(var) = 4
-
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 20:
-                                                        
-#include <stdio.h>;
- 
-int main()
-{
+Output của chương trình này là gì?
+A. 1 4 5
+B. 1 4 7
+C. 8 4 7
+D. Một giá trị khác
+A. 1 4 5
+6252a66641a9bed830e041cc
+@
+#include <iostream>;
+using namespace std;
+int main(){
     int w = 3;
     int x = 31;
     int y = 10;
     double z = x / y % w;
-    printf("%f\n", z);
- 
+    cout << z;
     return 0;
 }
 
-
-                                                        
-                                                      Output của chương trình này là gì?
-                                                        
-                                                                          A. 1
-                                                                
-                                                                   
-                                                                          B. 0
-                                                                
-                                                                     C. 0.1
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                    
-                                                               B là đáp án đúng
-                                                                                                                  
-                                        
-                                                            
-                                                        
-                                                                Toán tử / lấy thương, còn toán tử % lấy phần dư. Cả 2 toán tử này có độ ưu tiên toán tử như nhau. Do vậy, x/y%w = (x/y)%w = (31/10)%3 = 0
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 21:
-                                                        
-#include <stdio.h>;
- 
-int main()
-{
+Output của chương trình này là gì?
+A. 1
+B. 0
+C. 0.1
+D.  
+B. 0                       
+6252a66641a9bed830e041cc
+0                                                           
+#include <iostream>;
+using namespace std;
+int main(){
     char a = 250;
     int expr;
     expr= a + !a + ~a + ++a;
-    printf("%d", expr);
+    cout<< expr;
     return 0;
 }
 
-
-                                                        
-                                                        Output của chương trình này là gì?
-                                                           
-                                                           
-                                                                          A. -6
-                                                                
-                                                                  
-                                                                          B. 5
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                          C. 4
-                                                                
-                                                                  
-                                                                          D. Một giá trị khác
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                      
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                    
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Biến char a = 250 vượt ra khỏi dải (-128 đến 127). Nên a = 250%256 = -6 (xem thêm: ) Trong các toán tử trong phép toán. Toán tử ! ~ ++ có cùng độ ưu tiên, nhưng trình tự kết hợp từ phải sang trái. Do vậy, ++a = -5 được thực hiện trước. expr = -5 + !(-5) + ~(-5) + (-5) = -5 + 0 + 4 -5 = -6
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 22:
-                                                        
-#include <stdio.h>;
- 
-int main()
-{
+Output của chương trình này là gì?
+A. -6
+B. 5
+C. 4
+D. Một giá trị khác
+A. -6
+6252a66641a9bed830e041cc
+@                                                        
+#include <iostream>;
+using namespace std;
+int main(){
     int a = -5;
-    unsigned int b = -5u; // (*)
+    int b = -5; // (*)
     if(a == b)
-        printf("Avatar");
+        cout<<"Avatar";
     else
-        printf("Alien");
+        cout<< "Alien";
     return 0;
 }
 
+Output của chương trình này là gì?
+A. Avatar
+B. Alien
+C. Error at (*)
+D. Một giá trị khác
+A. Avatar
+6252a66941a9bed830e041e8
+@
+#include <iostream>;
+using namespace std;
 
-                                                        
-                                                        Output của chương trình này là gì?
-                                                            
-                                                                          A. Avatar
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                          B. Alien
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          C. Error at (*)
-                                                                 
-                                                                          D. Một giá trị khác
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                    
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                            
-                                          
-                                                    
-                                               
-                                                                                           
-                                                    Câu 23:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
- 
-void main()
-{
+int main(){
     int x = 3;
-    printf("%d", x++ + ++x);
-    getch();
+    cout<< x++ + ++x;
 }
 
-
-                                                        
-                                                        Output của chương trình này là gì?
-                                                           
-                                                             
-                                                                          A. 7
-                                                                
-                                                                    
-                                                                          B. 8
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                          C. 9
-                                                                
-                                                                    
-                                                                          D. Một giá trị khác
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                       
-                                                                
-                                                               B là đáp án đúng
-                                                                                                                       
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Phép toán ++x sẽ được thực hiện trước tiên (x = 4), sau đó x++ + x = 4++ + 4 = 8. Sau phép toán,giá trị củax = 5
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 24:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 7
+B. 8
+C. 9
+D. Một giá trị khác
+B. 8
+6252a66e41a9bed830e04223                                                          
+@                                                   
+#include <iostream>;
+using namespace std;
  
-void main()
-{
+int main(){
     int i = 5, j = 6, k;
-    k = i &amp; j;
-    printf("%d", k);
-    getch();
+    k = i & j;
+    cout<< k;
 }
-
-
-                                                        
-                                                     Output của chương trình này là gì?
-                                                           
-                                                             
-                                                                          A. 4
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          B. 0
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          C. 1
-                                                                
-                                                                    
-                                                                          D. 5
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                     
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                                   
-                                                          
-                                                        
-                                                                i = 5 = 101 (hệ nhị phân), j = 6 = 110 (hệ nhị phân). Phép toán &amp; là phép toán AND bit. k = i&amp;j = 100 = 4.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 25:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 4
+B. 0
+C. 1
+D. 5
+A. 4
+6252a66e41a9bed830e04226
+@                                                                                                                                   
+#include <iostream>;
+using namespace std;
  
-void main()
-{
+int main(){
     int i = 5,j = 6;
-    printf("%d", i | j); 
-    getch();
+    cout<< i | j; 
 }
 
-
-                                                        
-                                                    Output của chương trình này là gì?
-                                                           
-                                                      
-                                                                          A. 7
-                                                                
-                                                            
-                                                                          B. 6
-                                                                
-                                                                
-                                                                          C. 5
-                                                     
-                                                                          D. 1
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                         
-                                                                
-                                                               A là đáp án đúng
-                                                                                                      
-                                        
-                                                            
-                                                        
-                                                                i = 5 = 101 (hệ nhị phân), j = 6 = 110 (hệ nhị phân). Phép toán | là phép toán OR bit. i|j = 111 = 7.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 26:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 7
+B. 6
+C. 5
+D. 1
+A. 7
+6252a66e41a9bed830e04226
+@
+#include <iostream>;
+using namespace std;
  
 extern int x = 0; 
  
-void main()
-{
+int main(){
     x++;
-    printf("%d", x); 
-    getch();
+    cout<< x; 
 }
-
-
-                                                        
-                                                    Output của chương trình này là gì?
-                                                           
-                                                     
-                                                                          A. 0
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                          B. Error
-                                                                
-                                                                    
-                                                                          C. 1
-                                                                
-                                                                  
-                                                                          D. x isn’t defined
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                                      
-                                                               C là đáp án đúng
-                                                                                                                              
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Biến extern int x có thể thay đổi giá trị của nó.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 27:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 0
+B. Error
+C. 1
+D. x isn’t defined
+C. 1
+6252a65f41a9bed830e0417b
+@                                                            
+#include <iostream>;
+using namespace std;
  
 extern int x = 0;
  
-void main()
-{
+int main(){
     {
         int x = 1;
     }
-    printf("%d", x);
-    getch();
+    cout<< x;
 }
-
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                                          A. 0
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          B. 1
-                                                                
-                                                                     
-                                                                          C. Error Comlier
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                       
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                         
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Khai báo int x = 1, x ở đây là biến local và chỉ có giá trị trong {}. Hàm printf() ở ngoài {} sẽ dùng giá trị của biến x = 0.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 28:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 0
+B. 1
+C. Error Comlier
+D.   
+A. 0 
+6252a65f41a9bed830e0417b
+@                                                           
+#include <iostream>;
+using namespace std;
  
 int y = 0;
-void main()
-{
+int main(){
     {
         int x = 0;
         x++;
         ++y;
     }
-    printf("%d\t%d", x, y);
-    getch();
+    cout<< x <<" "<< y);
 }
-
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                            
-                                                                          A. 1 1
-                                                                
-                                                                  
-                                                                   
-                                                                          B. 1 0
-                                                                 
-                                                                          C. ‘x’ undeclared identifier
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                  
-                                                                
-                                                               C là đáp án đúng
-                                                              
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Biến x là biến cục bộ, nên trình biên dịch sẽ báo lỗi tại lệnh printf().
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 29:
-                                                        
-void main()
-{
+Output của chương trình này là gì?
+A. 1 1
+B. 1 0
+C. ‘x’ undeclared identifier
+D.   
+C. ‘x’ undeclared identifier
+6252a65f41a9bed830e0417b                                                       
+@                                                        
+int main(){
     int x;
     {
         x++;
     }
-    printf("%d", x);
-    getch();
+    cout<< x;
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                          
-                                                                          A. 1
-                                                                
-                                                                  B. 0
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                          C. Error
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                 
-                                                               C là đáp án đúng
-                                                   
-                                                        
-                                                                Giải thích: Lỗi biến x chưa được khởi tạo
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 30:
-                                                        
-void main()
-{
+Output của chương trình này là gì?
+A. 1
+B. 0
+C. Error
+D. Kết quả khác
+C. Error
+6252a65f41a9bed830e0417a
+@                                                            
+int main(){
     int x=0;
     {
         int x = 0, y = 0;
         y++;
         x++;
     }
-    printf("%d", x);
-    getch();
+    cout<< x;
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                         
-                                                                          A. 1
-                                                         
-                                                                          B. Error
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                          C. 0
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                   
-                                                               C là đáp án đúng
-                                                       
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Giải thích: biến x được khai báo trong ngoặc {} là biến local, hàm printf() sẽ lấy giá trị x = 0.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 31:
-                                                        
-void count()
-{
+Output của chương trình này là gì?
+A. 1
+B. Error
+C. 0
+D. -1
+C. 0                                                       
+6252a65f41a9bed830e0417b
+@
+int count(){
     static int page = 0;
-    printf("%d", page);
+    cout<< page;
     page++;
 }
  
-void main()
-{
+int main(){
     int i;
     for(i = 0; i < 10; i++)
-    {
         count();
-    }
-    getch();
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                            
-                                                                          A. 0123456789
-                                                                
-                                                                
-                                                                          B. 0000000000
-                                                                
-                                                                
-                                                                          C. 0101010101
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                      
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                                   '3 
-                                                                Giải thích: biến page là biến static. Biến static được khai báo trong 1 hàm có đặc điểm giữ nguyên trạng thái (giá trị) giữa các lần gọi hàm.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 32:
-                                                        
+Output của chương trình này là gì?
+A. 0123456789
+B. 0000000000
+C. 0101010101
+D. 9876543210
+A. 0123456789
+6252a66f41a9bed830e04232
+@ 
 const int x = 5;
  
-void main()
-{
+int main(){
     int x[x];
     int y = sizeof(x) / sizeof(int);
-    printf("%d", y);
-    getch();
+    cout<< y;
 }
 
+Output của chương trình này là gì?
+A. 1
+B. 5
+C. 20
+D. ‘x’ isn’t defined
+B. 5
+6252a66641a9bed830e041c6
+@                                                            
+#include <iostream>;
+using namespace std;
 
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                             
-                                                                          A. 1
-                                                                 
-                                                                          B. 5
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          C. 20
-                                                                
-                                                                  
-                                                                    3
-                                                                          D. ‘x’ isn’t defined
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                       
-                                                               B là đáp án đúng
-                                                            
-                                        
-                                                            
-                                                        
-                                                                Giải thích: khai báo biến const x tương đương với việc sử dụng #define, chương trình biên dịch sẽ không cho phép người lập trình thay đổi biến này.
-Theo msdn: việc sử dụng biến const để khai báo mảng trong C ko được phép.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 33:
-                                                        
-#include <stdio.h>;
- 
-int main()
-{
-    int x = 5, y = 10, z = 15;
-    printf("%d %d %d");
+int main(){
+    int 1x = 5, y = 10, z = 15;
+    cout<<x y z;
     return 0;
 }
 
+Output của chương trình này là gì?
+A. Error
+B. 5 10 15
+C. 15 10 5
+D. Run time error
+A. Error
+6252a65f41a9bed830e0417a
+@
+#include <iostream>;
+using namespace std;
 
-                                                        
-                                                         Output của chương trình này là gì?
-                                                           
-                                                          
-                                                                          A. Garbage Garbage Garbage
-                                                                
-                                                                 
-                                                                          B. 5 10 15
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                     
-                                                                          C. 15 10 5
-                                                                 
-                                                                          D. Run time error
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                   
-                                                                
-                                                               A là đáp án đúng
-                                               
-                                               
-                                                                                           
-                                                    Câu 34:
-                                                        
-#include <stdio.h>;
- 
-int main()
-{
+int main(){
     char *url="c:\tc\bin\rw.c";
-    printf("%s", url);
+    cout<< url;
     return 0;
 }
+Output của chương trình này là gì?
+A. c:/tc/bin/rw.c
+B. c: c inw.c
+C. c:cinw.c
+D. w.c in
+D. w.c in
+6252a66741a9bed830e041ce
+@                                                            
+#include <iostream>;
+using namespace std;
 
-
-                                                        
-                                                         Output của chương trình này là gì?
-                                                          
-                                                                          
-                                                                          A. c:/tc/bin/rw.c
-                                                                
-                                                                                                                                                                                                                                                          
-                                                              
-                                                                          
-                                                                          B. c: c inw.c
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          
-                                                                          C. c:cinw.c
-                                                                
-                                                        
-                                                                          D. w.c in
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                              
-                                                                
-                                                               D là đáp án đúng
-                                                                                                                      
-                                        
-                                                            
-                                                        
-                                                                Giải thích: trong chuỗi url, có các kí tự đặc biệt: ‘\t’ : cách 1 tab, ‘\b’ : đưa con trỏ trên màn hình lùi về trước 1 kí tự, ‘\r’ : quay về đầu dòng.
-Chương trình sẽ in: c: c, gặp kí tự ‘\b’ đưa con trỏ lùi về 1 kí tự và kết quả tiếp theo: c: in. Khi gặp kí tự ‘\r’, con trỏ sẽ trỏ về vị trí đầu dòng và in đè lên kết quả đã có. Cuối cùng: w.c in
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 35:
-                                                        
-#include <stdio.h>;
- 
-int main()
-{
+int main(){
     const int i = 5;
     i++;
-    printf("%d", i);
+    cout<< i;
     return 0;
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                       
-                                                                           
-                                                                          A. 5
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          B. 6
-                                                                
-                                                                  
-                                                                          C. 0
-                                                                 
-                                                                          D. Complier error
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                      
-                                                               D là đáp án đúng
-                                                               
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Giải thích: chương trình biên dịch sẽ không cho phép thay đổi giá trị của biến const.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 36:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 5
+B. 6
+C. 0
+D. Complier error
+D. Complier error
+6252a66641a9bed830e041c6
+@
+#include <iostream>;
+using namespace std;
  
-void main()
-{
-    char c = 125;
-    c = c + 10;
-    printf("%d", c);
-    getch();
-}
-
-
-                                                        
-                                                         Output của chương trình này là gì?
-                                                            
-                                                                          A. 135
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                
-                                                                          B. 8
-                                                                
-                                                                   
-                                                                          
-                                                                          C. -121
-                                                                 
-                                                                          D. 121
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                                
-                                                               C là đáp án đúng
-                                                                                                                             
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Giải thích: biến char a = 135 vượt ra khỏi dải (-128 đến 127). Nên a = 135%256 = -121
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 37:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
- 
-int main()
-{
+int main(){
     char c = 48;
     int i, mask = 01;
-    for(i = 1; i <= 5; i++)
-    {
-        printf("%c", c|mask);
+    for(i = 1; i <= 5; i++){
+        cout<< c|mask;
         mask = mask < 1;
     }
-    getch();
 }
-
-
+Output của chương trình này là gì?
+A. 12480
+B. 1248@
+C. 12500
+D. 12522
+A. 12480
+6252a67041a9bed830e04237
+@
                                                         
-                                                         Output của chương trình này là gì?
-                                                           
-                                                            
-                                                                          
-                                                                          A. 12480
-                                                                
-                                                                  
-                                                                          B. 1248@
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                          
-                                                                          C. 12500
-                                                                
-                                                                
-                                                                          D. 12522
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                     
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                                   
-                                                        
-                                                                Giải thích:
-c|mask = 49 ->; in ra 1, mask = mask<1 = 2
-c|mask = 50 ->; in ra 2, mask = mask<1 = 4
-c|mask = 52 ->; in ra 4, mask = mask<1 = 8
-c|mask = 56 ->; in ra 8, mask = mask<1 = 16
-c|mask = 48 ->; in ra 0, end for()
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 38:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+#include <iostream>;
+using namespace std;
  
-int main()
-{
+int main(){
     float a = 0.7;
-    if(0.7 >; a)
-        printf("Hi\n");
+    if(0.7 >= a)
+        cout<< "Hi\n";
     else
-        printf("Hello\n");
-    getch();
+        cout<<"Hello\n";
 }
+Output của chương trình này là gì?
+A. Hi
+B. Hello
+C. Tất cả đều sai
+D. Tất cả đều đúng
+A. Hi
+6252a66941a9bed830e041e8
+@
+#include <iostream>;
+using namespace std;
 
-
-                                                        
-                                                         Output của chương trình này là gì?
-                                                           
-                                                          
-                                                                          A. Hi
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                          
-                                                                          B. Hello
-                                                                
-                                                                 
-                                                                          
-                                                                          C. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                        
-                                                               A là đáp án đúng
-                                                      
-                                               
-                                                                                           
-                                                    Câu 39:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
-void main()
-{
+int main(){
     int x = 10, y = 20, z = 5, i;
     i = x < y < z;
-    printf("i = %d", i);
-    getch();
+    cout<<"i = "<< i;
 }
-
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                            
-                                                                          A. i = 0
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          
-                                                                          B. i = 1
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                   
-                                                                          
-                                                                          C. Error
-                                                                
-                                                                 
-                                                                          D. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                   
-                                                               B là đáp án đúng
-                                                                                                                                
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Toán tử so sánh có thứ tự ưu tiên từ trái sang phải. x < y <=>; 10 < 20 trả về Đúng ` (1). (x < y) < z <=>; 1 < z trả về Đúng ` (1)
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 40:
-                                                        
-                                                        
-                                                        Kiểu khai báo nào sau đây hợp lệ?
-                                                       
-                                                                          A. int length;
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                  
-                                                                          B. char int;
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                
-                                                                          
-                                                                          C. int long;
-                                                                
-                                                               
-                                                                          D. float double;
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                       
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                            
-                                            
-                                                    
-                                               
-                                                                                           
-                                                    Câu 41:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. i = 0
+B. i = 1
+C. Error
+D. Tất cả đều sai
+B là đáp án đúng
+B. i = 1
+6252a66341a9bed830e041a8                
+@                                                        
+Kiểu khai báo nào sau đây hợp lệ?
+A. int length;
+B. char int;
+C. int long;
+D. float double;
+A là đáp án đúng
+6252a65f41a9bed830e04179
+@                                                    
+#include <iostream>;
+using namespace std;
  
 int N = 10;
-void main()
-{
+int main(){
     int N = 20;
-    printf("N = %d", N);
-    getch();
+    cout<<"N = "<< N;
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                             
-                                                                          A. N = 20
-                                                                
-                                                                 
-                                                                          B. N = 10
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                 
-                                                                 
-                                                                          C. Error
-                                                                
-                                                                    D. Không có output
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                      
-                                                                
-                                                               A là đáp án đúng
-                                                       
-                                                    
-                                               
-                                                                                           
-                                                    Câu 42:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. N = 20
+B. N = 10
+C. Error
+D. Không có output
+A là đáp án đúng
+6252a66341a9bed830e041a8                                                      
+@                                                    
+#include <iostream>;
+using namespace std;
  
-void main()
-{
+int main(){
     int a[5] = {1, 2};
-    printf("%d %d %d", a[2], a[3], a[4]);
-    getch();
+    cout<< a[2]<< " " << a[3] << " " << a[4]);
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                           
-                                                                          A. 0 0 0
-                                                                
-                                                               
-                                                                          B. 1 2 2
-                                                                
-                                                                
-                                                                          C. 1 1 1
-                                                                
-                                                                 
-                                                                          D. Error
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                      
-                                                                
-                                                               A là đáp án đúng
-                                                                                                                     
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Đối với mảng tĩnh,nếu khởi tạo thiếu cho các phần tử thì mặc định các phần tử đó được gán bằng 0.
-Hay nói cách khác, câu lệnh int a[5] = {1,2}; <=>; int a[5] = {1, 2, 0, 0, 0};
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 43:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 0 0 0
+B. 1 2 2
+C. 1 1 1
+D. Error
+A. 0 0 0
+6252a66841a9bed830e041dd
+@
+#include <iostream>;
+using namespace std;
  
-void main()
-{
+int main(){
     extern int func(float);
     int a;
     a = func(3.14);
-    printf("%d", a);
-    getch();
+    cout<< a;
 }
  
-int func(float a)
-{
+int func(float a){
     return (int)++a;
 }
 
-
-                                                        
-                                                          Output của chương trình này là gì?
-                                                           
-                                                            
-                                                                          A. 3
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                    
-                                                                          B. 4
-                                                                
-                                                                                                                                                                                                                                                          
-                                                                
-                                                                          C. Complier Error
-                                                                
-                                                                   
-                                                                          D. 3.14
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                        
-                                                     
-                                                                
-                                                               B là đáp án đúng
-                                                                                                           
-                                        
-                                                            
-                                                        
-                                                                Toán tử ++ dùng cho cả số nguyên và số thập phân.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 44:
-                                                        
-                                                        
-                                                        Which of the following operations are INCORRECT?
-                                                            
-                                                                          A. int i = 35; i = i%5
-                                                                
-                                                                                                                                                                                                                                                          
-                                                               
-                                                                          B. short int j = 5; j = j;
-                                                                 
-                                                                          C. long int k = 123L; k = k;
-                                                                
-                                                                   
-                                                                          D. float a = 3.14; a = a%3;
-                                                                
-                                                                                                                                                                                        
-
-                                                        
-                                                            
-                                                               D là đáp án đúng
-                                                                                                                 
-                                        
-                                                            
-                                                        
-                                                                Toán tử % chỉ dùng cho số nguyên
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 45:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Output của chương trình này là gì?
+A. 3
+B. 4
+C. Complier Error
+D. 3.14
+B. 4
+6252a66e41a9bed830e04223
+@
+Thao tác nào sau đây là KHÔNG ĐÚNG?
+A. int i = 35; i = i%5
+B. short int j = 5; j = j;
+C. long int k = 123L; k = k;
+D. float a = 3.14; a = a%3;
+D. float a = 3.14; a = a%3;
+6252a66e41a9bed830e04223
+@                                                            
+#include <iostream>;
+using namespace std;
  
-void main()
-{
-    void v = 0;
-    printf("%d", v);
-    getch();
+int main(){
+    int v = 0;
+    cout<< v;
 }
-
-
-                                                        
-                                                       Chỉ ra lỗi trong chương trình sau
-                                                           
-                                                            
-                                                                          A. Error: Declaration syntax error v (or) ‘v’: illegal use of type ‘void’
-                                                                
-                                                                                                                                                                                                                                                          
-                                                               
-                                                                          B. Chương trình kết thúc bất thường
-                                                                
-                                                                 
-                                                                          C. Không có lỗi
-                                                               
-                                                                          D. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
+Chỉ ra lỗi trong chương trình sau
+A. Error: Declaration syntax error v (or) ‘v’: illegal use of type ‘void’
+B. Chương trình kết thúc bất thường
+C. Không có lỗi
+D. Tất cả đều sai
+A là đáp án đúng 
+6252a66241a9bed830e0419e
+@                                                            
+#include <iostream>;
+using namespace std;
  
-                                                                
-                                                               A là đáp án đúng 
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Dùng kiểu con trỏ void* để trỏ đến kiểu dữ liệu khác.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 46:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
- 
-void main()
-{
+int main(){
     int i = 5;
-    for(;scanf("%d", &amp;i); printf("%d", i));
-    getch();
+    for(;cin>>&i ; cout<< i);
 }
-
-
-                                                        
-                                                        Trong chương trình sau, vòng lặp for sẽ được thực thi trong bao lâu?
-                                                           
-                                                                          A. Vòng lặp for hoàn toàn không được thực thi
-                                                                 
-                                                                          B. Vòng lặp for sẽ chỉ được thực thi một lần
-                                                                 
-                                                                          C. Vòng lặp for sẽ được thực thi 5 lần
-                                                                 
-                                                                          D. Vòng lặp for sẽ được thực thi vô hạn lần
-                                                               
-                                                               D là đáp án đúng
-                                                                                                                     
-                                                                                                                        
-                                                            
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Hàm scanf() đợi người dùng nhập giá trị vào từ bàn phím. Đồng thời trong đoạn code này, hàm scanf() luôn trả về 1 (vòng lặp vô hạn), hàm printf() in ra giá trị nhập vào.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 47:
-                                                        
-#include <stdio.h>;
-#include <conio.h>;
+Trong chương trình sau, vòng lặp for sẽ được thực thi trong bao lâu?
+A. Vòng lặp for hoàn toàn không được thực thi
+B. Vòng lặp for sẽ chỉ được thực thi một lần
+C. Vòng lặp for sẽ được thực thi 5 lần
+D. Vòng lặp for sẽ được thực thi vô hạn lần
+D. Vòng lặp for sẽ được thực thi vô hạn lần
+6252a67041a9bed830e04237
+@
+#include <iostream>;
+using namespace std;
  
-void main()
-{
+int main(){
     display();   
-    getch();
 }
  
-void display()
-{
-    printf("vncoding.net");
+void display(){
+    cout<<"vncoding.net";
 }
-
-
-                                                        
-                                                        Hãy chỉ ra lỗi trong chương trình trên (if it is compiled with Turbo C complier)
-                                                          
-                                                                          A. No error
-                                                                
-                                                              
-                                                                          B. display( ) is not declared
-                                                                
-                                                                 
-                                                                          C. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-
-                                                          B là đáp án đúng
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 48:
-                                                        
-                                                        
-                                                        Đâu là toán tử 1 ngôi trong C/C++
+Hãy chỉ ra lỗi trong chương trình trên (if it is compiled with Turbo C complier)
+A. No error
+B. display() is not declared
+C. Tất cả đều sai
+D. Run time error
+B. display() is not declared
+6252a66541a9bed830e041ba
+@
+Đâu là toán tử 1 ngôi trong C/C++
 1. !
 2. sizeof
 3. ~
 4. <>
-                                                                          A. 1, 2
-                                                                
-                                                                  
-                                                                          B. 1, 3
-                                                                 
-                                                                          C. 2, 4
-                                                                 
-                                                                          D. 1, 2, 3
-                                                                
-                                                                                                                                                                                        
 
-                                                        
-                                                       
-                                                                
-                                                               D là đáp án đúng
-                                                         
-                                                    
-                                               
-                                                                                           
-                                                    Câu 49:
-                                                        
-                                                        
-                                                       Trong biểu thức a = b = 5, thứ tự của phép gán KHÔNG được quyết định bởi tính liên kết của các toán tử.
-                                                           
-                                                             
-                                                                          A. Đúng 
-                                                                 
-                                                                          B. Sai
-                                                                
-                                                                                                                                                                                        
- 
-                                                                
-                                                               B là đáp án đúng
-                                                                                         
-                                                     
-                                                                
-                                        
-                                                            
-                                                        
-                                                                Toán tử ‘=’ có trình tự kết hợp từ phải sang trái, b = 5 sau đó a = b.
-                                                            
-                                                        
-                                                        
-                                                    
-                                               
-                                                                                           
-                                                    Câu 50:
-                                                        
-a = f1(11, 16) * f2(12/8)  +  f3();
-
-
-                                                        
-                                                        Which of the following is the correct order if calling functions in the below code?
-                                                           
-                                                                          A. f1, f2, f3
-                                                               
-                                                                          B. f3, f2, f1
-                                                             
-                                                                          C. Thứ tự có thể thay đổi tuỳ theo trình biên dịch
-                                                                 
-                                                                          D. Tất cả đều sai
-                                                                
-                                                                                                                                                                                        
-  
-                                                               C là đáp án đúng
+A. 1, 2
+B. 1, 3
+C. 2, 4
+D. 1, 2, 3
+D. 1, 2, 3
+6252a66e41a9bed830e04224
+@
+Trong biểu thức a = b = 5, thứ tự của phép gán KHÔNG được quyết định bởi tính liên kết của các toán tử.
+A. Đúng 
+B. Sai
+C. Tuỳ thuộc vào phép toán được sử dụng
+D. Tuỳ thuộc vào trình biên dịch
+B. Sai
+6252a66f41a9bed830e04229
+@
