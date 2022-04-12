@@ -5,7 +5,7 @@ C.
 D.  
 B. Sai
 6252a66541a9bed830e041c0
-@                                                                                                                                                                                      
+@                                                           
 Thường thì đệ quy hoạt động chậm hơn các vòng lặp
 A. Đúng
 B. Sai
@@ -32,7 +32,7 @@ float f(int a, float b){
     return ((float)a + b);
 }
 
-Có một lỗi trong chương trình dưới đây. Bạn sẽ thêm/xoá câu lệnh nào?                                                          
+Có một lỗi trong chương trình dưới đây. Bạn sẽ thêm/xoá câu lệnh nào?      
 A. Add prototype: float f(int, float);
 B. Add prototype: float f(a, b);
 C. Add prototype: float f(float a, int b)
