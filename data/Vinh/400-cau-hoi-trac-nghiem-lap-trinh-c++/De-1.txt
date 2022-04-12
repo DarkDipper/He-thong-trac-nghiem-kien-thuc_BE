@@ -1,1006 +1,245 @@
-
-
-
-Câu 1: 
-
-
 Trong cấu trúc chương trình C++, lệnh #include dùng để làm gì? 
-
 A. Thông báo trong chương trình sử dụng các lệnh tính toán, thông báo các biến sử dụng trong thân chương trình.
-
 B. Khai báo các câu lệnh được sử dụng trong chương trình. Phải tạo các câu lệnh trước thì mới sử dụng được trong chương
 trình C++.
-
-C. Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương
-trình phải có prototype nằm trong các thư viện chuẩn này.
-
-D. Không có đáp án đúng.
-
-C  là đáp án đúng
-
-
-Câu 2: 
-
-
+C. Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương trình phải có prototype nằm trong các thư viện chuẩn này.
+D.Không có đáp án đúng.
+C. Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương trình phải có prototype nằm trong các thư viện chuẩn này.
+6252a66141a9bed830e0418c
+@
 Trong cấu trúc chương trình C++ có bao nhiêu hàm main()? 
-
 A. 1
-
 B. 2
-
 C. 3
-
 D. 4
-
-
-
-
-A  là đáp án đúng
-
-Câu 3: 
-
-
+A. 1
+6252a66541a9bed830e041be
+@
 Lệnh cout trong C++ có tác dụng gì? 
-
 A. Là stream đầu ra chuẩn trong C++.
-
 B. Là lệnh chú thích trong C++
 C. Là stream đầu vào chuẩn của C++.
 D. Là lệnh khai báo một biến.
-A  là đáp án đúng
-
-Câu 4: 
-
-
+A. Là stream đầu ra chuẩn trong C++.
+6252a66341a9bed830e041a8
+@
 Lệnh cin trong C++ có tác dụng gì? 
-
-
-
-
 A. Là lệnh chú thích trong C++
-
-
 B. Là lệnh khai báo một biến.
 C. Là stream đầu ra chuẩn trong C++.
-"D. Là stream đầu vào chuẩn của C++.
-
-
-D  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Câu 5: 
-
-
+D. Là stream đầu vào chuẩn của C++.
+D. Là stream đầu vào chuẩn của C++.
+6252a66341a9bed830e041a9
+@
 Kết thúc một dòng lệnh trong chương trình C++, ta sử dụng ký hiệu gì? 
-
-
-/
-
-
-,
-
-
-
-
 A. Dấu ,
-
-
-
-,
-
-
-
-
 B. Dấu .
-
-
-
-
-
-
-
-
 C. Dấu :
-
-
-
-,
-
-
-
-
 D. Dấu ;
-
-
-
-D  là đáp án đúng
-
-
-
-Câu 6: 
-
-
+D. Dấu ;
+6252a66141a9bed830e0418c
+@
 Lệnh cout trong C++ đi kèm với cặp dấu nào? 
-
-
-A. &gt;&gt;
+A. >>
 B. \\
 C. ||
-D. &lt;&lt;
-
-
-
-D  là đáp án đúng
-
-
-
-
-Câu 7: 
-
-
+D. <<
+D. <<
+6252a66341a9bed830e041a8
+@
 Để chú thích trên 1 dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? 
-
-
 A. \* và *\
-B. &lt;&lt;
+B. >>
 C. //
-D. &gt;&gt;
-
-
-
-C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-Câu 8: 
-
-
+D. <<
+C. //
+6252a67041a9bed830e04235
+ @
 Để chú thích trên nhiều dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? 
-
-
 A. \\
-
-
-
-B. &gt;&gt;
-
-
-
-
+B. >>
 C. /* và */
-
-
-
-
-D. &lt;&lt;
-
-
-
-C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Câu 9: 
-
-
+D. <<
+C. /* và */
+6252a67041a9bed830e04235
+@
 Chú thích nào sau đây là chính xác? 
-
-
-
 A. \*Lập trình C++
-
-
-
 B. //Lập trình C++
-
-
-
-
-C. &lt;!-Lập trình C++--&gt;
-
-
-
-
+C. <!-Lập trình C++-->
 D. \\Lập trình C++
-
-
-
-B  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-Câu 10: 
-
-
+B. //Lập trình C++
+6252a67041a9bed830e04235
+@
 Cách khai báo biến nào sau đây là đúng? 
-
-
-
-A. &lt;Kiểu dữ liệu&gt; &lt;Danh sách tên biến&gt;;
-
-
-
-
-B. &lt;Danh sách tên biến&gt; : &lt;Kiểu dữ liệu&gt;;
-
-
-
-
-C. &lt;Tên biến&gt; = &lt;Giá trị&gt;;
-
-
-
-
+A. <Kiểu dữ liệu> <Danh sách tên biến>;
+B. <Danh sách tên biến> : <Kiểu dữ liệu>;
+C. <Tên biến> = <Giá trị>;
 D. Tất cả đầu không đúng
-
-
-
-A  là đáp án đúng
-
-
-
-
-
-
-
-
-
-Câu 11: 
-
-
-What is the correct value to return to the operating system upon the successful completion of a program? 
-
-
-
+A. <Kiểu dữ liệu> <Danh sách tên biến>;
+6252a65f41a9bed830e04179
+@
+Giá trị chính xác để trả về hệ điều hành sau khi hoàn thành chương trình thành công là bao nhiêu ? 
 A. 0
-
-
-
-
 B. -1
-
-
-
-
 C. 1
-
-
-
-
 D. Do not return a value
-
-
-
-A  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-Câu 12: 
-
-
+A. 0
+6252a66141a9bed830e0418e
+@
 Đâu là hàm mà tất cả chương trình C phải có?
-
-
-
 A. start()
-
-
-
-
 B. system()
-
-
-
-
 C. main()
-
-
-
 D. program()
-
-
-
-C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-Câu 13: 
-
-
+C. main()
+6252a66541a9bed830e041be
+@
 Ký tự nào được sử dụng để báo hiệu bắt đầu và kết thúc của các khối lệnh?
-
-
-
 A. { }
-
-
-
-
 B. → and ←
-
-
-
-
 C. BEGIN and END
-
-
-
 D. ( and )
-
-
-
-A  là đáp án đúng
-
-
-Dấu {} được dùng để đánh dấu điểm bắt đầu và kết thúc 1 khối lệnh (thân hàm, while, for, if/else,..) 
-
-
-
-
-
-
-Câu 14: 
-
-
+A. { }
+6252a66141a9bed830e0418c
+@
 Ký tự nào báo hiệu kết thúc dòng lệnh trong C++
-
-
-
 A. .
-
-
-
-
 B. ;
-
-
-
-
 C. '
-
-
-
-
-
-Dấu ; được dùng để đánh dấu điểm kết thúc 1 dòng lệnh. 
-
-
-
-
-
-
-Câu 15: 
-
-
+D. :
+B. ;
+6252a66141a9bed830e0418c
+@
 Cách comment đoạn code sau đây là đúng? 
-
-
-
 A. */ Comments */
-
-
-
-
 B. ** Comment **
-
-
-
 C. /* Comment */
-
-
-
-
 D. { Comment }
-
-
-
-C  là đáp án đúng
-
-
-
- 
-
-Trong ngôn ngữ C, có 2 cách comment là: "// Comments" : 1 dòng code "/* Comment */" : 1 block code 
-
-
-
-
-
-
-Câu 16: 
-
-
+C. /* Comment */
+6252a67041a9bed830e04235
+@
 Đâu là kiểu dữ liệu không đúng trong C++?
-
-
-
 A. float
-
-
-
-
 B. real
-
-
-
-
 C. int
-
-
-
-
 D. double
-
-
-
-B  là đáp án đúng
-
-"real" không phải là kiểu dữ liệu trong ngôn ngữ lập trình C/C++ 
-
-
-
-
-
-
-Câu 17: 
-
+B. real
+6252a66641a9bed830e041ca
+@
 Đâu là toán tử so sánh 2 biến trong C++?
-
-
 A. :=
-
-
-
-
 B. =
-
-
-
-
 C. equal
-
-
-
-
 D. ==
-
-
-
-D  là đáp án đúng
-
-
-
- 
-
-"==" là toán tử dùng để so sánh 2 biến với nhau. 
-
-
-
-
-
-
-Câu 18: 
-
-
-Which of the following is true? 
-
-
-
-A. 1
-
-
-
-B. 66
-
-
-
-
-C. -1
-
-
-
-
-D. All of the above
-
-
-
-D  là đáp án đúng
-
-
-Kiểu dữ liệu boolean được định nghĩa như sau: true: giá trị khác không, false: giá trị bằng 0. 
-
-
-
-
-
-
-Câu 19: 
+D. ==
+6252a66e41a9bed830e04224
+@
 Đâu là toán tử logic AND?
-
 A. &
-
-
-
-
 B. &&
-
-
-
-
 C. |
-
-
-
 D. |&
-
-
-
-B  là đáp án đúng
-
-Toán tử logic AND được kí hiệu là: &&
-
-
-
-
-
-
-Câu 20: 
-
+B. &&
+6252a66e41a9bed830e04225
+@
 Đoạn code sau trả về giá trị gì?
- !(1 &amp;&amp; !(0 || 1)) 
-
-
-
+ !(1 && !(0 || 1)) 
 A. True
-
-
-
-
 B. False
-
-
-
-
 C. Unevaluatable
-
-
-
-A là đáp án đúng
-
-
-
-
-
-Câu 21: 
-
-
+A. True
+6252a66e41a9bed830e04225
+@
 Đâu là cú pháp đúng của lệnh if?
-
-
 A. if ...
-
-
-
 B. if { ...
-
-
-
-
 C. if ( ... )
-
-
-
-
 D. ... if
-
-
-
-C là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 22: 
-
-    int x;
-    for(x = 0; x <= 10; x++) { }
-
-     
-
-    Giá trị của x sau khi thực hiện đoạn lệnh bằng: 
-
-
-
-    A. 10
-
-
-
-
-    B. 9
-
-
-
-
-    C. 0
-
-
-
-    D. 1
-
-
-
-    A  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-    Câu 23: 
-
-
-    Khi nào thì lệnh While(x < 100) được thực hiện?
-
-
-
-    A. Khi x < 100
-
-
-
-    B. Khi x > 100
-
-
-
-
-    C. Khi x < 100
-
-
-
-
-    D. Khi x != 100
-
-
-
-    A  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 24: 
-    Đâu không phải là câu lệnh lặp trong C++?
-
-
-    A. for
-
-
-
-
-
-    B. do while
-
-
-
-
-    C. while
-
-
-
-
-    D. repeat until
-
-
-
-    D  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 25:  
-    Lệnh lặp do while được bảo đảm việc thực hiện bao nhiêu lần?
-
-
-    A. 0
-
-
-
-    B. Vô hạn
-
-
-
-    C. 1
-
-
-
-    D. Tuỳ theo biến
-
-
-
-    C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 26: 
-
-    Đâu không phải là cách khai báo prototype đúng?
-
-
-    A. int funct(char x, char y);
-
-    B. double funct(char x)
-
-
-
-    C. void funct();
-
-
-
-
-    D. char x();
-
-
-
-    B  là đáp án đúng
-
-    Câu lệnh khai báo hàm thiếu dấu ; 
-
-
-
-
-
-
-    Câu 27: 
-    Đâu là kiểu dữ liệu trả về của prototype sau?
-       “int func(char x, float v, double t);” 
-
-    A. char
-
-
-
-
-    B. int
-
-
-
-    C. float
-
-
-
-    D. double
-
-
-
-    B  là đáp án đúng
-
-
-
-    Câu 28: 
-
-
-    Which of the following is a valid function call (assuming the function exists)? 
-    Đâu là lời gọi hàm đúng? (Giả sử rằng hàm đã được khai báo)
-
-
-    A. funct;
-
-
-
-
-    B. funct x, y;
-
-
-
-    C. funct();
-
-
-
-    D. int funct();
-
-
-
-    C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-    Câu 29: 
-
-
-    Which of the following is a complete function? 
-    Đâu là một hàm được hoàn chỉnh đúng cách?
-
-
-    A. int funct();
-
-
-
-    B. int funct(int x) {return x=x+1;}
-
-
-
-
-    C. void funct(int) {cout<<( “Hello” );
-
-
-    D. void funct(x) {cout<<( “Hello” ); }
-
-
-
-    B  là đáp án đúng
-
-
-
-
-
-
-
-    Câu 30: 
-
-
-    What is required to avoid falling through from one case to the next? 
-    Đâu là lệnh được sử dụng để kết thúc một case khỏi case kế tiếp?
-
-
-    A. end;
-
-
-
-
-    B. break;
-
-
-    C. stop;
-
-
-
-
-    D. continue;
-
-
-
-    B  là đáp án đúng
-
-
-
-    Câu 31: 
+C. if ( ... )
+6252a66941a9bed830e041e7
+@
+int x; for(x = 0; x <= 10; x++) { }. Giá trị của x sau khi thực hiện đoạn lệnh bằng: 
+A. 10
+B. 9
+C. 0
+D. 1
+A. 10
+6252a67041a9bed830e04237
+@
+Khi nào thì lệnh While(x < 100) được thực hiện?
+A. Khi x < 100
+B. Khi x > 100
+C. Khi x < 100
+D. Khi x != 100
+A. Khi x < 100
+6252a67041a9bed830e04238
+@
+Đâu không phải là câu lệnh lặp trong C++?
+A. for
+B. do while
+C. while
+D. repeat until
+D. repeat until
+6252a67041a9bed830e04238;6252a67041a9bed830e04239;6252a67041a9bed830e04236
+@
+Lệnh lặp do while được bảo đảm việc thực hiện bao nhiêu lần?
+A. 0
+B. Vô hạn
+C. 1
+D. Tuỳ theo biến
+C. 1
+6252a67041a9bed830e04239
+@
+Đâu không phải là cách khai báo prototype đúng?
+A. int funct(char x, char y);
+B. double funct(char x)
+C. void funct();
+D. char x();
+B. double funct(char x)
+6252a66541a9bed830e041ba
+@
+Đâu là kiểu dữ liệu trả về của prototype sau?. “int func(char x, float v, double t);” 
+A. char
+B. int
+C. float
+D. double
+B. int
+6252a66541a9bed830e041ba
+@
+Đâu là lời gọi hàm đúng? (Giả sử rằng hàm đã được khai báo)
+A. funct;
+B. funct x, y;
+C. funct();
+D. int funct();
+C. funct();
+6252a66641a9bed830e041c3
+@
+Đâu là một hàm được hoàn chỉnh đúng cách?
+A. int funct();
+B. int funct(int x) {return x=x+1;}
+C. void funct(int) {cout<<( “Hello” );
+D. void funct(x) {cout<<( “Hello” ); }
+B. int funct(int x) {return x=x+1;}
+6252a66641a9bed830e041c2
+@
+Đâu là lệnh được sử dụng để kết thúc một case khỏi case kế tiếp?
+A. end;
+B. break;
+C. stop;
+D. continue;
+B. break;
+6252a66741a9bed830e041d1;6252a66941a9bed830e041ea
+@
 Từ khóa nào bao hàm các khả năng chưa được xử lý?
-
-
-    A. all
-
-
-
-    B. continue
-
-
-
-    C. default
-
-
-
-
-    D. other
-
-
-
-    C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 32: 
-
-    void main()
-    {
+A. all
+B. continue
+C. default
+D. other
+C. default
+6252a66941a9bed830e041ea
+@
+    void main(){ 
         int x = 0;
         switch(x)
             {
@@ -1009,551 +248,154 @@ Từ khóa nào bao hàm các khả năng chưa được xử lý?
                 case 2: printf( "Hello World" );
             }
     }
-
-     
-
-    Kết quả của đoạn code trên là?
-
-
-
-    A. One
-
-
-
-    B. Zero
-    
-
-
-
-    C. Hello World
-
-
-
-    D. ZeroHello World
-
-
-
-    D  là đáp án đúng
-
-
-    Do không có lệnh break giữa các case. Khi x = 0, lệnh case 0 và case 2 được thực hiện. 
-
-
-
-
-
-
-    Câu 33: 
-
-
-    Đâu là cách khai báo con trỏ hợp lệ?
-
-
-    A. int x;
-
-
-
-
-    B. int &amp;x;
-
-
-
-    C. ptr x;
-
-
-
-
-    D. int *x;
-
-
-
-    D  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 34: 
-
-
-    Which of the following gives the memory address of integer variable a? 
-    Đâu là lệnh dùng để truy xuất địa chỉ vùng nhớ của biến a?
-
-
-    A. *a;
-
-
-    B. a;
-
-
-
-
-    C. &a;
-
-
-
-
-    D. address(a);
-
-
-
-    C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 35: 
-
-    Đâu là lệnh cung cấp địa chỉ bộ nhớ của một biến được trỏ tới bởi con trỏ a?
-
-    A. a;
-
-
-
-    B. *a;
-
-
-
-    C. &amp;a;
-
-
-
-
-    D. address(a);
-
-
-
-    A  là đáp án đúng
-
-
-    Câu 36: 
-
-
-    Which of the following gives the value stored at the address pointed to by pointer a? 
-    Đâu là lệnh truy xuất giá trị của một biến được trỏ tới bởi con trỏ a?
-
-    A. a;
-
-
-
-
-    B. val(a);
-
-    C. *a;
-
-    D. &amp;a;
-
-
-
-    C  là đáp án đúng
-
-    Câu 37: 
-
-    Đâu là từ khoá/hàm hợp lệ để cấp phát vùng nhớ trong C++?
-
-
-    A. new
-
-
-
-    B. delete
-
-    C. create
-
-
-    D. value
-
-
-
-    A  là đáp án đúng
-
-
-
-    Câu 38: 
-
-
-    Đâu là từ khoá/hàm hợp lệ để giải phóng vùng nhớ trong C++?
-
-    A. free
-
-
-
-    B. delete
-
-
-
-    C. clear
-
-
-
-    D. remove
-
-
-
-    B  là đáp án đúng
-
-    Câu 39: 
-
-    Đâu là lệnh truy cập biến var trong struct b?
-
-
-    A. b→var;
-
-
-
-    B. b.var;
-
-
-
-    C. b-var;
-
-
-
-    D. b&gt;var;
-
-
-
-    B  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 40: 
-
-    Đâu là lệnh truy cập biến var trong struct con trỏ *b?
-
-    A. b→var;
-
-    B. b.var;
-
-    C. b-var;
-
-    D. b&var;
-
-
-
-    A  là đáp án đúng
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 41: 
-
-    Đâu là lệnh khai báo struct hợp lệ?
-    A. struct {int a;}
-
-    B. struct a_struct {int a;}
-
-    C. struct a_struct int a;
-
-    D. struct a_struct {int a;};
-
-    D  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Câu 42: 
-
+Kết quả của đoạn code trên là?
+A. One
+B. Zero
+C. Hello World
+D. ZeroHello World
+D. ZeroHello World
+6252a66941a9bed830e041ea
+@
+Đâu là cách khai báo con trỏ hợp lệ?
+A. int x;
+B. int &x;
+C. ptr x;
+D. int *x;
+D. int *x;
+6252a66241a9bed830e0419d
+@
+Đâu là lệnh dùng để truy xuất địa chỉ vùng nhớ của biến a?
+A. *a;
+B. a;
+C. &a;
+D. address(a);
+C. &a;
+6252a66241a9bed830e0419e
+@
+Đâu là lệnh cung cấp địa chỉ bộ nhớ của một biến được trỏ tới bởi con trỏ a?
+A. a;
+B. *a;
+C. &a;
+D. address(a);
+A. a;
+6252a66241a9bed830e0419e
+@
+Đâu là lệnh truy xuất giá trị của một biến được trỏ tới bởi con trỏ a?
+A. a;
+B. val(a);
+C. *a;
+D. &a;
+C. *a;
+6252a66241a9bed830e0419e
+@
+Đâu là từ khoá/hàm hợp lệ để cấp phát vùng nhớ trong C++?
+A. new
+B. delete
+C. create
+D. value
+A. new
+6253ed4b9a5e3f8c443f951b
+@
+Đâu là từ khoá/hàm hợp lệ để giải phóng vùng nhớ trong C++?
+A. free
+B. delete
+C. clear
+D. remove
+B. delete
+6253ed4b9a5e3f8c443f951b
+@
+Đâu là lệnh truy cập biến var trong struct b?
+A. b→var;
+B. b.var;
+C. b-var;
+D. b>var;
+B. b.var;
+6252a66c41a9bed830e0420c
+@
+Đâu là lệnh truy cập biến var trong struct con trỏ *b?
+A. b→var;
+B. b.var;
+C. b-var;
+D. b&var;
+A. b→var;
+625446f16eddb741297c930f
+@
+Đâu là lệnh khai báo struct hợp lệ?
+A. struct {int a;}
+B. struct a_struct {int a;}
+C. struct a_struct int a;
+D. struct a_struct {int a;};
+D. struct a_struct {int a;};
+6252a66c41a9bed830e0420a
+@
 Đâu là lệnh khai báo đúng một biến của struct foo? 
-
-
-
-
-
-
-    A. struct foo;
-
-
-
-
-    B. struct foo var;
-
-
-
-
-    C. foo;
-
-
-
-    D. int foo;
-
-
-
-    B  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 43: 
-
-    Đâu là lệnh khai báo mảng hợp lệ?
-
-
-
-
-    A. int arr[10];
-
-
-
-    B. int arr;
-
-
-
-    C. arr{10};
-
-
-
-    D. array arr[10];
-
-
-
-    A  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-
-    Câu 44: 
-
-
+A. struct foo;
+B. struct foo var;
+C. foo;
+D. int foo;
+B. struct foo var;
+6252a66c41a9bed830e0420a
+@
+Đâu là lệnh khai báo mảng hợp lệ?
+A. int arr[10];
+B. int arr;
+C. arr{10};
+D. array arr[10];
+A. int arr[10];
+6252a66841a9bed830e041e0
+@
 Đâu là chỉ số của phẩn tử cuối cùng trong mảng có 29 phần tử?
-
-
-    A. 29
-
-
-
-    B. 28
-
-
-
-    C. 0
-
-
-
-    D. Programmer-defined
-
-
-
-    B  là đáp án đúng
-
-
-
-
-
-
-
-
-
-    Câu 45: 
-
-
+A. 29
+B. 28
+C. 0
+D. Programmer-defined
+B. 28
+6252a66841a9bed830e041e1
+@
 Đâu là cách khai báo mảng 2 chiều hợp lệ?
-
-
-    A. array arr[20][20];
-
-
-
-
-    B. int arr[20][20];
-
-
-
-    C. int arr[20, 20];
-
-
-
-    D. char arr[20];
-
-
-
-    B  là đáp án đúng
-
-
-
-
-
-
-
-
-
-    Câu 46: 
-
+A. array arr[20][20];
+B. int arr[20][20];
+C. int arr[20, 20];
+D. char arr[20];
+B. int arr[20][20];
+6252a66841a9bed830e041db
+@
 Đâu là lệnh truy cập chính xác phần tử thứ 7 được lưu trữ trong mảng có 100 phần tử?
-    A. foo[6];
-    B. foo[7];
-    C. foo(7);
-    D. foo;
-    A  là đáp án đúng
-
-    Câu 47: 
-
-
-    Đâu là lệnh cung cấp địa chỉ bộ nhớ của phần tử đầu tiên trong mảng arr, một mảng có 100 phần tử?
-
-
-    A. arr[0];
-
-
-
-
-    B. arr;
-
-
-    C. &amp;arr;
-
-
-
-
-    D. arr[1];
-
-
-
-    B  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 48: 
-
-
-    Đâu là một chuỗi ký tự?
-
-
-
-    A. Static String
-
-
-
-    B. “Static String”
-
-
-
-    C. ‘Static String’
-
-
-
-
-    D. char string[100];
-
-
-
-    B  là đáp án đúng
-
-    Câu 49: 
-
-    Ký tư nào báo hiệu kết thúc tất cả các chuỗi?
-
-
-    A. ‘.’
-
-
-
-    B. ‘ ‘
-
-
-
-    C. ‘\0’
-
-
-
-
-    D. ‘/0’
-
-
-
-    C  là đáp án đúng
-
-
-
-
-
-
-
-
-
-
-    Câu 50: 
-
-
-    Đâu là lệnh đọc trong một chuỗi có tên là x với 100 ký tự?
-
-
-    A. fgets(x, 101, stdin);
-
-
-
-    B. fgets(x, 100, stdin);
-
-
-
-    C. readline(x, 100, ‘\n’);
-
-
-
-    D. read(x);
-
-
-
-    B  là đáp án đúng
+A. foo[6];
+B. foo[7];
+C. foo(7);
+D. foo;
+A. foo[6];
+6252a66841a9bed830e041e1
+@
+Đâu là lệnh cung cấp địa chỉ bộ nhớ của phần tử đầu tiên trong mảng arr, một mảng có 100 phần tử?
+A. arr[0];
+B. arr;
+C. &arr;
+D. arr[1];
+B. arr;
+6252a66241a9bed830e041a0
+@
+Đâu là một chuỗi ký tự?
+A. Static String
+B. “Static String”
+C. ‘Static String’
+D. char string[100];
+B. “Static String”
+6252a66141a9bed830e0418b
+@
+Ký tư nào báo hiệu kết thúc tất cả các chuỗi?
+A. ‘.’
+B. ‘ ‘
+C. ‘\0’
+D. ‘/0’
+C. ‘\0’
+6252a66141a9bed830e0418a
+@
+Đâu là lệnh đọc trong một chuỗi có tên là x với 100 ký tự?
+A. fgets(x, 101, stdin);
+B. fgets(x, 100, stdin);
+C. readline(x, 100, ‘\n’);
+D. read(x);
+B. fgets(x, 100, stdin);
+6252a66141a9bed830e0418a
