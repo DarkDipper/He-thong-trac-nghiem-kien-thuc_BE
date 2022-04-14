@@ -1,0 +1,893 @@
+int main(){
+    int i = 5, k;
+    if (i == 0)
+        goto label;
+    label: cout<< i;
+        cout<<"Hey";
+}
+
+Output của chương trình là gì?
+A. Hey
+B. 5
+C. 5Hey
+D. Complie error
+C. 5Hey
+6252a66741a9bed830e041d5
+@
+int main(){
+    cout<< 1;
+    goto l1;
+    cout<< 2;
+    l1:goto l2;
+    cout<<);
+    l2:cout<< 4;
+}
+
+Output của chương trình là gì?
+A. 1 4
+B. 1 2 4
+C. Syntax error
+D. Syntax error
+A. 1 4
+6252a66741a9bed830e041d5
+@
+#include <iostream>
+using namespace std;
+
+void foo();
+
+int main(){
+    cout<< 1;
+    goto l1;
+    cout<< 2;
+}
+void foo(){
+    l1: cout<<"3 ";
+}
+
+Output của chương trình là gì?
+A. Complie error
+B. 2
+C. 1
+D. 1
+A. Complie error
+6252a66741a9bed830e041d5
+@
+#include <iostream>
+using namespace std;
+int main(){
+    int i = 0, j = 0;
+    while (i < 2){
+        l1: i++;
+        while (j <){
+            cout<<"loop\n";
+        goto l1;
+        }
+    }
+}
+
+Output của chương trình là gì?
+A. loop loop loop
+B. Vòng lặp vô hạn
+C. Complie error
+D. Kết quả khác
+C. Complie error
+6252a66741a9bed830e041d5
+@
+int main(){
+    int a = 15, b = 10, c = 5;
+    if(a > b > c)
+        cout<< "True";
+    else
+        cout<< "False";
+}
+
+Output của chương trình là gì?
+A. True
+B. False
+C. Complier Error
+D. Run time error
+B. False
+6252a66e41a9bed830e04223
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i = 0;
+    switch (i){
+        case '0': cout<< "A";
+            break;
+        case '1': cout<< "B";
+            break;
+        default: cout<< "ABC";
+    }
+}
+
+Output của chương trình là gì?
+A. A
+B. B
+C. ABC
+D. Complier Error
+C. ABC
+6252a66941a9bed830e041eb
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i =;
+    switch (i){
+        case 0+1: cout<< "A";
+            break;
+        case 1+2: cout<< "B";
+            break;
+        default: cout<< "ABC";
+    }
+}
+
+Output của chương trình là gì?
+A. A
+B. B
+C. ABC
+D. Complier Error
+B. B
+6252a66941a9bed830e041eb
+@
+#include <iostream>
+using namespace std;
+
+#define A 0
+#define B 1
+int main(){
+    int i =;
+    switch (i  & 1){
+        case A: cout<< "FALSE";
+            break;
+        case B: cout<< "TRUE";
+            break;
+        default: cout<< "Defa";
+    }
+}
+
+Output của chương trình là gì?
+A. FALSE
+B. TRUE
+C. Default
+D. Complier error
+B. TRUE
+6252a66941a9bed830e041eb
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 5;
+    switch(a){
+        default:
+            a = 4;
+        case 6:
+            a--;
+        case 5:
+            a = a + 1;
+        case 1:
+            a = a - 1;
+    }
+    cout<< a;
+}
+
+Output của chương trình là gì?
+A. 3
+B. 4
+C. 5
+D. 6
+C. 5
+6252a66941a9bed830e041eb
+@
+Câu 11:
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x =;
+    if (x == 2); x = 0;
+    if (x ==) x++;
+    else x += 2;
+    cout<< "x = "<< x;
+}
+
+Output của chương trình là gì?
+A. x = 2
+B. x = 6
+C. x = 0
+D. x = 8
+A. x = 2
+6252a66941a9bed830e041e6
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int check = 20, arr[] = {10, 20,0};
+    switch (check){
+        case arr[0]: cout<< "A";
+        case arr[1]: cout<< "B";
+        case arr[2]: cout<< "C";
+    }
+}
+
+Output của chương trình là gì?
+A. ABC
+B. BC
+C. B
+D. Complier Error
+D. Complier Error
+6252a66941a9bed830e041ea
+@
+int main(){
+    if ((1 || 0)  & & (0 || 1)){
+        cout<< "ABC";
+    else
+        cout<< "DEF";
+}
+
+Output của chương trình là gì?
+A. ABC
+B. DEF
+C. Syntax error
+D. Kết quả khác
+A. ABC
+6252a66e41a9bed830e04225
+@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    char str1[] = "vncoding";
+    char str2[] = "vncoding";
+    if (strcmp(str1, str2))
+        cout<< "Equal";
+    else
+        cout<< "Unequal";
+}
+
+Output của chương trình là gì?
+A. Equal
+B. Unequal
+C. Không xuất gì cả
+D. Complier Error
+B. Unequal
+6252a66141a9bed830e0418b
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i;
+    i = 10;
+    if(i == 20 ||0)
+        cout<< "True";
+    else
+        cout<< "False";
+}
+
+Output của chương trình là gì?
+A. True
+B. False
+C. Không xuất gì cả
+D. Complier error
+A. True
+6252a66e41a9bed830e04225
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    if(1,0)
+        cout<< "True";
+    else
+      cout<< "False";
+}
+
+Output của chương trình là gì?
+A. True
+B. False
+C. Không xuất gì cả
+D. Complier error
+B. False
+6252a66941a9bed830e041e7
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i, j, *ptr, *ptr1;
+    i = 10;
+    j = 10;
+    ptr =  &i;
+    ptr1 =  &j;
+    if(ptr == ptr1)
+        cout<< "True";
+    else
+        cout<< "False";
+}
+
+Output của chương trình là gì?
+A. True
+B. False
+C. Không xuất gì cả
+D. Complier error
+B. False
+6252a66241a9bed830e0419e
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i;
+    i = 2;
+    DES:
+        cout<< i;
+        i = i + 2;
+        if(i <= 20)
+    goto DES;
+}
+
+Output của chương trình là gì?
+A. 2468101214161820
+B. 468101214161820
+C. Không xuất gì cả
+D. Complier error
+A. 2468101214161820
+6252a66741a9bed830e041d5
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i;
+    i = 0;
+    if(i = 15, 10, 5)
+        cout<< "C/C++ ", i);
+    else
+        cout<< "Java ", i);
+}
+
+Output của chương trình là gì?
+A. C/C++ 15
+B. Java 15
+C. Java 5
+D. Complier error
+A. C/C++ 15
+6252a66941a9bed830e041e7
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 80;
+    if(a++ > 80)
+        cout<< "C/C++ ", a);
+    else
+        cout<< "Java ", a)
+}
+
+Output của chương trình là gì?
+A. C/C++ 80
+B. C/C++ 81
+C. Java 80
+D. Java 81
+B. C/C++ 81
+6252a66941a9bed830e041e7
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a;
+    a = 1;
+    while(a <= 1)
+        if(a%2)
+            cout<< a++);
+        else
+            cout<< ++a;
+    cout<< a+10;
+}
+Output của chương trình là gì?
+A. 112
+B. 2 12
+C. 2 11
+D. 121
+A. 112
+6252a67041a9bed830e04238
+@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void myfunc(char** param){
+    ++param;
+}
+
+int main(){
+    char* string = (char*)malloc(64);
+    strcpy(string, "hello_World");
+    myfunc(&string);
+    myfunc(&string);
+    cout<< string;
+}
+
+Output của chương trình là gì?
+A. hello_World
+B. ello_World
+C. llo_World
+D. lo_World
+A. hello_World
+6252a66141a9bed830e0418b
+@
+void myfunc(char** param){
+    ++*param;
+}
+int main(){
+char* string = (char*)malloc(64);
+    strcpy(string, "hello_World";
+    myfunc( &string);
+    myfunc( &string);
+    cout<< string)
+}
+
+Output của chương trình là gì?
+A. hello_World
+B. ello_World
+C. llo_World
+D. lo_World
+C. llo_World
+6252a66141a9bed830e0418b
+@
+int main(){
+    int ints[] = { 0, 1, 2, };
+    int* i1 = ints + 1;
+    int a = ++*i1;
+    int b = a + *i1;
+    cout<< b;
+}
+
+Output của chương trình là gì?
+A. 2
+B. 4
+C. 5
+D. 6
+B. 4
+6252a66241a9bed830e0419e
+@
+int main(){
+    int ints[] = { 0, 5, 10, 15 };
+    int* i2 = ints + 2;
+    int a = *i2++; // a = *(i2++);
+    cout<< a << "#" << *i2;
+}
+
+Output của chương trình là gì?
+A. 10#15
+B. 10#10
+C. 15#15
+D. 11#15
+A. 10#15
+6252a66241a9bed830e0419e
+@
+Câu 26:
+int main(){
+    int ints[] = { 0, 1, 2, };
+    int* i1 = ints + 1;
+    int* i2 = ints + 2;
+    int a = ++*i1 + *i2++;
+    int b = *++i1 + *i2--;
+    cout<< a << "#" << b;
+}
+
+Output của chương trình là gì?
+A. 4#4
+B. 4#5
+C. 5#6
+D. 4#6
+B. 4#5
+6252a66241a9bed830e0419e
+@
+int main(){
+    int i = 400;
+    int *ptr =  &i;
+    *++ptr = 2;
+    cout<< i << " " << *ptr;
+}
+
+Output của chương trình là gì?
+A. 400 2
+B. 400 400
+C. 400 401
+D. Complier error
+A. 400 2
+6252a66241a9bed830e0419e
+@
+int main(){
+    char str[] = {"pvpit"};
+    char *s1 = str;
+    s1++;
+    cout<< *s1;
+}
+
+Output của chương trình là gì?
+A. pvpit
+B. vpit
+C. v
+D. Kết quả khác
+C. v
+6252a66241a9bed830e0419e
+@
+int main(){
+    char *s = "\12345s\n";
+    cout<< strlen(s);
+    cout<< s;
+}
+
+Output của chương trình là gì?
+A. 5
+B. 7
+C. 9
+D. 10
+A. 5
+6252a66141a9bed830e0418b
+@
+int main(int argc, char** argv){
+    const char* foo = "wow"; // line 1
+    foo = "top"; // line 2
+    foo[0] = 1; // line 3
+    return 0;
+}
+
+Đối với đoạn mã dưới đây, dòng nào sẽ được trình biên dịch báo cáo là lỗi?
+A. 1
+B. 2
+C. 3
+D. Tất cả đều sai
+C là đáp án đúng
+6252a66641a9bed830e041c6
+@
+int main(){
+    int x = 5,y = 6;
+    int* const p =  &x;
+    p =  &y;
+    cout<< *p
+}
+
+Output của chương trình là gì?
+A. Complier error
+B. 6
+C. 5
+D. Kết quả khác
+A. Complier error
+6252a66641a9bed830e041c6
+@
+    int main(){
+    int x = 5, y = 8;
+    const int* p;
+    p =  &x;
+    p =  &y;
+    x++;
+    cout<< *p;
+}
+
+Output của chương trình là gì?
+A. 5
+B. 6
+C. 8
+D. Complier Error
+C. 8
+6252a66641a9bed830e041c6
+@
+int main(){
+    int x = 5;
+    const int* p;
+    p =  &x;
+    x++;
+    *p = 4;
+    cout<< *p;
+}
+
+Output của chương trình là gì?
+A. 4
+B. 5
+C. 6
+D. Complier Error
+D. Complier Error
+6252a66641a9bed830e041c6
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a =20;
+    char *ptr;
+    ptr = (char*) &a;
+    cout<< *ptr;
+    return 0;
+}
+
+Output của chương trình là gì?
+A. 20
+B. 64
+C. Complier Error
+D. Kết quả khác
+B. 64
+6252a66241a9bed830e0419e
+@
+Câu 35:
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i =;
+    int *j;
+    int **k;
+    j =  &i;
+    k =  &j;
+    cout<<  k << *k << **k;
+    return 0;
+}
+
+Output của chương trình là gì?
+A. Địa chỉ của i, địa chỉ của j
+B. Complier Error
+C. , ,
+D. Kết quả khác
+A. Địa chỉ của i, địa chỉ của j
+6252a66241a9bed830e0419e
+@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    char *ptr1 = NULL;
+    char *ptr2 = 0;
+    cout<< ptr2;
+    strcpy(ptr1, "c");
+    strcpy(ptr2, "questions");
+    cout<< ptr1 << ptr2)
+}
+
+Chương trình sẽ báo lỗi ở dòng nào?
+A. cout<< ptr2;
+B. strcpy(ptr1, "c");
+C. strcpy(ptr2, "questions");
+D. cout<< ptr1 << ptr2)
+B. strcpy(ptr1, "c");
+6252a66141a9bed830e0418b
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 10;
+    void *p =  &a;
+    int *ptr = p;
+    cout<< *ptr;
+}
+
+Chương trình sẽ báo lỗi ở dòng nào?
+A. int a = 10;
+B. void *p =  &a;
+C. int *ptr = p;
+D. cout<< "%u\n", *ptr);
+C. int *ptr = p;
+6252a66141a9bed830e0418b
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 5, b = 10, c;
+    int *p =  &a, *q =  &b;
+    c = p - q;
+    cout<< c;
+}
+
+Output của chương trình là gì?
+A. 1
+B. 4
+C. 5
+D. 6
+A là đáp án đúng
+6252a66241a9bed830e0419e
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i = 5, j;
+    int *p , *q;
+    p =  &i;
+    q =  &j;
+    j = 5;
+    cout<< *p << *q)
+}
+
+Output của chương trình là gì?
+A. 5 5
+B. Complier Error
+C. 5 giá trị rác
+D. Kết quả khác
+A. 5 5
+6252a66241a9bed830e0419e
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i = 5;
+    int *p;
+    p =  &i;
+    cout<<* &p <<  &*p;
+}
+
+Output của chương trình là gì?
+A. Địa chỉ của i
+B. Giá trị rác
+C. Complier Error
+D. Kết quả khác
+A. Địa chỉ của i
+6252a66241a9bed830e0419e
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int array[2][2][3]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+    cout<< array[1][0][2];
+}
+
+Output của chương trình là gì?
+A. 6
+B. 7
+C. 8
+D. 9
+C. 8
+6252a66841a9bed830e041e2
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    char arr[8]={'V''I''E''T''N''A''M'};
+    char *p;
+    p=(char *)(arr+2)[2];
+    cout<< p;
+}
+
+Output của chương trình là gì?
+A. I
+B. E
+C. M
+D. N
+D. N
+6252a66141a9bed830e0418a
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    char ch[]={'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    int *p = (int*)ch;
+    p++;
+    cout<< *p;
+}
+
+Output của chương trình là gì?
+A. 7363534
+B. 4353637
+C. 45673333
+D. 58284020
+A. 7363534
+6252a66141a9bed830e0418a
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i = 11;
+    int const * p =  &i;
+    p++;
+    cout<< *p)
+}
+Output của chương trình là gì?
+A. 11
+B. 12
+C. Giá trị rác
+D. Complier error
+C. Giá trị rác
+6252a66241a9bed830e0419e
+@
+Câu nào sau đây đúng về mảng?
+    1. Mảng int num[26]; có thể lưu trữ 26 phần tử
+    2. Biểu thức num[1] chỉ định phần tử đầu tiên trong mảng
+    3. Cần khởi tạo mảng tại thời điểm khai báo.
+    4. Khai báo num[SIZE] hợp lệ nếu SIZE là một macro.
+A. 1,4
+B.
+C. 1,2
+D. 1
+A. 1,4
+6252a66841a9bed830e041e0
+@
+Hàm thư viện được sử dụng để tìm lần xuất hiện cuối cùng của một ký tự trong một chuỗi là
+A. strnstr()
+B. strrchr()
+C. laststr()
+D. strstr()
+B. strrchr()
+6252a66141a9bed830e0418b
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a[3][4] = { 1, 2,, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+    cout<< a[0]+1 << ", " << *(a[0]+1) << ", " <<  *(*(a+0)+1))
+}
+
+Output của chương trình là gì? (giả sử rằng mảng bắt đầu ở vị trí 1002 và kích thước của kiểu integer là 4 byte)
+A. 1006, 2, 2
+B. 1006, 4, 4
+C. 1002, 5, 5
+D. Error
+A. 1006, 2, 2
+6252a66241a9bed830e041a0
+@
+int (*ptr)[10];
+Khai báo sau có nghĩa là gì?
+A. ptr là mảng con trỏ có 10 số nguyên
+B. ptr là một con trỏ tới một mảng 10 số nguyên
+C. ptr là một mảng gồm 10 số nguyên
+D. ptr là một con trỏ tới mảng
+A. ptr là mảng con trỏ có 10 số nguyên
+6252a66241a9bed830e041a0
+@
+#include <iostream>
+using namespace std;
+
+int main(){
+    char str[] = "LAPTRINHC++\0\.NET\;
+    cout<< str;
+}
+
+Output của chương trình là gì?
+A. LAPTRINHC++
+B. LAPTRINHC++\0\.NET\0
+C. LAPTRINHC++\0\.NET
+A. LAPTRINHC++
+6252a66141a9bed830e0418a
+@
+#include <iostream>
+using namespace std;
+
+void swap(char *, char *);
+
+int main(){
+    char *pstr[2] = {"LAPTRINHC++", ".NET"};
+    swap(pstr[0], pstr[1]);
+    cout<< pstr[0] << pstr[1]
+}
+void swap(char *tmp, char *tmp2 ){
+    char *t;
+    t = tmp;
+    tmp = tmp2;
+    tmp2 = t;
+}
+
+Output của chương trình là gì?
+A. LAPTRINHC++.NET
+B. .NETLAPTRINHC++
+C. Address of pstr[0] Address of pstr[1]
+D. Complier error
+6252a66141a9bed830e0418a
+@
