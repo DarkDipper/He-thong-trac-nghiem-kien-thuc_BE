@@ -1,3 +1,4 @@
+@
 #include <iostream>;
 using namespace std;
 int main()
@@ -41,7 +42,6 @@ Bạn nghĩ từ khóa nào sau đây có thể được sử dụng khi khai b�
 A. Tất cả
 B. (i)
 C. (i), (iii)
-D.  
 A. Tất cả
 6252a66f41a9bed830e04230
 @

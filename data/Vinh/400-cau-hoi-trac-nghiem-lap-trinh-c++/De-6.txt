@@ -1,4 +1,3 @@
-@
     #include <stdio.h>
     #include <conio.h>
     void swap(char **, char **);
@@ -21,6 +20,7 @@
 A. LAPTRINHC++.NET
 B. .NETLAPTRINHC++
 C. Địa chỉ của pstr[0] Địa chỉ của pstr[1]
+D.  
 B. .NETLAPTRINHC++
 6252a66241a9bed830e0419b;62543f006eddb741297c92ff
 @
@@ -28,6 +28,7 @@ B. .NETLAPTRINHC++
 A. Constructor
 B. Destructor
 C. Static method
+D.  
 A. Constructor
 6252a66241a9bed830e041a2
 @
@@ -37,19 +38,21 @@ B. public
 C. protected
 D. protect
 A. private
-6252a66d41a9bed830e04216
+62568853ca04156772f95171
 @
    Các hàm thành viên của một lớp thường được tạo ở kiểu ___ và các thành viên dữ liệu của một lớp thường được tạo ở kiểu ___.
 A. private, public
 B. protected, public
 C. public, private
+D.  
 C. public, private
-6252a66e41a9bed830e0421c
+62568853ca04156772f95171
 @
 Tính kế thừa cho phép ___ giúp tiết kiệm thời gian phát triển và khuyến khích sử dụng phần mềm chất lượng.
 A. khả năng tái sử dụng (reusability)
 B. tính đóng gói (encapsulation)
 C. tính phát triển (development)
+D.  
 A. khả năng tái sử dụng (reusability)
 6252a66d41a9bed830e04219
 @
@@ -57,13 +60,15 @@ Ba phương thức chỉ định truy cập hàm thành viên là ___, ___ và _
 A. public, private, protected
 B. public, private, protect
 C. public, private, static
+D.  
 A. public, private, protected
-6252a66e41a9bed830e0421c
+62568853ca04156772f95171
 @
 Một hàm ảo (pure virtual) được chỉ định bằng cách đặt ___ ở cuối nguyên mẫu của nó trong lớp Định nghĩa.
 A. =0
 B. =1
 C. =-1
+D.  
 A. =0
 6252a66d41a9bed830e04215
 @
@@ -71,6 +76,7 @@ Một lớp được gọi là lớp cơ sở trừu tượng nếu nó có hàm
 A. pure virtual
 B. static
 C. private
+D.  
 A. pure virtual
 6252a66d41a9bed830e04215
 @
@@ -78,6 +84,7 @@ A. pure virtual
 A. new
 B. alloc
 C. malloc
+D.  
 A. new
 6253ed4b9a5e3f8c443f951b
 @
@@ -85,6 +92,7 @@ A. new
 A. Class
 B. Object
 C. Function
+D.  
 B. Object
 6252a66741a9bed830e041d6
 @
@@ -92,6 +100,7 @@ B. Object
 A. giá trị, đối tượng
 B. đối tượng, lớp
 C. biến, hàm
+D.  
 C. biến, hàm
 6252a66241a9bed830e0419d
 @
@@ -100,12 +109,14 @@ A. debugging
 B. kiểm tra rò rỉ bộ nhớ
 C. library for time
 A. debugging
+D.  
 62551233f214278e765adeed
 @
 Hai hoặc nhiều hàm có thể có cùng tên, miễn là ___ của chúng khác nhau.
 A. giá trị trả về
 B. danh sách các tham số
 C. Tất cả đều đúng
+D.  
 B. danh sách các tham số
 6252a66b41a9bed830e04203
 @
@@ -113,6 +124,7 @@ B. danh sách các tham số
 A. static
 B. run-time
 C. default
+D.  
 C. default
 6252a66241a9bed830e041a3
 @
@@ -120,6 +132,7 @@ C. default
 A. dynamic
 B. static
 C. public
+D.  
 B. static
 6252a66f41a9bed830e04230
 @
@@ -127,6 +140,7 @@ B. static
 A. private
 B. public
 C. protected
+D.  
 A. private
 6252a66d41a9bed830e0421a
 @
@@ -134,6 +148,7 @@ A. private
 A. catch
 B. try
 C. Tất cả đều sai
+D.  
 B. try
 6252a67041a9bed830e0423c
 @
@@ -141,5 +156,6 @@ Khi viết hàm hoặc mẫu lớp, người ta sử dụng ___ để chỉ đ�
 A. template parameters
 B. keyword
 C. Tất cả đều đúng
+D.  
 A. template parameters
 6252a66d41a9bed830e04210

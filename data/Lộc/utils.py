@@ -1,5 +1,3 @@
-from xml.etree.ElementPath import find
-from matplotlib.pyplot import get
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import re
@@ -18,8 +16,8 @@ table = database["table"]
 keyphrase = database["keyphrase"]
 
 
-def getContentById(strID):
-    content = noi_dung.find({"_id": ObjectId(strID)})[0]
+def getContentById(id):
+    content = noi_dung.find({"_id": id})[0]
     data = {
         "ten_chuong" : "",
         "ten_noi_dung" : content["ten_noi_dung"],
@@ -90,14 +88,9 @@ def findWithKeyphrase(keyph):
         else:
             rgx = re.compile(f'.*{keyph}.*', re.IGNORECASE)
     list_find_index = [idx["_id"] for idx in phan_muc.find({"ten_muc":rgx})]
-    # for key in keyphrase.find({}):
-    #     if key["to"] == keyph:
-    #         keyph = key["from"]
-    # rgx = re.compile(f'.*{keyph}.*', re.IGNORECASE)
-    # list_find_index.append([idx["_id"] for idx in phan_muc.find({"ten_muc":rgx})])
     return list_find_index
 
-list_find_index =  findWithKeyphrase("array")
+list_find_index =  findWithKeyphrase("toán tử")
 for idx in list_find_index:
     data = getIndexById(idx)
     with open('data_index.json', 'a', encoding='utf-8') as f:

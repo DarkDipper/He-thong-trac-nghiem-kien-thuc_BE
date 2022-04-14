@@ -1,7 +1,6 @@
 Trong cấu trúc chương trình C++, lệnh #include dùng để làm gì? 
 A. Thông báo trong chương trình sử dụng các lệnh tính toán, thông báo các biến sử dụng trong thân chương trình.
-B. Khai báo các câu lệnh được sử dụng trong chương trình. Phải tạo các câu lệnh trước thì mới sử dụng được trong chương
-trình C++.
+B. Khai báo các câu lệnh được sử dụng trong chương trình. Phải tạo các câu lệnh trước thì mới sử dụng được trong chương trình C++.
 C. Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương trình phải có prototype nằm trong các thư viện chuẩn này.
 D.Không có đáp án đúng.
 C. Thông báo cho bộ tiền biên dịch thêm các thư viện chuẩn trong C++. Các lệnh được sử dụng trong thân chương trình phải có prototype nằm trong các thư viện chuẩn này.
@@ -148,6 +147,7 @@ B. &&
 A. True
 B. False
 C. Unevaluatable
+D.  
 A. True
 6252a66e41a9bed830e04225
 @

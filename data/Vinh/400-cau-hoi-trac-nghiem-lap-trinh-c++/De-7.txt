@@ -1,11 +1,10 @@
-@
 Các thành viên của Class được mặc định là public
 A. Đúng
 B. Sai
 C.  
 D.  
 B. Sai
-6252a66d41a9bed830e04216
+62568853ca04156772f95171
 @
 Hàm `Friend chỉ có quyền truy cập đối với các thành viên công khai của lớp..
 A. Đúng

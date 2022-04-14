@@ -1,18 +1,18 @@
 Tham số tối đa một hàm có thể nhận được là 12
 A. Đúng
 B. Sai
-C.                                                                  
+C.    
 D.  
 B. Sai
 6252a66541a9bed830e041c0
-@                                                           
+@
 Thường thì đệ quy hoạt động chậm hơn các vòng lặp
 A. Đúng
 B. Sai
 C.  
 D.  
-6252a66441a9bed830e041b1
 A. Đúng
+6252a66441a9bed830e041b1
 @
 Trong một hàm, hai câu lệnh return sẽ không bao giờ xảy ra.
 A. Đúng
@@ -20,7 +20,7 @@ B. Sai
 C.  
 D.  
 B. Sai
-6252a66541a9bed830e041b8                              
+6252a66541a9bed830e041b8 
 @
 #include<iostream>;
 int main(){
@@ -32,7 +32,7 @@ float f(int a, float b){
     return ((float)a + b);
 }
 
-Có một lỗi trong chương trình dưới đây. Bạn sẽ thêm/xoá câu lệnh nào?      
+Có một lỗi trong chương trình dưới đây. Bạn sẽ thêm/xoá câu lệnh nào?   
 A. Add prototype: float f(int, float);
 B. Add prototype: float f(a, b);
 C. Add prototype: float f(float a, int b)
@@ -47,7 +47,7 @@ C.
 D.  
 B. Sai
 6252a66041a9bed830e04183
-@                                                                        
+@  
 #include <iostream>; 
 int main(){
     cout<< main();
@@ -72,9 +72,11 @@ int f2(int a){
 Các hàm trên sẽ hoạt động?
 A. Đúng
 B. Sai
+C.  
+D.  
 B. Sai
 6252a66541a9bed830e041ba
-@                                                          
+@  
 Nếu một hàm chứa hai câu lệnh trả về liên tiếp, trình biên dịch sẽ tạo ra các cảnh báo. Đúng hay Sai?
 A. Đúng
 B. Sai
@@ -89,8 +91,8 @@ B. Sai
 C.  
 D.  
 B. Sai
-6252a66041a9bed830e04184                                                                                                                           
-@                                    
+6252a66041a9bed830e04184 
+@
 #include <iostream>;
 using namespace std;
 int reverse(int);
@@ -135,7 +137,7 @@ C. 6
 D. Một giá trị khác
 A. 4
 6252a66641a9bed830e041c3
-@                                              
+@
 f(int a, int b)
 {
     int a;
@@ -150,7 +152,7 @@ C. Khai báo lại biến a
 D. Không có lỗi
 B. Hàm nên được định nghĩa là int f (int a, int b)
 6252a66641a9bed830e041c2
-@                                                      
+@   
 #include <iostream>;
 using namespace std;
  
@@ -175,7 +177,7 @@ C. Complie error
 D. Tất cả đều sai
 A.6 6
 6252a66441a9bed830e041b2
-@                                                        
+@   
 #include <iostream>;
 using namespace std;
  
@@ -207,7 +209,7 @@ C. 3, 4, 3, 4
 D. Tất cả đều sai
 A. 4, 3, 4, 3
 6252a66441a9bed830e041b2
-@                                              
+@
 long fun(int n){
     int i;
     long f = 1;
@@ -223,7 +225,7 @@ C. Hàm tính căn bậc hai của một số nguyên
 D. Tất cả đều sai
 B. Hàm tính giá trị giai thừa của một số nguyên
 6252a66641a9bed830e041c1
-@                                                       
+@  
 #include <iostream>;
 using namespace std;
  
@@ -244,8 +246,8 @@ B. Compile Error
 C.  
 D.  
 A. Error: cannot convert ‘void’ to ‘int’
-6252a66641a9bed830e041c1                                                                                                                           
-@                                                             
+6252a66641a9bed830e041c1 
+@
 #include <iostream>;
 #include <cmath>;
 using namespace std;
@@ -299,9 +301,9 @@ A. 1
 B. 0
 C. 0.1
 D.  
-B. 0                       
+B. 0   
 6252a66641a9bed830e041cc
-0                                                           
+@
 #include <iostream>;
 using namespace std;
 int main(){
@@ -319,7 +321,7 @@ C. 4
 D. Một giá trị khác
 A. -6
 6252a66641a9bed830e041cc
-@                                                        
+@   
 #include <iostream>;
 using namespace std;
 int main(){
@@ -354,8 +356,8 @@ B. 8
 C. 9
 D. Một giá trị khác
 B. 8
-6252a66e41a9bed830e04223                                                          
-@                                                   
+6252a66e41a9bed830e04223
+@  
 #include <iostream>;
 using namespace std;
  
@@ -371,7 +373,7 @@ C. 1
 D. 5
 A. 4
 6252a66e41a9bed830e04226
-@                                                                                                                                   
+@
 #include <iostream>;
 using namespace std;
  
@@ -404,16 +406,14 @@ C. 1
 D. x isn’t defined
 C. 1
 6252a65f41a9bed830e0417b
-@                                                            
+@   
 #include <iostream>;
 using namespace std;
  
 extern int x = 0;
  
 int main(){
-    {
-        int x = 1;
-    }
+    int x = 1;
     cout<< x;
 }
 Output của chương trình này là gì?
@@ -423,7 +423,7 @@ C. Error Comlier
 D.   
 A. 0 
 6252a65f41a9bed830e0417b
-@                                                           
+@  
 #include <iostream>;
 using namespace std;
  
@@ -442,13 +442,11 @@ B. 1 0
 C. ‘x’ undeclared identifier
 D.   
 C. ‘x’ undeclared identifier
-6252a65f41a9bed830e0417b                                                       
-@                                                        
+6252a65f41a9bed830e0417b
+@   
 int main(){
     int x;
-    {
-        x++;
-    }
+    x++;
     cout<< x;
 }
 
@@ -459,14 +457,12 @@ C. Error
 D. Kết quả khác
 C. Error
 6252a65f41a9bed830e0417a
-@                                                            
+@   
 int main(){
     int x=0;
-    {
-        int x = 0, y = 0;
-        y++;
-        x++;
-    }
+    int x = 0, y = 0;
+    y++;
+    x++;
     cout<< x;
 }
 
@@ -475,7 +471,7 @@ A. 1
 B. Error
 C. 0
 D. -1
-C. 0                                                       
+C. 0
 6252a65f41a9bed830e0417b
 @
 int count(){
@@ -513,7 +509,7 @@ C. 20
 D. ‘x’ isn’t defined
 B. 5
 6252a66641a9bed830e041c6
-@                                                            
+@   
 #include <iostream>;
 using namespace std;
 
@@ -546,7 +542,7 @@ C. c:cinw.c
 D. w.c in
 D. w.c in
 6252a66741a9bed830e041ce
-@                                                            
+@   
 #include <iostream>;
 using namespace std;
 
@@ -567,7 +563,7 @@ D. Complier error
 @
 #include <iostream>;
 using namespace std;
- 
+
 int main(){
     char c = 48;
     int i, mask = 01;
@@ -578,13 +574,13 @@ int main(){
 }
 Output của chương trình này là gì?
 A. 12480
-B. 1248@
+B. 1248
 C. 12500
 D. 12522
 A. 12480
 6252a67041a9bed830e04237
 @
-                                                        
+  
 #include <iostream>;
 using namespace std;
  
@@ -616,18 +612,17 @@ A. i = 0
 B. i = 1
 C. Error
 D. Tất cả đều sai
-B là đáp án đúng
 B. i = 1
-6252a66341a9bed830e041a8                
-@                                                        
+6252a66341a9bed830e041a8
+@   
 Kiểu khai báo nào sau đây hợp lệ?
 A. int length;
 B. char int;
 C. int long;
 D. float double;
-A là đáp án đúng
+A. int length;
 6252a65f41a9bed830e04179
-@                                                    
+@   
 #include <iostream>;
 using namespace std;
  
@@ -642,9 +637,9 @@ A. N = 20
 B. N = 10
 C. Error
 D. Không có output
-A là đáp án đúng
-6252a66341a9bed830e041a8                                                      
-@                                                    
+A. N = 20
+6252a66341a9bed830e041a8
+@   
 #include <iostream>;
 using namespace std;
  
@@ -690,7 +685,7 @@ C. long int k = 123L; k = k;
 D. float a = 3.14; a = a%3;
 D. float a = 3.14; a = a%3;
 6252a66e41a9bed830e04223
-@                                                            
+@   
 #include <iostream>;
 using namespace std;
  
@@ -703,9 +698,9 @@ A. Error: Declaration syntax error v (or) ‘v’: illegal use of type ‘void�
 B. Chương trình kết thúc bất thường
 C. Không có lỗi
 D. Tất cả đều sai
-A là đáp án đúng 
+A. Error: Declaration syntax error v (or) ‘v’: illegal use of type ‘void’
 6252a66241a9bed830e0419e
-@                                                            
+@   
 #include <iostream>;
 using namespace std;
  
@@ -759,4 +754,3 @@ C. Tuỳ thuộc vào phép toán được sử dụng
 D. Tuỳ thuộc vào trình biên dịch
 B. Sai
 6252a66f41a9bed830e04229
-@

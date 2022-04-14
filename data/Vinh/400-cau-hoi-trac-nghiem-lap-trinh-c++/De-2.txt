@@ -70,7 +70,6 @@ B. rem = 3.14%2.1;
     };
 2. long int l = 2.3;
 3. enum day{Monday, Tuesday, Wednesday};
-@
 Đâu không phải là kiểu dữ liệu do người dùng xác định?
 A. 1
 B. 2
@@ -256,15 +255,14 @@ D. dos.h
 A. math.h
 62551233f214278e765adeed
 @
-Câu 30:
 Bạn sẽ làm gì để coi hằng số 3,14 là kiểu float?
 A. const float(3.14)
 B. const float P = 3.14
 C. const float = 3.14
-D. Sử dụng (f)(3.14)
-B. Sử dụng 3.14f
-
-@:
+D. const = 3.14
+B. const float P = 3.14
+6252a66641a9bed830e041c6
+@
    Ta muốn làm tròn x ở kiểu float thành một giá trị int, Cách đúng để làm là:
 A. y = (int)(x + 0.5)
 B. y = int(x + 0.5)
@@ -352,6 +350,7 @@ C. Chương trình có thể bị lỗi nếu một số dữ liệu quan trọn
 A. 6.000000
 B. 6
 C. Error
+D.  
 A. 6.000000
 6252a66041a9bed830e0417e
 @
