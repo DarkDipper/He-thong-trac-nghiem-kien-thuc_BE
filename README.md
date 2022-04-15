@@ -26,11 +26,11 @@ Góp ý:
     - [x] Lộc phải bỏ file data vào folder data và tạo riêng ra folder riêng
     - [x] [LearnCPP](https://www.learncpp.com/)  - Vinh
     - [x] [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)  - Phong
-- [ ] Cào câu hỏi + Dịch (23h59 5/4 - 23h59 8/4)  - Vinh
-- [ ] Phân loại câu hỏi theo nội dung (0h 9/4 - 23h59 10/4) - Lộc, Vinh
+- [x] Cào câu hỏi + Dịch (23h59 5/4 - 23h59 8/4)  - Vinh
+- [x] Phân loại câu hỏi theo nội dung (0h 9/4 - 23h59 10/4) - Lộc, Vinh
    - [x] [LearnCPP](https://www.learncpp.com/)  - Vinh
    - [x] [Elib](https://www.elib.vn/huong-dan/chu-de/ngon-ngu-lap-trinh-c-.html)  - Phong
-- [ ] Phân loại (0h 4/4 - 23h59 10/4):
+- [x] Phân loại (0h 4/4 - 23h59 10/4):
 	Phân loại theo khuôn mẫu file SL.xlxs
 	Database : MongoDB
 - Frontend : React (T.Phong)
@@ -55,3 +55,9 @@ Sơ đồ Database:
   - [ ] 2. Lần 2(0h 17/4 - 23h59 20/4):
   	- Hệ thống kê đánh giá người đọc + đề xuất
 - [ ] Làm sile + test hệ thống(0h 21/4 - lúc báo cáo) 
+
+Hướng dẫn chạy BE (sử dụng FastAPI + mongo):
+> pip install -r requirements.txt
+Chạy file ![runFastAPI](runFastAPI.py)
+Để xem các router vào file ![FastAPI_Server](FastAPI/FastAPI_Server.py)
+

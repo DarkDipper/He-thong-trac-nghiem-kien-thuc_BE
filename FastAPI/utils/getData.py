@@ -15,13 +15,31 @@ code = database["code"]
 table = database["table"]
 keyphrase = database["keyphrase"]
 
+def getChapter():
+    list_data = []
+    for chapter in chuong.find({}):
+        list_data.append({
+            "id": str(chapter["_id"]),
+            "ten" : chapter["ten_chuong"]
+        })
+    return list_data   
 
-def getContentById(id):
-    content = noi_dung.find({"_id": id})[0]
+def getIdContentByIdChapter(strId):
+    list_data = []
+    for content in noi_dung.find({"id_chuong": ObjectId(strId)}):
+        list_data.append({
+            "id": str(content["_id"]),
+        })
+    return list_data  
+
+
+def getContentById(strId):
+    content = noi_dung.find({"_id": ObjectId(strId)})[0]
     data = {
         "ten_chuong" : "",
         "ten_noi_dung" : content["ten_noi_dung"],
         "Phan_loai" : content["Phan_loai"],
+        "Mo_ta" : content["Mo_ta"],
         "Phan_muc" : []
     }
     for chapter in chuong.find({}):
@@ -52,8 +70,8 @@ def getContentById(id):
 
     return data
 
-def getIndexById(id):
-    index = phan_muc.find({"_id": id})[0]
+def getIndexById(strId):
+    index = phan_muc.find({"_id": ObjectId(strId)})[0]
     data_index =  {
         "ten_noi_dung" : "",
         "ten_muc" : index["ten_muc"],
@@ -80,6 +98,7 @@ def getIndexById(id):
     return data_index
 
 def findWithKeyphrase(keyph):
+    list_data = []
     keyph = keyph.lower()
     for key in keyphrase.find({}):
         if key["from"] == keyph or key["to"] == keyph:
@@ -88,10 +107,7 @@ def findWithKeyphrase(keyph):
         else:
             rgx = re.compile(f'.*{keyph}.*', re.IGNORECASE)
     list_find_index = [idx["_id"] for idx in phan_muc.find({"ten_muc":rgx})]
-    return list_find_index
-
-list_find_index =  findWithKeyphrase("toán tử")
-for idx in list_find_index:
-    data = getIndexById(idx)
-    with open('data_index.json', 'a', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False)
+    for idx in list_find_index:
+        data = getIndexById(str(idx))
+        list_data.append(data)
+    return list_data
