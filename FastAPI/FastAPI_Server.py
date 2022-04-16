@@ -2,6 +2,8 @@ import json
 import numpy as np
 from fastapi import FastAPI
 import FastAPI.utils.getData as mgGet
+import FastAPI.utils.calculation as cal
+from FastAPI.model.Client import Client
 
 app = FastAPI()
 
@@ -29,4 +31,16 @@ async def create_upload_file(id_chapter:str):
 async def create_upload_file(id_content:str):
     return {
         "list_data": mgGet.getContentById(id_content)
+    }
+
+@app.post("/question")
+async def create_upload_file(number_of_question: int):
+    return {
+        "list_data": mgGet.getQuestionRandom(number_of_question)
+    }
+
+@app.post("/submit")
+async def create_upload_file(client: Client):
+    return {
+        "list_data": cal.resultOfAnswer(client.list_ans)
     }
