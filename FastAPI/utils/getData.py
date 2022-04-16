@@ -1,7 +1,7 @@
-import random
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import re
+import json
 
 CONNECTION_STRING = "mongodb+srv://kun09:khongbiet@cluster0.7vq6c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 client = MongoClient(CONNECTION_STRING)
@@ -14,7 +14,6 @@ media = database["media"]
 code = database["code"]
 table = database["table"]
 keyphrase = database["keyphrase"]
-cau_hoi = database["cau hoi"]
 
 def getChapter():
     list_data = []
@@ -112,13 +111,3 @@ def findWithKeyphrase(keyph):
         data = getIndexById(str(idx))
         list_data.append(data)
     return list_data
-
-def getQuestionRandom(number_of_question):
-    list_question = list(cau_hoi.find({}))
-    list_data = [list_question[idx] for idx in random.sample(range(len(list_question)), number_of_question)]
-    for data in list_data:
-        data["_id"] = str(data["_id"])
-        # data.pop('Dap_an', None)
-        data.pop("id_muc", None)
-    return list_data
-
