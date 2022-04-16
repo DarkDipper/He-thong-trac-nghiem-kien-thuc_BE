@@ -58,6 +58,8 @@ Sơ đồ Database:
 
 Hướng dẫn chạy BE (sử dụng FastAPI + mongo):
 > pip install -r requirements.txt
-Chạy file ![runFastAPI](runFastAPI.py)
-Để xem các router vào file ![FastAPI_Server](FastAPI/FastAPI_Server.py)
+
+Chạy file [runFastAPI](runFastAPI.py)
+
+Để xem các router vào file [FastAPI_Server](FastAPI/FastAPI_Server.py)
 
