@@ -1,0 +1,81 @@
+[{
+    "_id": "6257ec87f7f2450ddc0c09dc",
+    "Cau_hoi": ["Tất cả các hàm C ++ là đệ quy."],
+    "Cau_tra_loi": ["A. Đúng", "B. Sai", "C.  ", "D.  "]
+}, {
+    "_id": "6257ec81f7f2450ddc0c0940",
+    "Cau_hoi": ["#include <iostream>;", "using namespace std;", "extern int x = 0; ", "int main(){", "    x++;", "    cout<< x; ", "}", "Output của chương trình này là gì?"],
+    "Cau_tra_loi": ["A. 0", "B. Error", "C. 1", "D. x isn’t defined"]
+}, {
+    "_id": "6257ec7df7f2450ddc0c08d7",
+    "Cau_hoi": ["Giá trị chính xác để trả về hệ điều hành sau khi hoàn thành chương trình thành công là bao nhiêu ? "],
+    "Cau_tra_loi": ["A. 0", "B. -1", "C. 1", "D. Do not return a value"]
+}, {
+    "_id": "6257ec81f7f2450ddc0c0948",
+    "Cau_hoi": ["#include <iostream>;", "using namespace std;", "int main(){", "    char *url=\"c:\\tc\\bin\\rw.c\";", "    cout<< url;", "    return 0;", "}", "Output của chương trình này là gì?"],
+    "Cau_tra_loi": ["A. c:/tc/bin/rw.c", "B. c: c inw.c", "C. c:cinw.c", "D. w.c in"]
+}, {
+    "_id": "6257ec85f7f2450ddc0c09a9",
+    "Cau_hoi": ["#include <iostream>", "using namespace std;", "int main(){", "    int i = 3;", "    while (i--){", "        int i = 100;", "    i--;", "    cout << i);", "}", "Output của chương trình là gì?"],
+    "Cau_tra_loi": ["A. 99 99 99", "B. Complier Error", "C. 1", "D. Kết quả khác"]
+}, {
+    "_id": "6257ec7ef7f2450ddc0c08fe",
+    "Cau_hoi": ["Đâu là hàm dùng để so sánh sự giống nhau của 2 chuỗi?"],
+    "Cau_tra_loi": ["A. compare();", "B. stringcompare();", "C. cmp();", "D. strcmp();"]
+}, {
+    "_id": "6257ec7ff7f2450ddc0c090d",
+    "Cau_hoi": ["int func(int arr[]);", "int func(int arr[20]);", "    ", "Trong khai báo trên đây có sự khác biệt?"],
+    "Cau_tra_loi": ["A. Có", "B. Không", "C.\t", "D.\t"]
+}, {
+    "_id": "6257ec83f7f2450ddc0c096b",
+    "Cau_hoi": ["int main(){", "    char s[] = \"man\";", "    int i;", "    for(i = 0; s[i]; i++)", "    cout<< s[i] << *(s+i) << *(i+s) << i[s];", "}", "Output của chương trình này là gì?"],
+    "Cau_tra_loi": ["A. mmmm aaaa nnnn", "B. mmm aaa nnn", "C. mmmm aaa nnn", "D. Kết quả khác"]
+}, {
+    "_id": "6257ec7ff7f2450ddc0c090c",
+    "Cau_hoi": ["Bạn sẽ làm tròn giá trị từ 1,66 thành 2,0 như thế nào?"],
+    "Cau_tra_loi": ["A. ceil(1.66)", "B. floor(1.66)", "C. roundup(1.66)", "D. roundto(1.66)"]
+}, {
+    "_id": "6257ec7df7f2450ddc0c08d4",
+    "Cau_hoi": ["Để chú thích trên nhiều dòng lệnh trong chương trình C++, ta dùng cặp dấu nào? "],
+    "Cau_tra_loi": ["A. \\\\", "B. >>", "C. /* và */", "D. <<"]
+}, {
+    "_id": "6257ec84f7f2450ddc0c098c",
+    "Cau_hoi": ["#include <iostream>", "using namespace std;", "int main(){", "    int i = 4, j = -1, k = 0, w, x, y, z;", "    w = i || j || k;", "    x = i && j && k;", "    y = i || j && k;", "    z = i && j || k;", "    cout<< w << x << y << z);", "}", "Output của chương trình này là gì?"],
+    "Cau_tra_loi": ["A. 1 1 1 1", "B. 1 0 0 1", "C. 1 0 1 1", "D. Kết quả khác"]
+}, {
+    "_id": "6257ec82f7f2450ddc0c095e",
+    "Cau_hoi": ["Mỗi toán tử đều có một trình tự kết hợp"],
+    "Cau_tra_loi": ["A. Có", "B. Không", "C. Tuỳ theo bài toán", "D. Tất cả đều sai"]
+}, {
+    "_id": "6257ec80f7f2450ddc0c091e",
+    "Cau_hoi": ["    #include <stdio.h>", "    #include <math.h>", "    #include <conio.h>", "    void main()", "    {", "    printf(%f, sqrt(36.0));", "    getch();", "    }", "    ", "    Output của chương trình này là gì?"],
+    "Cau_tra_loi": ["A. 6.000000", "B. 6", "C. Error", "D.  "]
+}, {
+    "_id": "6257ec84f7f2450ddc0c0985",
+    "Cau_hoi": ["int main(){", "    static int i;", "    while(i <= 10&&i >= 0)", "        (i > 2 ? i++ : i--);", "    cout<<  i;", "}", "Output của chương trình là gì?"],
+    "Cau_tra_loi": ["A. -1", "B. 0", "C. 1", "D. Complier error"]
+}, {
+    "_id": "6257ec84f7f2450ddc0c097f",
+    "Cau_hoi": ["#include <iostream>", "using namespace std;", "int func(int* i);", "int main(){", "    int i = 15;", "    while(func(&i) && i++ > 0);", "    cout<< i;", "}", "int func(int* i){", "    *i -= 5;", "    return(*i);", "}", "Output của chương trình là gì?"],
+    "Cau_tra_loi": ["A. 0", "B. -1", "C. -2", "D. -3"]
+}, {
+    "_id": "6257ec7ff7f2450ddc0c0904",
+    "Cau_hoi": ["Tại sao các prototype lại hữu ích?"],
+    "Cau_tra_loi": ["A. Bởi vì chúng nói với trình biên dịch rằng một hàm được khai báo sau", "B. Vì chúng làm cho chương trình có thể chạy được", "C. Vì chúng cho phép người lập trình xem nhanh danh sách các hàm trong chương trình cùng với đối số cho mỗi hàm số.", "D. Tất cả điều đúng"]
+}, {
+    "_id": "6257ec83f7f2450ddc0c0976",
+    "Cau_hoi": ["#include <iostream>", "using namespace std;", "int main(){", "    int i = 0;", "    for(; i <= 2; )", "    cout<< ++i;", "}", "Output của chương trình là gì?"],
+    "Cau_tra_loi": ["A. 1 2 3", "B. 0 1 2 3", "C. 0 1 2", "D. Kết quả khác"]
+}, {
+    "_id": "6257ec89f7f2450ddc0c0a12",
+    "Cau_hoi": ["Lệnh nào sau đây là SAI?"],
+    "Cau_tra_loi": ["A. cout << 120;", "B. Không có lệnh sai", "C. int x; cout << x;", "D. int age = 33; cout << “My age is “ << age << “.\\n”;"]
+}, {
+    "_id": "6257ec84f7f2450ddc0c0989",
+    "Cau_hoi": ["Biểu thức bên tay phải của || toán tử không được đánh giá nếu phía bên trái xác định kết quả."],
+    "Cau_tra_loi": ["A. Đúng", "B. Sai", "C. Tuỳ theo trình biên Dịch", "D.      "]
+}, {
+    "_id": "6257ec84f7f2450ddc0c0992",
+    "Cau_hoi": ["a <= 20 ? (b = 30) : (c = 30);", "(a <= 20) ? b : (c = 30);", "Hai câu lệnh sau có giống nhau không?"],
+    "Cau_tra_loi": ["A. Có", "B. Không", "C. Không liên quan", "D.  "]
+}]
