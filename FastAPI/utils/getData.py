@@ -21,6 +21,8 @@ cau_hoi = database["cau hoi"]
 
 def findOccurrences(str_, substr):
     return [m.start() for m in re.finditer(substr, str_)]
+def ignoreABCD(str):
+    return str.replace("A.","").replace("B.","").replace("C.","").replace("D.","").strip()
 
 def getChapter():
     list_data = []
@@ -238,6 +240,7 @@ def getQuestionRandom(number_of_question):
     list_data = [list_question[idx] for idx in random.sample(range(len(list_question)), number_of_question)]
     for data in list_data:
         data["_id"] = str(data["_id"])
+        data["Cau_tra_loi"] = [ignoreABCD(c) for c in  data["Cau_tra_loi"]] 
         data.pop('Dap_an', None)
         data.pop("id_muc", None)
     return list_data
