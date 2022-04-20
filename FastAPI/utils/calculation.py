@@ -2,6 +2,7 @@ import random
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import re
+from FastAPI.utils.getData import getIndexById
 
 CONNECTION_STRING = "mongodb+srv://kun09:khongbiet@cluster0.7vq6c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 client = MongoClient(CONNECTION_STRING)
@@ -31,12 +32,15 @@ def resultOfAnswer(list_ans):
                 dict_detail[str(id)] = {
                     "total" : 1,
                     "correct" : 0,
+                    "content" : []
                 }
             else:
                 dict_detail[str(id)]["total"] = dict_detail[str(id)]["total"] + 1
 
             if ans["ans"] == cau_hoi.find({"_id" : ObjectId(ans["id"])})[0]["Dap_an"]:
                 dict_detail[str(id)]["correct"] = dict_detail[str(id)]["correct"] + 1
+            else:
+                dict_detail[str(id)]["content"].append(getIndexById(str(id_muc)) for id_muc in cau_hoi.find({"_id" : ObjectId(ans["id"])})[0]["id_muc"])
 
     list_data["detail"] = dict_detail
 

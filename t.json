@@ -1,0 +1,84 @@
+{
+    "list_ans": [
+        {
+            "id": "6257ec84f7f2450ddc0c0983",
+            "ans": "Value of x is"
+        },
+        {
+            "id": "6257ec7ef7f2450ddc0c08eb",
+            "ans": "Zero"
+        },
+        {
+            "id": "6257ec81f7f2450ddc0c093c",
+            "ans": "Error at (*)"
+        },
+        {
+            "id": "6257ec86f7f2450ddc0c09bd",
+            "ans": "khả năng tái sử dụng (reusability)"
+        },
+        {
+            "id": "6257ec7ff7f2450ddc0c0906",
+            "ans": "2"
+        },
+        {
+            "id": "6257ec80f7f2450ddc0c0928",
+            "ans": "Sai"
+        },
+        {
+            "id": "6257ec7df7f2450ddc0c08d0",
+            "ans": "Là lệnh chú thích trong C++"
+        },
+        {
+            "id": "6257ec80f7f2450ddc0c092c",
+            "ans": "Đúng"
+        },
+        {
+            "id": "6257ec7ef7f2450ddc0c08fd",
+            "ans": "fgets(x, 100, stdin);"
+        },
+        {
+            "id": "6257ec84f7f2450ddc0c0982",
+            "ans": "7"
+        },
+        {
+            "id": "6257ec83f7f2450ddc0c0968",
+            "ans": "None of above"
+        },
+        {
+            "id": "6257ec89f7f2450ddc0c09ff",
+            "ans": "Trong mệnh đề throw"
+        },
+        {
+            "id": "6257ec7ef7f2450ddc0c08ee",
+            "ans": "a;"
+        },
+        {
+            "id": "6257ec86f7f2450ddc0c09b9",
+            "ans": "Địa chỉ của pstr[0] Địa chỉ của pstr[1]"
+        },
+        {
+            "id": "6257ec88f7f2450ddc0c09f8",
+            "ans": "Phiên bản lớp cơ sở của hàm sẽ luôn được sử dụng"
+        },
+        {
+            "id": "6257ec86f7f2450ddc0c09b4",
+            "ans": "Value of x is"
+        },
+        {
+            "id": "6257ec7ef7f2450ddc0c08f1",
+            "ans": "remove"
+        },
+        {
+            "id": "6257ec7df7f2450ddc0c08e6",
+            "ans": "int"
+        },
+        {
+            "id": "6257ec83f7f2450ddc0c097c",
+            "ans": "1 2 3 4 5 6 7 8 9"
+        },
+        {
+            "id": "6257ec86f7f2450ddc0c09bf",
+            "ans": "=-1"
+        }
+    ]
+  }
