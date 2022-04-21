@@ -1,1 +1,214 @@
-[{"_id": "6257ec88f7f2450ddc0c09fc", "Cau_hoi": ["Trong kiểu kế thừa protected:"], "Cau_tra_loi": ["Các thành viên public của lớp cơ sở trở thành public", "Các thành viên public của lớp cơ sở được bảo vệ", "Các thành viên được bảo vệ của lớp cơ sở trở thành private", "Các thành viên public của lớp cơ sở trở nên không thể truy cập được"]}, {"_id": "6257ec84f7f2450ddc0c0992", "Cau_hoi": ["a <= 20 ? (b = 30) : (c = 30);", "(a <= 20) ? b : (c = 30);", "Hai câu lệnh sau có giống nhau không?"], "Cau_tra_loi": ["Có", "Không", "Không liên quan", ""]}, {"_id": "6257ec88f7f2450ddc0c09e7", "Cau_hoi": ["Static member functions có thể dùng con trỏ this."], "Cau_tra_loi": ["Đúng", "Sai", "", ""]}, {"_id": "6257ec82f7f2450ddc0c095e", "Cau_hoi": ["Mỗi toán tử đều có một trình tự kết hợp"], "Cau_tra_loi": ["Có", "Không", "Tuỳ theo bài toán", "Tất cả đều sai"]}, {"_id": "6257ec87f7f2450ddc0c09df", "Cau_hoi": ["Không cần thiết phải khởi tạo một tham chiếu đến đối tượng thực khi nó được khai báo."], "Cau_tra_loi": ["Đúng", "Sai", "", ""]}, {"_id": "6257ec82f7f2450ddc0c095d", "Cau_hoi": ["#include <iostream>", "using namespace std;", "int main(){", "    int x = 12, y = 7, z = 2;", "    z = x != 4 || y == 2;", "    cout << \"z = \" << z;", "}", "Output của chương trình này là gì?"], "Cau_tra_loi": ["z = 0", "z = 1", "z = 4", "z = 3"]}, {"_id": "6257ec81f7f2450ddc0c0938", "Cau_hoi": ["#include <iostream>;", "#include <cmath>;", "using namespace std;", "int main(){", "    cout<< sizeof(6.5);", "    cout<< sizeof(90000);", "    cout<< sizeof('A');", "}", "Điều gì sẽ được xuất ra khi bạn thực hiện chương trình trên đây?", "Biết kích thước kiểu char : 1 byte, float : 4 byte, int : 4 byte, double : 8 byte, long : 4 byte."], "Cau_tra_loi": ["8 4 1", "8 2 1", "4 4 1", "Tuỳ thuộc vào trình biên dịch mà kết quả sẽ khác"]}, {"_id": "6257ec7df7f2450ddc0c08e3", "Cau_hoi": ["Đâu không phải là câu lệnh lặp trong C++?"], "Cau_tra_loi": ["for", "do while", "while", "repeat until"]}, {"_id": "6257ec84f7f2450ddc0c098d", "Cau_hoi": ["#include <iostream>", "using namespace std;", "int main(){", "    static int a[20];", "    int i = 0;", "    a[i] = i;", "    cout<< a[0] << a[1] << i;", "}", "Output của chương trình này là gì?"], "Cau_tra_loi": ["1 0 1", "1 1 1", "0 0 0", "0 1 0"]}, {"_id": "6257ec7ff7f2450ddc0c0903", "Cau_hoi": ["Trong chương trình C++, dòng lệnh nào được thực hiện đầu tiên?"], "Cau_tra_loi": ["Lệnh đầu tiên trong hàm main()", "Lệnh đầu tiên của chương trình", "Lệnh đầu tiên trong khối comment /* */", "Câu lệnh đầu tiên của hàm kết thúc"]}, {"_id": "6257ec83f7f2450ddc0c0973", "Cau_hoi": ["#include <iostream>", "using namespace std;", "int main(){", "    int i = 0, j = 0;", "    while (i < 5, j < 10){", "        i++;", "        j++;", "    }", "    cout<< i << j;", "}", "Output của chương trình là gì?"], "Cau_tra_loi": ["5 5", "10 10", "Syntax error", "Kết quả khác"]}, {"_id": "6257ec7df7f2450ddc0c08e6", "Cau_hoi": ["Đâu là kiểu dữ liệu trả về của prototype sau?. “int func(char x, float v, double t);” "], "Cau_tra_loi": ["char", "int", "float", "double"]}, {"_id": "6257ec7df7f2450ddc0c08d0", "Cau_hoi": ["Lệnh cin trong C++ có tác dụng gì? "], "Cau_tra_loi": ["Là lệnh chú thích trong C++", "Là lệnh khai báo một biến.", "Là stream đầu ra chuẩn trong C++.", "Là stream đầu vào chuẩn của C++."]}, {"_id": "6257ec80f7f2450ddc0c091d", "Cau_hoi": ["    Điều gì sẽ xảy ra nếu trong chương trình C++ bạn gán giá trị cho một phần tử mảng có chỉ số con vượt quá kích thước của mảng?"], "Cau_tra_loi": ["Phần tử sẽ được đặt thành 0.", "Trình biên dịch sẽ báo lỗi.", "Chương trình có thể bị lỗi nếu một số dữ liệu quan trọng bị ghi đè", "Kích thước mảng sẽ phát triển một cách thích hợp"]}, {"_id": "6257ec7df7f2450ddc0c08e4", "Cau_hoi": ["Lệnh lặp do while được bảo đảm việc thực hiện bao nhiêu lần?"], "Cau_tra_loi": ["0", "Vô hạn", "1", "Tuỳ theo biến"]}, {"_id": "6257ec85f7f2450ddc0c099d", "Cau_hoi": ["int main(){", "    int i = 0;", "    char ch = 'A';", "    do{", "        putchar(ch);", "    }", "    while(i++ < 5 || ++ch <= 'F');", "}", "Output của chương trình này là gì?"], "Cau_tra_loi": ["AAAAAABCDEF", "AAAAAABCDE", "ABCDEF", "Kết quả khác"]}, {"_id": "6257ec82f7f2450ddc0c0950", "Cau_hoi": ["#include <iostream>;", "using namespace std;", "int main(){", "    extern int func(float);", "    int a;", "    a = func(3.14);", "    cout<< a;", "}", "int func(float a){", "    return (int)++a;", "}", "Output của chương trình này là gì?"], "Cau_tra_loi": ["3", "4", "Complier Error", "3.14"]}, {"_id": "6257ec84f7f2450ddc0c098a", "Cau_hoi": ["Điều nào sau đây thể hiện đúng thứ bậc của toán tử số học trong C?"], "Cau_tra_loi": ["/ + * –", "* – / +", "+ – / *", "/ * + –"]}, {"_id": "6257ec81f7f2450ddc0c093b", "Cau_hoi": ["#include <iostream>;", "using namespace std;", "int main(){", "    char a = 250;", "    int expr;", "    expr= a + !a + ~a + ++a;", "    cout<< expr;", "    return 0;", "}", "Output của chương trình này là gì?"], "Cau_tra_loi": ["-6", "5", "4", "Một giá trị khác"]}, {"_id": "6257ec82f7f2450ddc0c0953", "Cau_hoi": ["   ", "#include <iostream>;", "using namespace std;", "int main(){", "    int i = 5;", "    for(;cin>>&i ; cout<< i);", "}", "Trong chương trình sau, vòng lặp for sẽ được thực thi trong bao lâu?"], "Cau_tra_loi": ["Vòng lặp for hoàn toàn không được thực thi", "Vòng lặp for sẽ chỉ được thực thi một lần", "Vòng lặp for sẽ được thực thi 5 lần", "Vòng lặp for sẽ được thực thi vô hạn lần"]}]
+{
+    "number_of_question": 20,
+    "number_of_correct": 8,
+    "detail": [{
+        "total": 4,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Mệnh đề if-else trong C++ là gì?",
+            "noi_dung": ["Mệnh đề if-else trong C++ được sử dụng để kiểm tra một biểu thức điều kiện nào đó có đúng hay không, nếu đúng thì thực thi những câu lệnh bên trong khối lệnh if và ngược lại nếu sai thì nó sẽ bỏ qua những câu lệnh đó. Có ba dạng của câu lệnh if trong C++.\n\tMệnh đề if.\n\tMệnh đề if-else.\n\tMệnh đề if-elseif-else.\nNgoài ra, còn có dạng mệnh đề if lồng nhau.\nLưu đồ thuật toán của mệnh đề if trong C++:\n", "Mệnh đề If - else trong C++\n"],
+            "bo_sung": [{
+                "noi_dung": "https://s.elib.vn/images/fckeditor/upload/2020/20201027/images/menh-de-if-else-trong-c%2B%2B.png",
+                "Loai": "img"
+            }]
+        }, {
+            "ten_muc": "Mệnh đề if-else trong C++",
+            "noi_dung": ["Mệnh đề if được sử dụng để kiểm tra giá trị dạng boolean của điều kiện. Khối lệnh sau if được thực thi nếu giá trị của điều kiện là True, nếu là False thì chỉ có khối lệnh sau else được thực hiện. Cú pháp:\n", "Ví dụ mệnh đề if-else trong C++:\n", "Kết quả:\n", "Ví dụ mệnh đề if-else trong C++, với input từ người dùng:\n", "Kết quả 1:\n", "Kết quả 2:\n", ""],
+            "bo_sung": [{
+                "noi_dung": "f (condition) { \n  // khối lệnh này được thực thi nếu condition = true\n} else {\n  // khối lệnh này được thực thi nếu condition = false\n}\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "include <iostream> \nusing namespace std; \nint main () { \n   int num = 11;   \n            if (num % 2 == 0)   \n            {   \n                cout<<\"num la so chan.\";   \n            }  \n            else \n            {   \n                cout<<\"num la so le.\";   \n            } \n   return 0; \n} \n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "um la so le.\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "include <iostream> \nusing namespace std; \n#include <iostream> \nusing namespace std; \nint main () { \n    int num; \n    cout<<\"Nhap so num = \"; \n    cin>>num; \n            if (num % 2 == 0)   \n            {   \n                cout<<\"num la so chan.\"<<endl;   \n            }  \n            else \n            {   \n                cout<<\"num la so le.\"<<endl;   \n            } \n   return 0; \n} \n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "hap so num = 11\nnum la so le.\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "hap so num = 12\nnum la so chan.\n",
+                "Loai": "code"
+            }]
+        }]
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Mệnh đề switch-case trong C++",
+            "noi_dung": ["Mệnh đề switch-case trong C++ được sử dụng để thực thi 1 hoặc nhiều khối lệnh từ nhiều điều kiện. Nó gần giống với mệnh đề if-else-if trong C++.\nCú pháp:\n", "Lưu đồ thuật toán của mệnh đề switch-case trong C++\n", ""],
+            "bo_sung": [{
+                "noi_dung": "witch (bieu_thuc) {   \ncase gia_tri_1:\n    // Khối lệnh 1\n    break;  //tùy chọn\ncase gia_tri_2:   \n    // Khối lệnh 2\n    break;  //tùy chọn\n......   \ncase gia_tri_n:   \n    // Khối lệnh n\n    break;  //tùy chọn   \ndefault:    \n    // Khối lệnh này được thực thi\n    // nếu tất cả các điều kiện trên không thỏa mãn \n}  \n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "https://s.elib.vn/images/fckeditor/upload/2020/20201027/images/menh-de-switch-case-trong-c%2B%2B.png",
+                "Loai": "img"
+            }]
+        }]
+    }, {
+        "total": 2,
+        "correct": 2,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Input stream tiêu chuẩn (cin)",
+            "noi_dung": ["cin là một đối tượng được xác định trước của lớp istream. Nó được kết nối với thiết bị đầu vào tiêu chuẩn, mà thường là một bàn phím. Cin được sử dụng cùng với toán tử (>>) để đọc đầu vào từ console.\nVí dụ sử dụng cin trong C++:\n", "Kết quả:\n", ""],
+            "bo_sung": [{
+                "noi_dung": "include <iostream>\n\nusing namespace std;\n\nint main() {\n    int age;\n    cout << \"Enter your age: \";\n    cin >> age;\n    cout << \"Your age is: \" << age << endl;\n} \n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "nter your age: 20\nYour age is: 20\n",
+                "Loai": "code"
+            }]
+        }]
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Hàm có đối số nhưng không trả về giá trị",
+            "noi_dung": ["Ví dụ 3: Truyền vào đối số nhưng không trả về giá trị\n", "Trong ví dụ trên, các số nguyên dương được nhập vào từ người dùng và lưu vào biến num.\nSau đó, biến num được truyền vào hàm prime() và sẽ được kiểm tra liệu số đó có phải số nguyên tố hay không rồi in ra màn hình.\nVì kiểu trả về của hàm prime() là void nên không có giá trị nào được trả về từ hàm.\n*Lưu ý:  Hàm có kiểu trả về là void thì trong thân hàm không cần gọi lệnh return.\n"],
+            "bo_sung": [{
+                "noi_dung": "include <iostream>\nusing namespace std;\n\nvoid prime(int n);\n\nint main()\n{\n\tint num;\n\tcout << \"Enter a positive integer to check: \";\n\tcin >> num;\n\n\t// Đối số num được truyền vào hàm prime()\n\tprime(num);\n\treturn 0;\n}\n\n// Không có giá trị trả về nên kiểu trả về của hàm là void. */\nvoid prime(int n)\n{\n\tint i, flag = 0;\n\tfor (i = 2; i <= n/2; ++i)\n\t{\n\t\tif (n%i == 0)\n\t\t{\n\t\t\tflag = 1;\n\t\t\tbreak;\n\t\t}\n\t}\n\n\tif (flag == 1)\n\t{\n\t\tcout << n << \" is not a prime number.\";\n\t}\n\telse {\n\t\tcout << n << \" is a prime number.\";\n\t}\n}\n",
+                "Loai": "code"
+            }]
+        }]
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Toán tử số học trong C++",
+            "noi_dung": ["Bảng dưới đây mô tả các toán tử số học được hỗ trợ bởi ngôn ngữ C++. Giả sử biến A = 10 và biến B = 20:\n", ""],
+            "bo_sung": [{
+                "noi_dung": {
+                    "Toán tử": ["+", "-", "*", "/", "%", "++", "--"],
+                    "Miêu tả": ["Thêm hai toán hạng", "Trừ giá trị toán hạng hai từ toán hạng đầu", "Nhân hai toán hạng", "Chia lấy phần nguyên hai toán hạng", "Chia lấy phần dư", "Lượng gia giá trị toán hạng thêm 1 đơn vị", "Lượng giảm giá trị toán hạng một đơn vị"],
+                    "Ví dụ": ["A + B sẽ cho kết quả là 30", "A - B sẽ cho kết quả là -10", "A * B sẽ cho kết quả là 200", "B / A sẽ cho kết quả là 2", "B % A sẽ cho kết quả là 0", "A++ sẽ cho kết quả là 11", "A-- sẽ cho kết quả là 9"]
+                },
+                "Loai": "table"
+            }]
+        }]
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Truyền con trỏ tới hàm trong C++",
+            "noi_dung": ["Ngôn ngữ lập trình C++ cho phép bạn truyền một con trỏ tới một hàm. Để truyền con trỏ tới hàm trong C++ bạn chỉ cần khai báo tham số hàm có kiểu con trỏ.\nVí dụ sau chúng ta truyền một con trỏ unsigned long tới một hàm và thay đổi giá trị của nó bên trong hàm, truyền tham chiếu khi gọi hàm:\n", "Kết quả:\n", "Với hàm có tham số là một con trỏ, thì bạn cũng có thể truyền một mảng vào, ví dụ:\n", "Kết quả:\n", "              \n"],
+            "bo_sung": [{
+                "noi_dung": "include <iostream>\n#include <ctime>\n  \nusing namespace std;\nvoid laySoGiay(unsigned long *par);\n\nint main() {\n    unsigned long seconds;\n\n    laySoGiay(&seconds);\n\n    // in gia tri\n    cout << \"So giay la: \" << seconds << endl;\n\n    return 0;\n}\n\nvoid laySoGiay(unsigned long *par) {\n    // Lay so giay hien tai\n    *par = time( NULL );\n    return;\n}\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "o giay la: 1542429527\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "include <iostream>\nusing namespace std;\n  \n// khai bao prototype ham:\ndouble giaTriTB(int *arr, int size);\n  \nint main() {\n    // khai bao mang so nguyen arr co 5 phan tu.\n    int arr[5] = {10, 20, 100, 30, 60};\n    double trungbinh;\n  \n    // truyen con tro toi mang duoi dang mot tham so.\n    trungbinh = giaTriTB(arr, 5);\n  \n    // hien thi ket qua\n    cout << \"Gia tri trung binh la: \" << trungbinh << endl; \n     \n    return 0;\n}\n\ndouble giaTriTB(int *arr, int size) {\n    int    i, sum = 0;      \n    double trungbinh;         \n   \n    for (i = 0; i < size; ++i) {\n        sum += arr[i];\n    }\n  \n    trungbinh = double(sum) / size;\n  \n    return trungbinh;\n}\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "ia tri trung binh la: 44\n",
+                "Loai": "code"
+            }]
+        }, {
+            "ten_muc": "Con trỏ trỏ vào con trỏ",
+            "noi_dung": ["Con trỏ cũng giống như một biến thông thường nên nó sẽ có địa chỉ, do đó, một con trỏ có thể được một con trỏ khác trỏ tới. Ví dụ: \n", "\nKhi một con trỏ trỏ vào con trỏ, con trỏ đó sẽ giữ giá trị là địa chỉ của con trỏ mà nó trỏ tới, vậy nên nếu muốn lấy giá trị của biến của con trỏ mà nó đang trỏ tới ta phải dùng hai lần toán tử *, lần 1 là để lấy địa chỉ của con trỏ nó trỏ tới đang giữ, lần 2 là để lấy giá trị được lưu trữ tại địa chỉ mà biến của con trỏ mà nó trỏ tới đang giữ. \n", "\nCon trỏ trỏ vào con trỏ được ứng dụng để xây dựng mảng hai chiều như sau: \n", ""],
+            "bo_sung": [{
+                "noi_dung": "nt *a = new int(2409);\nint **ptr_a = &a; // con trỏ ptr_a trỏ vào con trỏ a\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "nt *a = new int(2409); // giả sử biến động có địa chỉ 0x50 và con trỏ có địa chỉ 0x70 \nint **ptr_a = &a; // con trỏ ptr_a trỏ vào con trỏ a tức ptr_a mang giá trị 0x70 \ncout << *ptr_a;   // được 0x50 là giá trị của con trỏ nó trỏ tới đang giữ tức địa chỉ của a đang giữ \ncout << **ptr_a;  // được 2409 do nó lấy giá trị lưu trữ tại địa chỉ a đang giữ chính là 0x50\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "/ Tạo ra mảng 2 chiều 10x10 \nint** arr = new int* [10]; \nfor (auto i = 0; i < 10; i++)\n\tarr[i] = new int[10]; \n \n// truy xuất phần tử giống như mảng bình thường \n \n// Giải phóng vùng nhớ \nfor (auto i = 0; i < 10; i++)\n\tdelete[] arr[i]; \ndelete[] arr; \narr = nullptr;\n",
+                "Loai": "code"
+            }]
+        }]
+    }, {
+        "total": 2,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Cấp phát động",
+            "noi_dung": ["Để cấp phát vùng nhớ cho một biến động ta làm như sau: \n", "\nNếu như cấp phát vùng nhớ thành công, toán tử new sẽ trả về một con trỏ trỏ tới địa chỉ của vùng nhớ mới. Và như đã nói ở trên, biến động không có tên do đó nó được quản lý bằng con trỏ, vậy nên khi tạo biến động ta gán luôn địa chỉ của nó cho con trỏ như sau: \n", "\nBây giờ bạn có thể thao tác trên biến động vừa cấp phát thông qua con trỏ như sau: \n", "\nCấp phát động là yêu cầu cấp phát một vùng nhớ, do đó sẽ có thể xảy ra trường hợp không đủ bộ nhớ để cấp phát, lúc này toán tử new sẽ trả về con trỏ NULL, bạn có thể kiểm tra như sau: \n", "\nSau khi đã sử dụng xong, dữ liệu trong vùng nhớ của biến động nên được xóa đi và trả lại cho hệ điều hành. Việc này rất quan trọng, việc không giải phóng sau khi sử dụng sẽ khiến cho vùng nhớ đó tồn tại nhưng hệ điều hành không được sử dụng do nó đã được cấp phát cho chương trình của chúng ta, dẫn đến việc rò rỉ bộ nhớ. \n \nViệc xóa và giải phóng vùng nhớ của biến động được thực hiện qua toán tử delete. Cú pháp như sau: \n", "\nSau khi xóa đi, vùng nhớ đó đã được xóa dữ liệu và trả lại cho hệ điều hành quản lý, tuy nhiên, con trỏ mà đang trỏ đến vùng nhớ đó vẫn đang chứa địa chỉ đó. Việc sử dụng con trỏ này sẽ gây ra hậu quả không mong muốn do biến động nó trỏ tới không còn tồn tại, do đó khi delete biến động, ta nên gán lại con trỏ NULL. \n", ""],
+            "bo_sung": [{
+                "noi_dung": "ew <kiểu_dữ_liệu>; \n// Ví dụ \nnew int; \nnew float;\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "nt *ptr = new int; // con trỏ ptr lúc này đang trỏ tới biến động kiểu int đã được tạo \n// Bạn cũng có thể khởi tạo giá trị ngay khi khai báo như sau \nint *ptr1 = new int(2409);\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "ptr = 2001;\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "elete <tên_biến_con_trỏ>; \n// ví dụ \ndelete ptr_a;\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "nt *ptr = new int(1); \ndelete ptr; \nptr = nullptr;\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "nt* myPtr = new int;\nif (myPtr != nullptr)\n\tcout <<\"Memory allocated\";\nelse\n\tcout << \"Bad allocate\";\n",
+                "Loai": "code"
+            }]
+        }]
+    }, {
+        "total": 1,
+        "correct": 1,
+        "content": []
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Vòng lặp while trong C++",
+            "noi_dung": ["Vòng lặp while trong C++ được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này.\nCú pháp:\n", "Trong đó, condition có thể là bất kỳ biểu thức nào. Khối lệnh trong vòng lặp while được thực thi trong khi condition là true. Khi condition là false thì điều khiển chương trình sẽ chuyển đến dòng ngay sau vòng lặp.\nSơ đồ thuật toán:\n", "Ở đây, điểm mấu chốt cần lưu ý là vòng lặp while có thể không thực thi được. Khi điều kiện là false, khối lệnh bên trong vòng lặp sẽ bị bỏ qua và câu lệnh đầu tiên sau vòng lặp while sẽ được thực thi.\nVí dụ\n", "Kết quả:\n", ""],
+            "bo_sung": [{
+                "noi_dung": "hile(condition) {\n    // Khối lệnh được lặp lại cho đến khi condition = False\n}\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "https://s.elib.vn/images/fckeditor/upload/2020/20201027/images/vong-lap-while-trong-c.png",
+                "Loai": "img"
+            }, {
+                "noi_dung": "include <iostream>\n\nusing namespace std;\n  \nint main () {\n    int a = 10;\n\n    while( a < 20 ) {\n        cout << \"Gia tri cua a: \" << a << endl;\n        a++;\n    }\n  \n    return 0;\n}\n",
+                "Loai": "code"
+            }, {
+                "noi_dung": "ia tri cua a: 10\nGia tri cua a: 11\nGia tri cua a: 12\nGia tri cua a: 13\nGia tri cua a: 14\nGia tri cua a: 15\nGia tri cua a: 16\nGia tri cua a: 17\nGia tri cua a: 18\nGia tri cua a: 19\n",
+                "Loai": "code"
+            }]
+        }]
+    }, {
+        "total": 1,
+        "correct": 0,
+        "content": [{
+            "ten_muc": "Hàm pure virtual(trừu tượng)trong C++",
+            "noi_dung": ["Nó là có thể nếu bạn muốn bao một hàm virtual trong một lớp cơ sở, để mà nó có thể được tái định nghĩa trong một lớp kế thừa để phù hợp với các đối tượng của lớp đó, nhưng đó là định nghĩa không có ý nghĩa gì.\nChúng ta có thể thay đổi hàm virtual là dientich() trong lớp cơ sở thành như sau:\n", "=0 nói cho compiler rằng hàm đó không có phần thân và hàm virtual trên sẽ được gọi là hàm pure virtual function trong C++..\nTrên đây là bài viết của eLib.VN về tính đa hình trong C++. Hy vọng là bài viết có ích với mọi người.\n              \n"],
+            "bo_sung": [{
+                "noi_dung": "lass Hinh {\n   protected:\n      int chieurong, chieucao;\n   public:\n      Hinh( int a=0, int b=0)\n      {\n         chieurong = a;\n         chieucao = b;\n      }\n      // ham pure virtual\n      virtual int dientich() = 0;\n};\n",
+                "Loai": "code"
+            }]
+        }]
+    }]
+}
