@@ -30,7 +30,7 @@ def resultOfAnswer(list_ans):
         for id in list_id_noi_dung:
             if str(id) not in dict_detail.keys():
                 dict_detail[str(id)] = {
-                    "ten_noi_dung" : noi_dung.find({"_id":id})["ten_noi_dung"],
+                    "ten_noi_dung" : noi_dung.find({"_id":id})[0]["ten_noi_dung"],
                     "total" : 1,
                     "correct" : 0,
                     "content" : []
